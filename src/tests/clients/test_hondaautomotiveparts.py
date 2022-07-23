@@ -1,10 +1,8 @@
 import pytest
 from money import Money
 
-
-from part.part import Part
-
 from clients.hondaautomotiveparts import HondaautomotivepartsClient
+from part.part import Part
 
 
 @pytest.mark.vcr()

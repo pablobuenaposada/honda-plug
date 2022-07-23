@@ -1,7 +1,7 @@
-from typing import Union, Optional
+from typing import Optional, Union
 
-from money import Money
 import pydantic
+from money import Money
 from pydantic.class_validators import validator
 from pydantic.networks import HttpUrl
 

@@ -1,8 +1,7 @@
-from clients.hondapartsonline import HondapartsonlineClient
+import pytest
 from money import Money
 
-import pytest
-
+from clients.hondapartsonline import HondapartsonlineClient
 from part.part import Part
 
 

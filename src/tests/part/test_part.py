@@ -1,10 +1,10 @@
-import pydantic
-from part.part import Part
 from contextlib import nullcontext as does_not_raise
 
+import pydantic
+import pytest
 from money import Money
 
-import pytest
+from part.part import Part
 
 
 class TestPart:
@@ -16,6 +16,15 @@ class TestPart:
                 pytest.raises(
                     pydantic.error_wrappers.ValidationError
                 ),  # TODO: match regexp
+                None,
+            ),
+            (
+                {
+                    "reference": "foo-bar",
+                    "title": "bar",
+                    "price": Money(1, "USD"),
+                },
+                pytest.raises(pydantic.error_wrappers.ValidationError),
                 None,
             ),
             (
