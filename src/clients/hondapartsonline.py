@@ -4,6 +4,8 @@ import requests
 from bs4 import BeautifulSoup
 from money import Money
 
+from part.part import Part
+
 
 def _parse_availability(value):
     # TODO: change by new switch python syntax
@@ -30,15 +32,12 @@ class HondapartsonlineClient:
             .find(id="product_data")
             .contents[0]
         )
-        return {
-            "part_number": product_data["sku"],
-            "price": Money(amount=product_data["price"], currency="USD"),
-            "title": product_data["title"],
-            "available": _parse_availability(
-                product_data["current_product_availabilty"]
-            ),
-            "discontinued": _is_discontinued(
-                product_data["current_product_availabilty"]
-            ),
-            "image": product_data["images"][0]["main"]["url"][2:],
-        }
+
+        return Part(
+            reference=product_data["sku"],
+            price=Money(amount=product_data["price"], currency="USD"),
+            title=product_data["title"],
+            available=_parse_availability(product_data["current_product_availabilty"]),
+            discontinued=_is_discontinued(product_data["current_product_availabilty"]),
+            image=f'https://{product_data["images"][0]["main"]["url"][2:]}',
+        )
