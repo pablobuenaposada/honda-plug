@@ -6,6 +6,7 @@ import pytest
 from part.part import Part
 
 
+@pytest.mark.vcr()
 class TestHondapartsonlineClient:
     @pytest.mark.parametrize(
         "part_number, expected",

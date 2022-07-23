@@ -7,6 +7,7 @@ from part.part import Part
 from clients.hondaautomotiveparts import HondaautomotivepartsClient
 
 
+@pytest.mark.vcr()
 class TestHondaautomotivepartsClient:
     @pytest.mark.parametrize(
         "part_number, expected",
