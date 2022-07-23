@@ -8,13 +8,13 @@ from part.part import Part
 
 
 def _parse_availability(value):
-    # TODO: change by new switch python syntax
-    if value == "Available for Sale":
-        return True
-    elif value == "Discontinued":
-        return False
-    else:
-        return None
+    match value:
+        case "Available for Sale":
+            return True
+        case "Discontinued":
+            return False
+        case _:
+            return None
 
 
 def _is_discontinued(value):
