@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from money import Money
 
-from part.part import Part
+from scrapper.part.part import Part
 
 
 def _parse_availability(value):

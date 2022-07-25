@@ -4,7 +4,7 @@ import pydantic
 import pytest
 from money import Money
 
-from part.part import Part
+from scrapper.part.part import Part
 
 
 class TestPart:

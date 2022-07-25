@@ -1,4 +1,4 @@
-from clients.common import CommonClient
+from scrapper.clients.common import CommonClient
 
 
 class HondapartsonlineClient(CommonClient):

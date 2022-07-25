@@ -1,8 +1,8 @@
 import pytest
 from money import Money
 
-from clients.hondapartsnow import HondapartsnowClient
-from part.part import Part
+from scrapper.clients.hondapartsnow import HondapartsnowClient
+from scrapper.part.part import Part
 
 
 @pytest.mark.vcr()

@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+money
+pydantic
+django
+django_extensions
