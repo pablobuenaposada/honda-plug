@@ -14,6 +14,9 @@ format/check: venv
 	venv/bin/black --verbose src --check
 	venv/bin/isort --df -c src
 
+migrations/check:
+	venv/bin/python src/manage.py makemigrations --check --dry-run
+
 tests: venv
 	venv/bin/pip install -r requirements-tests.txt
 	PYTHONPATH=src venv/bin/pytest src/tests
@@ -26,3 +29,6 @@ docker/tests:
 
 docker/format/check:
 	 docker run honda /bin/sh -c 'make format/check'
+
+docker/migrations/check:
+	 docker run honda /bin/sh -c 'make migrations/check'

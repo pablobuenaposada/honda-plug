@@ -13,6 +13,9 @@ jobs:
     - name: Build docker image
       run: |
         make docker/build
+    - name: Forgotten migrations
+      run: |
+        make docker/migrations/check
     - name: Lint
       run: |
         make docker/format/check
