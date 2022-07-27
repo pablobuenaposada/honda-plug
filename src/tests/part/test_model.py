@@ -1,9 +1,10 @@
 import pytest
 from django.core.exceptions import ValidationError
 from django.db import IntegrityError
+from djmoney.money import Money
 from model_bakery import baker
 
-from part.models import Part, Stock
+from part.models import Image, Part, Stock
 
 
 @pytest.mark.django_db
@@ -41,12 +42,19 @@ class TestPart:
 @pytest.mark.django_db
 class TestStock:
     def test_mandatory_fields(self):
-        with pytest.raises(IntegrityError):
+        with pytest.raises(IntegrityError) as error:
             Stock.objects.create()
+        assert str(error.value) == "NOT NULL constraint failed: part_stock.part_id"
 
     def test_valid(self):
         part = baker.make(Part, reference="foo")
-        data = {"reference": part, "title": "bar"}
+        data = {
+            "part": part,
+            "title": "bar",
+            "price": Money(1, "USD"),
+            "available": True,
+            "discontinued": False,
+        }
         stock = Stock.objects.create(**data)
         expected = data | {
             "id": stock.id,
@@ -54,5 +62,26 @@ class TestStock:
             "modified": stock.modified,
         }
 
-        for field in [field.name for field in Stock._meta.get_fields()]:
+        for field in {field.name for field in Stock._meta.get_fields()} - {
+            "price_currency",
+            "image",
+        }:
             assert getattr(stock, field) == expected[field]
+
+
+@pytest.mark.django_db
+class TestImage:
+    def test_mandatory_fields(self):
+        with pytest.raises(IntegrityError) as error:
+            Image.objects.create()
+        assert str(error.value) == "NOT NULL constraint failed: part_image.url"
+
+    def test_valid(self):
+        part = baker.make(Part, reference="foo")
+        stock = baker.make(Stock, part=part)
+        data = {"stock": stock, "url": "http://www.foo.com"}
+        image = Image.objects.create(**data)
+        expected = data | {"id": image.id}
+
+        for field in {field.name for field in Image._meta.get_fields()}:
+            assert getattr(image, field) == expected[field]

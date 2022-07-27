@@ -4,3 +4,4 @@ money
 pydantic
 django
 django_extensions
+django-money
