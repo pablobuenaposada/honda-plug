@@ -30,6 +30,7 @@ class TestPart:
             "id": part.id,
             "created": part.created,
             "modified": part.modified,
+            "reference": data["reference"].upper(),
         }
 
         for field in [

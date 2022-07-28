@@ -15,6 +15,7 @@ class Part(TimeStampedModel):
 
     def save(self, **kwargs):
         validate_reference(self.reference)
+        self.reference = self.reference.upper()
         super().save(**kwargs)
 
     def __str__(self):
