@@ -11,12 +11,12 @@ from part.models import Image, Part, Stock
 @pytest.mark.django_db
 class TestPart:
     def test_unique(self):
-        Part.objects.create(reference="foo")
+        Part.objects.create(reference="foo-bar-banana")
         with pytest.raises(IntegrityError):
-            Part.objects.create(reference="foo")
+            Part.objects.create(reference="foo-bar-banana")
 
     def test_mandatory_fields(self):
-        with pytest.raises(IntegrityError, match="reference"):
+        with pytest.raises(ValidationError, match="reference"):
             Part.objects.create()
 
     def test_reference_not_empty(self):
@@ -24,7 +24,7 @@ class TestPart:
             Part.objects.create(reference="")
 
     def test_valid(self):
-        data = {"reference": "foo", "source": SOURCE_EPCDATA}
+        data = {"reference": "foo-bar-banana", "source": SOURCE_EPCDATA}
         part = Part.objects.create(**data)
         expected = data | {
             "id": part.id,
@@ -48,7 +48,7 @@ class TestStock:
         assert str(error.value) == "NOT NULL constraint failed: part_stock.part_id"
 
     def test_valid(self):
-        part = baker.make(Part, reference="foo")
+        part = baker.make(Part, reference="foo-bar-banana")
         data = {
             "part": part,
             "title": "bar",
@@ -74,7 +74,7 @@ class TestStock:
 @pytest.mark.django_db
 class TestImage:
     def test_unique(self):
-        part = baker.make(Part, reference="foo")
+        part = baker.make(Part, reference="foo-bar-banana")
         stock = baker.make(Stock, part=part)
         Image.objects.create(stock=stock, url="http://www.foo.com")
         with pytest.raises(IntegrityError):
@@ -86,7 +86,7 @@ class TestImage:
         assert str(error.value) == "NOT NULL constraint failed: part_image.stock_id"
 
     def test_valid(self):
-        part = baker.make(Part, reference="foo")
+        part = baker.make(Part, reference="foo-bar-banana")
         stock = baker.make(Stock, part=part)
         data = {"stock": stock, "url": "http://www.foo.com"}
         image = Image.objects.create(**data)

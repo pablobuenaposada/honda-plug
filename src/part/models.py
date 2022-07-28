@@ -4,15 +4,17 @@ from django_extensions.db.models import TimeStampedModel
 from djmoney.models.fields import MoneyField
 
 from part.constants import PART_SOURCES, STOCK_SOURCES
+from part.validators import validate_reference
 
 
 class Part(TimeStampedModel):
-    reference = models.CharField(unique=True, max_length=13, default=None)
+    reference = models.CharField(
+        unique=True, max_length=13, default=None, validators=[validate_reference]
+    )
     source = models.CharField(choices=PART_SOURCES, max_length=20)
 
     def save(self, **kwargs):
-        if self.reference == "":
-            raise ValidationError("Empty reference")
+        validate_reference(self.reference)
         super().save(**kwargs)
 
     def __str__(self):
