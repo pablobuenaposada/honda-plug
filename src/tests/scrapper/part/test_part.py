@@ -20,7 +20,16 @@ class TestPart:
             ),
             (
                 {
-                    "reference": "foo-bar",
+                    "reference": "foo",
+                    "title": "bar",
+                    "price": Money(1, "USD"),
+                },
+                pytest.raises(pydantic.error_wrappers.ValidationError),
+                None,
+            ),
+            (
+                {
+                    "reference": "foo-bar-banana-melon",
                     "title": "bar",
                     "price": Money(1, "USD"),
                 },

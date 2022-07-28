@@ -16,8 +16,8 @@ class Part(pydantic.BaseModel):
 
     @validator("reference")
     def format_reference(cls, v):
-        if v.count("-") != 2:
-            raise ValueError("must contain 3 times character -")
+        if not 0 < v.count("-") < 3:
+            raise ValueError("must contain 2 or 3 times character -")
         return v.upper()
 
     class Config:

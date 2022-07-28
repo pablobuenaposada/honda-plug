@@ -4,6 +4,7 @@ from django.db import IntegrityError
 from djmoney.money import Money
 from model_bakery import baker
 
+from part.constants import SOURCE_EPCDATA, SOURCE_HONDAPARTSNOW
 from part.models import Image, Part, Stock
 
 
@@ -23,7 +24,7 @@ class TestPart:
             Part.objects.create(reference="")
 
     def test_valid(self):
-        data = {"reference": "foo"}
+        data = {"reference": "foo", "source": SOURCE_EPCDATA}
         part = Part.objects.create(**data)
         expected = data | {
             "id": part.id,
@@ -54,6 +55,7 @@ class TestStock:
             "price": Money(1, "USD"),
             "available": True,
             "discontinued": False,
+            "source": SOURCE_HONDAPARTSNOW,
         }
         stock = Stock.objects.create(**data)
         expected = data | {
@@ -71,10 +73,17 @@ class TestStock:
 
 @pytest.mark.django_db
 class TestImage:
+    def test_unique(self):
+        part = baker.make(Part, reference="foo")
+        stock = baker.make(Stock, part=part)
+        Image.objects.create(stock=stock, url="http://www.foo.com")
+        with pytest.raises(IntegrityError):
+            Image.objects.create(stock=stock, url="http://www.foo.com")
+
     def test_mandatory_fields(self):
         with pytest.raises(IntegrityError) as error:
             Image.objects.create()
-        assert str(error.value) == "NOT NULL constraint failed: part_image.url"
+        assert str(error.value) == "NOT NULL constraint failed: part_image.stock_id"
 
     def test_valid(self):
         part = baker.make(Part, reference="foo")
