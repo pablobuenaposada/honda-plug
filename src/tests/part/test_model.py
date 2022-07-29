@@ -43,6 +43,12 @@ class TestPart:
 
 @pytest.mark.django_db
 class TestStock:
+    def test_unique(self):
+        part = baker.make(Part, reference="foo-bar-banana")
+        baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW)
+        with pytest.raises(IntegrityError):
+            baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW)
+
     def test_mandatory_fields(self):
         with pytest.raises(IntegrityError) as error:
             Stock.objects.create()
@@ -57,6 +63,7 @@ class TestStock:
             "available": True,
             "discontinued": False,
             "source": SOURCE_HONDAPARTSNOW,
+            "quantity": 1,
         }
         stock = Stock.objects.create(**data)
         expected = data | {

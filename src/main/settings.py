@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "part",
     "djmoney",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [

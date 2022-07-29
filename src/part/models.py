@@ -29,6 +29,10 @@ class Stock(TimeStampedModel):
     available = models.BooleanField(null=True, default=None)
     discontinued = models.BooleanField(null=True, default=None)
     source = models.CharField(choices=STOCK_SOURCES, max_length=20)
+    quantity = models.IntegerField(null=True, blank=True)
+
+    class Meta:
+        unique_together = ("part", "source")
 
     def __str__(self):
         return self.part.reference
