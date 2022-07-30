@@ -11,9 +11,9 @@ from part.models import Image, Part, Stock
 @pytest.mark.django_db
 class TestPart:
     def test_unique(self):
-        Part.objects.create(reference="foo-bar-banana")
+        Part.objects.create(reference="56483-PND-003")
         with pytest.raises(IntegrityError):
-            Part.objects.create(reference="foo-bar-banana")
+            Part.objects.create(reference="56483-PND-003")
 
     def test_mandatory_fields(self):
         with pytest.raises(ValidationError, match="reference"):
@@ -24,7 +24,7 @@ class TestPart:
             Part.objects.create(reference="")
 
     def test_valid(self):
-        data = {"reference": "foo-bar-banana", "source": SOURCE_EPCDATA}
+        data = {"reference": "56483-PND-003", "source": SOURCE_EPCDATA}
         part = Part.objects.create(**data)
         expected = data | {
             "id": part.id,
@@ -44,7 +44,7 @@ class TestPart:
 @pytest.mark.django_db
 class TestStock:
     def test_unique(self):
-        part = baker.make(Part, reference="foo-bar-banana")
+        part = baker.make(Part, reference="56483-PND-003")
         baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW)
         with pytest.raises(IntegrityError):
             baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW)
@@ -52,10 +52,13 @@ class TestStock:
     def test_mandatory_fields(self):
         with pytest.raises(IntegrityError) as error:
             Stock.objects.create()
-        assert str(error.value) == "NOT NULL constraint failed: part_stock.part_id"
+        assert (
+            'null value in column "part_id" of relation "part_stock" violates not-null constraint'
+            in str(error.value)
+        )
 
     def test_valid(self):
-        part = baker.make(Part, reference="foo-bar-banana")
+        part = baker.make(Part, reference="56483-PND-003")
         data = {
             "part": part,
             "title": "bar",
@@ -82,7 +85,7 @@ class TestStock:
 @pytest.mark.django_db
 class TestImage:
     def test_unique(self):
-        part = baker.make(Part, reference="foo-bar-banana")
+        part = baker.make(Part, reference="56483-PND-003")
         stock = baker.make(Stock, part=part)
         Image.objects.create(stock=stock, url="http://www.foo.com")
         with pytest.raises(IntegrityError):
@@ -91,10 +94,13 @@ class TestImage:
     def test_mandatory_fields(self):
         with pytest.raises(IntegrityError) as error:
             Image.objects.create()
-        assert str(error.value) == "NOT NULL constraint failed: part_image.stock_id"
+        assert (
+            str(error.value)
+            == 'null value in column "url" of relation "part_image" violates not-null constraint\nDETAIL:  Failing row contains (3, null, null).\n'
+        )
 
     def test_valid(self):
-        part = baker.make(Part, reference="foo-bar-banana")
+        part = baker.make(Part, reference="56483-PND-003")
         stock = baker.make(Stock, part=part)
         data = {"stock": stock, "url": "http://www.foo.com"}
         image = Image.objects.create(**data)

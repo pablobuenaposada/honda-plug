@@ -1,8 +1,8 @@
 FROM python:3.10.4
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
-COPY src /usr/src/app/src
-COPY Makefile requirements.txt requirements-tests.txt /usr/src/app/
+COPY src /app/src
+COPY Makefile requirements.txt requirements-tests.txt docker-compose.yml .env /app/
 
 RUN make venv

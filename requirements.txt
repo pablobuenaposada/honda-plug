@@ -5,3 +5,5 @@ pydantic
 django
 django_extensions
 django-money
+python-dotenv
+psycopg2
