@@ -18,6 +18,12 @@ format/check: venv
 migrations/check:
 	venv/bin/python src/manage.py makemigrations --check --dry-run
 
+migrate:
+	venv/bin/python src/manage.py collectstatic --noinput
+
+gunicorn:
+	venv/bin/gunicorn src.main.wsgi:application --bind 0.0.0.0:8000 --pythonpath=src
+
 tests: venv
 	venv/bin/pip install -r requirements-tests.txt
 	PYTHONPATH=src venv/bin/pytest src/tests
@@ -37,3 +43,6 @@ docker/migrations/check:
 
 docker/run/shell:
 	docker exec -it honda_django_1 bash
+
+docker/run/prod:
+	docker-compose -f docker-compose.prod.yml up --build
