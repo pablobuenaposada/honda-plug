@@ -46,3 +46,6 @@ docker/run/shell:
 
 docker/run/prod:
 	docker compose -f docker-compose.prod.yml up -d --build
+
+docker/run/client/epc-data:
+	docker exec -it honda-django-1 bash -c "PYTHONPATH=src venv/bin/python src/manage.py runscript epcdata"

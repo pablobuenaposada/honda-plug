@@ -3,6 +3,7 @@ from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
+from django.db.utils import IntegrityError
 
 
 class RequestLimiter:
@@ -23,7 +24,7 @@ class RequestLimiter:
 class EpcdataClient:
     DOMAIN = "honda.epc-data.com"
 
-    def get_parts(self):
+    def get_parts(self, function):
         references = []
         session = requests.Session()
         request_limiter = RequestLimiter(session)
@@ -88,7 +89,8 @@ class EpcdataClient:
                                     response.content, "html.parser"
                                 ).find("b", {"class": "parts-in-stock-widget_part-oem"})
                                 try:
-                                    references.append(soup.text)
+                                    # references.append(soup.text)
                                     print(soup.text)
-                                except AttributeError:
+                                    function(soup.text, "epc-data")
+                                except (AttributeError, IntegrityError):
                                     pass
