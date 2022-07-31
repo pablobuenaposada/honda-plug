@@ -9,7 +9,7 @@ from part.validators import validate_reference
 
 class Part(TimeStampedModel):
     reference = models.CharField(
-        unique=True, max_length=13, default=None, validators=[validate_reference]
+        unique=True, max_length=14, default=None, validators=[validate_reference]
     )
     source = models.CharField(choices=PART_SOURCES, max_length=20)
 
