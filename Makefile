@@ -26,7 +26,7 @@ gunicorn:
 
 tests: venv
 	venv/bin/pip install -r requirements-tests.txt
-	PYTHONPATH=src venv/bin/pytest src/tests
+	venv/bin/dotenv ".env.test" && PYTHONPATH=src venv/bin/pytest src/tests
 
 docker/build:
 	docker build --no-cache	--tag=$(DOCKER_IMAGE) .
@@ -42,7 +42,7 @@ docker/migrations/check:
 	 docker run $(DOCKER_IMAGE) /bin/sh -c 'make migrations/check'
 
 docker/run/shell:
-	docker exec -it honda_django_1 bash
+	docker exec -it honda-django-1 bash
 
 docker/run/prod:
-	docker-compose -f docker-compose.prod.yml up --build
+	docker compose -f docker-compose.prod.yml up -d --build

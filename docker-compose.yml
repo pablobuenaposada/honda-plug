@@ -3,10 +3,8 @@ version: "3.9"
 services:
   db:
     image: postgres:14.4-alpine
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+    env_file:
+      - .env.test
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
     ports:
@@ -21,22 +19,16 @@ services:
     command: venv/bin/python src/manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
-    environment:
-      - POSTGRES_NAME=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_HOST=db
+    env_file:
+      - .env.test
     depends_on:
       db:
         condition: service_healthy
   migration:
     build: .
     command: venv/bin/python src/manage.py migrate
-    environment:
-      - POSTGRES_NAME=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_HOST=db
+    env_file:
+      - .env.test
     depends_on:
       - django
 
