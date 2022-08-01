@@ -1,3 +1,4 @@
+import logging
 import time
 from datetime import datetime
 
@@ -22,10 +23,11 @@ class RequestLimiter:
 
 
 class EpcdataClient:
+    logger = logging.getLogger(__name__)
     DOMAIN = "honda.epc-data.com"
 
     def get_parts(self, function):
-        references = []
+        self.logger.info("START")
         session = requests.Session()
         request_limiter = RequestLimiter(session)
         response = request_limiter.get(f"https://{self.DOMAIN}")
@@ -89,8 +91,9 @@ class EpcdataClient:
                                     response.content, "html.parser"
                                 ).find("b", {"class": "parts-in-stock-widget_part-oem"})
                                 try:
-                                    # references.append(soup.text)
-                                    print(soup.text)
+                                    self.logger.info(f"found {soup.text}")
                                     function(soup.text, "epc-data")
-                                except (AttributeError, IntegrityError):
-                                    pass
+                                except IntegrityError:
+                                    self.logger.info("already in")
+                                except Exception as e:
+                                    self.logger.info(e)

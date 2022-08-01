@@ -33,7 +33,7 @@ docker/build:
 
 docker/tests:
 	 docker compose up -d db django
-	 docker exec honda-django-1 make tests
+	 docker exec $(DOCKER_IMAGE)-django-1 make tests
 
 docker/format/check:
 	 docker run $(DOCKER_IMAGE) /bin/sh -c 'make format/check'
@@ -47,5 +47,8 @@ docker/run/shell:
 docker/run/prod:
 	docker compose -f docker-compose.prod.yml up -d --build
 
+docker/run/local:
+	docker compose -f docker-compose.yml up -d --build
+
 docker/run/client/epc-data:
-	docker exec -it honda-django-1 bash -c "PYTHONPATH=src venv/bin/python src/manage.py runscript epcdata"
+	docker compose -f docker-compose.scripts.prod.yml up epc-data -d --build
