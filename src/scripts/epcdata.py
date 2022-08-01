@@ -1,6 +1,5 @@
-from scrapper.clients.epcdata import EpcdataClient
-
 from part.lambdas import add_part
+from scrapper.clients.epcdata import EpcdataClient
 
 
 def run():
