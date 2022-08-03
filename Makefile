@@ -52,3 +52,6 @@ docker/run/local:
 
 docker/run/client/epc-data:
 	docker compose -f docker-compose.scripts.prod.yml up epc-data -d --build
+
+docker/run/client/hondapartsnow:
+	docker compose -f docker-compose.scripts.prod.yml up hondapartsnow -d --build

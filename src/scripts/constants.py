@@ -1,0 +1,1 @@
+WAIT_BETWEEN_REQUESTS = 3  # seconds

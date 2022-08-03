@@ -28,7 +28,7 @@ class Part(TimeStampedModel):
 
 class Stock(TimeStampedModel):
     part = models.ForeignKey(Part, on_delete=models.CASCADE)
-    title = models.CharField(max_length=20)
+    title = models.CharField(max_length=100)
     price = MoneyField(max_digits=10, null=True, default_currency=None)
     available = models.BooleanField(null=True, default=None)
     discontinued = models.BooleanField(null=True, default=None)
