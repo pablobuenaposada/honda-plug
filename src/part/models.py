@@ -5,7 +5,7 @@ from djmoney.models.fields import MoneyField
 from simple_history.models import HistoricalRecords
 
 from part.constants import PART_SOURCES, STOCK_SOURCES
-from part.validators import validate_reference
+from part.validators import validate_empty, validate_reference
 
 
 class Part(TimeStampedModel):
@@ -17,6 +17,7 @@ class Part(TimeStampedModel):
     history = HistoricalRecords()
 
     def save(self, **kwargs):
+        validate_empty(self.source)
         validate_reference(self.reference)
         self.reference = self.reference.upper()
         super().save(**kwargs)
@@ -48,6 +49,5 @@ class Image(models.Model):
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
 
     def save(self, **kwargs):
-        if self.url == "":
-            raise ValidationError("Empty url")
+        validate_empty(self.url)
         super().save(**kwargs)

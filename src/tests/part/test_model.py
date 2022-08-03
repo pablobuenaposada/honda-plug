@@ -11,13 +11,14 @@ from part.models import Image, Part, Stock
 @pytest.mark.django_db
 class TestPart:
     def test_unique(self):
-        Part.objects.create(reference="56483-PND-003")
+        Part.objects.create(reference="56483-PND-003", source=SOURCE_EPCDATA)
         with pytest.raises(IntegrityError):
-            Part.objects.create(reference="56483-PND-003")
+            Part.objects.create(reference="56483-PND-003", source=SOURCE_EPCDATA)
 
     def test_mandatory_fields(self):
-        with pytest.raises(ValidationError, match="reference"):
+        with pytest.raises(ValidationError) as error:
             Part.objects.create()
+        assert "This field cannot be emtpy" in str(error.value)
 
     def test_reference_not_empty(self):
         with pytest.raises(ValidationError):
@@ -92,12 +93,9 @@ class TestImage:
             Image.objects.create(stock=stock, url="http://www.foo.com")
 
     def test_mandatory_fields(self):
-        with pytest.raises(IntegrityError) as error:
+        with pytest.raises(ValidationError) as error:
             Image.objects.create()
-        assert (
-            str(error.value)
-            == 'null value in column "url" of relation "part_image" violates not-null constraint\nDETAIL:  Failing row contains (3, null, null).\n'
-        )
+        assert "This field cannot be emtpy" in str(error.value)
 
     def test_valid(self):
         part = baker.make(Part, reference="56483-PND-003")
