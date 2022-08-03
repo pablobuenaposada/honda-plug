@@ -8,3 +8,4 @@ django-money
 python-dotenv
 psycopg2
 gunicorn
+django-simple-history

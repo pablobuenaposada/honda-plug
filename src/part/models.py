@@ -2,6 +2,7 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django_extensions.db.models import TimeStampedModel
 from djmoney.models.fields import MoneyField
+from simple_history.models import HistoricalRecords
 
 from part.constants import PART_SOURCES, STOCK_SOURCES
 from part.validators import validate_reference
@@ -12,6 +13,8 @@ class Part(TimeStampedModel):
         unique=True, max_length=15, default=None, validators=[validate_reference]
     )
     source = models.CharField(choices=PART_SOURCES, max_length=20)
+
+    history = HistoricalRecords()
 
     def save(self, **kwargs):
         validate_reference(self.reference)
@@ -30,6 +33,8 @@ class Stock(TimeStampedModel):
     discontinued = models.BooleanField(null=True, default=None)
     source = models.CharField(choices=STOCK_SOURCES, max_length=20)
     quantity = models.IntegerField(null=True, blank=True)
+
+    history = HistoricalRecords()
 
     class Meta:
         unique_together = ("part", "source")
