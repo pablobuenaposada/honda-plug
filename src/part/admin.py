@@ -8,6 +8,7 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Part
     readonly_fields = ("created", "modified")
     list_display = ("reference", "source", "modified")
+    search_fields = ["reference"]
 
 
 class ImageInlineAdmin(admin.TabularInline):
@@ -17,7 +18,17 @@ class ImageInlineAdmin(admin.TabularInline):
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Stock
     readonly_fields = ("created", "modified")
-    list_display = ("part", "source", "title", "price", "modified")
+    list_display = (
+        "part",
+        "title",
+        "source",
+        "price",
+        "available",
+        "discontinued",
+        "modified",
+    )
+    search_fields = ["part__reference", "title"]
+    list_filter = ["source", "available", "discontinued"]
     inlines = [ImageInlineAdmin]
 
 
