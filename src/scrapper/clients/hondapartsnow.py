@@ -47,5 +47,7 @@ class HondapartsnowClient:
             title=product_data["description"],
             available=_parse_availability(product_data["offers"]["availability"]),
             discontinued=_is_discontinued(product_data["offers"]["availability"]),
-            image=product_data["image"][0],
+            image=None
+            if not product_data.get("image", False)
+            else product_data.get("image")[0],
         )

@@ -32,6 +32,17 @@ class TestHondapartsnowClient:
                     image="https://www.hondapartsnow.com/resources/encry/part-picture/hpn/large/792b87b040876fda9770fd4a712d9665/756566f6e674b120a1c138fcb821a53c.png",
                 ),
             ),
+            (
+                "72861-SEA-J00",
+                Part(
+                    available=False,
+                    reference="72861-SEA-J00",
+                    price=Money(amount="0.00", currency="USD"),
+                    title="Seal, L. RR. Door Hole",
+                    discontinued=True,
+                    image=None,
+                ),
+            ),
         ),
     )
     def test_success(self, part_number, expected):
