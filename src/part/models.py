@@ -34,6 +34,7 @@ class Stock(TimeStampedModel):
     discontinued = models.BooleanField(null=True, default=None)
     source = models.CharField(choices=STOCK_SOURCES, max_length=20)
     quantity = models.IntegerField(null=True, blank=True)
+    url = models.URLField()
 
     history = HistoricalRecords()
 

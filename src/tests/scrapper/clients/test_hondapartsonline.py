@@ -19,6 +19,7 @@ class TestHondapartsonlineClient:
                     title="Gasket, Cylinder Head (Nippon Leakless) - Honda (12251-RBB-004)",
                     discontinued=False,
                     image="https://dz310nzuyimx0.cloudfront.net/strapr1/7cfd97ab6173d165e37dec41c6a978e9/85957d0bd63c58860e15bdc7b79afe4f.gif",
+                    url="https://www.hondapartsonline.net/search",
                 ),
             ),
             (
@@ -30,6 +31,7 @@ class TestHondapartsonlineClient:
                     title="Pulley, Power Steering Pump - Honda (56483-PND-003)",
                     discontinued=True,
                     image="https://dz310nzuyimx0.cloudfront.net/strapr1/056442089e514a4e09f554927e3d604f/7e1bbfa7e632ddb91eb5f5bb58518895.png",
+                    url="https://www.hondapartsonline.net/search",
                 ),
             ),
         ),

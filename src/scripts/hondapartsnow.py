@@ -1,5 +1,6 @@
 import logging
 import time
+from datetime import datetime
 
 from djmoney.money import Money
 
@@ -16,7 +17,7 @@ def run():
     for part in Part.objects.all():
         try:
             time.sleep(WAIT_BETWEEN_REQUESTS)
-            logger.info(f"searching {part.reference}")
+            logger.info(f"{datetime.now()}: searching {part.reference}")
             parsed_stock = client.get_part(part.reference)
         except Exception as error:
             logger.info(error)
@@ -28,6 +29,7 @@ def run():
                 available=parsed_stock.available,
                 discontinued=parsed_stock.discontinued,
                 source=SOURCE_HONDAPARTSNOW,
+                url=parsed_stock.url,
             )
             logger.info("added") if created else logger.info("updated")
             if parsed_stock.image:

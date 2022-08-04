@@ -13,6 +13,7 @@ class Part(pydantic.BaseModel):
     image: Optional[HttpUrl]
     available: Union[bool, None] = None
     discontinued: Union[bool, None] = None
+    url: HttpUrl
 
     @validator("reference")
     def format_reference(cls, v):

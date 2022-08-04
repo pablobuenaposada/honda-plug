@@ -45,6 +45,7 @@ class HondapartsnowClient:
             reference=product_data["sku"],
             price=Money(amount=product_data["offers"]["price"], currency="USD"),
             title=product_data["description"],
+            url=product_data["url"],
             available=_parse_availability(product_data["offers"]["availability"]),
             discontinued=_is_discontinued(product_data["offers"]["availability"]),
             image=None

@@ -46,9 +46,13 @@ class TestPart:
 class TestStock:
     def test_unique(self):
         part = baker.make(Part, reference="56483-PND-003")
-        baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW)
+        baker.make(
+            Stock, part=part, source=SOURCE_HONDAPARTSNOW, url="https://www.foo.com"
+        )
         with pytest.raises(IntegrityError):
-            baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW)
+            baker.make(
+                Stock, part=part, source=SOURCE_HONDAPARTSNOW, url="https://www.foo.com"
+            )
 
     def test_mandatory_fields(self):
         with pytest.raises(IntegrityError) as error:
@@ -68,6 +72,7 @@ class TestStock:
             "discontinued": False,
             "source": SOURCE_HONDAPARTSNOW,
             "quantity": 1,
+            "url": "https://www.foo.com",
         }
         stock = Stock.objects.create(**data)
         expected = data | {
@@ -87,7 +92,7 @@ class TestStock:
 class TestImage:
     def test_unique(self):
         part = baker.make(Part, reference="56483-PND-003")
-        stock = baker.make(Stock, part=part)
+        stock = baker.make(Stock, part=part, url="https://www.foo.com")
         Image.objects.create(stock=stock, url="http://www.foo.com")
         with pytest.raises(IntegrityError):
             Image.objects.create(stock=stock, url="http://www.foo.com")
@@ -99,7 +104,7 @@ class TestImage:
 
     def test_valid(self):
         part = baker.make(Part, reference="56483-PND-003")
-        stock = baker.make(Stock, part=part)
+        stock = baker.make(Stock, part=part, url="https://www.foo.com")
         data = {"stock": stock, "url": "http://www.foo.com"}
         image = Image.objects.create(**data)
         expected = data | {"id": image.id}

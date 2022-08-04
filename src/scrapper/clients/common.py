@@ -44,4 +44,5 @@ class CommonClient:
             available=_parse_availability(product_data["current_product_availabilty"]),
             discontinued=_is_discontinued(product_data["current_product_availabilty"]),
             image=f'https://{product_data["images"][0]["main"]["url"][2:]}',
+            url=f"https://{self.DOMAIN}{self.SEARCH_SUFFIX}",  # TODO: get the correct url
         )

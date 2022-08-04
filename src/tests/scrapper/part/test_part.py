@@ -41,6 +41,7 @@ class TestPart:
                     "reference": "foo-bar-banana",
                     "title": "bar",
                     "price": Money(1, "USD"),
+                    "url": "https://www.foo.com",
                 },
                 does_not_raise(),
                 {
@@ -50,6 +51,7 @@ class TestPart:
                     "image": None,
                     "available": None,
                     "discontinued": None,
+                    "url": "https://www.foo.com",
                 },
             ),
             (
@@ -60,6 +62,7 @@ class TestPart:
                     "image": "http://url.com",
                     "available": True,
                     "discontinued": False,
+                    "url": "https://www.foo.com",
                 },
                 does_not_raise(),
                 {
@@ -69,6 +72,7 @@ class TestPart:
                     "image": "http://url.com",
                     "available": True,
                     "discontinued": False,
+                    "url": "https://www.foo.com",
                 },
             ),
         ),

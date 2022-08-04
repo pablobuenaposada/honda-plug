@@ -20,6 +20,7 @@ class TestHondapartsnowScript:
             "available": False,
             "discontinued": True,
             "quantity": None,
+            "url": "https://www.hondapartsnow.com/genuine/honda~pulley~power~steering~56483-pnd-003.html",
         }
 
         assert Stock.objects.count() == Image.objects.count() == 0
