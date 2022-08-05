@@ -24,12 +24,18 @@ def run():
         else:
             stock, created = Stock.objects.update_or_create(
                 part=part,
-                title=parsed_stock.title,
-                price=Money(parsed_stock.price.amount, parsed_stock.price.currency),
-                available=parsed_stock.available,
-                discontinued=parsed_stock.discontinued,
                 source=SOURCE_HONDAPARTSNOW,
-                url=parsed_stock.url,
+                defaults={
+                    "part": part,
+                    "title": parsed_stock.title,
+                    "price": Money(
+                        parsed_stock.price.amount, parsed_stock.price.currency
+                    ),
+                    "available": parsed_stock.available,
+                    "discontinued": parsed_stock.discontinued,
+                    "source": SOURCE_HONDAPARTSNOW,
+                    "url": parsed_stock.url,
+                },
             )
             logger.info("added") if created else logger.info("updated")
             if parsed_stock.image:
