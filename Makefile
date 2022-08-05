@@ -55,3 +55,6 @@ docker/run/client/epc-data:
 
 docker/run/client/hondapartsnow:
 	docker compose -f docker-compose.scripts.prod.yml up hondapartsnow -d --build
+
+docker/run/client/amayama:
+	docker compose -f docker-compose.scripts.prod.yml up amayama -d --build

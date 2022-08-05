@@ -8,4 +8,8 @@ STOCK_SOURCES = (
 )
 
 SOURCE_EPCDATA = "epc-data"
-PART_SOURCES = ((SOURCE_EPCDATA, "www.epc-data.com"),)
+SOURCE_AMAYAMA = "amayama"
+PART_SOURCES = (
+    (SOURCE_EPCDATA, "www.epc-data.com"),
+    (SOURCE_AMAYAMA, "www.amayama.com"),
+)

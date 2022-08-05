@@ -11,3 +11,8 @@ services:
     command: venv/bin/python src/manage.py runscript hondapartsnow
     env_file:
       - .env.prod
+  amayama:
+    build: .
+    command: venv/bin/python src/manage.py runscript amayama
+    env_file:
+      - .env.prod
