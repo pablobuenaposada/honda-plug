@@ -9,6 +9,7 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     readonly_fields = ("created", "modified")
     list_display = ("reference", "source", "modified")
     search_fields = ["reference"]
+    list_filter = ["source", "modified"]
 
 
 class ImageInlineAdmin(admin.TabularInline):
