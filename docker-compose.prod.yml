@@ -29,7 +29,6 @@ services:
       db:
         condition: service_healthy
   migration:
-    restart: always
     build: .
     command: venv/bin/python src/manage.py migrate
     env_file:
