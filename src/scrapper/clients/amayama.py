@@ -20,6 +20,8 @@ class AmayamaClient:
             for tag_a in BeautifulSoup(response.content, "html.parser").findAll(
                 "a", {"class": "list-group-item"}
             )
+            if "genuine-catalogs"
+            not in tag_a["href"]  # filter out some models that gives problems
         ]
         if start_from_model:
             models = models[models.index(start_from_model) :]
@@ -57,4 +59,4 @@ class AmayamaClient:
                         )
 
                         for part in parts:
-                            function(part.a.text, SOURCE_AMAYAMA)
+                            function(part.a.text, SOURCE_AMAYAMA, f"Model:{model}")

@@ -8,8 +8,10 @@ from part.models import Part
 logger = logging.getLogger(__name__)
 
 
-def add_part(reference: str, source: str):
-    log_message = lambda message: f"{datetime.now()}: Part:{reference} {message}"
+def add_part(reference: str, source: str, message_prefix: str = ""):
+    log_message = (
+        lambda message: f"{datetime.now()}: {message_prefix} Part:{reference} {message}"
+    )
 
     try:
         Part.objects.create(reference=reference, source=source)
