@@ -58,3 +58,6 @@ docker/run/client/hondapartsnow:
 
 docker/run/client/amayama:
 	docker compose -f docker-compose.scripts.prod.yml up amayama -d --build
+
+docker/run/client/tegiwa:
+	docker compose -f docker-compose.scripts.prod.yml up tegiwa -d --build
