@@ -6,7 +6,7 @@ from pydantic.class_validators import validator
 from pydantic.networks import HttpUrl
 
 
-class Part(pydantic.BaseModel):
+class Stock(pydantic.BaseModel):
     reference: str
     title: str
     price: Money

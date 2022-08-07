@@ -5,7 +5,7 @@ from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.tegiwa import TegiwaClient
-from scrapper.part.part import Part
+from scrapper.common.stock import Stock
 
 REFERENCES = {
     "12251-RBB-004",  # normal part
@@ -21,7 +21,7 @@ class TestClients:
             (
                 HondapartsnowClient(),
                 {
-                    "12251-RBB-004": Part(
+                    "12251-RBB-004": Stock(
                         available=True,
                         reference="12251-RBB-004",
                         price=Money(amount="102.08", currency="USD"),
@@ -30,7 +30,7 @@ class TestClients:
                         image="https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a5254ccaa3be7c7eb2b12f5745f04ca0/93bd5a06e83c3a33c1985cee27354789.jpg",
                         url="https://www.hondapartsnow.com/genuine/honda~gasket~cylinder~head~12251-rbb-004.html",
                     ),
-                    "56483-PND-003": Part(
+                    "56483-PND-003": Stock(
                         available=False,
                         reference="56483-PND-003",
                         price=Money(amount="15.68", currency="USD"),
@@ -44,7 +44,7 @@ class TestClients:
             (
                 HondapartsonlineClient(),
                 {
-                    "12251-RBB-004": Part(
+                    "12251-RBB-004": Stock(
                         available=True,
                         reference="12251-RBB-004",
                         price=Money(amount="107.23", currency="USD"),
@@ -53,7 +53,7 @@ class TestClients:
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/7cfd97ab6173d165e37dec41c6a978e9/85957d0bd63c58860e15bdc7b79afe4f.gif",
                         url="https://www.hondapartsonline.net/search",
                     ),
-                    "56483-PND-003": Part(
+                    "56483-PND-003": Stock(
                         available=False,
                         reference="56483-PND-003",
                         price=Money(amount="16.48", currency="USD"),
@@ -67,7 +67,7 @@ class TestClients:
             (
                 HondaautomotivepartsClient(),
                 {
-                    "12251-RBB-004": Part(
+                    "12251-RBB-004": Stock(
                         available=True,
                         reference="12251-RBB-004",
                         price=Money(amount="98.65", currency="USD"),
@@ -76,7 +76,7 @@ class TestClients:
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/7cfd97ab6173d165e37dec41c6a978e9/85957d0bd63c58860e15bdc7b79afe4f.gif",
                         url="https://www.hondaautomotiveparts.com/search",
                     ),
-                    "56483-PND-003": Part(
+                    "56483-PND-003": Stock(
                         available=False,
                         reference="56483-PND-003",
                         price=Money(amount="15.82", currency="USD"),
@@ -90,7 +90,7 @@ class TestClients:
             (
                 TegiwaClient(),
                 {
-                    "12251-RBB-004": Part(
+                    "12251-RBB-004": Stock(
                         available=False,
                         reference="12251-RBB-004",
                         price=Money(amount="65", currency="GBP"),

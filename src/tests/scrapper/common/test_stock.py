@@ -4,7 +4,7 @@ import pydantic
 import pytest
 from money import Money
 
-from scrapper.part.part import Part
+from scrapper.common.stock import Stock
 
 
 class TestPart:
@@ -79,6 +79,6 @@ class TestPart:
     )
     def test_initialization(self, arguments, expectation, result):
         with expectation:
-            part = Part(**arguments)
+            part = Stock(**arguments)
         if result:
             assert part.dict() == result

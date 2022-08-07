@@ -1,7 +1,7 @@
 from djmoney.money import Money
 
 from part.models import Image, Part, Stock
-from scrapper.part.part import Part as StockParsed
+from scrapper.common.stock import Stock as StockParsed
 
 
 def add_stock(part: Part, stock_found: StockParsed, source: str):

@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from money import Money
 
 from scrapper.clients.interface import ClientInterface
-from scrapper.part.part import Part
+from scrapper.common.stock import Stock
 from scrapper.utils import RequestLimiter, string_to_float
 
 
@@ -43,7 +43,7 @@ class TegiwaClient(ClientInterface):
             soup = BeautifulSoup(response.content, "html.parser")
             sku = soup.find(id="sku").text
             if sku == part_number:
-                return Part(
+                return Stock(
                     reference=sku,
                     price=Money(
                         amount=string_to_float(

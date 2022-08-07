@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from money import Money
 
-from scrapper.part.part import Part
+from scrapper.common.stock import Stock
 
 
 def _parse_availability(value):
@@ -41,7 +41,7 @@ class HondapartsnowClient:
             .contents[0]
         )
 
-        return Part(
+        return Stock(
             reference=product_data["sku"],
             price=Money(amount=product_data["offers"]["price"], currency="USD"),
             title=product_data["description"],
