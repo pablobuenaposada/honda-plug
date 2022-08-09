@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.db import models
+from django.forms import Textarea, TextInput
 from simple_history.admin import SimpleHistoryAdmin
 
 from part.models import Image, Part, Stock
@@ -18,7 +20,19 @@ class ImageInlineAdmin(admin.TabularInline):
 
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Stock
-    readonly_fields = ("created", "modified")
+    readonly_fields = ("created", "modified", "part")
+    fields = (
+        "part",
+        "title",
+        "source",
+        "url",
+        "quantity",
+        "available",
+        "discontinued",
+        "price",
+        "created",
+        "modified",
+    )
     list_display = (
         "part",
         "title",
@@ -31,6 +45,9 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     search_fields = ["part__reference", "title"]
     list_filter = ["source", "available", "discontinued"]
     inlines = [ImageInlineAdmin]
+    formfield_overrides = {
+        models.CharField: {"widget": TextInput(attrs={"size": "100"})},
+    }
 
 
 class ImageAdmin(admin.ModelAdmin):
