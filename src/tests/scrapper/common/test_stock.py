@@ -1,84 +1,86 @@
-from contextlib import nullcontext as does_not_raise
-
 import pydantic
 import pytest
 from money import Money
 
+from part.constants import SOURCE_AMAYAMA
 from scrapper.common.stock import Stock
 
 
-class TestPart:
+class TestStock:
     @pytest.mark.parametrize(
-        "arguments, expectation, result",
+        "arguments, expected",
         (
             (
                 {},
-                pytest.raises(
-                    pydantic.error_wrappers.ValidationError
-                ),  # TODO: match regexp
-                None,
+                "4 validation errors for Stock\nreference\n  field required (type=value_error.missing)\nurl\n  field required (type=value_error.missing)\nsource\n  field required (type=value_error.missing)\ncountry\n  field required (type=value_error.missing)",
             ),
             (
-                {
-                    "reference": "foo",
-                    "title": "bar",
-                    "price": Money(1, "USD"),
-                },
-                pytest.raises(pydantic.error_wrappers.ValidationError),
-                None,
+                {"reference": "foo", "url": "https://www.foo.com", "country": "us"},
+                "2 validation errors for Stock\nreference\n  must contain 2 or 3 times character - (type=value_error)\nsource\n  field required (type=value_error.missing)",
             ),
             (
                 {
                     "reference": "foo-bar-banana-melon",
-                    "title": "bar",
-                    "price": Money(1, "USD"),
-                },
-                pytest.raises(pydantic.error_wrappers.ValidationError),
-                None,
-            ),
-            (
-                {
-                    "reference": "foo-bar-banana",
-                    "title": "bar",
-                    "price": Money(1, "USD"),
                     "url": "https://www.foo.com",
+                    "country": "us",
                 },
-                does_not_raise(),
-                {
-                    "reference": "FOO-BAR-BANANA",
-                    "title": "bar",
-                    "price": Money(1, "USD"),
-                    "image": None,
-                    "available": None,
-                    "discontinued": None,
-                    "url": "https://www.foo.com",
-                },
-            ),
-            (
-                {
-                    "reference": "foo-bar-banana",
-                    "title": "bar",
-                    "price": Money(1, "USD"),
-                    "image": "http://url.com",
-                    "available": True,
-                    "discontinued": False,
-                    "url": "https://www.foo.com",
-                },
-                does_not_raise(),
-                {
-                    "reference": "FOO-BAR-BANANA",
-                    "title": "bar",
-                    "price": Money(1, "USD"),
-                    "image": "http://url.com",
-                    "available": True,
-                    "discontinued": False,
-                    "url": "https://www.foo.com",
-                },
+                "2 validation errors for Stock\nreference\n  must contain 2 or 3 times character - (type=value_error)\nsource\n  field required (type=value_error.missing)",
             ),
         ),
     )
-    def test_initialization(self, arguments, expectation, result):
-        with expectation:
-            part = Stock(**arguments)
-        if result:
-            assert part.dict() == result
+    def test_fail(self, arguments, expected):
+        with pytest.raises(pydantic.error_wrappers.ValidationError) as error:
+            Stock(**arguments)
+        assert str(error.value) == expected
+
+    @pytest.mark.parametrize(
+        "arguments, result",
+        (
+            (
+                {
+                    "reference": "FOO-BAR-BANANA",
+                    "url": "https://www.foo.com",
+                    "country": "us",
+                    "source": SOURCE_AMAYAMA,
+                },
+                {
+                    "reference": "FOO-BAR-BANANA",
+                    "url": "https://www.foo.com",
+                    "country": "us",
+                    "source": SOURCE_AMAYAMA,
+                    "title": None,
+                    "price": None,
+                    "image": None,
+                    "available": None,
+                    "discontinued": None,
+                },
+            ),  # minimal fields
+            (
+                {
+                    "reference": "foo-bar-banana",
+                    "title": "bar",
+                    "country": "us",
+                    "source": SOURCE_AMAYAMA,
+                    "price": Money(1, "USD"),
+                    "image": "http://url.com",
+                    "available": True,
+                    "discontinued": False,
+                    "url": "https://www.foo.com",
+                },
+                {
+                    "reference": "FOO-BAR-BANANA",
+                    "title": "bar",
+                    "country": "us",
+                    "source": SOURCE_AMAYAMA,
+                    "price": Money(1, "USD"),
+                    "image": "http://url.com",
+                    "available": True,
+                    "discontinued": False,
+                    "url": "https://www.foo.com",
+                },
+            ),  # all the fields
+        ),
+    )
+    def test_success(self, arguments, result):
+        part = Stock(**arguments)
+        assert part.dict() == result

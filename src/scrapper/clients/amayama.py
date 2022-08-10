@@ -1,13 +1,21 @@
+import re
+
+import pycountry
 import requests
 from bs4 import BeautifulSoup
+from money import Money
 
 from part.constants import SOURCE_AMAYAMA
+from part.lambdas import add_stock
+from scrapper.common.stock import Stock
 from scrapper.utils import RequestLimiter
 
 DOMAIN = "amayama.com"
 
 
 class AmayamaClient:
+    regex = re.compile("[^a-zA-Z]")
+
     def get_parts(self, function, start_from_model=None):
         session = requests.Session()
         request_limiter = RequestLimiter(session)
@@ -57,4 +65,48 @@ class AmayamaClient:
                         )
 
                         for part in parts:
-                            function(part.a.text, SOURCE_AMAYAMA, f"Model:{model}")
+                            reference = part.a.text
+                            response = request_limiter.get(
+                                f'https://{DOMAIN}{part.a["href"]}'
+                            )
+                            soup = BeautifulSoup(response.content, "html.parser")
+                            title = soup.find(
+                                "div", {"class": "part-page__name"}
+                            ).h1.text
+                            url = f'https://{DOMAIN}{part.a["href"]}'
+                            stocks = soup.find(
+                                "tbody", {"class": "part-table__body"}
+                            ).findAll(
+                                "tr",
+                                {
+                                    "class": lambda L: L
+                                    and L.startswith("part-table__row")
+                                },
+                            )
+
+                            for stock in stocks:
+                                country = stock.find(
+                                    "span", {"class": "warehouse-name"}
+                                ).text
+                                country = self.regex.sub("", country)
+                                country = (
+                                    "AE" if country == "UAE" else country
+                                )  # special case for Arab Emirates
+                                country = pycountry.countries.search_fuzzy(country)[0]
+                                price = stock.find(
+                                    "span", {"class": "part-price"}
+                                ).text.replace(",", "")
+                                quantity = stock.find(
+                                    "span", {"class": "part-quantity"}
+                                ).text
+                                add_stock(
+                                    Stock(
+                                        reference=reference,
+                                        url=url,
+                                        source=SOURCE_AMAYAMA,
+                                        country=country.alpha_2,
+                                        title=title,
+                                        price=Money(price, "USD"),
+                                    ),
+                                    model,
+                                )

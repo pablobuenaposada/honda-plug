@@ -24,6 +24,7 @@ def _is_discontinued(value):
 class CommonClient:
     SEARCH_SUFFIX = "/search"
     DOMAIN = ""
+    SOURCE = ""
 
     def get_part(self, part_number):
         response = requests.get(
@@ -38,6 +39,8 @@ class CommonClient:
         )
 
         return Stock(
+            country="US",
+            source=self.SOURCE,
             reference=product_data["sku"],
             price=Money(amount=str(product_data["price"]), currency="USD"),
             title=product_data["title"],

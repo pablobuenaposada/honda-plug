@@ -9,6 +9,7 @@ from scripts.hondapartsnow import run
 
 @pytest.mark.django_db
 @pytest.mark.vcr()
+@pytest.mark.skip()
 class TestHondapartsnowScript:
     def test_script(self):
         part = baker.make(Part, reference="56483-PND-003")

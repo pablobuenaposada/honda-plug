@@ -1,6 +1,7 @@
+import pycountry
 from django.contrib import admin
 from django.db import models
-from django.forms import Textarea, TextInput
+from django.forms import TextInput
 from simple_history.admin import SimpleHistoryAdmin
 
 from part.models import Image, Part, Stock
@@ -41,7 +42,7 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         "price",
         "available",
         "discontinued",
-        "country",
+        "get_country_flag",
         "modified",
     )
     search_fields = ["part__reference", "title"]
@@ -50,6 +51,11 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     formfield_overrides = {
         models.CharField: {"widget": TextInput(attrs={"size": "100"})},
     }
+
+    def get_country_flag(self, obj):
+        return pycountry.countries.get(alpha_2=obj.country.code).flag
+
+    get_country_flag.short_description = "Country"
 
 
 class ImageAdmin(admin.ModelAdmin):

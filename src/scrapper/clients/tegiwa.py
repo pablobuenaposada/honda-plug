@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from money import Money
 
+from part.constants import SOURCE_TEGIWA
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
 from scrapper.utils import RequestLimiter, string_to_float
@@ -44,6 +45,8 @@ class TegiwaClient(ClientInterface):
             sku = soup.find(id="sku").text
             if sku == part_number:
                 return Stock(
+                    country="GB",
+                    source=SOURCE_TEGIWA,
                     reference=sku,
                     price=Money(
                         amount=string_to_float(

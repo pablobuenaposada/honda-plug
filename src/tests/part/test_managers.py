@@ -14,7 +14,7 @@ class TestPartManager:
         part3 = baker.make(Part, reference="foo-bar-banana3", source=SOURCE_EPCDATA)
 
         assert list(Part.objects.all()) == [part1, part2, part3]
-        assert list(Part.objects.stocked_parts_first()) == [part2, part3, part1]
+        assert list(Part.objects.stocked_parts_first())[0] == part2
 
     def test_stocked_parts_last(self):
         part1 = baker.make(Part, reference="foo-bar-banana1", source=SOURCE_EPCDATA)
@@ -23,4 +23,4 @@ class TestPartManager:
         part3 = baker.make(Part, reference="foo-bar-banana3", source=SOURCE_EPCDATA)
 
         assert list(Part.objects.all()) == [part1, part2, part3]
-        assert list(Part.objects.stocked_parts_last()) == [part1, part3, part2]
+        assert list(Part.objects.stocked_parts_last())[-1] == part2

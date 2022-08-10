@@ -1,6 +1,12 @@
 import pytest
 from money import Money
 
+from part.constants import (
+    SOURCE_HONDAAUTOMOTIVEPARTS,
+    SOURCE_HONDAPARTSNOW,
+    SOURCE_HONDAPARTSONLINE,
+    SOURCE_TEGIWA,
+)
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
@@ -29,6 +35,8 @@ class TestClients:
                         discontinued=False,
                         image="https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/a5254ccaa3be7c7eb2b12f5745f04ca0/93bd5a06e83c3a33c1985cee27354789.jpg",
                         url="https://www.hondapartsnow.com/genuine/honda~gasket~cylinder~head~12251-rbb-004.html",
+                        country="US",
+                        source=SOURCE_HONDAPARTSNOW,
                     ),
                     "56483-PND-003": Stock(
                         available=False,
@@ -38,6 +46,8 @@ class TestClients:
                         discontinued=True,
                         image="https://www.hondapartsnow.com/resources/encry/part-picture/hpn/large/792b87b040876fda9770fd4a712d9665/756566f6e674b120a1c138fcb821a53c.png",
                         url="https://www.hondapartsnow.com/genuine/honda~pulley~power~steering~56483-pnd-003.html",
+                        country="US",
+                        source=SOURCE_HONDAPARTSNOW,
                     ),
                 },
             ),
@@ -52,6 +62,8 @@ class TestClients:
                         discontinued=False,
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/7cfd97ab6173d165e37dec41c6a978e9/85957d0bd63c58860e15bdc7b79afe4f.gif",
                         url="https://www.hondapartsonline.net/search",
+                        country="US",
+                        source=SOURCE_HONDAPARTSONLINE,
                     ),
                     "56483-PND-003": Stock(
                         available=False,
@@ -61,6 +73,8 @@ class TestClients:
                         discontinued=True,
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/056442089e514a4e09f554927e3d604f/7e1bbfa7e632ddb91eb5f5bb58518895.png",
                         url="https://www.hondapartsonline.net/search",
+                        country="US",
+                        source=SOURCE_HONDAPARTSONLINE,
                     ),
                 },
             ),
@@ -75,6 +89,8 @@ class TestClients:
                         discontinued=False,
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/7cfd97ab6173d165e37dec41c6a978e9/85957d0bd63c58860e15bdc7b79afe4f.gif",
                         url="https://www.hondaautomotiveparts.com/search",
+                        country="US",
+                        source=SOURCE_HONDAAUTOMOTIVEPARTS,
                     ),
                     "56483-PND-003": Stock(
                         available=False,
@@ -84,6 +100,8 @@ class TestClients:
                         discontinued=True,
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/056442089e514a4e09f554927e3d604f/7e1bbfa7e632ddb91eb5f5bb58518895.png",
                         url="https://www.hondaautomotiveparts.com/search",
+                        country="US",
+                        source=SOURCE_HONDAAUTOMOTIVEPARTS,
                     ),
                 },
             ),
@@ -98,6 +116,8 @@ class TestClients:
                         discontinued=None,
                         url="https://www.tegiwaimports.com/genuine-honda-head-gasket-k-series-k24.html",
                         image="https://www.tegiwaimports.com/media/catalog/product/cache/1/image/470x470/4be6a58e18b1f94a8adc93cd75a4b5ce/g/e/genuine-honda-head-gasket-k-series_2.jpg",
+                        country="GB",
+                        source=SOURCE_TEGIWA,
                     ),
                     "56483-PND-003": None,
                 },

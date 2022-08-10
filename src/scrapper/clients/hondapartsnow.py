@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from money import Money
 
+from part.constants import SOURCE_HONDAPARTSNOW
 from scrapper.common.stock import Stock
 
 
@@ -42,6 +43,8 @@ class HondapartsnowClient:
         )
 
         return Stock(
+            country="US",
+            source=SOURCE_HONDAPARTSNOW,
             reference=product_data["sku"],
             price=Money(amount=product_data["offers"]["price"], currency="USD"),
             title=product_data["description"],
