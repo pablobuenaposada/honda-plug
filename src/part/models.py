@@ -4,6 +4,7 @@ from djmoney.models.fields import MoneyField
 from simple_history.models import HistoricalRecords
 
 from part.constants import PART_SOURCES, STOCK_SOURCES
+from part.managers import PartManager
 from part.validators import validate_empty, validate_reference
 
 
@@ -14,6 +15,7 @@ class Part(TimeStampedModel):
     source = models.CharField(choices=PART_SOURCES, max_length=20)
 
     history = HistoricalRecords()
+    objects = PartManager()
 
     def save(self, **kwargs):
         validate_empty(self.source)

@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 def run(*args):
     client = TegiwaClient()
-    for part in Part.objects.all():
+    for part in Part.objects.stocked_parts_first():
         log_message = (
             lambda message: f"{datetime.now()}: Part:{part.reference} {message}"
         )
