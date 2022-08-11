@@ -46,17 +46,16 @@ class TestPart:
 class TestStock:
     def test_unique(self):
         part = baker.make(Part, reference="56483-PND-003")
-        baker.make(
-            Stock, part=part, source=SOURCE_HONDAPARTSNOW, url="https://www.foo.com"
-        )
-        with pytest.raises(IntegrityError):
-            baker.make(
-                Stock, part=part, source=SOURCE_HONDAPARTSNOW, url="https://www.foo.com"
-            )
+        Stock.objects.create(part=part, source=SOURCE_HONDAPARTSNOW, country="US")
+        with pytest.raises(IntegrityError) as error:
+            Stock.objects.create(part=part, source=SOURCE_HONDAPARTSNOW, country="US")
+
+        assert "duplicate key value violates unique constraint" in str(error.value)
 
     def test_mandatory_fields(self):
         with pytest.raises(IntegrityError) as error:
             Stock.objects.create()
+
         assert (
             'null value in column "part_id" of relation "part_stock" violates not-null constraint'
             in str(error.value)
@@ -73,6 +72,7 @@ class TestStock:
             "source": SOURCE_HONDAPARTSNOW,
             "quantity": 1,
             "url": "https://www.foo.com",
+            "country": "US",
         }
         stock = Stock.objects.create(**data)
         expected = data | {
@@ -92,19 +92,22 @@ class TestStock:
 class TestImage:
     def test_unique(self):
         part = baker.make(Part, reference="56483-PND-003")
-        stock = baker.make(Stock, part=part, url="https://www.foo.com")
+        stock = baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW, country="US")
         Image.objects.create(stock=stock, url="http://www.foo.com")
-        with pytest.raises(IntegrityError):
+        with pytest.raises(IntegrityError) as error:
             Image.objects.create(stock=stock, url="http://www.foo.com")
+
+        assert "duplicate key value violates unique constraint" in str(error.value)
 
     def test_mandatory_fields(self):
         with pytest.raises(ValidationError) as error:
             Image.objects.create()
+
         assert "This field cannot be emtpy" in str(error.value)
 
     def test_valid(self):
         part = baker.make(Part, reference="56483-PND-003")
-        stock = baker.make(Stock, part=part, url="https://www.foo.com")
+        stock = baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW, country="US")
         data = {"stock": stock, "url": "http://www.foo.com"}
         image = Image.objects.create(**data)
         expected = data | {"id": image.id}

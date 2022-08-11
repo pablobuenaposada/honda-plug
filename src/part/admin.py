@@ -30,6 +30,7 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         "available",
         "discontinued",
         "price",
+        "country",
         "created",
         "modified",
     )
@@ -40,6 +41,7 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         "price",
         "available",
         "discontinued",
+        "country",
         "modified",
     )
     search_fields = ["part__reference", "title"]

@@ -35,6 +35,7 @@ def run():
                     "discontinued": parsed_stock.discontinued,
                     "source": SOURCE_HONDAPARTSNOW,
                     "url": parsed_stock.url,
+                    "country": "US",
                 },
             )
             logger.info("added") if created else logger.info("updated")

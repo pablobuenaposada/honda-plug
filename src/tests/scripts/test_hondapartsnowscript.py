@@ -21,12 +21,14 @@ class TestHondapartsnowScript:
             "discontinued": True,
             "quantity": None,
             "url": "https://www.hondapartsnow.com/genuine/honda~pulley~power~steering~56483-pnd-003.html",
+            "country": "US",
         }
 
         assert Stock.objects.count() == Image.objects.count() == 0
         run()
         assert Stock.objects.count() == Image.objects.count() == 1
         stock = Stock.objects.first()
+
         for field_name in {f.name for f in Stock._meta.get_fields()} - {
             "id",
             "created",

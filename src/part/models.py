@@ -1,4 +1,5 @@
 from django.db import models
+from django_countries.fields import CountryField
 from django_extensions.db.models import TimeStampedModel
 from djmoney.models.fields import MoneyField
 from simple_history.models import HistoricalRecords
@@ -33,14 +34,17 @@ class Stock(TimeStampedModel):
     price = MoneyField(max_digits=10, null=True, default_currency=None)
     available = models.BooleanField(null=True, default=None)
     discontinued = models.BooleanField(null=True, default=None)
-    source = models.CharField(choices=STOCK_SOURCES, max_length=20)
+    source = models.CharField(
+        choices=STOCK_SOURCES, max_length=20, blank=False, default=None
+    )
     quantity = models.IntegerField(null=True, blank=True)
     url = models.URLField()
+    country = CountryField(blank=False, default=None)
 
     history = HistoricalRecords()
 
     class Meta:
-        unique_together = ("part", "source")
+        unique_together = ("part", "source", "country")
 
     def __str__(self):
         return self.part.reference
