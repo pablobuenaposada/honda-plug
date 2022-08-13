@@ -13,7 +13,10 @@ class Part(TimeStampedModel):
     reference = models.CharField(
         unique=True, max_length=15, default=None, validators=[validate_reference]
     )
-    source = models.CharField(choices=PART_SOURCES, max_length=20)
+    source = models.CharField(
+        choices=PART_SOURCES,
+        max_length=len(max([source[0] for source in PART_SOURCES], key=len)),
+    )
 
     history = HistoricalRecords()
     objects = PartManager()
@@ -35,7 +38,10 @@ class Stock(TimeStampedModel):
     available = models.BooleanField(null=True, default=None)
     discontinued = models.BooleanField(null=True, default=None)
     source = models.CharField(
-        choices=STOCK_SOURCES, max_length=20, blank=False, default=None
+        choices=STOCK_SOURCES,
+        max_length=len(max([source[0] for source in STOCK_SOURCES], key=len)),
+        blank=False,
+        default=None,
     )
     quantity = models.IntegerField(null=True, blank=True)
     url = models.URLField()
