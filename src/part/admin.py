@@ -40,6 +40,7 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         "title",
         "source",
         "price",
+        "quantity",
         "available",
         "discontinued",
         "get_country_flag",

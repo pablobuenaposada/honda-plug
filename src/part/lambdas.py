@@ -4,7 +4,7 @@ from datetime import datetime
 import pycountry
 from djmoney.money import Money
 
-from part.models import Part, Stock
+from part.models import Image, Part, Stock
 from scrapper.common.stock import Stock as ParsedStock
 
 logger = logging.getLogger(__name__)
@@ -48,10 +48,13 @@ def add_stock(
             "discontinued": stock_parsed.discontinued,
             "source": stock_parsed.source,
             "url": str(stock_parsed.url),
+            "quantity": stock_parsed.quantity,
         },
     )
     logger.info(log_message("added")) if created else logger.info(
         log_message("updated")
     )
-    # if stock.image:
-    #     Image.objects.update_or_create(stock=stock, url=parsed_stock.image)
+    if stock_parsed.image:
+        Image.objects.update_or_create(
+            url=stock_parsed.image, defaults={"stock": stock, "url": stock_parsed.image}
+        )

@@ -64,3 +64,6 @@ docker/run/client/amayama:
 
 docker/run/client/tegiwa:
 	docker compose -f docker-compose.scripts.prod.yml up tegiwa -d --build
+
+docker/run/client/clockwisemotion:
+	docker compose -f docker-compose.scripts.prod.yml up clockwisemotion -d --build

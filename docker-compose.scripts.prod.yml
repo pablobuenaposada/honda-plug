@@ -21,3 +21,8 @@ services:
     command: venv/bin/python src/manage.py runscript tegiwa
     env_file:
       - .env.prod
+  clockwisemotion:
+    build: .
+    command: venv/bin/python src/manage.py runscript clockwisemotion
+    env_file:
+      - .env.prod

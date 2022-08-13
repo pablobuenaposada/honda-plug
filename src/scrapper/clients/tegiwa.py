@@ -1,11 +1,10 @@
-import requests
 from bs4 import BeautifulSoup
 from money import Money
 
 from part.constants import SOURCE_TEGIWA
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
-from scrapper.utils import RequestLimiter, string_to_float
+from scrapper.utils import string_to_float
 
 
 def _parse_availability(soup):
@@ -23,9 +22,8 @@ def _parse_availability(soup):
 
 
 class TegiwaClient(ClientInterface):
-    def __init__(self):
-        session = requests.Session()
-        self.request_limiter = RequestLimiter(session)
+    def get_parts(self):
+        raise NotImplementedError
 
     def get_part(self, part_number):
         response = self.request_limiter.get(

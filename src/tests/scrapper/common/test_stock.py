@@ -53,6 +53,7 @@ class TestStock:
                     "image": None,
                     "available": None,
                     "discontinued": None,
+                    "quantity": None,
                 },
             ),  # minimal fields
             (
@@ -77,6 +78,7 @@ class TestStock:
                     "available": True,
                     "discontinued": False,
                     "url": "https://www.foo.com",
+                    "quantity": None,
                 },
             ),  # all the fields
         ),

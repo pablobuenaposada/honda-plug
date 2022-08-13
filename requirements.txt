@@ -11,3 +11,4 @@ gunicorn==20.1.0
 django-simple-history==3.1.1
 django-countries==7.3.2
 pycountry==22.3.5
+price-parser==0.3.4
