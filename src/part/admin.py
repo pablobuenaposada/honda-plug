@@ -2,6 +2,7 @@ import pycountry
 from django.contrib import admin
 from django.db import models
 from django.forms import TextInput
+from django.utils.safestring import mark_safe
 from simple_history.admin import SimpleHistoryAdmin
 
 from part.models import Image, Part, Stock
@@ -17,6 +18,11 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
 
 class ImageInlineAdmin(admin.TabularInline):
     model = Image
+    readonly_fields = ("image",)
+    fields = ("url", "image")
+
+    def image(self, obj):
+        return mark_safe(f'<img src="{obj.url}" style="height: 200px"/>')
 
 
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
@@ -62,6 +68,11 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
 class ImageAdmin(admin.ModelAdmin):
     model = Image
     list_display = ("id", "url", "stock")
+    readonly_fields = ["image", "stock"]
+    fields = ["stock", "url", "image"]
+
+    def image(self, obj):
+        return mark_safe(f'<img src="{obj.url}" style="height: 200px"/>')
 
 
 admin.site.register(Part, PartAdmin)
