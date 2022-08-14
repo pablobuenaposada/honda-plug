@@ -26,3 +26,8 @@ services:
     command: venv/bin/python src/manage.py runscript clockwisemotion
     env_file:
       - .env.prod
+  hondaspareparts:
+    build: .
+    command: venv/bin/python src/manage.py runscript hondaspareparts
+    env_file:
+      - .env.prod

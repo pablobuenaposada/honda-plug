@@ -5,17 +5,20 @@ from part.constants import (
     SOURCE_HONDAAUTOMOTIVEPARTS,
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
+    SOURCE_HONDASPAREPARTS,
     SOURCE_TEGIWA,
 )
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
+from scrapper.clients.hondaspareparts import HondasparepartsClient
 from scrapper.clients.tegiwa import TegiwaClient
 from scrapper.common.stock import Stock
 
 REFERENCES = {
     "12251-RBB-004",  # normal part
     "56483-PND-003",  # discontinued part
+    "08F03-S02-180K",  # really discontinued part
 }
 
 
@@ -49,6 +52,17 @@ class TestClients:
                         country="US",
                         source=SOURCE_HONDAPARTSNOW,
                     ),
+                    "08F03-S02-180K": Stock(
+                        available=False,
+                        reference="08F03-S02-180K",
+                        price=Money(amount="211.75", currency="USD"),
+                        title="Spoiler, Rear Under (Vogue Silver Metallic)",
+                        discontinued=True,
+                        image=None,
+                        url="https://www.hondapartsnow.com/genuine/honda~spoiler~08f03-s02-180k.html",
+                        country="US",
+                        source=SOURCE_HONDAPARTSNOW,
+                    ),
                 },
             ),
             (
@@ -72,6 +86,17 @@ class TestClients:
                         title="Pulley, Power Steering Pump - Honda (56483-PND-003)",
                         discontinued=True,
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/056442089e514a4e09f554927e3d604f/7e1bbfa7e632ddb91eb5f5bb58518895.png",
+                        url="https://www.hondapartsonline.net/search",
+                        country="US",
+                        source=SOURCE_HONDAPARTSONLINE,
+                    ),
+                    "08F03-S02-180K": Stock(
+                        available=False,
+                        reference="08F03-S02-180K",
+                        price=Money(amount="220.58", currency="USD"),
+                        title="Spoiler, Rear Under *NH583M* (Vogue Silver Metallic) - Honda (08F03-S02-180K)",
+                        discontinued=True,
+                        image="https://s3.amazonaws.com/static.revolutionparts.com/assets/images/honda.png",
                         url="https://www.hondapartsonline.net/search",
                         country="US",
                         source=SOURCE_HONDAPARTSONLINE,
@@ -103,6 +128,17 @@ class TestClients:
                         country="US",
                         source=SOURCE_HONDAAUTOMOTIVEPARTS,
                     ),
+                    "08F03-S02-180K": Stock(
+                        available=False,
+                        reference="08F03-S02-180K",
+                        price=Money(amount="197.64", currency="USD"),
+                        title="Spoiler, Rear Under *NH583M* (Vogue Silver Metallic) - Honda (08F03-S02-180K)",
+                        discontinued=True,
+                        image="https://s3.amazonaws.com/static.revolutionparts.com/assets/images/honda.png",
+                        url="https://www.hondaautomotiveparts.com/search",
+                        country="US",
+                        source=SOURCE_HONDAAUTOMOTIVEPARTS,
+                    ),
                 },
             ),
             (
@@ -120,6 +156,35 @@ class TestClients:
                         source=SOURCE_TEGIWA,
                     ),
                     "56483-PND-003": None,
+                    "08F03-S02-180K": None,
+                },
+            ),
+            (
+                HondasparepartsClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        available=None,
+                        reference="12251-RBB-004",
+                        price=Money(amount="89.11", currency="GBP"),
+                        title="GASKET COMP., CYLINDER HE",
+                        discontinued=None,
+                        url="https://hondaspareparts.co.uk/products/12251RBB004",
+                        image="http://cdn.shopify.com/s/files/1/0280/2971/4502/products/hondagenuineparts_fb5977d1-76f9-4e44-8f42-a62c910b4e06_1200x1200.jpg?v=1624066698",
+                        country="GB",
+                        source=SOURCE_HONDASPAREPARTS,
+                    ),
+                    "56483-PND-003": Stock(
+                        available=None,
+                        reference="56483-PND-003",
+                        price=Money(amount="74.47", currency="GBP"),
+                        title="PULLEY COMP., POWER STEER",
+                        discontinued=None,
+                        url="https://hondaspareparts.co.uk/products/56483PND003",
+                        image="http://cdn.shopify.com/s/files/1/0280/2971/4502/products/hondagenuineparts_721cce4d-0a63-44ce-ba41-56232249458e_1200x1200.jpg?v=1624241025",
+                        country="GB",
+                        source=SOURCE_HONDASPAREPARTS,
+                    ),
+                    "08F03-S02-180K": None,
                 },
             ),
         ),

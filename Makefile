@@ -67,3 +67,6 @@ docker/run/client/tegiwa:
 
 docker/run/client/clockwisemotion:
 	docker compose -f docker-compose.scripts.prod.yml up clockwisemotion -d --build
+
+docker/run/client/hondaspareparts:
+	docker compose -f docker-compose.scripts.prod.yml up hondaspareparts -d --build

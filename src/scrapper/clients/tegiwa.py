@@ -35,17 +35,21 @@ class TegiwaClient(ClientInterface):
             },
         )
 
-        for result in response.json()["result"]:
-            response = self.request_limiter.get(
-                result["url"], headers={"user-agent": "curl/7.79.1"}
-            )
-            soup = BeautifulSoup(response.content, "html.parser")
-            sku = soup.find(id="sku").text
-            if sku == part_number:
+        for result in response.json()[
+            "result"
+        ]:  # TODO: only care about the first result?
+            if result["sku"] != part_number:
+                continue
+            else:
+                response = self.request_limiter.get(
+                    result["url"], headers={"user-agent": "curl/7.79.1"}
+                )
+                soup = BeautifulSoup(response.content, "html.parser")
+
                 return Stock(
                     country="GB",
                     source=SOURCE_TEGIWA,
-                    reference=sku,
+                    reference=part_number,
                     price=Money(
                         amount=string_to_float(
                             soup.find(

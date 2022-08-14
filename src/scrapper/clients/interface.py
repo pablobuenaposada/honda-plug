@@ -11,7 +11,7 @@ class ClientInterface(ABC):
         self.request_limiter = RequestLimiter(session)
 
     @abstractmethod
-    def get_part(self, part_number):
+    def get_part(self, reference):
         pass
 
     @abstractmethod
