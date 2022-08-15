@@ -8,12 +8,17 @@ from simple_history.admin import SimpleHistoryAdmin
 from part.models import Image, Part, Stock
 
 
-class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
-    model = Part
-    readonly_fields = ("created", "modified")
-    list_display = ("reference", "source", "modified")
-    search_fields = ["reference"]
-    list_filter = ["source", "modified"]
+class StockInlineAdmin(admin.TabularInline):
+    model = Stock
+    can_delete = False
+    extra = 0
+    show_change_link = True
+
+    def get_readonly_fields(self, request, obj=None):
+        return [f.name for f in self.model._meta.fields]
+
+    def has_add_permission(self, request, obj=None):
+        return False
 
 
 class ImageInlineAdmin(admin.TabularInline):
@@ -23,6 +28,15 @@ class ImageInlineAdmin(admin.TabularInline):
 
     def image(self, obj):
         return mark_safe(f'<img src="{obj.url}" style="height: 200px"/>')
+
+
+class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
+    model = Part
+    readonly_fields = ("created", "modified")
+    list_display = ("reference", "source", "modified")
+    search_fields = ["reference"]
+    list_filter = ["source", "modified"]
+    inlines = [StockInlineAdmin]
 
 
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
@@ -67,7 +81,8 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
 
 class ImageAdmin(admin.ModelAdmin):
     model = Image
-    list_display = ("id", "url", "stock")
+    list_display = ("id", "url", "stock", "image")
+    search_fields = ["url", "id", "stock__part__reference"]
     readonly_fields = ["image", "stock"]
     fields = ["stock", "url", "image"]
 
