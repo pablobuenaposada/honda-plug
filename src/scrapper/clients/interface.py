@@ -1,14 +1,11 @@
 from abc import ABC, abstractmethod
 
-import requests
-
 from scrapper.utils import RequestLimiter
 
 
 class ClientInterface(ABC):
     def __init__(self):
-        session = requests.Session()
-        self.request_limiter = RequestLimiter(session)
+        self.request_limiter = RequestLimiter()
 
     @abstractmethod
     def get_part(self, reference):
