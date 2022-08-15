@@ -1,26 +1,10 @@
-import logging
-from datetime import datetime
-
-from part.constants import SOURCE_TEGIWA
+from part.lambdas import add_stock
 from part.models import Part
 from scrapper.clients.tegiwa import TegiwaClient
-from scripts.utils import add_stock
-
-logger = logging.getLogger(__name__)
 
 
-def run(*args):
+def run():
     client = TegiwaClient()
-    for part in Part.objects.stocked_parts_first():
-        log_message = (
-            lambda message: f"{datetime.now()}: Part:{part.reference} {message}"
-        )
-        logger.info(log_message("..."))
+    for part in Part.objects.stocked_parts_first().iterator():
         parsed_stock = client.get_part(part.reference)
-        if parsed_stock:
-            stock, created = add_stock(part, parsed_stock, SOURCE_TEGIWA)
-            logger.info(log_message("added")) if created else logger.info(
-                log_message("updated")
-            )
-        else:
-            logger.info(log_message("not found"))
+        add_stock(parsed_stock)
