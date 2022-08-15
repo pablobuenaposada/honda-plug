@@ -1,3 +1,5 @@
+import json
+
 import requests
 from bs4 import BeautifulSoup
 from money import Money
@@ -17,9 +19,11 @@ class HondasparepartsClient(ClientInterface):
             return
 
         soup = BeautifulSoup(response.content, "html.parser")
-        title = (
-            soup.find("meta", {"property": "og:title"})["content"].split("|")[0].strip()
+        dict = json.loads(
+            soup.find("script", {"id": "ProductJson-product-template"}).text
         )
+        title = dict["title"].split("|")[0].strip()
+        available = dict["available"]
         price = Price.fromstring(
             soup.find("meta", {"property": "og:price:amount"})["content"]
         )
@@ -27,6 +31,7 @@ class HondasparepartsClient(ClientInterface):
 
         return Stock(
             reference=reference,
+            available=available,
             url=url,
             source=SOURCE_HONDASPAREPARTS,
             country="GB",

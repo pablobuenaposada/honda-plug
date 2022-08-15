@@ -19,6 +19,7 @@ REFERENCES = {
     "12251-RBB-004",  # normal part
     "56483-PND-003",  # discontinued part
     "08F03-S02-180K",  # really discontinued part
+    "31206-P3F-003",  # sold out in some sites
 }
 
 
@@ -63,6 +64,18 @@ class TestClients:
                         country="US",
                         source=SOURCE_HONDAPARTSNOW,
                     ),
+                    "31206-P3F-003": Stock(
+                        reference="31206-P3F-003",
+                        url="https://www.hondapartsnow.com/genuine/honda~armature~31206-p3f-003.html",
+                        source=SOURCE_HONDAPARTSNOW,
+                        country="US",
+                        title="Armature",
+                        price=Money("365.23", "USD"),
+                        image="https://www.hondapartsnow.com/resources/encry/part-picture/hpn/large/5045e7403da1abdff6fb3bebadf2b54b/8e3ec15302dc4429b6427e73d6984b06.png",
+                        available=False,
+                        discontinued=True,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -100,6 +113,18 @@ class TestClients:
                         url="https://www.hondapartsonline.net/search",
                         country="US",
                         source=SOURCE_HONDAPARTSONLINE,
+                    ),
+                    "31206-P3F-003": Stock(
+                        reference="31206-P3F-003",
+                        url="https://www.hondapartsonline.net/search",
+                        source=SOURCE_HONDAPARTSONLINE,
+                        country="US",
+                        title="Armature - Honda (31206-P3F-003)",
+                        price=Money(amount="380.45", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/9975b81af67056cae80ebf24ef8b639c/e20c8f426e887da8ac3ec1522cd66c31.gif",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
                     ),
                 },
             ),
@@ -139,6 +164,18 @@ class TestClients:
                         country="US",
                         source=SOURCE_HONDAAUTOMOTIVEPARTS,
                     ),
+                    "31206-P3F-003": Stock(
+                        reference="31206-P3F-003",
+                        url="https://www.hondaautomotiveparts.com/search",
+                        source=SOURCE_HONDAAUTOMOTIVEPARTS,
+                        country="US",
+                        title="Armature - Honda (31206-P3F-003)",
+                        price=Money("340.88", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/9975b81af67056cae80ebf24ef8b639c/e20c8f426e887da8ac3ec1522cd66c31.gif",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -157,13 +194,14 @@ class TestClients:
                     ),
                     "56483-PND-003": None,
                     "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
                 },
             ),
             (
                 HondasparepartsClient(),
                 {
                     "12251-RBB-004": Stock(
-                        available=None,
+                        available=True,
                         reference="12251-RBB-004",
                         price=Money(amount="89.11", currency="GBP"),
                         title="GASKET COMP., CYLINDER HE",
@@ -174,7 +212,7 @@ class TestClients:
                         source=SOURCE_HONDASPAREPARTS,
                     ),
                     "56483-PND-003": Stock(
-                        available=None,
+                        available=True,
                         reference="56483-PND-003",
                         price=Money(amount="74.47", currency="GBP"),
                         title="PULLEY COMP., POWER STEER",
@@ -185,6 +223,17 @@ class TestClients:
                         source=SOURCE_HONDASPAREPARTS,
                     ),
                     "08F03-S02-180K": None,
+                    "31206-P3F-003": Stock(
+                        available=False,
+                        reference="31206-P3F-003",
+                        price=Money(amount="0.00", currency="GBP"),
+                        title="ARMATURE COMP. (###)",
+                        discontinued=None,
+                        url="https://hondaspareparts.co.uk/products/31206P3F003",
+                        image="http://cdn.shopify.com/s/files/1/0280/2971/4502/products/hondagenuineparts_abc51d9e-3890-4754-91cb-b613c29ac938_1200x1200.jpg?v=1624138310",
+                        country="GB",
+                        source=SOURCE_HONDASPAREPARTS,
+                    ),
                 },
             ),
         ),
