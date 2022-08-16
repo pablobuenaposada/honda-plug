@@ -38,7 +38,7 @@ class TegiwaClient(ClientInterface):
         for result in response.json()[
             "result"
         ]:  # TODO: only care about the first result?
-            if result["sku"] != part_number:
+            if result.get("sku", None) != part_number:
                 continue
             else:
                 response = self.request_limiter.get(
