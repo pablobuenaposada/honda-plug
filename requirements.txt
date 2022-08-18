@@ -5,7 +5,6 @@ pydantic==1.9.1
 Django==4.1
 django_extensions==3.2.0
 django-money==3.0.0
-python-dotenv==0.20.0
 psycopg2==2.9.3
 gunicorn==20.1.0
 django-simple-history==3.1.1
@@ -13,3 +12,6 @@ django-countries==7.3.2
 pycountry==22.3.5
 price-parser==0.3.4
 sentry-sdk==1.9.4
+django-rq==2.5.1
+fakeredis==1.9.0
+django-environ==0.9.0

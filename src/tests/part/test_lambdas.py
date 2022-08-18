@@ -1,4 +1,4 @@
-from datetime import datetime
+from unittest.mock import patch
 
 import pytest
 from djmoney.money import Money as DjangoMoney
@@ -13,6 +13,7 @@ from tests.utils import assert_part_main_fields, assert_stock_main_fields
 
 
 @pytest.mark.django_db
+@patch("part.tasks.search_for_stocks")
 class TestLambdas:
     reference = "56483-PND-003"
     url = "http://foo.com"
@@ -47,7 +48,7 @@ class TestLambdas:
         "quantity": None,
     }
 
-    def test_add_stock_empty_db(self):
+    def test_add_stock_empty_db(self, m_search_for_stocks):
         assert Part.objects.count() == 0
         assert Stock.objects.count() == 0
         assert Image.objects.count() == 0
@@ -61,7 +62,7 @@ class TestLambdas:
         assert_part_main_fields(Part.objects.first(), self.expected_part)
         assert_stock_main_fields(Stock.objects.first(), self.expected_stock)
 
-    def test_add_stock_part_found(self):
+    def test_add_stock_part_found(self, m_search_for_stocks):
         baker.make(Part, reference=self.reference, source=self.source)
 
         assert Part.objects.count() == 1
@@ -77,7 +78,7 @@ class TestLambdas:
         assert_part_main_fields(Part.objects.first(), self.expected_part)
         assert_stock_main_fields(Stock.objects.first(), self.expected_stock)
 
-    def test_add_stock_part_found_and_stock_found(self):
+    def test_add_stock_part_found_and_stock_found(self, m_search_for_stocks):
         part = baker.make(Part, reference=self.reference, source=self.source)
         baker.make(Stock, part=part, source=self.source, country=self.country)
 

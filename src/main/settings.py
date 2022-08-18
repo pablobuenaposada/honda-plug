@@ -9,11 +9,20 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
-import os
 from pathlib import Path
 
+import django_rq.queues
+import environ
 import sentry_sdk
+from fakeredis import FakeRedisConnSingleton
 from sentry_sdk.integrations.django import DjangoIntegration
+
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False),
+    RQ_REDIS_ENABLED=(bool, True),
+    SENTRY_DSN=(str, None),
+)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,9 +35,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-ko2&azqa-xo!5e)=1h(uc8*5*5$n1b!5p7-^xkll-lfrt9)ze3"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ["localhost", "hondaplug.local"]
+ALLOWED_HOSTS = ["localhost", "hondaplug.local", "127.0.0.1"]
 CSRF_TRUSTED_ORIGINS = ["http://localhost:1337", "http://hondaplug.local:1337"]
 
 # Application definition
@@ -45,6 +54,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "simple_history",
     "django_countries",
+    "django_rq",
 ]
 
 MIDDLEWARE = [
@@ -85,10 +95,10 @@ WSGI_APPLICATION = "main.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("POSTGRES_NAME"),
-        "USER": os.environ.get("POSTGRES_USER"),
-        "PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
-        "HOST": os.environ.get("POSTGRES_HOST"),
+        "NAME": env("POSTGRES_NAME"),
+        "USER": env("POSTGRES_USER"),
+        "PASSWORD": env("POSTGRES_PASSWORD"),
+        "HOST": env("POSTGRES_HOST"),
         "PORT": 5432,
     }
 }
@@ -150,8 +160,23 @@ LOGGING = {
     },
 }
 
+RQ_QUEUES = {
+    "default": {
+        "HOST": "redis",
+        "PORT": 6379,
+        "DB": 0,
+        # 'PASSWORD': 'some-password', TODO: set a password
+        "DEFAULT_TIMEOUT": 360,
+    },
+}
+RQ_SHOW_ADMIN_LINK = True
+RQ_REDIS_ENABLED = env("RQ_REDIS_ENABLED")
+if not RQ_REDIS_ENABLED:
+    RQ_QUEUES["default"]["ASYNC"] = False
+    django_rq.queues.get_redis_connection = FakeRedisConnSingleton()
+
 sentry_sdk.init(
-    dsn=os.environ.get("SENTRY_DSN"),
+    dsn=env("SENTRY_DSN"),
     integrations=[DjangoIntegration()],
     # Set traces_sample_rate to 1.0 to capture 100%
     # of transactions for performance monitoring.

@@ -1,14 +1,18 @@
 version: "3.9"
 
 services:
+  redis:
+    image: redis:alpine3.16
+    ports:
+      - "6379:6379" # not needed but convenient for running django in true local
   db:
     image: postgres:14.4-alpine
     env_file:
-      - .env.test
+      - .env.local
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5432:5432" # not needed but convenient for running django in true local
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 5s
@@ -20,17 +24,29 @@ services:
     ports:
       - "8000:8000"
     env_file:
-      - .env.test
+      - .env.local
     depends_on:
       db:
         condition: service_healthy
+  worker:
+    build: .
+    command: venv/bin/python src/manage.py rqworker
+    env_file:
+      - .env.local
   migration:
     build: .
     command: venv/bin/python src/manage.py migrate
     env_file:
-      - .env.test
+      - .env.local
     depends_on:
       - django
+  create-superuser:
+    build: .
+    command: venv/bin/python src/manage.py createsuperuser --noinput
+    env_file:
+      - .env.local
+    depends_on:
+      - migration
 
 volumes:
   postgres_data:

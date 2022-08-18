@@ -1,5 +1,5 @@
-export DJANGO_SETTINGS_MODULE=main.settings
 DOCKER_IMAGE=honda-plug
+TEST_ENV_VARS:=$(shell cat .env.test | xargs)
 
 venv:
 	python3.10 -m venv venv
@@ -16,7 +16,7 @@ format/check: venv
 	venv/bin/isort --df -c src
 
 migrations/check:
-	venv/bin/python src/manage.py makemigrations --check --dry-run
+	$(TEST_ENV_VARS) venv/bin/python src/manage.py makemigrations --check --dry-run
 
 migrate:
 	venv/bin/python src/manage.py collectstatic --noinput
@@ -26,13 +26,13 @@ gunicorn:
 
 tests: venv
 	venv/bin/pip install -r requirements-tests.txt
-	venv/bin/dotenv ".env.test" && PYTHONPATH=src venv/bin/pytest src/tests
+	$(TEST_ENV_VARS) PYTHONPATH=src venv/bin/pytest src/tests
 
 docker/build:
 	docker build --no-cache	--tag=$(DOCKER_IMAGE) .
 
 docker/tests:
-	 docker compose up -d db django
+	 docker compose up -d --force-recreate db django
 	 docker exec $(DOCKER_IMAGE)-django-1 make tests
 
 docker/format/check:
@@ -48,7 +48,7 @@ docker/run/prod:
 	docker compose -f docker-compose.prod.yml up -d --build
 
 docker/run/local:
-	docker compose -f docker-compose.yml up -d --build
+	docker compose -f docker-compose.yml up --force-recreate -d --build
 
 docker/run/backup-db:
 	docker exec -t honda-db-1 pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
