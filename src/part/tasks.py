@@ -30,3 +30,4 @@ def search_for_stocks(reference):
             add_stock(stock)
         except Exception as e:
             capture_exception(e)
+    logger.info(f"Done searching stocks for: {reference}")
