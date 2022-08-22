@@ -49,3 +49,22 @@ class TestSearchForStocks:
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
         assert Stock.objects.count() == len(CLIENTS)
+
+    @patch("part.tasks.search_for_stocks")
+    @patch(
+        "scrapper.clients.hondaautomotiveparts.HondaautomotivepartsClient.get_part",
+        side_effect=Exception(),
+    )
+    def test_stock_exception(self, m_search_for_stocks, m_get_part):
+        """
+        If an exception is raised during getting the stock from a client,
+        the rest of the clients should perform anyway.
+        This test make hondaautomotiveparts client to fail but the rest should continue.
+        """
+        baker.make(Part, reference=REFERENCE, source=SOURCE_UNKNOWN)
+
+        assert Part.objects.count() == 1
+        assert Stock.objects.count() == 0
+        search_for_stocks(REFERENCE)
+        assert Part.objects.count() == 1
+        assert Stock.objects.count() == len(CLIENTS) - 1

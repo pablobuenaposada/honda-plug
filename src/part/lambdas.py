@@ -34,10 +34,7 @@ def add_stock(
     stock_parsed: ParsedStock,
     message_prefix: str = "",
 ):
-    try:
-        part = add_part(stock_parsed.reference, stock_parsed.source, message_prefix)
-    except Exception:
-        return
+    part = add_part(stock_parsed.reference, stock_parsed.source, message_prefix)
     log_message = (
         lambda message: f"{datetime.now()}: {message_prefix} Stock:{stock_parsed.reference} Source: {stock_parsed.source} Country: {pycountry.countries.get(alpha_2=stock_parsed.country).flag}  {message}"
     )
@@ -61,7 +58,7 @@ def add_stock(
         )
     except Exception as error:
         logger.info(log_message(error))
-        return
+        return error
     logger.info(log_message("added")) if created else logger.info(
         log_message("updated")
     )
