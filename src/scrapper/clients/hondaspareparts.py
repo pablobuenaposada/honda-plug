@@ -27,7 +27,7 @@ class HondasparepartsClient(ClientInterface):
         price = Price.fromstring(
             soup.find("meta", {"property": "og:price:amount"})["content"]
         )
-        image = soup.find("meta", {"property": "og:image"})["content"]
+        # their image seems is always a placeholder, so no image for now
 
         return Stock(
             reference=reference,
@@ -37,7 +37,6 @@ class HondasparepartsClient(ClientInterface):
             country="GB",
             title=title,
             price=Money(price.amount, "GBP"),
-            image=image,
         )
 
     def get_parts(self):
