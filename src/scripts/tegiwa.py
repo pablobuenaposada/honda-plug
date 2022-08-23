@@ -16,7 +16,8 @@ def run():
         logger.info(f"Current:{current} Searching stocks for: {part.reference}")
         try:
             parsed_stock = client.get_part(part.reference)
-            add_stock(parsed_stock)
+            if parsed_stock:
+                add_stock(parsed_stock)
         except Exception as e:
             capture_exception(e)
         logger.info(f"Done searching stocks for: {part.reference}")
