@@ -70,3 +70,6 @@ docker/run/client/clockwisemotion:
 
 docker/run/client/hondaspareparts:
 	docker compose -f docker-compose.scripts.prod.yml up hondaspareparts -d --build
+
+docker/run/client/hondaautomotiveparts:
+	docker compose -f docker-compose.scripts.prod.yml up hondaautomotiveparts -d --build

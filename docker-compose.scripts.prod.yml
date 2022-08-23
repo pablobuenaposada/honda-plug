@@ -31,3 +31,8 @@ services:
     command: venv/bin/python src/manage.py runscript hondaspareparts
     env_file:
       - .env.prod
+  hondaautomotiveparts:
+    build: .
+    command: venv/bin/python src/manage.py runscript hondaautomotiveparts
+    env_file:
+      - .env.prod
