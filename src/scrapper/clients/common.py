@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from money import Money
 
+from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
 
 
@@ -21,13 +22,13 @@ def _is_discontinued(value):
     return True if value == "Discontinued" else False
 
 
-class CommonClient:
+class CommonClient(ClientInterface):
     SEARCH_SUFFIX = "/search"
     DOMAIN = ""
     SOURCE = ""
 
     def get_part(self, reference):
-        response = requests.get(
+        response = self.request_limiter.get(
             f"https://{self.DOMAIN}{self.SEARCH_SUFFIX}",
             params={"search_str": reference},
         )
@@ -50,3 +51,6 @@ class CommonClient:
             image=f'https://{product_data["images"][0]["main"]["url"][2:]}',
             url=response.url,
         )
+
+    def get_parts(self):
+        raise NotImplementedError
