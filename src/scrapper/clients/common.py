@@ -26,17 +26,18 @@ class CommonClient:
     DOMAIN = ""
     SOURCE = ""
 
-    def get_part(self, part_number):
+    def get_part(self, reference):
         response = requests.get(
             f"https://{self.DOMAIN}{self.SEARCH_SUFFIX}",
-            params={"search_str": part_number},
+            params={"search_str": reference},
         )
         response.raise_for_status()
-        product_data = json.loads(
-            BeautifulSoup(response.content, "html.parser")
-            .find(id="product_data")
-            .contents[0]
+        product_data = BeautifulSoup(response.content, "html.parser").find(
+            id="product_data"
         )
+        if not product_data:  # this means that reference haven't been found
+            return
+        product_data = json.loads(product_data.contents[0])
 
         return Stock(
             country="US",

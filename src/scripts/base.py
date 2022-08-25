@@ -1,4 +1,5 @@
 import logging
+from datetime import datetime
 
 from sentry_sdk import capture_exception
 
@@ -17,12 +18,17 @@ def run():
     client = Config.client()
     current = 0
     for part in getattr(Part.objects, Config.manager_method)().iterator():
-        logger.info(f"Current:{current} Searching stocks for: {part.reference}")
+        log_message = (
+            lambda message: f"{datetime.now()}: Stock:{part.reference} {message}"
+        )
+        logger.info(log_message("searching stock"))
         try:
             parsed_stock = client.get_part(part.reference)
             if parsed_stock:
                 add_stock(parsed_stock)
-        except Exception as e:
-            capture_exception(e)
-        logger.info(f"Done searching stocks for: {part.reference}")
+            else:
+                logger.info(log_message("not found"))
+        except Exception as error:
+            capture_exception(error)
+            logger.info(log_message(error))
         current += 1
