@@ -8,6 +8,7 @@ from part.constants import (
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
+    SOURCE_PIECESAUTOHONDA,
     SOURCE_TEGIWA,
     SOURCE_UNKNOWN,
 )
@@ -44,6 +45,7 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="GB")
         baker.make(Stock, part=part, source=SOURCE_HONDAAUTOMOTIVEPARTS, country="US")
         baker.make(Stock, part=part, source=SOURCE_HONDASPAREPARTS, country="GB")
+        baker.make(Stock, part=part, source=SOURCE_PIECESAUTOHONDA, country="FR")
         assert Part.objects.count() == 1
         assert Stock.objects.count() == len(CLIENTS)
         search_for_stocks(REFERENCE)

@@ -73,3 +73,6 @@ docker/run/client/hondaspareparts:
 
 docker/run/client/hondaautomotiveparts:
 	docker compose -f docker-compose.scripts.prod.yml up hondaautomotiveparts -d --build
+
+docker/run/client/piecesautohonda:
+	docker compose -f docker-compose.scripts.prod.yml up piecesautohonda -d --build

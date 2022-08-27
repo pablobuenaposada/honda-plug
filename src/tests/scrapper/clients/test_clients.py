@@ -6,18 +6,20 @@ from part.constants import (
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
+    SOURCE_PIECESAUTOHONDA,
     SOURCE_TEGIWA,
 )
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.hondaspareparts import HondasparepartsClient
+from scrapper.clients.piecesautohonda import PiecesAutoHondaClient
 from scrapper.clients.tegiwa import TegiwaClient
 from scrapper.common.stock import Stock
 
 REFERENCES = {
     "12251-RBB-004",  # normal part
-    "56483-PND-003",  # discontinued part
+    "56483-PND-003",  # discontinued part but has new replacement
     "08F03-S02-180K",  # really discontinued part
     "31206-P3F-003",  # sold out in some sites
 }
@@ -230,6 +232,48 @@ class TestClients:
                         url="https://hondaspareparts.co.uk/products/31206P3F003",
                         country="GB",
                         source=SOURCE_HONDASPAREPARTS,
+                    ),
+                },
+            ),
+            (
+                PiecesAutoHondaClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        reference="12251-RBB-004",
+                        url="https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/12251RBB004",
+                        source=SOURCE_PIECESAUTOHONDA,
+                        country="FR",
+                        title="Joint comp. de culasse (n",
+                        price=Money(amount="90.76", currency="EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
+                    "56483-PND-003": Stock(
+                        reference="56483-PND-003",
+                        url="https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/56483PND003",
+                        source=SOURCE_PIECESAUTOHONDA,
+                        country="FR",
+                        title="Poulie de pompe a directi",
+                        price=None,
+                        image=None,
+                        available=False,
+                        discontinued=True,
+                        quantity=None,
+                    ),
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": Stock(
+                        reference="31206-P3F-003",
+                        url="https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/31206P3F003",
+                        source=SOURCE_PIECESAUTOHONDA,
+                        country="FR",
+                        title="Induit comp.",
+                        price=None,
+                        image=None,
+                        available=False,
+                        discontinued=False,
+                        quantity=None,
                     ),
                 },
             ),

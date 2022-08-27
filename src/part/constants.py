@@ -6,6 +6,7 @@ SOURCE_AMAYAMA = "amayama"
 SOURCE_EPCDATA = "epc-data"
 SOURCE_CLOCKWISEMOTION = "clockwise-motion"
 SOURCE_HONDASPAREPARTS = "hondaspareparts"
+SOURCE_PIECESAUTOHONDA = "pieces-auto-honda"
 SOURCE_UNKNOWN = "unknown"
 
 STOCK_SOURCES = (
@@ -16,6 +17,7 @@ STOCK_SOURCES = (
     (SOURCE_AMAYAMA, "www.amayama.com"),
     (SOURCE_CLOCKWISEMOTION, "www.clockwisemotion.co.uk"),
     (SOURCE_HONDASPAREPARTS, "www.hondaspareparts.co.uk"),
+    (SOURCE_PIECESAUTOHONDA, "www.pieces-auto-honda.fr"),
 )
 
 PART_SOURCES = (

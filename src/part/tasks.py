@@ -7,6 +7,7 @@ from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.hondaspareparts import HondasparepartsClient
+from scrapper.clients.piecesautohonda import PiecesAutoHondaClient
 from scrapper.clients.tegiwa import TegiwaClient
 
 logger = logging.getLogger(__name__)
@@ -16,6 +17,7 @@ CLIENTS = (
     HondaautomotivepartsClient,
     TegiwaClient,
     HondasparepartsClient,
+    PiecesAutoHondaClient,
 )
 
 
