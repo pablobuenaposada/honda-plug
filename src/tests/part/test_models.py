@@ -9,14 +9,16 @@ from model_bakery import baker
 from part.constants import SOURCE_EPCDATA, SOURCE_HONDAPARTSNOW, SOURCE_UNKNOWN
 from part.models import Image, Part, Stock
 
+REFERENCE = "56483-PND-003"
+
 
 @pytest.mark.django_db
 @patch("part.tasks.search_for_stocks")
 class TestPart:
     def test_unique(self, m_search_for_stocks):
-        Part.objects.create(reference="56483-PND-003", source=SOURCE_EPCDATA)
+        Part.objects.create(reference=REFERENCE, source=SOURCE_EPCDATA)
         with pytest.raises(IntegrityError):
-            Part.objects.create(reference="56483-PND-003", source=SOURCE_EPCDATA)
+            Part.objects.create(reference=REFERENCE, source=SOURCE_EPCDATA)
 
         assert m_search_for_stocks.call_count == 1
 
@@ -34,7 +36,7 @@ class TestPart:
         assert m_search_for_stocks.call_count == 0
 
     def test_valid(self, m_search_for_stocks):
-        data = {"reference": "56483-PND-003", "source": SOURCE_EPCDATA}
+        data = {"reference": REFERENCE, "source": SOURCE_EPCDATA}
         part = Part.objects.create(**data)
         expected = data | {
             "id": part.id,
@@ -55,7 +57,7 @@ class TestPart:
         """
         Only new Parts should trigger a call to search_for_stocks
         """
-        part = Part.objects.create(reference="56483-PND-003", source=SOURCE_EPCDATA)
+        part = Part.objects.create(reference=REFERENCE, source=SOURCE_EPCDATA)
         assert m_search_for_stocks.call_count == 1
         part.source = SOURCE_UNKNOWN
         part.save(update_fields=["source"])
@@ -66,7 +68,7 @@ class TestPart:
 @patch("part.tasks.search_for_stocks")
 class TestStock:
     def test_unique(self, m_search_for_stocks):
-        part = baker.make(Part, reference="56483-PND-003")
+        part = baker.make(Part, reference=REFERENCE)
         Stock.objects.create(part=part, source=SOURCE_HONDAPARTSNOW, country="US")
         with pytest.raises(IntegrityError) as error:
             Stock.objects.create(part=part, source=SOURCE_HONDAPARTSNOW, country="US")
@@ -85,7 +87,7 @@ class TestStock:
         assert m_search_for_stocks.call_count == 0
 
     def test_valid(self, m_search_for_stocks):
-        part = baker.make(Part, reference="56483-PND-003")
+        part = baker.make(Part, reference=REFERENCE)
         data = {
             "part": part,
             "title": "bar",
@@ -116,7 +118,7 @@ class TestStock:
 @patch("part.tasks.search_for_stocks")
 class TestImage:
     def test_unique(self, m_search_for_stocks):
-        part = baker.make(Part, reference="56483-PND-003")
+        part = baker.make(Part, reference=REFERENCE)
         stock = baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW, country="US")
         Image.objects.create(stock=stock, url="http://www.foo.com")
         with pytest.raises(IntegrityError) as error:
@@ -133,7 +135,7 @@ class TestImage:
         assert m_search_for_stocks.call_count == 0
 
     def test_valid(self, m_search_for_stocks):
-        part = baker.make(Part, reference="56483-PND-003")
+        part = baker.make(Part, reference=REFERENCE)
         stock = baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW, country="US")
         data = {"stock": stock, "url": "http://www.foo.com"}
         image = Image.objects.create(**data)

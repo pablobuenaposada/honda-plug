@@ -16,8 +16,13 @@ def add_part(reference: str, source: str, message_prefix: str = ""):
     )
 
     try:
+        # format the reference so the search ignores hyphens since they don't really matter for uniqueness
+        regexp = reference.upper().replace("-", "")
+        regexp = [*regexp]
+        regexp = "-?".join(regexp)
+
         part, created = Part.objects.get_or_create(
-            reference=reference,
+            reference__regex=regexp,
             defaults={"reference": reference, "source": source},
         )
     except Exception as error:
