@@ -41,6 +41,11 @@ services:
     command: venv/bin/python src/manage.py runscript piecesautohonda
     env_file:
       - .env.prod
+  piecesautohonda-getparts:
+    build: .
+    command: venv/bin/python src/manage.py runscript piecesautohonda_get_parts
+    env_file:
+      - .env.prod
   hondapartsonline:
     build: .
     command: venv/bin/python src/manage.py runscript hondapartsonline

@@ -25,4 +25,5 @@ PART_SOURCES = (
     (SOURCE_AMAYAMA, "www.amayama.com"),
     (SOURCE_CLOCKWISEMOTION, "www.clockwisemotion.co.uk"),
     (SOURCE_UNKNOWN, "Unknown"),
+    (SOURCE_PIECESAUTOHONDA, "www.pieces-auto-honda.fr"),
 )
