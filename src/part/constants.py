@@ -6,7 +6,7 @@ SOURCE_AMAYAMA = "amayama"
 SOURCE_EPCDATA = "epc-data"
 SOURCE_CLOCKWISEMOTION = "clockwise-motion"
 SOURCE_HONDASPAREPARTS = "hondaspareparts"
-SOURCE_PIECESAUTOHONDA = "pieces-auto-honda"
+SOURCE_PIECESAUTOHONDA = "pieces-auto-honda"  # repuestos-honda.es ersatzteile-honda.de parts-honda.uk ricambi-honda.it onderdelen-auto-honda.nl pecas-honda.com
 SOURCE_UNKNOWN = "unknown"
 
 STOCK_SOURCES = (
