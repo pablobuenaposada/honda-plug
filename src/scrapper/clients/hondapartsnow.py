@@ -1,10 +1,10 @@
 import json
 
-import requests
 from bs4 import BeautifulSoup
 from money import Money
 
 from part.constants import SOURCE_HONDAPARTSNOW
+from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
 
 
@@ -22,25 +22,28 @@ def _is_discontinued(value):
     return True if value == "http://schema.org/Discontinued" else False
 
 
-class HondapartsnowClient:
+class HondapartsnowClient(ClientInterface):
     DOMAIN = "www.hondapartsnow.com"
     URL = f"https://{DOMAIN}/api/search/search-words"
 
-    def get_part(self, part_number):
-        response = requests.get(
-            self.URL, params={"searchText": part_number}, headers={"site": "HPN"}
+    def get_part(self, reference):
+        response = self.request_limiter.get(
+            self.URL, params={"searchText": reference}, headers={"site": "HPN"}
         )
         response.raise_for_status()
         response = response.json()
 
-        response = requests.get(
+        response = self.request_limiter.get(
             f'https://{self.DOMAIN}{response["data"]["redirectUrl"]}'
         )
-        product_data = json.loads(
-            BeautifulSoup(response.content, "html.parser")
-            .findAll("script", {"data-react-helmet": "true"})[2]
-            .contents[0]
-        )
+        try:
+            product_data = json.loads(
+                BeautifulSoup(response.content, "html.parser")
+                .findAll("script", {"data-react-helmet": "true"})[2]
+                .contents[0]
+            )
+        except IndexError:
+            return
 
         return Stock(
             country="US",
@@ -55,3 +58,6 @@ class HondapartsnowClient:
             if not product_data.get("image", False)
             else product_data.get("image")[0],
         )
+
+    def get_parts(self):
+        raise NotImplementedError
