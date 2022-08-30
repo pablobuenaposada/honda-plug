@@ -62,35 +62,39 @@ class PiecesAutoHondaClient(ClientInterface):
         response = self.request_limiter.get(base_url)
         soup = BeautifulSoup(response.content, "html.parser")
         for model in soup.findAll("div", {"class": "col text-center height_150 mb-1"}):
-            logger.info(f"Searching parts for {model}")
-            response = self.request_limiter.get(f'{base_url}{model.a["href"]}')
-            for year in BeautifulSoup(response.content, "html.parser").findAll(
-                "div", {"class": "col text-center"}
-            )[1:]:
-                response = self.request_limiter.get(f'{base_url}{year.a["href"]}')
-                for spec in BeautifulSoup(response.content, "html.parser").findAll(
+            try:
+                response = self.request_limiter.get(f'{base_url}{model.a["href"]}')
+                for year in BeautifulSoup(response.content, "html.parser").findAll(
                     "div", {"class": "col text-center"}
-                )[2:]:
-                    response = self.request_limiter.get(f'{base_url}{spec.a["href"]}')
-                    for group in BeautifulSoup(response.content, "html.parser").findAll(
-                        "div",
-                        {
-                            "class": "col-md-6 col-lg-4 infos_vehicle ps-2 align-self-center"
-                        },
-                    ):
+                )[1:]:
+                    response = self.request_limiter.get(f'{base_url}{year.a["href"]}')
+                    for spec in BeautifulSoup(response.content, "html.parser").findAll(
+                        "div", {"class": "col text-center"}
+                    )[2:]:
                         response = self.request_limiter.get(
-                            f'{base_url}{group.a["href"]}'
+                            f'{base_url}{spec.a["href"]}'
                         )
-                        for inner_group in BeautifulSoup(
+                        for group in BeautifulSoup(
                             response.content, "html.parser"
-                        ).findAll("div", {"class": "col p-1"}):
+                        ).findAll(
+                            "div",
+                            {
+                                "class": "col-md-6 col-lg-4 infos_vehicle ps-2 align-self-center"
+                            },
+                        ):
                             response = self.request_limiter.get(
-                                f'{base_url}{inner_group.a["href"]}'
+                                f'{base_url}{group.a["href"]}'
                             )
-                            for parts in BeautifulSoup(
+                            for inner_group in BeautifulSoup(
                                 response.content, "html.parser"
-                            ).findAll("span", {"class": "JS_ref_link"}):
-                                try:
+                            ).findAll("div", {"class": "col p-1"}):
+                                response = self.request_limiter.get(
+                                    f'{base_url}{inner_group.a["href"]}'
+                                )
+                                for parts in BeautifulSoup(
+                                    response.content, "html.parser"
+                                ).findAll("span", {"class": "JS_ref_link"}):
                                     add_part(parts.text.strip(), SOURCE_PIECESAUTOHONDA)
-                                except Exception:
-                                    pass
+            except Exception as error:
+                logger.info(response.url)
+                logger.info(error)
