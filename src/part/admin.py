@@ -33,10 +33,13 @@ class ImageInlineAdmin(admin.TabularInline):
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Part
     readonly_fields = ("created", "modified")
-    list_display = ("reference", "source", "modified")
+    list_display = ("reference", "source", "stock_found", "modified")
     search_fields = ["reference"]
     list_filter = ["source", "modified"]
     inlines = [StockInlineAdmin]
+
+    def stock_found(self, obj):
+        return obj.stock_set.count()
 
 
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
