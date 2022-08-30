@@ -4,6 +4,7 @@ import pytest
 from model_bakery import baker
 
 from part.constants import (
+    SOURCE_AMAYAMA,
     SOURCE_HONDAAUTOMOTIVEPARTS,
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
@@ -26,7 +27,9 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert Stock.objects.count() == len(CLIENTS)
+        assert (
+            Stock.objects.count() == len(CLIENTS) + 1
+        )  # one more because amayama finds 2 more stocks
 
     @patch("part.tasks.search_for_stocks")
     def test_part_already_exists(self, m_search_for_stocks):
@@ -35,7 +38,9 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert Stock.objects.count() == len(CLIENTS)
+        assert (
+            Stock.objects.count() == len(CLIENTS) + 1
+        )  # one more because amayama finds 2 more stocks
 
     @patch("part.tasks.search_for_stocks")
     def test_part_and_stock_already_exists(self, m_search_for_stocks):
@@ -46,11 +51,17 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_HONDAAUTOMOTIVEPARTS, country="US")
         baker.make(Stock, part=part, source=SOURCE_HONDASPAREPARTS, country="GB")
         baker.make(Stock, part=part, source=SOURCE_PIECESAUTOHONDA, country="FR")
+        baker.make(Stock, part=part, source=SOURCE_AMAYAMA, country="JP")
+        baker.make(Stock, part=part, source=SOURCE_AMAYAMA, country="AE")
         assert Part.objects.count() == 1
-        assert Stock.objects.count() == len(CLIENTS)
+        assert (
+            Stock.objects.count() == len(CLIENTS) + 1
+        )  # one more because amayama finds 2 more stocks
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert Stock.objects.count() == len(CLIENTS)
+        assert (
+            Stock.objects.count() == len(CLIENTS) + 1
+        )  # one more because amayama finds 2 more stocks
 
     @patch("part.tasks.search_for_stocks")
     @patch(
@@ -69,4 +80,6 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert Stock.objects.count() == len(CLIENTS) - 1
+        assert (
+            Stock.objects.count() == len(CLIENTS) - 1 + 1
+        )  # one more because amayama finds 2 more stocks

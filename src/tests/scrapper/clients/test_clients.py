@@ -2,6 +2,7 @@ import pytest
 from money import Money
 
 from part.constants import (
+    SOURCE_AMAYAMA,
     SOURCE_HONDAAUTOMOTIVEPARTS,
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
@@ -9,6 +10,7 @@ from part.constants import (
     SOURCE_PIECESAUTOHONDA,
     SOURCE_TEGIWA,
 )
+from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
@@ -275,6 +277,66 @@ class TestClients:
                         discontinued=False,
                         quantity=None,
                     ),
+                },
+            ),
+            (
+                AmayamaClient(),
+                {
+                    "12251-RBB-004": [
+                        Stock(
+                            reference="12251-RBB-004",
+                            url="https://www.amayama.com/en/part/honda/12251rbb004",
+                            source=SOURCE_AMAYAMA,
+                            country="JP",
+                            title="GASKET COMP., CYLINDER HEAD (NIPPON LEAKLESS)",
+                            price=Money(amount="57.09", currency="USD"),
+                            image="https://static.amayama.com/part/honda-12251rbb004-1561012265107-big.jpg",
+                            available=None,
+                            discontinued=None,
+                            quantity=None,
+                        ),
+                        Stock(
+                            reference="12251-RBB-004",
+                            url="https://www.amayama.com/en/part/honda/12251rbb004",
+                            source=SOURCE_AMAYAMA,
+                            country="AE",
+                            title="GASKET COMP., CYLINDER HEAD (NIPPON LEAKLESS)",
+                            price=Money(amount="67.86", currency="USD"),
+                            image="https://static.amayama.com/part/honda-12251rbb004-1561012265107-big.jpg",
+                            available=True,
+                            discontinued=None,
+                            quantity=26,
+                        ),
+                    ],
+                    "56483-PND-003": [
+                        Stock(
+                            reference="56483-PND-003",
+                            url="https://www.amayama.com/en/part/honda/56483pnd003",
+                            source=SOURCE_AMAYAMA,
+                            country="JP",
+                            title="PULLEY COMP., POWER STEERING PUMP",
+                            price=Money(amount="29.43", currency="USD"),
+                            image="https://static.amayama.com/schema/honda-56483pnd003-1568785753036-big.jpg",
+                            available=None,
+                            discontinued=None,
+                            quantity=None,
+                        )
+                    ],
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": [
+                        Stock(
+                            reference="31206-P3F-003",
+                            url="https://www.amayama.com/en/part/honda/31206p3f003",
+                            source=SOURCE_AMAYAMA,
+                            country="JP",
+                            title="ARMATURE COMP.",
+                            price=Money(amount="204.82", currency="USD"),
+                            image="https://static.amayama.com/schema/honda-31206p3f003-1568726492705-big.jpg",
+                            available=None,
+                            discontinued=None,
+                            quantity=None,
+                        )
+                    ],
                 },
             ),
         ),

@@ -3,6 +3,7 @@ import logging
 from django_rq import job
 from sentry_sdk import capture_exception
 
+from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
@@ -18,6 +19,7 @@ CLIENTS = (
     TegiwaClient,
     HondasparepartsClient,
     PiecesAutoHondaClient,
+    AmayamaClient,
 )
 
 
@@ -28,7 +30,13 @@ def search_for_stocks(reference):
     logger.info(f"Searching stocks for: {reference}")
     for client in CLIENTS:
         try:
-            stock = client().get_part(reference)
+            stocks = client().get_part(reference)
+            if stocks:
+                if type(stocks) == list:
+                    for stock in stocks:
+                        add_stock(stock)
+                else:
+                    add_stock(stocks)
             add_stock(stock)
         except Exception as e:
             capture_exception(e)

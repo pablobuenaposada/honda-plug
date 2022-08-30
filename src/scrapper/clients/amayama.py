@@ -6,17 +6,64 @@ from bs4 import BeautifulSoup
 from money import Money
 
 from part.constants import SOURCE_AMAYAMA
-from part.lambdas import add_stock
+from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
-from scrapper.utils import RequestLimiter
+from scrapper.utils import RequestLimiter, format_reference
 
 DOMAIN = "amayama.com"
 
 
-class AmayamaClient:
+class AmayamaClient(ClientInterface):
     regex = re.compile("[^a-zA-Z]")
 
+    def get_part(self, reference):
+        stocks = []
+        response = self.request_limiter.get(
+            f"https://{DOMAIN}/en/part/honda/{format_reference(reference)}"
+        )
+        soup = BeautifulSoup(response.content, "html.parser")
+
+        if "Permanently out of stock" in soup.text:
+            return
+
+        title = soup.find("div", {"class": "part-page__name"}).h1.text
+        image = soup.find("figure", {"data-type": "photo-container"}).a["href"]
+        for stock in soup.find("tbody", {"class": "part-table__body"}).findAll(
+            "tr", {"class": lambda L: L and L.startswith("part-table__row")}
+        ):
+            country = self.regex.sub(
+                "", stock.find("span", {"class": "warehouse-name"}).text
+            )
+            country = (
+                "AE" if country == "UAE" else country
+            )  # special case for Arab Emirates
+            country = pycountry.countries.search_fuzzy(country)[0]
+            price = stock.find("span", {"class": "part-price"}).text.replace(",", "")
+            try:
+                quantity = int(stock.find("span", {"class": "part-quantity"}).text)
+                available = True
+            except ValueError:
+                quantity = None
+                available = None
+
+            stocks.append(
+                Stock(
+                    country=country.alpha_2,
+                    source=SOURCE_AMAYAMA,
+                    reference=reference,
+                    price=Money(price, "USD"),
+                    title=title,
+                    url=response.url,
+                    quantity=quantity,
+                    image=image,
+                    available=available,
+                )
+            )
+        return stocks
+
     def get_parts(self, function, start_from_model=None):
+        from part.lambdas import add_stock
+
         session = requests.Session()
         request_limiter = RequestLimiter(session)
         response = request_limiter.get(f"https://{DOMAIN}/en/catalogs/honda")

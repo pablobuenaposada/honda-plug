@@ -25,7 +25,11 @@ def run():
         try:
             parsed_stock = client.get_part(part.reference)
             if parsed_stock:
-                add_stock(parsed_stock)
+                if type(parsed_stock) == list:
+                    for stock in parsed_stock:
+                        add_stock(stock)
+                else:
+                    add_stock(parsed_stock)
             else:
                 logger.info(log_message("not found"))
         except Exception as error:
