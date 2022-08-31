@@ -26,8 +26,11 @@ class AmayamaClient(ClientInterface):
         if "Permanently out of stock" in soup.text:
             return
 
-        title = soup.find("div", {"class": "part-page__name"}).h1.text
-        image = soup.find("figure", {"data-type": "photo-container"}).a["href"]
+        title = soup.find("div", {"class": "part-page__name"}).h1.text.strip()
+        try:
+            image = soup.find("figure", {"data-type": "photo-container"}).a["href"]
+        except AttributeError:
+            image = None
         for stock in soup.find("tbody", {"class": "part-table__body"}).findAll(
             "tr", {"class": lambda L: L and L.startswith("part-table__row")}
         ):
@@ -39,12 +42,17 @@ class AmayamaClient(ClientInterface):
             )  # special case for Arab Emirates
             country = pycountry.countries.search_fuzzy(country)[0]
             price = stock.find("span", {"class": "part-price"}).text.replace(",", "")
-            try:
-                quantity = int(stock.find("span", {"class": "part-quantity"}).text)
-                available = True
-            except ValueError:
+            quantity = stock.find("span", {"class": "part-quantity"}).text.strip()
+            if quantity == ">1":
                 quantity = None
-                available = None
+                available = True
+            else:
+                try:
+                    quantity = int(quantity)
+                    available = True
+                except ValueError:
+                    quantity = None
+                    available = None
 
             stocks.append(
                 Stock(

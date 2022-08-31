@@ -291,7 +291,7 @@ class TestClients:
                             title="GASKET COMP., CYLINDER HEAD (NIPPON LEAKLESS)",
                             price=Money(amount="57.09", currency="USD"),
                             image="https://static.amayama.com/part/honda-12251rbb004-1561012265107-big.jpg",
-                            available=None,
+                            available=True,
                             discontinued=None,
                             quantity=None,
                         ),
@@ -317,7 +317,7 @@ class TestClients:
                             title="PULLEY COMP., POWER STEERING PUMP",
                             price=Money(amount="29.43", currency="USD"),
                             image="https://static.amayama.com/schema/honda-56483pnd003-1568785753036-big.jpg",
-                            available=None,
+                            available=True,
                             discontinued=None,
                             quantity=None,
                         )
@@ -332,7 +332,7 @@ class TestClients:
                             title="ARMATURE COMP.",
                             price=Money(amount="204.82", currency="USD"),
                             image="https://static.amayama.com/schema/honda-31206p3f003-1568726492705-big.jpg",
-                            available=None,
+                            available=True,
                             discontinued=None,
                             quantity=None,
                         )
