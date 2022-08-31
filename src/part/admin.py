@@ -6,6 +6,7 @@ from django.utils.safestring import mark_safe
 from simple_history.admin import SimpleHistoryAdmin
 
 from part.models import Image, Part, Stock
+from part.tasks import search_for_stocks
 
 
 class StockInlineAdmin(admin.TabularInline):
@@ -37,9 +38,14 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     search_fields = ["reference"]
     list_filter = ["source", "modified"]
     inlines = [StockInlineAdmin]
+    actions = ["search_stocks"]
 
     def stock_found(self, obj):
         return obj.stock_set.count()
+
+    def search_stocks(self, request, queryset):
+        for part in queryset:
+            search_for_stocks.delay(part.reference)
 
 
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
