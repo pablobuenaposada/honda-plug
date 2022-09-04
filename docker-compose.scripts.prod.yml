@@ -51,3 +51,8 @@ services:
     command: venv/bin/python src/manage.py runscript hondapartsonline
     env_file:
       - .env.prod
+  acuraexpressparts:
+    build: .
+    command: venv/bin/python src/manage.py runscript acuraexpressparts
+    env_file:
+      - .env.prod

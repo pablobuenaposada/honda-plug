@@ -4,6 +4,7 @@ import pytest
 from model_bakery import baker
 
 from part.constants import (
+    SOURCE_ACURAEXPRESSPARTS,
     SOURCE_AMAYAMA,
     SOURCE_HONDAAUTOMOTIVEPARTS,
     SOURCE_HONDAPARTSNOW,
@@ -53,6 +54,7 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_PIECESAUTOHONDA, country="FR")
         baker.make(Stock, part=part, source=SOURCE_AMAYAMA, country="JP")
         baker.make(Stock, part=part, source=SOURCE_AMAYAMA, country="AE")
+        baker.make(Stock, part=part, source=SOURCE_ACURAEXPRESSPARTS, country="US")
         assert Part.objects.count() == 1
         assert (
             Stock.objects.count() == len(CLIENTS) + 1
