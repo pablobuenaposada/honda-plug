@@ -1,6 +1,7 @@
 import pycountry
 from django.contrib import admin
 from django.db import models
+from django.db.models import Count
 from django.forms import TextInput
 from django.utils.safestring import mark_safe
 from simple_history.admin import SimpleHistoryAdmin
@@ -40,8 +41,16 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     inlines = [StockInlineAdmin]
     actions = ["search_stocks"]
 
+    def get_queryset(self, request):
+        """just to be able to order by column stock found"""
+        qs = super().get_queryset(request)
+        qs = qs.annotate(stock_count=Count("stock"))
+        return qs
+
     def stock_found(self, obj):
         return obj.stock_set.count()
+
+    stock_found.admin_order_field = "stock_count"
 
     def search_stocks(self, request, queryset):
         for part in queryset:
