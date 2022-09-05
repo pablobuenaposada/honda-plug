@@ -29,4 +29,5 @@ PART_SOURCES = (
     (SOURCE_UNKNOWN, "Unknown"),
     (SOURCE_PIECESAUTOHONDA, "www.pieces-auto-honda.fr"),
     (SOURCE_HONDAPARTSONLINE, "www.hondapartsonline.net"),
+    (SOURCE_ACURAEXPRESSPARTS, "www.acuraexpressparts.com"),
 )
