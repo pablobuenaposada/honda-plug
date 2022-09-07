@@ -5,3 +5,4 @@ model-bakery
 black
 isort
 ipdb
+freezegun
