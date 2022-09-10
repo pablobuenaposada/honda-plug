@@ -11,14 +11,14 @@ from scrapper.common.stock import Stock
 
 
 class HondasparepartsClient(ClientInterface):
-    def get_part(self, reference):
+    async def get_part(self, reference):
         url = f'https://hondaspareparts.co.uk/products/{reference.replace("-", "")}'
-        response = self.request_limiter.get(url)
+        response, url, status_code = await self.request_limiter.get(url)
 
-        if response.status_code != requests.codes.ok:
+        if status_code != requests.codes.ok:
             return
 
-        soup = BeautifulSoup(response.content, "html.parser")
+        soup = BeautifulSoup(response, "html.parser")
         dict = json.loads(
             soup.find("script", {"id": "ProductJson-product-template"}).text
         )
@@ -32,7 +32,7 @@ class HondasparepartsClient(ClientInterface):
         return Stock(
             reference=reference,
             available=available,
-            url=url,
+            url=str(url),
             source=SOURCE_HONDASPAREPARTS,
             country="GB",
             title=title,

@@ -1,6 +1,7 @@
 pytest
 pytest-vcr
 pytest-django
+pytest-asyncio
 model-bakery
 black
 isort

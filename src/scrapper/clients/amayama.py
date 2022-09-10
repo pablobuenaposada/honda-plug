@@ -16,12 +16,12 @@ DOMAIN = "amayama.com"
 class AmayamaClient(ClientInterface):
     regex = re.compile("[^a-zA-Z]")
 
-    def get_part(self, reference):
+    async def get_part(self, reference):
         stocks = []
-        response = self.request_limiter.get(
+        response, url, _ = await self.request_limiter.get(
             f"https://{DOMAIN}/en/part/honda/{format_reference(reference)}"
         )
-        soup = BeautifulSoup(response.content, "html.parser")
+        soup = BeautifulSoup(response, "html.parser")
 
         if "Permanently out of stock" in soup.text:
             return
@@ -61,7 +61,7 @@ class AmayamaClient(ClientInterface):
                     reference=reference,
                     price=Money(price, "USD"),
                     title=title,
-                    url=response.url,
+                    url=str(url),
                     quantity=quantity,
                     image=image,
                     available=available,

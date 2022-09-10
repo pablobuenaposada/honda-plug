@@ -26,19 +26,16 @@ class HondapartsnowClient(ClientInterface):
     DOMAIN = "www.hondapartsnow.com"
     URL = f"https://{DOMAIN}/api/search/search-words"
 
-    def get_part(self, reference):
-        response = self.request_limiter.get(
+    async def get_part(self, reference):
+        response, _, _ = await self.request_limiter.get(
             self.URL, params={"searchText": reference}, headers={"site": "HPN"}
         )
-        response.raise_for_status()
-        response = response.json()
-
-        response = self.request_limiter.get(
+        response, _, _ = await self.request_limiter.get(
             f'https://{self.DOMAIN}{response["data"]["redirectUrl"]}'
         )
         try:
             product_data = json.loads(
-                BeautifulSoup(response.content, "html.parser")
+                BeautifulSoup(response, "html.parser")
                 .findAll("script", {"data-react-helmet": "true"})[2]
                 .contents[0]
             )
