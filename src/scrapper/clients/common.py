@@ -27,15 +27,12 @@ class CommonClient(ClientInterface):
     DOMAIN = ""
     SOURCE = ""
 
-    def get_part(self, reference):
-        response = self.request_limiter.get(
+    async def get_part(self, reference):
+        response, url, _ = await self.request_limiter.get(
             f"https://{self.DOMAIN}{self.SEARCH_SUFFIX}",
             params={"search_str": reference},
         )
-        response.raise_for_status()
-        product_data = BeautifulSoup(response.content, "html.parser").find(
-            id="product_data"
-        )
+        product_data = BeautifulSoup(response, "html.parser").find(id="product_data")
         if not product_data:  # this means that reference haven't been found
             return
         product_data = json.loads(product_data.contents[0])
@@ -49,7 +46,7 @@ class CommonClient(ClientInterface):
             available=_parse_availability(product_data["current_product_availabilty"]),
             discontinued=_is_discontinued(product_data["current_product_availabilty"]),
             image=f'https://{product_data["images"][0]["main"]["url"][2:]}',
-            url=response.url,
+            url=str(url),
         )
 
     def get_parts(self):

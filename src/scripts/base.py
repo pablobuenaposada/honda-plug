@@ -1,3 +1,4 @@
+import asyncio
 import logging
 from datetime import datetime
 
@@ -23,7 +24,7 @@ def run():
         )
         logger.info(log_message("searching stock"))
         try:
-            parsed_stock = client.get_part(part.reference)
+            parsed_stock = asyncio.run(client.get_part(part.reference))
             if parsed_stock:
                 if type(parsed_stock) == list:
                     for stock in parsed_stock:

@@ -1,3 +1,5 @@
+import asyncio
+
 import pytest
 from money import Money
 
@@ -29,6 +31,7 @@ REFERENCES = {
 }
 
 
+@pytest.mark.asyncio
 @pytest.mark.vcr()
 class TestClients:
     @pytest.mark.parametrize(
@@ -291,7 +294,7 @@ class TestClients:
                             source=SOURCE_AMAYAMA,
                             country="JP",
                             title="GASKET COMP., CYLINDER HEAD (NIPPON LEAKLESS)",
-                            price=Money(amount="57.09", currency="USD"),
+                            price=Money(amount="49.41", currency="USD"),
                             image="https://static.amayama.com/part/honda-12251rbb004-1561012265107-big.jpg",
                             available=True,
                             discontinued=None,
@@ -317,7 +320,7 @@ class TestClients:
                             source=SOURCE_AMAYAMA,
                             country="JP",
                             title="PULLEY COMP., POWER STEERING PUMP",
-                            price=Money(amount="29.43", currency="USD"),
+                            price=Money(amount="28.66", currency="USD"),
                             image="https://static.amayama.com/schema/honda-56483pnd003-1568785753036-big.jpg",
                             available=True,
                             discontinued=None,
@@ -332,7 +335,7 @@ class TestClients:
                             source=SOURCE_AMAYAMA,
                             country="JP",
                             title="ARMATURE COMP.",
-                            price=Money(amount="204.82", currency="USD"),
+                            price=Money(amount="199.45", currency="USD"),
                             image="https://static.amayama.com/schema/honda-31206p3f003-1568726492705-big.jpg",
                             available=True,
                             discontinued=None,
@@ -374,6 +377,6 @@ class TestClients:
             ),
         ),
     )
-    def test_success(self, client, expected):
+    async def test_success(self, client, expected):
         for reference in REFERENCES:
-            assert client.get_part(reference) == expected[reference]
+            assert await client.get_part(reference) == expected[reference]

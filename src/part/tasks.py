@@ -1,3 +1,4 @@
+import asyncio
 import logging
 
 from django_rq import job
@@ -25,21 +26,27 @@ CLIENTS = (
 )
 
 
+async def call_clients(reference):
+    tasks = []
+    for client in CLIENTS:
+        tasks.append(client().get_part(reference))
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    # flatten internal lists since some clients can return multiple Stocks
+    return [y for x in results for y in (x if isinstance(x, list) else [x])]
+
+
 @job
 def search_for_stocks(reference):
     from part.lambdas import add_stock
 
     logger.info(f"Searching stocks for: {reference}")
-    for client in CLIENTS:
-        try:
-            stocks = client().get_part(reference)
-            if stocks:
-                if type(stocks) == list:
-                    for stock in stocks:
-                        add_stock(stock)
-                else:
-                    add_stock(stocks)
-            add_stock(stock)
-        except Exception as e:
-            capture_exception(e)
+    results = asyncio.run(call_clients(reference))
+    for result in results:
+        if type(result) == Exception:
+            capture_exception(result)
+        else:  # Stock instance
+            try:
+                add_stock(result)
+            except Exception as e:
+                capture_exception(e)
     logger.info(f"Done searching stocks for: {reference}")

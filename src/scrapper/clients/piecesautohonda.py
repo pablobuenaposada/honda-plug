@@ -14,11 +14,11 @@ logger = logging.getLogger(__name__)
 
 
 class PiecesAutoHondaClient(ClientInterface):
-    def get_part(self, reference):
+    async def get_part(self, reference):
         raw_reference = format_reference(reference)
         url = f"https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/{raw_reference}"
-        response = self.request_limiter.get(url)
-        soup = BeautifulSoup(response.content, "html.parser")
+        response, _, _ = await self.request_limiter.get(url)
+        soup = BeautifulSoup(response, "html.parser")
 
         if not soup.find("span", {"id": "ref_etiquette"}):
             # case where reference is not even found
