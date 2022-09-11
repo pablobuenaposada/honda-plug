@@ -108,17 +108,20 @@ class TestAddPart:
         assert Part.objects.count() == 1
 
     @pytest.mark.parametrize(
-        "reference, reference_to_search",
+        "reference, reference_to_search, expected_num_parts",
         (
-            (REFERENCE, REFERENCE),
-            (REFERENCE, REFERENCE.lower()),
-            (REFERENCE, REFERENCE.upper()),
-            (REFERENCE, REFERENCE.replace("-", "")),
+            (REFERENCE, REFERENCE, 1),
+            (REFERENCE, REFERENCE.lower(), 1),
+            (REFERENCE, REFERENCE.upper(), 1),
+            (REFERENCE, REFERENCE.replace("-", ""), 1),
+            ("89000-SM4-000ZA", "89000-SM4-000", 2),
         ),
     )
-    def test_part_found(self, m_search_for_stocks, reference, reference_to_search):
+    def test_part_found(
+        self, m_search_for_stocks, reference, reference_to_search, expected_num_parts
+    ):
         baker.make(Part, reference=reference, source=self.source)
 
         assert Part.objects.count() == 1
         assert type(add_part(reference_to_search, self.source)) == Part
-        assert Part.objects.count() == 1
+        assert Part.objects.count() == expected_num_parts

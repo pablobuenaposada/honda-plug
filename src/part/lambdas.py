@@ -19,7 +19,7 @@ def add_part(reference: str, source: str, message_prefix: str = ""):
         # format the reference so the search ignores hyphens since they don't really matter for uniqueness
         regexp = reference.upper().replace("-", "")
         regexp = [*regexp]
-        regexp = "-?".join(regexp)
+        regexp = "-?".join(regexp) + "$"
 
         part, created = Part.objects.get_or_create(
             reference__regex=regexp,
