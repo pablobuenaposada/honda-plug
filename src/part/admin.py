@@ -17,10 +17,25 @@ class StockInlineAdmin(admin.TabularInline):
     show_change_link = True
 
     def get_readonly_fields(self, request, obj=None):
-        return [f.name for f in self.model._meta.fields]
+        fields = [f.name for f in self.model._meta.fields] + [
+            "get_num_of_updates",
+            "get_country_flag",
+        ]
+        fields.remove("country")
+        return fields
 
     def has_add_permission(self, request, obj=None):
         return False
+
+    def get_country_flag(self, obj):
+        return pycountry.countries.get(alpha_2=obj.country.code).flag
+
+    get_country_flag.short_description = "Country"
+
+    def get_num_of_updates(self, obj):
+        return obj.history.count() - 1
+
+    get_num_of_updates.short_description = "Times updated"
 
 
 class ImageInlineAdmin(admin.TabularInline):
@@ -35,7 +50,13 @@ class ImageInlineAdmin(admin.TabularInline):
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Part
     readonly_fields = ("created", "modified")
-    list_display = ("reference", "source", "stock_found", "modified")
+    list_display = (
+        "reference",
+        "source",
+        "stock_found",
+        "modified",
+        "get_num_of_stock_updates",
+    )
     search_fields = ["reference"]
     list_filter = ["source", "modified"]
     inlines = [StockInlineAdmin]
@@ -55,6 +76,14 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     def search_stocks(self, request, queryset):
         for part in queryset:
             search_for_stocks.delay(part.reference)
+
+    def get_num_of_stock_updates(self, obj):
+        updates = 0
+        for stock in obj.stock_set.all():
+            updates += stock.history.count() - 1
+        return updates
+
+    get_num_of_stock_updates.short_description = "Times updated"
 
 
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
@@ -83,6 +112,7 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         "discontinued",
         "get_country_flag",
         "modified",
+        "get_num_of_updates",
     )
     search_fields = ["part__reference", "title"]
     list_filter = ["source", "available", "discontinued"]
@@ -95,6 +125,11 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         return pycountry.countries.get(alpha_2=obj.country.code).flag
 
     get_country_flag.short_description = "Country"
+
+    def get_num_of_updates(self, obj):
+        return obj.history.count() - 1
+
+    get_num_of_updates.short_description = "Times updated"
 
 
 class ImageAdmin(admin.ModelAdmin):
