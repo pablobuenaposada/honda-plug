@@ -59,14 +59,30 @@ class StockCountFilter(admin.SimpleListFilter):
         group_by = {}
         for part in qs:
             group_by[part["stock_count"]] = group_by.get(part["stock_count"], 0) + 1
-        for result in group_by:
-            yield (result, f"{result} ({group_by[result]})")
+        for result, count in sorted(group_by.items(), key=lambda x: x[1], reverse=True):
+            yield (result, f"{result} ({count})")
 
     def queryset(self, request, queryset):
         if self.value():
-            return queryset.annotate(stock_count=Count("stock")).filter(
-                stock_count=self.value()
-            )
+            return queryset.filter(stock_count=self.value())
+
+
+class PCNFilter(admin.SimpleListFilter):
+    title = _("pcn")
+    parameter_name = "pcn"
+
+    def lookups(self, request, model_admin):
+        group_by = {}
+        for part in Part.objects.all():
+            pcn = part.reference.split("-")[1]
+            if len(pcn) == 3:
+                group_by[pcn] = group_by.get(pcn, 0) + 1
+        for result, count in sorted(group_by.items(), key=lambda x: x[1], reverse=True):
+            yield (result, f"{result} ({count})")
+
+    def queryset(self, request, queryset):
+        if self.value():
+            return queryset.filter(reference__icontains=self.value())
 
 
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
@@ -80,7 +96,7 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         "get_num_of_stock_updates",
     )
     search_fields = ["reference"]
-    list_filter = ["source", "modified", StockCountFilter]
+    list_filter = ["source", "modified", StockCountFilter, PCNFilter]
     inlines = [StockInlineAdmin]
     actions = ["search_stocks"]
 
