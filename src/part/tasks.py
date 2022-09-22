@@ -5,6 +5,7 @@ from django_rq import job
 from sentry_sdk import capture_exception
 
 from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
+from scrapper.clients.all4honda import All4hondaClient
 from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
@@ -23,6 +24,7 @@ CLIENTS = (
     PiecesAutoHondaClient,
     AmayamaClient,
     AcuraexpresspartsClient,
+    All4hondaClient,
 )
 
 

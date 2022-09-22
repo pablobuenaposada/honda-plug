@@ -5,6 +5,7 @@ from money import Money
 
 from part.constants import (
     SOURCE_ACURAEXPRESSPARTS,
+    SOURCE_ALL4HONDA,
     SOURCE_AMAYAMA,
     SOURCE_HONDAAUTOMOTIVEPARTS,
     SOURCE_HONDAPARTSNOW,
@@ -14,6 +15,7 @@ from part.constants import (
     SOURCE_TEGIWA,
 )
 from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
+from scrapper.clients.all4honda import All4hondaClient
 from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
@@ -371,6 +373,23 @@ class TestClients:
                         discontinued=True,
                         quantity=None,
                     ),
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
+                },
+            ),
+            (
+                All4hondaClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        country="NL",
+                        reference="12251-RBB-004",
+                        url="https://www.a4h-tech.com/en/oem-honda-head-gasket-accord-2003-2012-2-4-type-s",
+                        source=SOURCE_ALL4HONDA,
+                        title="OEM Honda head gasket (Accord 2003-2012 2.4 type S)",
+                        price=Money(amount="112.95", currency="EUR"),
+                        image="https://www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/1/2/12251-rbb-004-oem-honda-koppakking-accord-2003-2012-2.4-type-s-all4honda.jpg",
+                    ),
+                    "56483-PND-003": None,
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                 },

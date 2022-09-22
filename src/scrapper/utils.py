@@ -25,6 +25,15 @@ class RequestLimiter:
                 elif response.content_type == "text/html":
                     return await response.text(), response.url, response.status
 
+    async def post(self, url, *, data=None, **kwargs):
+        delta = (datetime.now() - self.last_time).seconds
+        if delta < self.WAIT_SECONDS:
+            time.sleep(self.WAIT_SECONDS - delta)
+        self.last_time = datetime.now()
+        async with aiohttp.ClientSession() as session:
+            async with session.post(url, data=data, **kwargs) as response:
+                return await response.json(), response.url, response.status
+
 
 def string_to_float(value: str):
     return float(re.findall("\d+\.\d+", value)[0])
