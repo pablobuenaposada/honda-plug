@@ -62,7 +62,7 @@ class Stock(TimeStampedModel):
 
 
 class Image(models.Model):
-    url = models.URLField(default=None, unique=True)
+    url = models.URLField(default=None, unique=True, max_length=300)
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
 
     def save(self, **kwargs):
