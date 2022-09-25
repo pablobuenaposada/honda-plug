@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 from simple_history.admin import SimpleHistoryAdmin
 
 from part.models import Image, Part, Stock
-from part.tasks import search_for_stocks
+from part.tasks import enqueue_queryset
 
 
 class StockInlineAdmin(admin.TabularInline):
@@ -112,8 +112,7 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     stock_found.admin_order_field = "stock_count"
 
     def search_stocks(self, request, queryset):
-        for part in queryset:
-            search_for_stocks.delay(part.reference)
+        enqueue_queryset.delay(queryset, at_front=True)
 
     def get_num_of_stock_updates(self, obj):
         updates = 0
