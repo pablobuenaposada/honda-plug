@@ -52,3 +52,9 @@ def search_for_stocks(reference):
             except Exception as e:
                 capture_exception(e)
     logger.info(f"Done searching stocks for: {reference}")
+
+
+@job
+def enqueue_queryset(queryset):
+    for part in queryset:
+        search_for_stocks.delay(part.reference, at_front=True)
