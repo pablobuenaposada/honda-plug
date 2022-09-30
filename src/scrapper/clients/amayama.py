@@ -8,7 +8,7 @@ from money import Money
 from part.constants import SOURCE_AMAYAMA
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
-from scrapper.utils import RequestLimiter, format_reference
+from scrapper.utils import RequestLimiter, flatten_reference
 
 DOMAIN = "amayama.com"
 
@@ -19,7 +19,7 @@ class AmayamaClient(ClientInterface):
     async def get_part(self, reference):
         stocks = []
         response, url, _ = await self.request_limiter.get(
-            f"https://{DOMAIN}/en/part/honda/{format_reference(reference)}"
+            f"https://{DOMAIN}/en/part/honda/{flatten_reference(reference)}"
         )
         soup = BeautifulSoup(response, "html.parser")
 

@@ -7,7 +7,7 @@ from money import Money
 from part.constants import SOURCE_PIECESAUTOHONDA
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
-from scrapper.utils import format_reference
+from scrapper.utils import flatten_reference
 
 MAX_PAGE = 530500
 logger = logging.getLogger(__name__)
@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 class PiecesAutoHondaClient(ClientInterface):
     async def get_part(self, reference):
-        raw_reference = format_reference(reference)
+        raw_reference = flatten_reference(reference)
         url = f"https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/{raw_reference}"
         response, _, _ = await self.request_limiter.get(url)
         soup = BeautifulSoup(response, "html.parser")

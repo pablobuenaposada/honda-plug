@@ -85,3 +85,6 @@ docker/run/client/hondapartsonline:
 
 docker/run/client/acuraexpressparts:
 	docker compose -f docker-compose.scripts.prod.yml up acuraexpressparts -d --build
+
+docker/run/client/epc:
+	docker compose -f docker-compose.scripts.prod.yml up epc -d --build

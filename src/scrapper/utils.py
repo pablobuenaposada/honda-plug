@@ -39,5 +39,18 @@ def string_to_float(value: str):
     return float(re.findall("\d+\.\d+", value)[0])
 
 
-def format_reference(reference):
+def flatten_reference(reference):
     return reference.strip().replace("-", "").upper()
+
+
+def format_reference(reference):
+    reference = flatten_reference(reference)
+    if len(reference) == 10:
+        return f"{reference[:5]}-{reference[5:]}"
+    if 10 <= len(reference) <= 11:
+        if reference[5:8].isdigit():
+            return f"{reference[:5]}-{reference[5:]}"
+        else:
+            return f"{reference[:5]}-{reference[5:8]}-{reference[8:]}"
+    if 12 <= len(reference) <= 13:
+        return f"{reference[:5]}-{reference[5:8]}-{reference[8:]}"
