@@ -37,7 +37,7 @@ SECRET_KEY = "django-insecure-ko2&azqa-xo!5e)=1h(uc8*5*5$n1b!5p7-^xkll-lfrt9)ze3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env("DEBUG")
 
-ALLOWED_HOSTS = ["localhost", "hondaplug.local", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "hondaplug.local", "127.0.0.1", "django"]
 CSRF_TRUSTED_ORIGINS = ["http://localhost:1337", "http://hondaplug.local:1337"]
 
 # Application definition
@@ -55,9 +55,11 @@ INSTALLED_APPS = [
     "simple_history",
     "django_countries",
     "django_rq",
+    "django_prometheus",
 ]
 
 MIDDLEWARE = [
+    "django_prometheus.middleware.PrometheusBeforeMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -66,6 +68,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "simple_history.middleware.HistoryRequestMiddleware",
+    "django_prometheus.middleware.PrometheusAfterMiddleware",
 ]
 
 ROOT_URLCONF = "main.urls"
@@ -191,3 +194,5 @@ sentry_sdk.init(
     # something more human-readable.
     # release="myapp@1.0.0",
 )
+
+PROMETHEUS_EXPORT_MIGRATIONS = False

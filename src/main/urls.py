@@ -25,4 +25,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("sentry-debug/", trigger_error),
     path("django-rq/", include("django_rq.urls")),
+    path("", include("django_prometheus.urls")),
 ]

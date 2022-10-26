@@ -47,6 +47,18 @@ services:
       - .env.local
     depends_on:
       - migration
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3060:3000"
+    volumes:
+      - ./grafana-data:/var/lib/grafana
 
 volumes:
   postgres_data:

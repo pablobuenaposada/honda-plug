@@ -1,6 +1,7 @@
 from django.db import models
 from django_countries.fields import CountryField
 from django_extensions.db.models import TimeStampedModel
+from django_prometheus.models import ExportModelOperationsMixin
 from djmoney.models.fields import MoneyField
 from simple_history.models import HistoricalRecords
 
@@ -10,7 +11,7 @@ from part.tasks import search_for_stocks
 from part.validators import validate_empty, validate_reference
 
 
-class Part(TimeStampedModel):
+class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
     reference = models.CharField(
         unique=True, max_length=15, default=None, validators=[validate_reference]
     )
@@ -36,7 +37,7 @@ class Part(TimeStampedModel):
         return self.reference
 
 
-class Stock(TimeStampedModel):
+class Stock(ExportModelOperationsMixin("stock"), TimeStampedModel):
     part = models.ForeignKey(Part, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     price = MoneyField(max_digits=10, null=True, default_currency=None)
@@ -61,7 +62,7 @@ class Stock(TimeStampedModel):
         return self.part.reference
 
 
-class Image(models.Model):
+class Image(ExportModelOperationsMixin("image"), models.Model):
     url = models.URLField(default=None, unique=True, max_length=300)
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
 
