@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from main.views import prometheus_override_view
+
 
 def trigger_error(request):
     1 / 0
@@ -25,5 +27,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("sentry-debug/", trigger_error),
     path("django-rq/", include("django_rq.urls")),
-    path("", include("django_prometheus.urls")),
+    path("metrics", prometheus_override_view, name="prometheus-django-metrics"),
 ]
