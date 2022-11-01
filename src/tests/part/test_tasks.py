@@ -5,6 +5,7 @@ from model_bakery import baker
 
 from part.constants import (
     SOURCE_ACURAEXPRESSPARTS,
+    SOURCE_ACURAPARTSFORLESS,
     SOURCE_ALL4HONDA,
     SOURCE_AMAYAMA,
     SOURCE_HONDAAUTOMOTIVEPARTS,
@@ -57,6 +58,7 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_AMAYAMA, country="AE")
         baker.make(Stock, part=part, source=SOURCE_ACURAEXPRESSPARTS, country="US")
         baker.make(Stock, part=part, source=SOURCE_ALL4HONDA, country="NL")
+        baker.make(Stock, part=part, source=SOURCE_ACURAPARTSFORLESS, country="US")
         assert Part.objects.count() == 1
         assert (
             Stock.objects.count() == len(CLIENTS) + 1

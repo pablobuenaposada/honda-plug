@@ -1,10 +1,9 @@
-import asyncio
-
 import pytest
 from money import Money
 
 from part.constants import (
     SOURCE_ACURAEXPRESSPARTS,
+    SOURCE_ACURAPARTSFORLESS,
     SOURCE_ALL4HONDA,
     SOURCE_AMAYAMA,
     SOURCE_HONDAAUTOMOTIVEPARTS,
@@ -15,6 +14,7 @@ from part.constants import (
     SOURCE_TEGIWA,
 )
 from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
+from scrapper.clients.acurapartsforless import AcurapartsforlessClient
 from scrapper.clients.all4honda import All4hondaClient
 from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
@@ -390,6 +390,35 @@ class TestClients:
                         image="https://www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/1/2/12251-rbb-004-oem-honda-koppakking-accord-2003-2012-2.4-type-s-all4honda.jpg",
                     ),
                     "56483-PND-003": None,
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
+                },
+            ),
+            (
+                AcurapartsforlessClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        available=True,
+                        reference="12251-RBB-004",
+                        price=Money(amount="102.08", currency="USD"),
+                        title="Gasket, Cylinder Head (Nippon Leakless) - Acura (12251-RBB-004)",
+                        discontinued=False,
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/7b1561c8a4029868d71075924f0861c2/8d93926db7f69e26349268f245817c37.gif",
+                        url="https://www.acurapartsforless.com/oem-parts/acura-gasket-cylinder-head-nippon-leakless-12251rbb004",
+                        country="US",
+                        source=SOURCE_ACURAPARTSFORLESS,
+                    ),
+                    "56483-PND-003": Stock(
+                        available=False,
+                        reference="56483-PND-003",
+                        price=Money(amount="17", currency="USD"),
+                        title="Pulley, Power Steering Pump - Acura (56483-PND-003)",
+                        discontinued=True,
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/c698a571f74957bb119a8b945bf3250e/48c7fcef179369ce2d238f7e80e095ef.gif",
+                        url="https://www.acurapartsforless.com/oem-parts/acura-pulley-power-steering-pump-56483pnd003",
+                        country="US",
+                        source=SOURCE_ACURAPARTSFORLESS,
+                    ),
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                 },
