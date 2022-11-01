@@ -40,4 +40,4 @@ class HondasparepartsClient(ClientInterface):
         )
 
     def get_parts(self):
-        raise NotImplemented
+        raise NotImplementedError

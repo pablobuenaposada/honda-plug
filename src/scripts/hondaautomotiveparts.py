@@ -1,5 +1,5 @@
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 
-from .base import *
+from .base import *  # noqa
 
-Config.client = HondaautomotivepartsClient
+Config.client = HondaautomotivepartsClient  # noqa

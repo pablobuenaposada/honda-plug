@@ -151,9 +151,9 @@ class AmayamaClient(ClientInterface):
                                 price = stock.find(
                                     "span", {"class": "part-price"}
                                 ).text.replace(",", "")
-                                quantity = stock.find(
-                                    "span", {"class": "part-quantity"}
-                                ).text
+                                # quantity = stock.find(
+                                #     "span", {"class": "part-quantity"}
+                                # ).text
                                 add_stock(
                                     Stock(
                                         reference=reference,

@@ -10,7 +10,7 @@ from scrapper.common.stock import Stock
 
 class ClockwiseMotionClient(ClientInterface):
     def get_part(self, part_number):
-        raise NotImplemented
+        raise NotImplementedError
 
     def get_parts(self):
         for page in [{}, {"page": "1"}, {"page": "2"}]:

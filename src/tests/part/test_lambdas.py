@@ -5,7 +5,7 @@ from djmoney.money import Money as DjangoMoney
 from model_bakery import baker
 from money import Money
 
-from part.constants import SOURCE_AMAYAMA, SOURCE_EPCDATA, SOURCE_TEGIWA, SOURCE_UNKNOWN
+from part.constants import SOURCE_TEGIWA, SOURCE_UNKNOWN
 from part.lambdas import add_part, add_stock
 from part.models import Image, Part, Stock
 from scrapper.common.stock import Stock as ParsedStock

@@ -1,5 +1,5 @@
 from scrapper.clients.amayama import AmayamaClient
 
-from .base import *
+from .base import *  # noqa
 
-Config.client = AmayamaClient
+Config.client = AmayamaClient  # noqa

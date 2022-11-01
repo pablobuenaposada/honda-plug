@@ -1,5 +1,5 @@
 from scrapper.clients.tegiwa import TegiwaClient
 
-from .base import *
+from .base import *  # noqa
 
-Config.client = TegiwaClient
+Config.client = TegiwaClient  # noqa

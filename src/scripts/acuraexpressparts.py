@@ -1,5 +1,5 @@
 from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
 
-from .base import *
+from .base import *  # noqa
 
-Config.client = AcuraexpresspartsClient
+Config.client = AcuraexpresspartsClient  # noqa

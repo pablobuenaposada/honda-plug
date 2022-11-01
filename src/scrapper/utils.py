@@ -36,7 +36,7 @@ class RequestLimiter:
 
 
 def string_to_float(value: str):
-    return float(re.findall("\d+\.\d+", value)[0])
+    return float(re.findall("\\d+\\.\\d+", value)[0])
 
 
 def flatten_reference(reference):
