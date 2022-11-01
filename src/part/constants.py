@@ -23,6 +23,7 @@ STOCK_SOURCES = (
     (SOURCE_HONDASPAREPARTS, "www.hondaspareparts.co.uk"),
     (SOURCE_PIECESAUTOHONDA, "www.pieces-auto-honda.fr"),
     (SOURCE_ACURAEXPRESSPARTS, "www.acuraexpressparts.com"),
+    (SOURCE_ACURAPARTSFORLESS, "www.acurapartsforless.com"),
     (SOURCE_ALL4HONDA, "www.a4h-tech.com"),
 )
 
@@ -34,6 +35,5 @@ PART_SOURCES = (
     (SOURCE_PIECESAUTOHONDA, "www.pieces-auto-honda.fr"),
     (SOURCE_HONDAPARTSONLINE, "www.hondapartsonline.net"),
     (SOURCE_ACURAEXPRESSPARTS, "www.acuraexpressparts.com"),
-    (SOURCE_ACURAPARTSFORLESS, "www.acurapartsforless.com"),
     (SOURCE_EPC_4_00, "EPC 4.00"),
 )
