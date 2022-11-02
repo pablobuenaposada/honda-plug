@@ -6,6 +6,7 @@ from part.constants import (
     SOURCE_ACURAPARTSFORLESS,
     SOURCE_ALL4HONDA,
     SOURCE_AMAYAMA,
+    SOURCE_CMS,
     SOURCE_HONDAAUTOMOTIVEPARTS,
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
@@ -17,6 +18,7 @@ from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
 from scrapper.clients.acurapartsforless import AcurapartsforlessClient
 from scrapper.clients.all4honda import All4hondaClient
 from scrapper.clients.amayama import AmayamaClient
+from scrapper.clients.cms import CmsClient
 from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
@@ -421,6 +423,55 @@ class TestClients:
                     ),
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
+                },
+            ),
+            (
+                CmsClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        available=False,
+                        reference="12251-RBB-004",
+                        price=Money(amount="106.48", currency="EUR"),
+                        title="Gasket Comp, Cyln",
+                        discontinued=None,
+                        image=None,
+                        url="https://www.cmsnl.com/products/gasket-compcyln_12251rbb004/",
+                        country="NL",
+                        source=SOURCE_CMS,
+                    ),
+                    "56483-PND-003": Stock(
+                        available=False,
+                        reference="56483-PND-003",
+                        price=Money(amount="90.14", currency="EUR"),
+                        title="Pulley Comp, P/s P",
+                        discontinued=None,
+                        image="https://images.cmsnl.com/img/partslists/ps-pump_medium00027665E__19_8e61.jpg",
+                        url="https://www.cmsnl.com/products/pulley-compps-p_56483pnd003/",
+                        country="NL",
+                        source=SOURCE_CMS,
+                    ),
+                    "08F03-S02-180K": Stock(
+                        available=False,
+                        reference="08F03-S02-180K",
+                        price=Money(amount="356.95", currency="EUR"),
+                        title="Splr, Rr. *nh583m*",
+                        discontinued=None,
+                        image="https://images.cmsnl.com/img/partslists/accessories-exterior_medium00026365XEX01_4c21.jpg",
+                        url="https://www.cmsnl.com/products/splrrr-nh583m_08f03s02180k/",
+                        country="NL",
+                        source=SOURCE_CMS,
+                    ),
+                    "31206-P3F-003": Stock(
+                        available=False,
+                        reference="31206-P3F-003",
+                        price=Money(amount="413.82", currency="EUR"),
+                        title="Armature Comp",
+                        discontinued=None,
+                        image="https://images.cmsnl.com/img/partslists/starter-motor-denso_medium00026534E__0710_24f7.jpg",
+                        url="https://www.cmsnl.com/products/armature-comp_31206p3f003/",
+                        country="NL",
+                        source=SOURCE_CMS,
+                    ),
                 },
             ),
         ),

@@ -10,6 +10,7 @@ SOURCE_PIECESAUTOHONDA = "pieces-auto-honda"  # repuestos-honda.es ersatzteile-h
 SOURCE_ACURAEXPRESSPARTS = "acuraexpressparts"  # also known as irunoem
 SOURCE_ALL4HONDA = "all4honda"
 SOURCE_ACURAPARTSFORLESS = "acurapartsforless"
+SOURCE_CMS = "cms"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -25,6 +26,7 @@ STOCK_SOURCES = (
     (SOURCE_ACURAEXPRESSPARTS, "www.acuraexpressparts.com"),
     (SOURCE_ACURAPARTSFORLESS, "www.acurapartsforless.com"),
     (SOURCE_ALL4HONDA, "www.a4h-tech.com"),
+    (SOURCE_CMS, "www.cmsnl.com"),
 )
 
 PART_SOURCES = (
