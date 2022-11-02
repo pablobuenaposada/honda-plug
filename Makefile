@@ -55,38 +55,5 @@ docker/run/local:
 docker/run/backup-db:
 	docker exec -t honda-db-1 pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
 
-docker/run/client/epc-data:
-	docker compose -f docker-compose.scripts.prod.yml up epc-data -d --build
-
-docker/run/client/hondapartsnow:
-	docker compose -f docker-compose.scripts.prod.yml up hondapartsnow -d --build
-
-docker/run/client/amayama:
-	docker compose -f docker-compose.scripts.prod.yml up amayama -d --build
-
-docker/run/client/tegiwa:
-	docker compose -f docker-compose.scripts.prod.yml up tegiwa -d --build
-
-docker/run/client/clockwisemotion:
-	docker compose -f docker-compose.scripts.prod.yml up clockwisemotion -d --build
-
-docker/run/client/hondaspareparts:
-	docker compose -f docker-compose.scripts.prod.yml up hondaspareparts -d --build
-
-docker/run/client/hondaautomotiveparts:
-	docker compose -f docker-compose.scripts.prod.yml up hondaautomotiveparts -d --build
-
-docker/run/client/piecesautohonda:
-	docker compose -f docker-compose.scripts.prod.yml up piecesautohonda -d --build
-
-docker/run/client/piecesautohonda_getparts:
-	docker compose -f docker-compose.scripts.prod.yml up piecesautohonda-getparts -d --build
-
-docker/run/client/hondapartsonline:
-	docker compose -f docker-compose.scripts.prod.yml up hondapartsonline -d --build
-
-docker/run/client/acuraexpressparts:
-	docker compose -f docker-compose.scripts.prod.yml up acuraexpressparts -d --build
-
 docker/run/client/epc:
 	docker compose -f docker-compose.scripts.prod.yml up epc -d --build

@@ -1,61 +1,6 @@
 version: "3.9"
 
 services:
-  epc-data:
-    build: .
-    command: venv/bin/python src/manage.py runscript epcdata
-    env_file:
-      - .env.prod
-  hondapartsnow:
-    build: .
-    command: venv/bin/python src/manage.py runscript hondapartsnow
-    env_file:
-      - .env.prod
-  amayama:
-    build: .
-    command: venv/bin/python src/manage.py runscript amayama
-    env_file:
-      - .env.prod
-  tegiwa:
-    build: .
-    command: venv/bin/python src/manage.py runscript tegiwa
-    env_file:
-      - .env.prod
-  clockwisemotion:
-    build: .
-    command: venv/bin/python src/manage.py runscript clockwisemotion
-    env_file:
-      - .env.prod
-  hondaspareparts:
-    build: .
-    command: venv/bin/python src/manage.py runscript hondaspareparts
-    env_file:
-      - .env.prod
-  hondaautomotiveparts:
-    build: .
-    command: venv/bin/python src/manage.py runscript hondaautomotiveparts
-    env_file:
-      - .env.prod
-  piecesautohonda:
-    build: .
-    command: venv/bin/python src/manage.py runscript piecesautohonda
-    env_file:
-      - .env.prod
-  piecesautohonda-getparts:
-    build: .
-    command: venv/bin/python src/manage.py runscript piecesautohonda_get_parts
-    env_file:
-      - .env.prod
-  hondapartsonline:
-    build: .
-    command: venv/bin/python src/manage.py runscript hondapartsonline
-    env_file:
-      - .env.prod
-  acuraexpressparts:
-    build: .
-    command: venv/bin/python src/manage.py runscript acuraexpressparts
-    env_file:
-      - .env.prod
   epc:
     build: .
     command: venv/bin/python src/manage.py runscript epc_parser --script-args pblpat.csv
