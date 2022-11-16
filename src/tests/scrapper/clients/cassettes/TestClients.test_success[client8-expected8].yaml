@@ -2273,4 +2273,570 @@ interactions:
       code: 200
       message: OK
     url: https://nnvjvcwb78-dsn.algolia.net/1/indexes/magento2_en_products/query?x-algolia-application-id=NNVJVCWB78&x-algolia-api-key=YmM2ZWQ3MGQwMjI2OGJiNjI2ZDdlYjQzZTM0ZjBiNDlhNTQzYzk4ZDhkMWExYWJjNGU0YzMwYWVjY2U1YjJkOXRhZ0ZpbHRlcnM9
+- request:
+    body: '{"params": "query=74100-S2A-010"}'
+    headers: {}
+    method: POST
+    uri: https://nnvjvcwb78-dsn.algolia.net/1/indexes/magento2_en_products/query?x-algolia-application-id=NNVJVCWB78&x-algolia-api-key=YmM2ZWQ3MGQwMjI2OGJiNjI2ZDdlYjQzZTM0ZjBiNDlhNTQzYzk4ZDhkMWExYWJjNGU0YzMwYWVjY2U1YjJkOXRhZ0ZpbHRlcnM9
+  response:
+    body:
+      string: "{\"hits\":[{\"name\":\"OEM Honda wheel arch inner fender (Honda S2000
+        99-03)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-wielkuip-spatbord-honda-s2000-99-4\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":\"\",\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Exterior\",\"Brands\",\"All
+        Products\",\"New\"],\"level1\":[\"Exterior /// Bumpers\",\"Exterior /// Fenders\",\"Exterior
+        /// Others Exterior\",\"Brands /// OEM Honda\",\"Exterior /// Body Repair
+        Parts\"]},\"categories_without_path\":[\"Bumpers\",\"Fenders\",\"Others Exterior\",\"OEM
+        Honda\",\"Body Repair Parts\",\"All Products\",\"New\"],\"categoryIds\":[\"1032\",\"1034\",\"1050\",\"1053\",\"1189\",\"1337\",\"1414\",\"1482\",\"1543\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/7/4/74151-s2a-020.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/7/4/74151-s2a-020.jpg\",\"in_stock\":1,\"stock_qty\":0,\"color\":[\"Platina
+        white\"],\"sku\":[\"741XX-S2A-020\",\"74100-S2A-000\",\"74150-S2A-000\"],\"created_at\":\"2022-09-29
+        13:40:48\",\"price\":{\"EUR\":{\"default\":199.3,\"default_formated\":\"\u20AC199.30\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 2004-2009\"],\"partfinder_lvl3\":[\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        19:49:20\",\"objectID\":\"50353\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda wheel arch inner fender (Honda S2000 99-03)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"New\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Exterior
+        /// Bumpers\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Fenders\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Others Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Body Repair Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Bumpers\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Fenders\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Others
+        Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Body
+        Repair Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"New\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"color\":[{\"value\":\"Platina
+        white\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"sku\":[{\"value\":\"741XX-<em>S2A</em>-020\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},{\"value\":\"<em>74100</em>-<em>S2A</em>-000\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"74100\",\"s2a\"]},{\"value\":\"74150-<em>S2A</em>-000\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]}],\"created_at\":{\"value\":\"2022-09-29
+        13:40:48\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda fender front (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-fender-front-s2000-99-09\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":14,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Brands\",\"Exterior\",\"All
+        Products\"],\"level1\":[\"Brands /// OEM Honda\",\"Exterior /// Body Repair
+        Parts\",\"Exterior /// Fenders\"]},\"categories_without_path\":[\"OEM Honda\",\"Body
+        Repair Parts\",\"Fenders\",\"All Products\"],\"categoryIds\":[\"1189\",\"1337\",\"1032\",\"1414\",\"1050\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/6/0/60260-s2a-010zz-oem-honda-spatbord-voorzijde-s2000-99-09-all4honda.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/6/0/60260-s2a-010zz-oem-honda-spatbord-voorzijde-s2000-99-09-all4honda.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":[\"602X0-S2A-010ZZ\",\"60260-S2A-010ZZ\",\"60210-S2A-010ZZ\",\"OEM-FEND-S2000-SET\"],\"created_at\":\"2018-04-04
+        10:06:33\",\"price\":{\"EUR\":{\"default\":577,\"default_formated\":\"\u20AC577.00
+        - \u20AC1,154.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        19:33:21\",\"objectID\":\"40641\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda fender front (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"14\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Body Repair Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Fenders\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"OEM
+        Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Body Repair
+        Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Fenders\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":[{\"value\":\"602X0-<em>S2A</em>-<em>010</em>ZZ\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\",\"010\"]},{\"value\":\"60260-<em>S2A</em>-<em>010</em>ZZ\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\",\"010\"]},{\"value\":\"60210-<em>S2A</em>-<em>010</em>ZZ\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\",\"010\"]},{\"value\":\"OEM-FEND-S2000-SET\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"created_at\":{\"value\":\"2018-04-04
+        10:06:33\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"Aeroworks
+        Carbon hood mugen style (Honda Civic 07-12 3/5 drs)\",\"url\":\"https://www.a4h-tech.com/en/aeroworks-carbon-hood-mugen-style-civic-07-12-3-5-drs\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":2,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Exterior\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Exterior /// Carbon & Polyester parts\",\"Brands
+        /// Aeroworks\",\"Exterior /// Hoods & Accessories\"]},\"categories_without_path\":[\"Carbon
+        & Polyester parts\",\"Aeroworks\",\"Hoods & Accessories\",\"All Products\"],\"categoryIds\":[\"1032\",\"1035\",\"1189\",\"1198\",\"1037\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/a/e/aero-06hdcv5tnr-010-aeroworks-carbon-motorkap-mugen-stijl-civic-07-12-3-5-drs-all4honda.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/a/e/aero-06hdcv5tnr-010-aeroworks-carbon-motorkap-mugen-stijl-civic-07-12-3-5-drs-all4honda.jpg\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"AERO-06HDCV5TNR-010\",\"created_at\":\"2018-02-15
+        19:38:30\",\"price\":{\"EUR\":{\"default\":866,\"default_formated\":\"\u20AC866.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Aeroworks\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > Accord 4 deurs/sedan\",\"Honda > Civic 3 deurs/hatchback\",\"Honda > Civic
+        5 deurs/hatchback\"],\"partfinder_lvl2\":[\"Honda > Accord 4 deurs/sedan >
+        2005-2007\",\"Honda > Civic 3 deurs/hatchback > 2007-2008\",\"Honda > Civic
+        3 deurs/hatchback > 2008-2012\",\"Honda > Civic 5 deurs/hatchback > 2005-2008\",\"Honda
+        > Civic 5 deurs/hatchback > 2008-2012\"],\"partfinder_lvl3\":[\"Honda > Accord
+        4 deurs/sedan > 2005-2007 > 2.0i\",\"Honda > Accord 4 deurs/sedan > 2005-2007
+        > 2.4i\",\"Honda > Accord 4 deurs/sedan > 2005-2007 > 2.2i-CTDi\",\"Honda
+        > Civic 3 deurs/hatchback > 2007-2008 > 1.8i\",\"Honda > Civic 3 deurs/hatchback
+        > 2007-2008 > 2.0i Type R\",\"Honda > Civic 3 deurs/hatchback > 2007-2008
+        > 2.2i-CTDi\",\"Honda > Civic 3 deurs/hatchback > 2008-2012 > 1.4i\",\"Honda
+        > Civic 3 deurs/hatchback > 2008-2012 > 1.8i\",\"Honda > Civic 3 deurs/hatchback
+        > 2008-2012 > 2.0i Type R\",\"Honda > Civic 3 deurs/hatchback > 2008-2012
+        > 2.2i CTDi\",\"Honda > Civic 5 deurs/hatchback > 2005-2008 > 1.4i\",\"Honda
+        > Civic 5 deurs/hatchback > 2005-2008 > 1.8i\",\"Honda > Civic 5 deurs/hatchback
+        > 2005-2008 > 2.2i-CTDi\",\"Honda > Civic 5 deurs/hatchback > 2008-2012 >
+        1.4i\",\"Honda > Civic 5 deurs/hatchback > 2008-2012 > 1.8i\",\"Honda > Civic
+        5 deurs/hatchback > 2008-2012 > 2.2i-CTDi\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        20:04:15\",\"objectID\":\"33044\",\"_highlightResult\":{\"name\":{\"value\":\"Aeroworks
+        Carbon hood mugen style (Honda Civic 07-12 3/5 drs)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"2\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Exterior
+        /// Carbon & Polyester parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Aeroworks\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Hoods & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Carbon
+        & Polyester parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Aeroworks\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Hoods
+        & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"AERO-06HDCV5TNR-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},\"created_at\":{\"value\":\"2018-02-15
+        19:38:30\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"Aeroworks
+        carbon hood OEM style (Civic 2015+)\",\"url\":\"https://www.a4h-tech.com/en/aeroworks-carbon-hood-oem-style-civic-2015\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":\"\",\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Exterior\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Exterior /// Hoods & Accessories\",\"Exterior ///
+        Carbon & Polyester parts\",\"Brands /// Aeroworks\"]},\"categories_without_path\":[\"Hoods
+        & Accessories\",\"Carbon & Polyester parts\",\"Aeroworks\",\"All Products\"],\"categoryIds\":[\"1032\",\"1037\",\"1035\",\"1189\",\"1198\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/h/t/httpswww.all4honda.comimagesstoriesvirtuemartproduct15hdcvc5droe-010_aeroworks.png\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/h/t/httpswww.all4honda.comimagesstoriesvirtuemartproduct15hdcvc5droe-010_aeroworks.png\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"15HDCVC5DOE-010\",\"created_at\":\"2018-04-12
+        13:02:28\",\"price\":{\"EUR\":{\"default\":919,\"default_formated\":\"\u20AC919.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Aeroworks\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > Civic 5 deurs/hatchback\"],\"partfinder_lvl2\":[\"Honda > Civic 5 deurs/hatchback
+        > 2015-2016\"],\"partfinder_lvl3\":[\"Honda > Civic 5 deurs/hatchback > 2015-2016
+        > 1.4i\",\"Honda > Civic 5 deurs/hatchback > 2015-2016 > 1.6i-DTEC\",\"Honda
+        > Civic 5 deurs/hatchback > 2015-2016 > 1.8i\",\"Honda > Civic 5 deurs/hatchback
+        > 2015-2016 > 2.0i Type R Turbo\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        15:10:15\",\"objectID\":\"42672\",\"_highlightResult\":{\"name\":{\"value\":\"Aeroworks
+        carbon hood OEM style (Civic 2015+)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Exterior
+        /// Hoods & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Carbon & Polyester parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Aeroworks\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Hoods
+        & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Carbon
+        & Polyester parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Aeroworks\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"15HDCVC5DOE-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},\"created_at\":{\"value\":\"2018-04-12
+        13:02:28\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"Hastings
+        piston rings set 81/81.5/82mm (B16/B18 engines)\",\"url\":\"https://www.a4h-tech.com/en/hastings-piston-rings-set-81-81-5-82mm-b16-b18-engines\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":59,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Engine\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Engine /// Internal Engine Parts\",\"Brands ///
+        Hastings\"],\"level2\":[\"Engine /// Internal Engine Parts /// Pistons & Accessories\"]},\"categories_without_path\":[\"Pistons
+        & Accessories\",\"Hastings\",\"All Products\"],\"categoryIds\":[\"1054\",\"1059\",\"1147\",\"1189\",\"1279\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/6/1/61ezl3iyg8l._sl1024__6.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/6/1/61ezl3iyg8l._sl1024__6.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":[\"HA-2C4666\",\"HA-2C4666-020\",\"HA-2C4666-000\",\"HA-2C4666-040\",\"HA-2C4666-010\"],\"created_at\":\"2018-02-15
+        20:27:50\",\"price\":{\"EUR\":{\"default\":68.5,\"default_formated\":\"\u20AC68.50
+        - \u20AC104.75\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Hastings\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > CRX\",\"Honda > Del Sol\",\"Honda > Integra\",\"Honda > Civic 3 deurs/hatchback\",\"Honda
+        > Civic 5 deurs/hatchback\",\"Honda > Civic 4 deurs/sedan\",\"Honda > Civic
+        aerodeck\"],\"partfinder_lvl2\":[\"Honda > CRX > 1988-1991\",\"Honda > Del
+        Sol > 1992-1995\",\"Honda > Del Sol > 1996-1998\",\"Honda > Integra > 1995-1997\",\"Honda
+        > Integra > 1998-2000\",\"Honda > Civic 3 deurs/hatchback > 1988-1991\",\"Honda
+        > Civic 3 deurs/hatchback > 1992-1995\",\"Honda > Civic 3 deurs/hatchback
+        > 1996-1998\",\"Honda > Civic 3 deurs/hatchback > 1999-2000\",\"Honda > Civic
+        5 deurs/hatchback > 1997-2001\",\"Honda > Civic 4 deurs/sedan > 1992-1995\",\"Honda
+        > Civic 4 deurs/sedan > 1996-1998\",\"Honda > Civic 4 deurs/sedan > 1999-2000\",\"Honda
+        > Civic aerodeck > 1998-2001\"],\"partfinder_lvl3\":[\"Honda > CRX > 1988-1991
+        > 1.6i VTEC\",\"Honda > Del Sol > 1992-1995 > 1.6 VTI\",\"Honda > Del Sol
+        > 1996-1998 > 1.6 VTI\",\"Honda > Integra > 1995-1997 > 1.8i RS/LS/SE (USDM)\",\"Honda
+        > Integra > 1995-1997 > 1.8i GS-R (USDM)\",\"Honda > Integra > 1995-1997 >
+        1.8i Type R(JDM 96-spec)\",\"Honda > Integra > 1998-2000 > 1.8i Type R (EDM)\",\"Honda
+        > Integra > 1998-2000 > 1.8i LS/GS (USDM)\",\"Honda > Integra > 1998-2000
+        > 1.8i GS-R (USDM)\",\"Honda > Integra > 1998-2000 > 1.8i Type R(JDM 98-spec)\",\"Honda
+        > Civic 3 deurs/hatchback > 1988-1991 > 1.6i VTEC\",\"Honda > Civic 3 deurs/hatchback
+        > 1992-1995 > 1.6 VTI\",\"Honda > Civic 3 deurs/hatchback > 1996-1998 > 1.6
+        VTI\",\"Honda > Civic 3 deurs/hatchback > 1996-1998 > 1.6 Type R (JDM)\",\"Honda
+        > Civic 3 deurs/hatchback > 1999-2000 > 1.6 VTI\",\"Honda > Civic 3 deurs/hatchback
+        > 1999-2000 > 1.6 Type R (JDM)\",\"Honda > Civic 5 deurs/hatchback > 1997-2001
+        > 1.8 VTI\",\"Honda > Civic 4 deurs/sedan > 1992-1995 > 1.6 VTI\",\"Honda
+        > Civic 4 deurs/sedan > 1996-1998 > 1.6 VTI\",\"Honda > Civic 4 deurs/sedan
+        > 1999-2000 > 1.6 VTI\",\"Honda > Civic aerodeck > 1998-2001 > 1.8 VTI\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        22:03:16\",\"objectID\":\"37278\",\"_highlightResult\":{\"name\":{\"value\":\"Hastings
+        piston rings set 81/81.5/82mm (B16/B18 engines)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"59\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Engine\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Engine
+        /// Internal Engine Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Engine
+        /// Internal Engine Parts /// Pistons & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Pistons
+        & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":[{\"value\":\"HA-2C4666\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4666-020\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4666-000\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4666-040\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4666-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]}],\"created_at\":{\"value\":\"2018-02-15
+        20:27:50\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"Hastings
+        piston rings set 84/84.25/84.5/84.75/85mm (B20B/B20Z engines)\",\"url\":\"https://www.a4h-tech.com/en/hastings-piston-rings-set-84mm-b20b-b20z-engines\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":15,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Engine\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Engine /// Internal Engine Parts\",\"Brands ///
+        Hastings\"],\"level2\":[\"Engine /// Internal Engine Parts /// Pistons & Accessories\"]},\"categories_without_path\":[\"Pistons
+        & Accessories\",\"Hastings\",\"All Products\"],\"categoryIds\":[\"1054\",\"1059\",\"1147\",\"1189\",\"1279\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/6/1/61ezl3iyg8l._sl1024__1_1.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/6/1/61ezl3iyg8l._sl1024__1_1.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":[\"HA-2C4973-0X0\",\"HA-2C4973-000\",\"HA-2C4973-010\",\"HA-2C4973-020\",\"HA-2C4973-030\",\"HA-2C4973-040\"],\"created_at\":\"2018-04-12
+        13:02:59\",\"price\":{\"EUR\":{\"default\":67.5,\"default_formated\":\"\u20AC67.50
+        - \u20AC100.95\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Hastings\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > CR-V\"],\"partfinder_lvl2\":[\"Honda > CR-V > 1996-2002\"],\"partfinder_lvl3\":[\"Honda
+        > CR-V > 1996-2002 > 2.0i\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        19:36:16\",\"objectID\":\"42809\",\"_highlightResult\":{\"name\":{\"value\":\"Hastings
+        piston rings set 84/84.25/84.5/84.75/85mm (B20B/B20Z engines)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"15\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Engine\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Engine
+        /// Internal Engine Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Engine
+        /// Internal Engine Parts /// Pistons & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Pistons
+        & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":[{\"value\":\"HA-2C4973-0X0\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4973-000\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4973-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"HA-2C4973-020\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4973-030\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C4973-040\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"created_at\":{\"value\":\"2018-04-12
+        13:02:59\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"Hastings
+        piston rings set 86mm/86.25mm/86.5mm/86.75mm/87mm (K20/K24 engines)\",\"url\":\"https://www.a4h-tech.com/en/hastings-piston-rings-set-86mm-86-5mm-k20-k24-engines\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":37,\"rating_summary\":87,\"categories\":{\"level0\":[\"Engine\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Engine /// Internal Engine Parts\",\"Brands ///
+        Hastings\"],\"level2\":[\"Engine /// Internal Engine Parts /// Pistons & Accessories\"]},\"categories_without_path\":[\"Pistons
+        & Accessories\",\"Hastings\",\"All Products\"],\"categoryIds\":[\"1054\",\"1059\",\"1147\",\"1189\",\"1279\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/6/1/61ezl3iyg8l._sl1024_.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/6/1/61ezl3iyg8l._sl1024_.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":[\"HA-2C5089-0X0\",\"HA-2C5089-020\",\"HA-2C5089-000\",\"HA-2C5089-040\",\"HA-2C5089-030\",\"HA-2C5089-010\"],\"created_at\":\"2018-05-15
+        13:56:04\",\"price\":{\"EUR\":{\"default\":76.5,\"default_formated\":\"\u20AC76.50
+        - \u20AC108.75\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Hastings\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > CR-V\",\"Honda > Integra\",\"Honda > Accord 4 deurs/sedan\",\"Honda > Accord
+        aerodeck/tourer\",\"Honda > Civic 3 deurs/hatchback\",\"Honda > Civic 5 deurs/hatchback\",\"Honda
+        > FR-V\",\"Honda > Stream\"],\"partfinder_lvl2\":[\"Honda > CR-V > 2002-2004\",\"Honda
+        > CR-V > 2004-2007\",\"Honda > Integra > 2001-2006\",\"Honda > Accord 4 deurs/sedan
+        > 2003-2005\",\"Honda > Accord 4 deurs/sedan > 2005-2007\",\"Honda > Accord
+        aerodeck/tourer > 2003-2005\",\"Honda > Accord aerodeck/tourer > 2005-2008\",\"Honda
+        > Civic 3 deurs/hatchback > 2001-2003\",\"Honda > Civic 3 deurs/hatchback
+        > 2004-2006\",\"Honda > Civic 3 deurs/hatchback > 2007-2008\",\"Honda > Civic
+        3 deurs/hatchback > 2008-2012\",\"Honda > Civic 5 deurs/hatchback > 2004-2006\",\"Honda
+        > FR-V > 2004-2007\",\"Honda > Stream > 2001-2005\"],\"partfinder_lvl3\":[\"Honda
+        > CR-V > 2002-2004 > 2.0i\",\"Honda > CR-V > 2004-2007 > 2.0i\",\"Honda >
+        Integra > 2001-2006 > 2.0i Type R (JDM)\",\"Honda > Integra > 2001-2006 >
+        2.0i Acura RSX Type S\",\"Honda > Accord 4 deurs/sedan > 2003-2005 > 2.0i\",\"Honda
+        > Accord 4 deurs/sedan > 2003-2005 > 2.4i\",\"Honda > Accord 4 deurs/sedan
+        > 2005-2007 > 2.0i\",\"Honda > Accord 4 deurs/sedan > 2005-2007 > 2.4i\",\"Honda
+        > Accord aerodeck/tourer > 2003-2005 > 2.0i\",\"Honda > Accord aerodeck/tourer
+        > 2003-2005 > 2.4i\",\"Honda > Accord aerodeck/tourer > 2005-2008 > 2.0i\",\"Honda
+        > Accord aerodeck/tourer > 2005-2008 > 2.4i\",\"Honda > Civic 3 deurs/hatchback
+        > 2001-2003 > 2.0i Type R\",\"Honda > Civic 3 deurs/hatchback > 2004-2006
+        > 2.0i Type R\",\"Honda > Civic 3 deurs/hatchback > 2007-2008 > 2.0i Type
+        R\",\"Honda > Civic 3 deurs/hatchback > 2008-2012 > 2.0i Type R\",\"Honda
+        > Civic 5 deurs/hatchback > 2004-2006 > 2.0i Sport\",\"Honda > FR-V > 2004-2007
+        > 2.0i\",\"Honda > Stream > 2001-2005 > 2.0i\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        22:03:16\",\"objectID\":\"43598\",\"_highlightResult\":{\"name\":{\"value\":\"Hastings
+        piston rings set 86mm/86.25mm/86.5mm/86.75mm/87mm (K20/K24 engines)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"37\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"87\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Engine\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Engine
+        /// Internal Engine Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Engine
+        /// Internal Engine Parts /// Pistons & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Pistons
+        & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":[{\"value\":\"HA-2C5089-0X0\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C5089-020\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C5089-000\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C5089-040\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C5089-030\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-2C5089-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]}],\"created_at\":{\"value\":\"2018-05-15
+        13:56:04\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"Hastings
+        Racing piston rings set 81/81.25/81.5/82mm (B16/B18 engines)\",\"url\":\"https://www.a4h-tech.com/en/hastings-racing-piston-rings-set-81-81-25-81-5-82mm-b16-b18-engines\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":15,\"rating_summary\":80,\"categories\":{\"level0\":[\"Engine\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Engine /// Internal Engine Parts\",\"Brands ///
+        Hastings\"],\"level2\":[\"Engine /// Internal Engine Parts /// Pistons & Accessories\"]},\"categories_without_path\":[\"Pistons
+        & Accessories\",\"Hastings\",\"All Products\"],\"categoryIds\":[\"1054\",\"1059\",\"1147\",\"1189\",\"1279\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/h/t/httpswww.all4honda.comimagesstoriesvirtuemartproductperfset_17682.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/h/t/httpswww.all4honda.comimagesstoriesvirtuemartproductperfset_17682.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":[\"HA-SC5572-0X0\",\"HA-SC5572-000\",\"HA-SC5572-010\",\"HA-SC5572-020\",\"HA-SC5572-040\"],\"created_at\":\"2018-04-12
+        20:02:43\",\"price\":{\"EUR\":{\"default\":100.5,\"default_formated\":\"\u20AC100.50
+        - \u20AC163.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Hastings\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > CRX\",\"Honda > Del Sol\",\"Honda > Integra\",\"Honda > Civic 3 deurs/hatchback\",\"Honda
+        > Civic 5 deurs/hatchback\",\"Honda > Civic 4 deurs/sedan\",\"Honda > Civic
+        aerodeck\"],\"partfinder_lvl2\":[\"Honda > CRX > 1988-1991\",\"Honda > Del
+        Sol > 1992-1995\",\"Honda > Del Sol > 1996-1998\",\"Honda > Integra > 1995-1997\",\"Honda
+        > Integra > 1998-2000\",\"Honda > Civic 3 deurs/hatchback > 1988-1991\",\"Honda
+        > Civic 3 deurs/hatchback > 1992-1995\",\"Honda > Civic 3 deurs/hatchback
+        > 1996-1998\",\"Honda > Civic 3 deurs/hatchback > 1999-2000\",\"Honda > Civic
+        5 deurs/hatchback > 1997-2001\",\"Honda > Civic 4 deurs/sedan > 1992-1995\",\"Honda
+        > Civic 4 deurs/sedan > 1996-1998\",\"Honda > Civic 4 deurs/sedan > 1999-2000\",\"Honda
+        > Civic aerodeck > 1998-2001\"],\"partfinder_lvl3\":[\"Honda > CRX > 1988-1991
+        > 1.6i VTEC\",\"Honda > Del Sol > 1992-1995 > 1.6 VTI\",\"Honda > Del Sol
+        > 1996-1998 > 1.6 VTI\",\"Honda > Integra > 1995-1997 > 1.8i RS/LS/SE (USDM)\",\"Honda
+        > Integra > 1995-1997 > 1.8i GS-R (USDM)\",\"Honda > Integra > 1995-1997 >
+        1.8i Type R(JDM 96-spec)\",\"Honda > Integra > 1998-2000 > 1.8i Type R (EDM)\",\"Honda
+        > Integra > 1998-2000 > 1.8i LS/GS (USDM)\",\"Honda > Integra > 1998-2000
+        > 1.8i GS-R (USDM)\",\"Honda > Integra > 1998-2000 > 1.8i Type R(JDM 98-spec)\",\"Honda
+        > Civic 3 deurs/hatchback > 1988-1991 > 1.6i VTEC\",\"Honda > Civic 3 deurs/hatchback
+        > 1992-1995 > 1.6 VTI\",\"Honda > Civic 3 deurs/hatchback > 1996-1998 > 1.6
+        VTI\",\"Honda > Civic 3 deurs/hatchback > 1996-1998 > 1.6 Type R (JDM)\",\"Honda
+        > Civic 3 deurs/hatchback > 1999-2000 > 1.6 VTI\",\"Honda > Civic 3 deurs/hatchback
+        > 1999-2000 > 1.6 Type R (JDM)\",\"Honda > Civic 5 deurs/hatchback > 1997-2001
+        > 1.8 VTI\",\"Honda > Civic 4 deurs/sedan > 1992-1995 > 1.6 VTI\",\"Honda
+        > Civic 4 deurs/sedan > 1996-1998 > 1.6 VTI\",\"Honda > Civic 4 deurs/sedan
+        > 1999-2000 > 1.6 VTI\",\"Honda > Civic aerodeck > 1998-2001 > 1.8 VTI\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        19:34:20\",\"objectID\":\"43140\",\"_highlightResult\":{\"name\":{\"value\":\"Hastings
+        Racing piston rings set 81/81.25/81.5/82mm (B16/B18 engines)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"15\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"80\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Engine\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Engine
+        /// Internal Engine Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Engine
+        /// Internal Engine Parts /// Pistons & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Pistons
+        & Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Hastings\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":[{\"value\":\"HA-SC5572-0X0\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-SC5572-000\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-SC5572-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"HA-SC5572-020\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"HA-SC5572-040\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"created_at\":{\"value\":\"2018-04-12
+        20:02:43\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"Insane
+        shafts drive shaft (Civic/CRX 88-91)\",\"url\":\"https://www.a4h-tech.com/en/insane-shafts-drive-shaft-civic-crx-88-91\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":\"\",\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Drivetrain\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Drivetrain /// Driveshafts\",\"Brands /// Insane
+        Shafts\"]},\"categories_without_path\":[\"Driveshafts\",\"Insane Shafts\",\"All
+        Products\"],\"categoryIds\":[\"1069\",\"1070\",\"1189\",\"1289\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/i/s/is-065-insane-shafts-aandrijfas-integra-01-06-type-r-all4honda_2_1.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/i/s/is-065-insane-shafts-aandrijfas-integra-01-06-type-r-all4honda_2_1.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":[\"IS-009-X\",\"IS-009-1000\",\"IS-009-500\",\"IS-009-1000/IS-010-1000\",\"IS-009-500/IS-010-500\",\"IS-010-1000\",\"IS-010-500\"],\"created_at\":\"2019-02-18
+        15:03:28\",\"price\":{\"EUR\":{\"default\":358,\"default_formated\":\"\u20AC358.00
+        - \u20AC1,369.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Insane
+        Shafts\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > CRX\",\"Honda > Civic 3 deurs/hatchback\",\"Honda > Civic 4 deurs/sedan\",\"Honda
+        > Shuttle\"],\"partfinder_lvl2\":[\"Honda > CRX > 1988-1991\",\"Honda > Civic
+        3 deurs/hatchback > 1988-1991\",\"Honda > Civic 4 deurs/sedan > 1988-1991\",\"Honda
+        > Shuttle > 1988-1993\"],\"partfinder_lvl3\":[\"Honda > CRX > 1988-1991 >
+        1.4\",\"Honda > CRX > 1988-1991 > 1.5i\",\"Honda > Civic 3 deurs/hatchback
+        > 1988-1991 > 1.3 DX\",\"Honda > Civic 3 deurs/hatchback > 1988-1991 > 1.4
+        GL/GLX\",\"Honda > Civic 3 deurs/hatchback > 1988-1991 > 1.5i GL/GLX\",\"Honda
+        > Civic 3 deurs/hatchback > 1988-1991 > 1.6i SOHC\",\"Honda > Civic 4 deurs/sedan
+        > 1988-1991 > 1.4\",\"Honda > Civic 4 deurs/sedan > 1988-1991 > 1.5i\",\"Honda
+        > Civic 4 deurs/sedan > 1988-1991 > 1.6i\",\"Honda > Shuttle > 1988-1993 >
+        1.4\",\"Honda > Shuttle > 1988-1993 > 1.5i\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        19:35:21\",\"objectID\":\"44743\",\"_highlightResult\":{\"name\":{\"value\":\"Insane
+        shafts drive shaft (Civic/CRX 88-91)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Drivetrain\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Drivetrain
+        /// Driveshafts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Insane Shafts\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Driveshafts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Insane
+        Shafts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":[{\"value\":\"IS-009-X\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"IS-009-1000\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"IS-009-500\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"IS-009-1000/IS-<em>010</em>-1000\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"IS-009-500/IS-<em>010</em>-500\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"IS-<em>010</em>-1000\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"IS-<em>010</em>-500\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]}],\"created_at\":{\"value\":\"2019-02-18
+        15:03:28\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"M-Pact
+        Clutch kit 21T/200mm (88-91 D-serie engines)\",\"url\":\"https://www.a4h-tech.com/en/m-pact-clutch-kit-21t-200mm-88-91-d-serie-engines\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":\"\",\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Drivetrain\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Drivetrain /// Clutch Kits\",\"Brands /// M-pact\"]},\"categories_without_path\":[\"Clutch
+        Kits\",\"M-pact\",\"All Products\"],\"categoryIds\":[\"1069\",\"1071\",\"1189\",\"1538\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/0/8/08-022_1.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/0/8/08-022_1.jpg\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"MP-08-010\",\"created_at\":\"2021-04-22
+        12:35:05\",\"price\":{\"EUR\":{\"default\":133.5,\"default_formated\":\"\u20AC133.50\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"M-pact\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > CRX\",\"Honda > Civic 3 deurs/hatchback\",\"Honda > Civic 4 deurs/sedan\",\"Honda
+        > Shuttle\"],\"partfinder_lvl2\":[\"Honda > CRX > 1988-1991\",\"Honda > Civic
+        3 deurs/hatchback > 1988-1991\",\"Honda > Civic 4 deurs/sedan > 1988-1991\",\"Honda
+        > Shuttle > 1988-1993\"],\"partfinder_lvl3\":[\"Honda > CRX > 1988-1991 >
+        1.4\",\"Honda > CRX > 1988-1991 > 1.5i\",\"Honda > CRX > 1988-1991 > 1.6i
+        DOHC\",\"Honda > Civic 3 deurs/hatchback > 1988-1991 > 1.3 DX\",\"Honda >
+        Civic 3 deurs/hatchback > 1988-1991 > 1.4 GL/GLX\",\"Honda > Civic 3 deurs/hatchback
+        > 1988-1991 > 1.5i GL/GLX\",\"Honda > Civic 3 deurs/hatchback > 1988-1991
+        > 1.6i SOHC\",\"Honda > Civic 3 deurs/hatchback > 1988-1991 > 1.6i DOHC\",\"Honda
+        > Civic 4 deurs/sedan > 1988-1991 > 1.4\",\"Honda > Civic 4 deurs/sedan >
+        1988-1991 > 1.5i\",\"Honda > Civic 4 deurs/sedan > 1988-1991 > 1.6i\",\"Honda
+        > Shuttle > 1988-1993 > 1.4\",\"Honda > Shuttle > 1988-1993 > 1.5i\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        17:38:16\",\"objectID\":\"47513\",\"_highlightResult\":{\"name\":{\"value\":\"M-Pact
+        Clutch kit 21T/200mm (88-91 D-serie engines)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Drivetrain\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Drivetrain
+        /// Clutch Kits\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// M-pact\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Clutch
+        Kits\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"M-pact\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"MP-08-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},\"created_at\":{\"value\":\"2021-04-22
+        12:35:05\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"MechaniX
+        Original mechanic gloves 10-pack (universal)\",\"url\":\"https://www.a4h-tech.com/en/mechanix-original-mechanic-gloves-10-pack-universal\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":\"\",\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Others\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Others /// Clothing\",\"Brands /// Mechanix\",\"Others
+        /// Tools & Consumables\"]},\"categories_without_path\":[\"Clothing\",\"Mechanix\",\"Tools
+        & Consumables\",\"All Products\"],\"categoryIds\":[\"1119\",\"1120\",\"1189\",\"1318\",\"1186\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/m/g/mg-0x-000-10-blk_1.png\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/m/g/mg-0x-000-10-blk_1.png\",\"in_stock\":1,\"stock_qty\":0,\"color\":[\"Blue\",\"Red\",\"Black\"],\"images_data\":{\"blue\":\"//www.a4h-tech.com/static/version1668512350/frontend/Elgentos/all4honda/en_GB/Magento_Catalog/images/product/placeholder/small_image.jpg\",\"red\":\"//www.a4h-tech.com/static/version1668512350/frontend/Elgentos/all4honda/en_GB/Magento_Catalog/images/product/placeholder/small_image.jpg\",\"black\":\"//www.a4h-tech.com/static/version1668512350/frontend/Elgentos/all4honda/en_GB/Magento_Catalog/images/product/placeholder/small_image.jpg\"},\"sku\":[\"MG-0X-000-10\",\"MG-03-008-10\",\"MG-03-009-10\",\"MG-03-010-10\",\"MG-03-011-10\",\"MG-02-008-10\",\"MG-02-009-10\",\"MG-02-010-10\",\"MG-02-011-10\",\"MG-05-008-10\",\"MG-05-009-10\",\"MG-05-010-10\",\"MG-05-011-10\"],\"created_at\":\"2021-07-23
+        13:41:38\",\"price\":{\"EUR\":{\"default\":259,\"default_formated\":\"\u20AC259.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"Mechanix\",\"ribbon\":null,\"partfinder_lvl0\":[\"Universal\"],\"partfinder_lvl1\":[\"Universal
+        > Universal\"],\"partfinder_lvl2\":[\"Universal > Universal > Universal\"],\"partfinder_lvl3\":[\"Universal
+        > Universal > Universal > Universal\"],\"partfinder_universal\":true,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        19:49:16\",\"objectID\":\"47803\",\"_highlightResult\":{\"name\":{\"value\":\"MechaniX
+        Original mechanic gloves 10-pack (universal)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Others\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Others
+        /// Clothing\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// Mechanix\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Others
+        /// Tools & Consumables\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Clothing\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Mechanix\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Tools
+        & Consumables\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"color\":[{\"value\":\"Blue\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Red\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Black\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"sku\":[{\"value\":\"MG-0X-000-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-03-008-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-03-009-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-03-<em>010</em>-10\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"MG-03-011-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-02-008-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-02-009-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-02-<em>010</em>-10\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"MG-02-011-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-05-008-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-05-009-10\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"MG-05-<em>010</em>-10\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]},{\"value\":\"MG-05-011-10\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"created_at\":{\"value\":\"2021-07-23
+        13:41:38\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda ''Type R'' mirror covers (Honda Civic 2022+)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-type-r-mirror-covers-honda-civic-2022\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"configurable\",\"ordered_qty\":\"\",\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Exterior\",\"Brands\",\"All
+        Products\",\"New\"],\"level1\":[\"Exterior /// Mirrors\",\"Brands /// OEM
+        Honda\"]},\"categories_without_path\":[\"Mirrors\",\"OEM Honda\",\"All Products\",\"New\"],\"categoryIds\":[\"1032\",\"1039\",\"1189\",\"1337\",\"1482\",\"1543\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/0/8/08r06-t60-01.png\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/0/8/08r06-t60-01.png\",\"in_stock\":1,\"stock_qty\":0,\"sku\":[\"08R06-T60-010\"],\"created_at\":\"2022-09-26
+        06:35:25\",\"price\":{\"EUR\":{\"default\":0,\"default_formated\":\"\u20AC0.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > Civic 5 deurs/hatchback\"],\"partfinder_lvl2\":[\"Honda > Civic 5 deurs/hatchback
+        > 2022+\"],\"partfinder_lvl3\":[\"Honda > Civic 5 deurs/hatchback > 2022+
+        > 2.0i e:HEV\",\"Honda > Civic 5 deurs/hatchback > 2022+ > 1.5i VTEC Turbo\",\"Honda
+        > Civic 5 deurs/hatchback > 2022+ > 2.0i Type R Turbo\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        19:49:20\",\"objectID\":\"50296\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda ''Type R'' mirror covers (Honda Civic 2022+)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"New\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Exterior
+        /// Mirrors\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Mirrors\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM
+        Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"New\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":[{\"value\":\"08R06-T60-<em>010</em>\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"010\"]}],\"created_at\":{\"value\":\"2022-09-26
+        06:35:25\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda auto cover (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-auto-cover-s2000-99-09\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":40,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Exterior\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Exterior /// Others Exterior\",\"Brands /// OEM
+        Honda\",\"Exterior /// Windows | Roofs | Accessories\"]},\"categories_without_path\":[\"Others
+        Exterior\",\"OEM Honda\",\"All Products\",\"Windows | Roofs | Accessories\"],\"categoryIds\":[\"1032\",\"1053\",\"1189\",\"1337\",\"1482\",\"1409\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/0/8/08p34-s2a-601.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/0/8/08p34-s2a-601.jpg\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"08P34-S2A-601\",\"created_at\":\"2018-04-04
+        12:13:22\",\"price\":{\"EUR\":{\"default\":218.95,\"default_formated\":\"\u20AC218.95\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        14:29:16\",\"objectID\":\"41109\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda auto cover (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"40\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Exterior
+        /// Others Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Windows | Roofs | Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Others
+        Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Windows
+        | Roofs | Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"08P34-<em>S2A</em>-601\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2018-04-04
+        12:13:22\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda auto cover grey ''inside'' (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-auto-cover-grey-inside-s2000-99-09\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":8,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"All
+        Products\",\"Exterior\",\"Brands\"],\"level1\":[\"Exterior /// Others Exterior\",\"Brands
+        /// OEM Honda\",\"Exterior /// Windows | Roofs | Accessories\"]},\"categories_without_path\":[\"All
+        Products\",\"Others Exterior\",\"OEM Honda\",\"Windows | Roofs | Accessories\"],\"categoryIds\":[\"1482\",\"1032\",\"1053\",\"1189\",\"1337\",\"1409\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/0/8/08p34-s2a-601-oem-honda-auto-cover-hoes-s2000-99-09-5907-all4honda_1.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/0/8/08p34-s2a-601-oem-honda-auto-cover-hoes-s2000-99-09-5907-all4honda_1.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":\"08P34-S2A-101\",\"created_at\":\"2020-02-07
+        20:25:24\",\"price\":{\"EUR\":{\"default\":408,\"default_formated\":\"\u20AC408.00\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        17:05:16\",\"objectID\":\"46176\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda auto cover grey ''inside'' (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"8\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Exterior
+        /// Others Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Exterior
+        /// Windows | Roofs | Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Others
+        Exterior\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Windows
+        | Roofs | Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"08P34-<em>S2A</em>-101\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2020-02-07
+        20:25:24\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda ball joint front lower (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-ball-joint-front-lower-s2000-99-09\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":4,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Suspension\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Suspension /// Ball Joints & Boots\",\"Brands ///
+        OEM Honda\"]},\"categories_without_path\":[\"Ball Joints & Boots\",\"OEM Honda\",\"All
+        Products\"],\"categoryIds\":[\"1093\",\"1103\",\"1189\",\"1337\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/7/3/73b331c29b6e50cdd016ab25f465354c89b456ef.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/7/3/73b331c29b6e50cdd016ab25f465354c89b456ef.jpg\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"51230-S2A-000\",\"created_at\":\"2018-04-04
+        12:13:26\",\"price\":{\"EUR\":{\"default\":105.5,\"default_formated\":\"\u20AC105.50\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        14:30:15\",\"objectID\":\"41191\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda ball joint front lower (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"4\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Suspension\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Suspension
+        /// Ball Joints & Boots\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Ball
+        Joints & Boots\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM
+        Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"51230-<em>S2A</em>-000\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2018-04-04
+        12:13:26\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda brake caliper repair set front (Civic/Del Sol/S2000/CR-Z)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-remklauw-reparatie-set-voorzijde-civic\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":11,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Brands\",\"Suspension\",\"All
+        Products\",\"Sale\"],\"level1\":[\"Brands /// OEM Honda\",\"Suspension ///
+        Brakes\"],\"level2\":[\"Suspension /// Brakes /// Others Brakes\",\"Suspension
+        /// Brakes /// Brake Calipers\"]},\"categories_without_path\":[\"OEM Honda\",\"Others
+        Brakes\",\"Brake Calipers\",\"All Products\",\"Sale\"],\"categoryIds\":[\"1189\",\"1337\",\"1093\",\"1110\",\"1118\",\"1113\",\"1482\",\"1541\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/0/1/01463-s2a-000-oem-honda-remklauw-reparatie-set-voorzijde-civic-del-sol-s2000-cr-z-all4honda.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/0/1/01463-s2a-000-oem-honda-remklauw-reparatie-set-voorzijde-civic-del-sol-s2000-cr-z-all4honda.jpg\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"01463-S2A-000\",\"created_at\":\"2018-04-04
+        12:13:31\",\"price\":{\"EUR\":{\"default\":79,\"default_formated\":\"\u20AC79.00\",\"special_from_date\":1224460800,\"special_to_date\":false,\"default_original_formated\":\"\u20AC99.20\"}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > Del Sol\",\"Honda > S2000\",\"Honda > Accord 4 deurs/sedan\",\"Honda > Civic
+        2 deurs/coupe\",\"Honda > Civic 3 deurs/hatchback\",\"Honda > Civic 5 deurs/hatchback\",\"Honda
+        > Civic 4 deurs/sedan\",\"Honda > Civic aerodeck\",\"Honda > CR-Z\",\"Honda
+        > FR-V\",\"Honda > HR-V 3 deurs\",\"Honda > HR-V 5 deurs\",\"Honda > Stream\"],\"partfinder_lvl2\":[\"Honda
+        > Del Sol > 1992-1995\",\"Honda > Del Sol > 1996-1998\",\"Honda > S2000 >
+        1999-2003\",\"Honda > S2000 > 2004-2009\",\"Honda > Accord 4 deurs/sedan >
+        1998-2002\",\"Honda > Civic 2 deurs/coupe > 1992-1995\",\"Honda > Civic 2
+        deurs/coupe > 1996-1998\",\"Honda > Civic 2 deurs/coupe > 1999-2000\",\"Honda
+        > Civic 2 deurs/coupe > 2001-2003\",\"Honda > Civic 2 deurs/coupe > 2004-2006\",\"Honda
+        > Civic 3 deurs/hatchback > 1992-1995\",\"Honda > Civic 3 deurs/hatchback
+        > 1996-1998\",\"Honda > Civic 3 deurs/hatchback > 1999-2000\",\"Honda > Civic
+        3 deurs/hatchback > 2001-2003\",\"Honda > Civic 3 deurs/hatchback > 2004-2006\",\"Honda
+        > Civic 5 deurs/hatchback > 1995-1997\",\"Honda > Civic 5 deurs/hatchback
+        > 1997-2001\",\"Honda > Civic 5 deurs/hatchback > 2001-2003\",\"Honda > Civic
+        5 deurs/hatchback > 2004-2006\",\"Honda > Civic 4 deurs/sedan > 1992-1995\",\"Honda
+        > Civic 4 deurs/sedan > 1996-1998\",\"Honda > Civic 4 deurs/sedan > 1999-2000\",\"Honda
+        > Civic 4 deurs/sedan > 2001-2003\",\"Honda > Civic 4 deurs/sedan > 2004-2006\",\"Honda
+        > Civic aerodeck > 1998-2001\",\"Honda > CR-Z > 2010-2014\",\"Honda > FR-V
+        > 2004-2007\",\"Honda > HR-V 3 deurs > 1999-2001\",\"Honda > HR-V 3 deurs
+        > 2001-2003\",\"Honda > HR-V 5 deurs > 1999-2001\",\"Honda > HR-V 5 deurs
+        > 2001-2006\",\"Honda > Stream > 2001-2005\"],\"partfinder_lvl3\":[\"Honda
+        > Del Sol > 1992-1995 > 1.6 ESI\",\"Honda > Del Sol > 1992-1995 > 1.6 VTI\",\"Honda
+        > Del Sol > 1996-1998 > 1.6 ESI\",\"Honda > Del Sol > 1996-1998 > 1.6 VTI\",\"Honda
+        > S2000 > 1999-2003 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.2i (US)\",\"Honda > Accord 4 deurs/sedan > 1998-2002
+        > 1.6i\",\"Honda > Civic 2 deurs/coupe > 1992-1995 > 1.5i DXI\",\"Honda >
+        Civic 2 deurs/coupe > 1992-1995 > 1.5i LSI\",\"Honda > Civic 2 deurs/coupe
+        > 1992-1995 > 1.6i ESI\",\"Honda > Civic 2 deurs/coupe > 1996-1998 > 1.6i
+        LS\",\"Honda > Civic 2 deurs/coupe > 1996-1998 > 1.6i SR\",\"Honda > Civic
+        2 deurs/coupe > 1999-2000 > 1.6i LS\",\"Honda > Civic 2 deurs/coupe > 1999-2000
+        > 1.6i SR\",\"Honda > Civic 2 deurs/coupe > 2001-2003 > 1.7i LS\",\"Honda
+        > Civic 2 deurs/coupe > 2001-2003 > 1.7i ES\",\"Honda > Civic 2 deurs/coupe
+        > 2004-2006 > 1.7i LS\",\"Honda > Civic 2 deurs/coupe > 2004-2006 > 1.7i ES\",\"Honda
+        > Civic 3 deurs/hatchback > 1992-1995 > 1.3 DX/LS\",\"Honda > Civic 3 deurs/hatchback
+        > 1992-1995 > 1.5 DXI\",\"Honda > Civic 3 deurs/hatchback > 1992-1995 > 1.5
+        LSI\",\"Honda > Civic 3 deurs/hatchback > 1992-1995 > 1.5 VEI\",\"Honda >
+        Civic 3 deurs/hatchback > 1992-1995 > 1.6 ESI\",\"Honda > Civic 3 deurs/hatchback
+        > 1992-1995 > 1.6 VTI\",\"Honda > Civic 3 deurs/hatchback > 1996-1998 > 1.4i\",\"Honda
+        > Civic 3 deurs/hatchback > 1996-1998 > 1.5i VTEC-E\",\"Honda > Civic 3 deurs/hatchback
+        > 1996-1998 > 1.6 VTI\",\"Honda > Civic 3 deurs/hatchback > 1999-2000 > 1.4i\",\"Honda
+        > Civic 3 deurs/hatchback > 1999-2000 > 1.5i VTEC-E\",\"Honda > Civic 3 deurs/hatchback
+        > 1999-2000 > 1.6 VTI\",\"Honda > Civic 3 deurs/hatchback > 2001-2003 > 1.4i\",\"Honda
+        > Civic 3 deurs/hatchback > 2001-2003 > 1.6i\",\"Honda > Civic 3 deurs/hatchback
+        > 2004-2006 > 1.4i\",\"Honda > Civic 3 deurs/hatchback > 2004-2006 > 1.6i\",\"Honda
+        > Civic 5 deurs/hatchback > 1995-1997 > 1.4i\",\"Honda > Civic 5 deurs/hatchback
+        > 1995-1997 > 1.5i VTEC-E\",\"Honda > Civic 5 deurs/hatchback > 1995-1997
+        > 1.6i LS\",\"Honda > Civic 5 deurs/hatchback > 1995-1997 > 1.6i SR VTEC\",\"Honda
+        > Civic 5 deurs/hatchback > 1997-2001 > 1.4i\",\"Honda > Civic 5 deurs/hatchback
+        > 1997-2001 > 1.5i VTEC-E\",\"Honda > Civic 5 deurs/hatchback > 1997-2001
+        > 1.6i LS\",\"Honda > Civic 5 deurs/hatchback > 2001-2003 > 1.4i\",\"Honda
+        > Civic 5 deurs/hatchback > 2001-2003 > 1.6i\",\"Honda > Civic 5 deurs/hatchback
+        > 2004-2006 > 1.4i\",\"Honda > Civic 5 deurs/hatchback > 2004-2006 > 1.6i\",\"Honda
+        > Civic 4 deurs/sedan > 1992-1995 > 1.5 DXI\",\"Honda > Civic 4 deurs/sedan
+        > 1992-1995 > 1.5 LSI\",\"Honda > Civic 4 deurs/sedan > 1992-1995 > 1.5 VEI\",\"Honda
+        > Civic 4 deurs/sedan > 1992-1995 > 1.6 ESI\",\"Honda > Civic 4 deurs/sedan
+        > 1992-1995 > 1.6 VTI\",\"Honda > Civic 4 deurs/sedan > 1996-1998 > 1.4i\",\"Honda
+        > Civic 4 deurs/sedan > 1996-1998 > 1.5i VTEC-E\",\"Honda > Civic 4 deurs/sedan
+        > 1996-1998 > 1.6 VTI\",\"Honda > Civic 4 deurs/sedan > 1999-2000 > 1.4i\",\"Honda
+        > Civic 4 deurs/sedan > 1999-2000 > 1.5i VTEC-E\",\"Honda > Civic 4 deurs/sedan
+        > 1999-2000 > 1.6 VTI\",\"Honda > Civic 4 deurs/sedan > 2001-2003 > 1.7i\",\"Honda
+        > Civic 4 deurs/sedan > 2004-2006 > 1.7i\",\"Honda > Civic aerodeck > 1998-2001
+        > 1.4i S\",\"Honda > Civic aerodeck > 1998-2001 > 1.5i VTEC-E\",\"Honda >
+        Civic aerodeck > 1998-2001 > 1.6i LS\",\"Honda > CR-Z > 2010-2014 > 1.5i\",\"Honda
+        > FR-V > 2004-2007 > 1.7i\",\"Honda > HR-V 3 deurs > 1999-2001 > 1.6i 2WD\",\"Honda
+        > HR-V 3 deurs > 1999-2001 > 1.6i 4WD\",\"Honda > HR-V 3 deurs > 2001-2003
+        > 1.6i 2WD\",\"Honda > HR-V 3 deurs > 2001-2003 > 1.6i 4WD\",\"Honda > HR-V
+        5 deurs > 1999-2001 > 1.6i 2WD\",\"Honda > HR-V 5 deurs > 1999-2001 > 1.6i
+        4WD\",\"Honda > HR-V 5 deurs > 2001-2006 > 1.6i 2WD\",\"Honda > HR-V 5 deurs
+        > 2001-2006 > 1.6i 4WD\",\"Honda > Stream > 2001-2005 > 1.7i\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        14:32:16\",\"objectID\":\"41420\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda brake caliper repair set front (Civic/Del Sol/S2000/CR-Z)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"11\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension
+        /// Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Suspension
+        /// Brakes /// Others Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension
+        /// Brakes /// Brake Calipers\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"OEM
+        Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Others Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brake
+        Calipers\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"01463-<em>S2A</em>-000\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2018-04-04
+        12:13:31\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda brake caliper repair set rear (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-remklauw-reparatieset-achterzijde\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":8,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Brands\",\"Suspension\",\"All
+        Products\",\"Sale\"],\"level1\":[\"Brands /// OEM Honda\",\"Suspension ///
+        Brakes\"],\"level2\":[\"Suspension /// Brakes /// Others Brakes\",\"Suspension
+        /// Brakes /// Brake Calipers\"]},\"categories_without_path\":[\"OEM Honda\",\"Others
+        Brakes\",\"Brake Calipers\",\"All Products\",\"Sale\"],\"categoryIds\":[\"1189\",\"1337\",\"1093\",\"1110\",\"1118\",\"1113\",\"1482\",\"1541\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/0/1/01473-s2a-000-oem-honda-remklauw-reparatieset-achterzijde-s2000-99-09-all4honda.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/0/1/01473-s2a-000-oem-honda-remklauw-reparatieset-achterzijde-s2000-99-09-all4honda.jpg\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"01473-S2A-000\",\"created_at\":\"2018-04-04
+        12:13:31\",\"price\":{\"EUR\":{\"default\":79,\"default_formated\":\"\u20AC79.00\",\"special_from_date\":1570569843,\"special_to_date\":false,\"default_original_formated\":\"\u20AC100.50\"}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        14:32:16\",\"objectID\":\"41421\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda brake caliper repair set rear (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"8\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension
+        /// Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Suspension
+        /// Brakes /// Others Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension
+        /// Brakes /// Brake Calipers\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"OEM
+        Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Others Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brake
+        Calipers\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"01473-<em>S2A</em>-000\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2018-04-04
+        12:13:31\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda brake discs front (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-remschijven-voorzijde-s2000-99-09\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":3,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Suspension\",\"Brands\",\"All
+        Products\",\"Sale\"],\"level1\":[\"Suspension /// Brakes\",\"Brands /// OEM
+        Honda\"],\"level2\":[\"Suspension /// Brakes /// Brake Discs\"]},\"categories_without_path\":[\"Brake
+        Discs\",\"OEM Honda\",\"All Products\",\"Sale\"],\"categoryIds\":[\"1093\",\"1110\",\"1111\",\"1189\",\"1337\",\"1482\",\"1541\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/o/e/oem-bd-dc5-f-oem-honda-remschijven-voorkant-integra-01-06-type-r-all4honda_1.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/o/e/oem-bd-dc5-f-oem-honda-remschijven-voorkant-integra-01-06-type-r-all4honda_1.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":\"45251-S2A-000(X2)\",\"created_at\":\"2021-08-17
+        09:32:56\",\"price\":{\"EUR\":{\"default\":299,\"default_formated\":\"\u20AC299.00\",\"special_from_date\":1605830400,\"special_to_date\":false,\"default_original_formated\":\"\u20AC341.20\"}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        17:41:15\",\"objectID\":\"47842\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda brake discs front (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"3\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Suspension\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Suspension
+        /// Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Suspension
+        /// Brakes /// Brake Discs\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Brake
+        Discs\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"45251-<em>S2A</em>-000(X2)\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2021-08-17
+        09:32:56\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda brake discs rear (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-brake-discs-rear-s2000-99-09\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":3,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Suspension\",\"Brands\",\"All
+        Products\"],\"level1\":[\"Suspension /// Brakes\",\"Brands /// OEM Honda\"],\"level2\":[\"Suspension
+        /// Brakes /// Brake Discs\"]},\"categories_without_path\":[\"Brake Discs\",\"OEM
+        Honda\",\"All Products\"],\"categoryIds\":[\"1093\",\"1110\",\"1111\",\"1189\",\"1337\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/r/e/rear-discs-1_1_1.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/r/e/rear-discs-1_1_1.jpg\",\"in_stock\":1,\"stock_qty\":0,\"sku\":\"42510-S2A-000(X2)\",\"created_at\":\"2021-08-17
+        09:40:30\",\"price\":{\"EUR\":{\"default\":225,\"default_formated\":\"\u20AC225.00\",\"special_from_date\":1629158400,\"special_to_date\":false,\"default_original_formated\":\"\u20AC247.40\"}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        17:41:15\",\"objectID\":\"47843\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda brake discs rear (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"3\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Suspension\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Suspension
+        /// Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Suspension
+        /// Brakes /// Brake Discs\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Brake
+        Discs\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"0\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"42510-<em>S2A</em>-000(X2)\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2021-08-17
+        09:40:30\",\"matchLevel\":\"none\",\"matchedWords\":[]}}},{\"name\":\"OEM
+        Honda brake piston rear (S2000 99-09)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-brake-piston-rear-s2000-99-09\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":2,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Brands\",\"Suspension\",\"All
+        Products\"],\"level1\":[\"Brands /// OEM Honda\",\"Suspension /// Brakes\"],\"level2\":[\"Suspension
+        /// Brakes /// Brake Calipers\",\"Suspension /// Brakes /// Others Brakes\"]},\"categories_without_path\":[\"OEM
+        Honda\",\"Brake Calipers\",\"Others Brakes\",\"All Products\"],\"categoryIds\":[\"1189\",\"1337\",\"1093\",\"1110\",\"1113\",\"1118\",\"1482\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/4/3/43215-s2a-003-oem-honda-remzuiger-achterzijde-s2000-99-09-all4honda.png\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/4/3/43215-s2a-003-oem-honda-remzuiger-achterzijde-s2000-99-09-all4honda.png\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"43215-S2A-003\",\"created_at\":\"2018-04-04
+        12:13:31\",\"price\":{\"EUR\":{\"default\":91.5,\"default_formated\":\"\u20AC91.50\",\"special_from_date\":false,\"special_to_date\":false}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > S2000\"],\"partfinder_lvl2\":[\"Honda > S2000 > 1999-2003\",\"Honda > S2000
+        > 2004-2009\"],\"partfinder_lvl3\":[\"Honda > S2000 > 1999-2003 > 2.0i\",\"Honda
+        > S2000 > 2004-2009 > 2.0i\",\"Honda > S2000 > 2004-2009 > 2.2i (US)\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-11-16
+        14:32:16\",\"objectID\":\"41429\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda brake piston rear (S2000 99-09)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"2\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension
+        /// Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Suspension
+        /// Brakes /// Brake Calipers\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Suspension
+        /// Brakes /// Others Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"OEM
+        Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brake Calipers\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Others
+        Brakes\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All Products\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"43215-<em>S2A</em>-003\",\"matchLevel\":\"partial\",\"fullyHighlighted\":false,\"matchedWords\":[\"s2a\"]},\"created_at\":{\"value\":\"2018-04-04
+        12:13:31\",\"matchLevel\":\"none\",\"matchedWords\":[]}}}],\"nbHits\":147,\"page\":0,\"nbPages\":8,\"hitsPerPage\":20,\"exhaustiveNbHits\":true,\"exhaustiveTypo\":true,\"exhaustive\":{\"nbHits\":true,\"typo\":true},\"query\":\"74100-S2A-010\",\"params\":\"query=74100-S2A-010&tagFilters=\",\"processingTimeMS\":2,\"processingTimingsMS\":{\"total\":2}}"
+    headers:
+      Accept-Encoding:
+      - deflate, gzip
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - inline; filename=a.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 16 Nov 2022 23:20:03 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Timing-Allow-Origin:
+      - '*'
+      Transfer-Encoding:
+      - chunked
+      X-Alg-PT:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+    url: https://nnvjvcwb78-dsn.algolia.net/1/indexes/magento2_en_products/query?x-algolia-application-id=NNVJVCWB78&x-algolia-api-key=YmM2ZWQ3MGQwMjI2OGJiNjI2ZDdlYjQzZTM0ZjBiNDlhNTQzYzk4ZDhkMWExYWJjNGU0YzMwYWVjY2U1YjJkOXRhZ0ZpbHRlcnM9
 version: 1

@@ -11,6 +11,7 @@ SOURCE_ACURAEXPRESSPARTS = "acuraexpressparts"  # also known as irunoem
 SOURCE_ALL4HONDA = "all4honda"
 SOURCE_ACURAPARTSFORLESS = "acurapartsforless"
 SOURCE_CMS = "cms"
+SOURCE_NENGUN = "nengun"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -27,6 +28,7 @@ STOCK_SOURCES = (
     (SOURCE_ACURAPARTSFORLESS, "www.acurapartsforless.com"),
     (SOURCE_ALL4HONDA, "www.a4h-tech.com"),
     (SOURCE_CMS, "www.cmsnl.com"),
+    (SOURCE_NENGUN, "www.nengun.com"),
 )
 
 PART_SOURCES = (

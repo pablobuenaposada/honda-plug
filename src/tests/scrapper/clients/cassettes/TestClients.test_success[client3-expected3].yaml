@@ -1233,4 +1233,52 @@ interactions:
       code: 200
       message: OK
     url: https://www.tegiwaimports.com/genuine-honda-head-gasket-k-series-k24.html
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://eucs4.klevu.com/cloud-search/n-search/search?ticket=klevu-14866558287345291&term=74100-S2A-010&responseType=json
+  response:
+    body:
+      string: '{"meta":{"layoutId":"","layoutType":"","noOfResults":12,"paginationStartFrom":0,"powerdByLogo":"","totalResultsFound":3,"typeOfQuery":"FUZZY_AND","storeBaseCurrency":"GBP","notificationCode":1,"term":"74100-S2A-010","excludeIds":null,"isPersonalised":false,"idsUsedForPersonalisation":null},"result":[{"discount":"","hideGroupPrices":"","itemGroupId":"","freeShipping":"","storeBaseCurrency":"GBP","price":"25","toPrice":"","imageUrl":"https://www.tegiwaimports.com/media/klevu_images/7/1/71103-s2a-000_1.jpg","currency":"GBP","inStock":"yes","id":"112172","imageHover":"","sku":"71108-S2A-010","basePrice":"25.0","startPrice":"","image":"https://www.tegiwaimports.com/media/klevu_images/7/1/71103-s2a-000_1.jpg","deliveryInfo":"","hideAddToCart":"","salePrice":"25.0","oldPrice":"25.0","swatches":{"swatch":[],"lowestPrice":"","numberOfAdditionalVariants":""},"weight":"0.5000","klevu_category":"KLEVU_PRODUCT;;Brands;;Genuine
+        Honda ;;Exterior  @ku@kuCategory@ku@","totalVariants":"0","groupPrices":"9:Dealer_VAT:18.7500;10:Dealer_VATREG:18.7500;11:Trader_VAT:18.7500;12:Trader_VATREG:18.7500;15:Sponsor:18.7500;18:Distributor_VATREG:18.7500;23:Dealer_UK:18.7500","url":"https://www.tegiwaimports.com/genuine-honda-front-bumper-upper-metal-retainer-seal-s2000-ap1-ap2.html","name":"GENUINE
+        HONDA FRONT BUMPER UPPER METAL RETAINER SEAL S2000 AP1 AP2","shortDesc":"Genuine
+        Honda metal bumper retainer.","category":"genuine honda;;exterior"},{"discount":"","hideGroupPrices":"","itemGroupId":"192152","freeShipping":"","storeBaseCurrency":"GBP","price":"110","toPrice":"","imageUrl":"https://www.tegiwaimports.com/media/klevu_images/7/4/74151-s2a-020-1.jpg","currency":"GBP","inStock":"yes","id":"192152-192154","imageHover":"","sku":"74151-S2A-020-M-74101-S2A-020","basePrice":"110.0","startPrice":"110","image":"https://www.tegiwaimports.com/media/klevu_images/7/4/74151-s2a-020-1.jpg","deliveryInfo":"","hideAddToCart":"","salePrice":"110.0","oldPrice":"110.0","swatches":{"swatch":[],"lowestPrice":"","numberOfAdditionalVariants":""},"weight":"2.0000","klevu_category":"KLEVU_PRODUCT;;Select
+        Car;;Honda;;S2000;;Exterior;;Brands;;Genuine Honda  @ku@kuCategory@ku@","totalVariants":"0","groupPrices":"9:Dealer_VAT:82.5000;10:Dealer_VATREG:82.5000;11:Trader_VAT:82.5000;12:Trader_VATREG:82.5000;15:Sponsor:82.5000;18:Distributor_VATREG:82.5000;19:12-Tune:82.5000","url":"https://www.tegiwaimports.com/genuine-honda-front-fender-arch-liner-s2000-ap1.html","paypal_credituk_available":"credit
+        available","name":"Genuine Honda Front Fender Arch Liner S2000 AP1","shortDesc":"HONDA
+        Arch Liner. Over time these can get worn and causing rubbing on your tyres.
+        Expect perfect fit and performance as with all OEM Honda parts.","category":"exterior;;genuine
+        honda;;exterior"},{"discount":"","hideGroupPrices":"","itemGroupId":"","freeShipping":"","storeBaseCurrency":"GBP","price":"22","toPrice":"","imageUrl":"https://www.tegiwaimports.com/media/klevu_images/7/1/71108-s2a-010_1.jpg","currency":"GBP","inStock":"yes","id":"112173","imageHover":"","sku":"71103-S2A-000","basePrice":"22.0","startPrice":"","image":"https://www.tegiwaimports.com/media/klevu_images/7/1/71108-s2a-010_1.jpg","deliveryInfo":"","hideAddToCart":"","salePrice":"22.0","oldPrice":"22.0","swatches":{"swatch":[],"lowestPrice":"","numberOfAdditionalVariants":""},"weight":"1.5000","klevu_category":"KLEVU_PRODUCT;;Select
+        Car;;Honda;;S2000;;Exterior;;Brands;;Genuine Honda  @ku@kuCategory@ku@","totalVariants":"0","groupPrices":"9:Dealer_VAT:16.4900;10:Dealer_VATREG:16.4900;11:Trader_VAT:16.4900;12:Trader_VATREG:16.4900;15:Sponsor:16.4900;18:Distributor_VATREG:16.4900;23:Dealer_UK:16.4900","url":"https://www.tegiwaimports.com/genuine-honda-front-bumper-upper-metal-retaining-strip-s2000-ap1-ap2.html","name":"GENUINE
+        HONDA FRONT BUMPER UPPER METAL RETAINING STRIP S2000 AP1 AP2","shortDesc":"Genuine
+        Honda metal bumper retainer seal.","category":"exterior;;genuine honda;;exterior"}],"filters":[],"price":{"min":"","max":"","start":"","end":""},"autoComplete":[],"popularTerm":[],"pages":[],"categories":[],"popularProducts":[],"recentlyViewedProducts":[],"ranges":[],"error":{"errorMessage":""}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 76b3f4521f3b0406-MAD
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 16 Nov 2022 23:19:56 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      X-Application-Context:
+      - application
+    status:
+      code: 200
+      message: OK
+    url: https://eucs4.klevu.com/cloud-search/n-search/search?ticket=klevu-14866558287345291&term=74100-S2A-010&responseType=json
 version: 1

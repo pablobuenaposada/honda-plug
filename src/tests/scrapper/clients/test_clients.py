@@ -11,6 +11,7 @@ from part.constants import (
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
+    SOURCE_NENGUN,
     SOURCE_PIECESAUTOHONDA,
     SOURCE_TEGIWA,
 )
@@ -23,12 +24,14 @@ from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.hondaspareparts import HondasparepartsClient
+from scrapper.clients.nengun import NengunClient
 from scrapper.clients.piecesautohonda import PiecesAutoHondaClient
 from scrapper.clients.tegiwa import TegiwaClient
 from scrapper.common.stock import Stock
 
 REFERENCES = {
     "12251-RBB-004",  # normal part
+    "74100-S2A-010",  # normal part
     "56483-PND-003",  # discontinued part but has new replacement
     "08F03-S02-180K",  # really discontinued part
     "31206-P3F-003",  # sold out in some sites
@@ -89,6 +92,18 @@ class TestClients:
                         discontinued=True,
                         quantity=None,
                     ),
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://www.hondapartsnow.com/genuine/honda~fender~assy~74100-s2a-010.html",
+                        source=SOURCE_HONDAPARTSNOW,
+                        country="US",
+                        title="Fender Assembly, Right Front (Inner)",
+                        price=Money("106.40", "USD"),
+                        image="https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/3b265650f5462cf45574014c7ca271fb/dfa5952adefb34667c0c1998b86c9200.jpg",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -135,6 +150,18 @@ class TestClients:
                         title="Armature - Honda (31206-P3F-003)",
                         price=Money(amount="380.45", currency="USD"),
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/9975b81af67056cae80ebf24ef8b639c/e20c8f426e887da8ac3ec1522cd66c31.gif",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://www.hondapartsonline.net/oem-parts/honda-fender-assembly-r-front-inner-74100s2a010",
+                        source=SOURCE_HONDAPARTSONLINE,
+                        country="US",
+                        title="Fender Assembly, R Front (Inner) - Honda (74100-S2A-010)",
+                        price=Money(amount="111.76", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/15e978bce0ad5c894ee495fee5c38985/b4a6e695c020ba70dea25395b7a487d6.png",
                         available=True,
                         discontinued=False,
                         quantity=None,
@@ -189,6 +216,18 @@ class TestClients:
                         discontinued=False,
                         quantity=None,
                     ),
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://www.hondaautomotiveparts.com/oem-parts/honda-fender-assembly-r-front-inner-74100s2a010",
+                        source=SOURCE_HONDAAUTOMOTIVEPARTS,
+                        country="US",
+                        title="Fender Assembly, R Front (Inner) - Honda (74100-S2A-010)",
+                        price=Money("102.82", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/15e978bce0ad5c894ee495fee5c38985/b4a6e695c020ba70dea25395b7a487d6.png",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -208,6 +247,7 @@ class TestClients:
                     "56483-PND-003": None,
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
+                    "74100-S2A-010": None,
                 },
             ),
             (
@@ -243,6 +283,18 @@ class TestClients:
                         url="https://hondaspareparts.co.uk/products/31206P3F003",
                         country="GB",
                         source=SOURCE_HONDASPAREPARTS,
+                    ),
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://hondaspareparts.co.uk/products/74100S2A010",
+                        source=SOURCE_HONDASPAREPARTS,
+                        country="GB",
+                        title="FENDER ASSY., R. FR. INNE",
+                        price=Money(amount="145.05", currency="GBP"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=None,
                     ),
                 },
             ),
@@ -283,6 +335,18 @@ class TestClients:
                         price=None,
                         image=None,
                         available=False,
+                        discontinued=False,
+                        quantity=None,
+                    ),
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/74100S2A010",
+                        source=SOURCE_PIECESAUTOHONDA,
+                        country="FR",
+                        title="Ens. garde-boue interieur",
+                        price=Money(amount="186.5", currency="EUR"),
+                        image=None,
+                        available=True,
                         discontinued=False,
                         quantity=None,
                     ),
@@ -346,6 +410,20 @@ class TestClients:
                             quantity=None,
                         )
                     ],
+                    "74100-S2A-010": [
+                        Stock(
+                            reference="74100-S2A-010",
+                            url="https://www.amayama.com/en/part/honda/74100s2a010",
+                            source=SOURCE_AMAYAMA,
+                            country="JP",
+                            title="FENDER ASSY., R. FR. INNER",
+                            price=Money(amount="76.70", currency="USD"),
+                            image="https://static.amayama.com/schema/honda-74100s2a010-1568746841881-big.jpg",
+                            available=True,
+                            discontinued=None,
+                            quantity=None,
+                        )
+                    ],
                 },
             ),
             (
@@ -377,6 +455,7 @@ class TestClients:
                     ),
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
+                    "74100-S2A-010": None,
                 },
             ),
             (
@@ -394,6 +473,7 @@ class TestClients:
                     "56483-PND-003": None,
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
+                    "74100-S2A-010": None,
                 },
             ),
             (
@@ -423,6 +503,7 @@ class TestClients:
                     ),
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
+                    "74100-S2A-010": None,
                 },
             ),
             (
@@ -471,6 +552,39 @@ class TestClients:
                         url="https://www.cmsnl.com/products/armature-comp_31206p3f003/",
                         country="NL",
                         source=SOURCE_CMS,
+                    ),
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://www.cmsnl.com/products/fender-assy-rfr_74100s2a010/",
+                        source=SOURCE_CMS,
+                        country="NL",
+                        title="Fender Assy R, Fr",
+                        price=Money(amount="183.92", currency="EUR"),
+                        image=None,
+                        available=False,
+                        discontinued=None,
+                        quantity=None,
+                    ),
+                },
+            ),
+            (
+                NengunClient(),
+                {
+                    "12251-RBB-004": None,
+                    "56483-PND-003": None,
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://www.nengun.com/oem/honda/74100-s2a-010",
+                        source=SOURCE_NENGUN,
+                        country="JP",
+                        title="FENDER ASSY., R. FR. INNER",
+                        price=Money(amount=72.28, currency="EUR"),
+                        image="https://image.nengun.com/brand/product/nengun-537-honda.png",
+                        available=True,
+                        discontinued=None,
+                        quantity=None,
                     ),
                 },
             ),
