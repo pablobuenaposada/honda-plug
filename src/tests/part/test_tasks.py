@@ -13,6 +13,7 @@ from part.constants import (
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
+    SOURCE_NENGUN,
     SOURCE_PIECESAUTOHONDA,
     SOURCE_TEGIWA,
     SOURCE_UNKNOWN,
@@ -31,9 +32,9 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert (
-            Stock.objects.count() == len(CLIENTS) + 1
-        )  # one more because amayama finds 2 more stocks
+        assert Stock.objects.count() == len(
+            CLIENTS
+        )  # one more because amayama finds 2 more stocks but nengun doesn't have it
 
     @patch("part.tasks.search_for_stocks")
     def test_part_already_exists(self, m_search_for_stocks):
@@ -42,9 +43,9 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert (
-            Stock.objects.count() == len(CLIENTS) + 1
-        )  # one more because amayama finds 2 more stocks
+        assert Stock.objects.count() == len(
+            CLIENTS
+        )  # one more because amayama finds 2 more stocks but nengun doesn't have it
 
     @patch("part.tasks.search_for_stocks")
     def test_part_and_stock_already_exists(self, m_search_for_stocks):
@@ -61,6 +62,8 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_ALL4HONDA, country="NL")
         baker.make(Stock, part=part, source=SOURCE_ACURAPARTSFORLESS, country="US")
         baker.make(Stock, part=part, source=SOURCE_CMS, country="NL")
+        baker.make(Stock, part=part, source=SOURCE_NENGUN, country="JP")
+
         assert Part.objects.count() == 1
         assert (
             Stock.objects.count() == len(CLIENTS) + 1
@@ -89,5 +92,5 @@ class TestSearchForStocks:
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
         assert (
-            Stock.objects.count() == len(CLIENTS) - 1 + 1
-        )  # one more because amayama finds 2 more stocks
+            Stock.objects.count() == len(CLIENTS) - 1
+        )  # amayama finds 2 more stocks but nengun doesn't have it
