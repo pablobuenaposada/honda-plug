@@ -32,7 +32,10 @@ class RequestLimiter:
         self.last_time = datetime.now()
         async with aiohttp.ClientSession() as session:
             async with session.post(url, data=data, **kwargs) as response:
-                return await response.json(), response.url, response.status
+                if response.content_type == "application/json":
+                    return await response.json(), response.url, response.status
+                elif response.content_type == "text/html":
+                    return await response.text(), response.url, response.status
 
 
 def string_to_float(value: str):

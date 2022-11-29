@@ -6,6 +6,7 @@ from sentry_sdk import capture_exception
 
 from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
 from scrapper.clients.acurapartsforless import AcurapartsforlessClient
+from scrapper.clients.akr import AkrClient
 from scrapper.clients.all4honda import All4hondaClient
 from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.cms import CmsClient
@@ -31,6 +32,7 @@ CLIENTS = (
     AcurapartsforlessClient,
     CmsClient,
     NengunClient,
+    AkrClient,
 )
 
 

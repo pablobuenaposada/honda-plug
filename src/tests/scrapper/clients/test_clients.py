@@ -4,6 +4,7 @@ from money import Money
 from part.constants import (
     SOURCE_ACURAEXPRESSPARTS,
     SOURCE_ACURAPARTSFORLESS,
+    SOURCE_AKR,
     SOURCE_ALL4HONDA,
     SOURCE_AMAYAMA,
     SOURCE_CMS,
@@ -17,6 +18,7 @@ from part.constants import (
 )
 from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
 from scrapper.clients.acurapartsforless import AcurapartsforlessClient
+from scrapper.clients.akr import AkrClient
 from scrapper.clients.all4honda import All4hondaClient
 from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.cms import CmsClient
@@ -586,6 +588,27 @@ class TestClients:
                         discontinued=None,
                         quantity=None,
                     ),
+                },
+            ),
+            (
+                AkrClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        reference="12251-RBB-004",
+                        url="https://www.akr-performance.com/p/honda-cylinder-head-gasket-12251-rbb-004",
+                        source=SOURCE_AKR,
+                        country="NL",
+                        title="Honda Cylinder head gasket",
+                        price=Money(amount="116.80", currency="EUR"),
+                        image="https://www.akr-performance.com/media/products/engine-parts-1-accord-4-door-sedan-2003-2005-24i_honda-cylinder-head-gasket-12251-rbb-004.jpg",
+                        available=False,
+                        discontinued=False,
+                        quantity=None,
+                    ),
+                    "56483-PND-003": None,
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
+                    "74100-S2A-010": None,
                 },
             ),
         ),

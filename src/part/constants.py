@@ -12,6 +12,7 @@ SOURCE_ALL4HONDA = "all4honda"
 SOURCE_ACURAPARTSFORLESS = "acurapartsforless"
 SOURCE_CMS = "cms"
 SOURCE_NENGUN = "nengun"
+SOURCE_AKR = "akr"  # old 12tune
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -29,6 +30,7 @@ STOCK_SOURCES = (
     (SOURCE_ALL4HONDA, "www.a4h-tech.com"),
     (SOURCE_CMS, "www.cmsnl.com"),
     (SOURCE_NENGUN, "www.nengun.com"),
+    (SOURCE_AKR, "www.akr-performance.com"),
 )
 
 PART_SOURCES = (
