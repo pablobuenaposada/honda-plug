@@ -73,7 +73,6 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     list_display = (
         "reference",
         "source",
-        "stock_found",
         "modified",
         "get_num_of_stock_updates",
     )
@@ -81,17 +80,6 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     list_filter = ["source", "modified", StockCountFilter]
     inlines = [StockInlineAdmin]
     actions = ["search_stocks"]
-
-    def get_queryset(self, request):
-        """just to be able to order by column stock found"""
-        qs = super().get_queryset(request)
-        qs = qs.annotate(stock_count=Count("stock"))
-        return qs
-
-    def stock_found(self, obj):
-        return obj.stock_set.count()
-
-    stock_found.admin_order_field = "stock_count"
 
     def search_stocks(self, request, queryset):
         enqueue_queryset.delay(queryset, at_front=True)
