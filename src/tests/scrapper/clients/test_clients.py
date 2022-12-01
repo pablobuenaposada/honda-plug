@@ -13,6 +13,7 @@ from part.constants import (
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
     SOURCE_NENGUN,
+    SOURCE_ONLINETEILE,
     SOURCE_PIECESAUTOHONDA,
     SOURCE_TEGIWA,
 )
@@ -27,6 +28,7 @@ from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.hondaspareparts import HondasparepartsClient
 from scrapper.clients.nengun import NengunClient
+from scrapper.clients.onlineteile import OnlineteileClient
 from scrapper.clients.piecesautohonda import PiecesAutoHondaClient
 from scrapper.clients.tegiwa import TegiwaClient
 from scrapper.common.stock import Stock
@@ -609,6 +611,49 @@ class TestClients:
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                     "74100-S2A-010": None,
+                },
+            ),
+            (
+                OnlineteileClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        reference="12251-RBB-004",
+                        url="https://www.online-teile.com/honda-ersatzteile/12251RBB004_Gasket-Comp-Cylinder-He.html",
+                        source=SOURCE_ONLINETEILE,
+                        country="DE",
+                        title="Gasket Comp Cylinder He",
+                        price=Money("118.39", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=None,
+                    ),
+                    "56483-PND-003": Stock(
+                        reference="56483-PND-003",
+                        url="https://www.online-teile.com/honda-ersatzteile/56483PND003_Pulley-Comp-Power-Steer.html",
+                        source=SOURCE_ONLINETEILE,
+                        country="DE",
+                        title="Pulley Comp Power Steer",
+                        price=Money("104.13", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=None,
+                    ),
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://www.online-teile.com/honda-ersatzteile/74100S2A010_Fender-Assy-R-Fr-Inne.html",
+                        source=SOURCE_ONLINETEILE,
+                        country="DE",
+                        title="Fender Assy R Fr Inne",
+                        price=Money("218.1", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=None,
+                    ),
                 },
             ),
         ),
