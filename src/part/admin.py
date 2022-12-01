@@ -4,7 +4,6 @@ from django.db import models
 from django.db.models import Count
 from django.forms import TextInput
 from django.utils.safestring import mark_safe
-from django.utils.translation import gettext_lazy as _
 from simple_history.admin import SimpleHistoryAdmin
 
 from part.models import Image, Part, Stock
@@ -48,25 +47,6 @@ class ImageInlineAdmin(admin.TabularInline):
         return mark_safe(f'<img src="{obj.url}" style="height: 200px"/>')
 
 
-class StockCountFilter(admin.SimpleListFilter):
-    title = _("stock found")
-    parameter_name = "stock_count"
-
-    def lookups(self, request, model_admin):
-        qs = Part.objects.annotate(stock_count=Count("stock")).values(
-            "reference", "stock_count"
-        )
-        group_by = {}
-        for part in qs:
-            group_by[part["stock_count"]] = group_by.get(part["stock_count"], 0) + 1
-        for result, count in sorted(group_by.items(), key=lambda x: x[1], reverse=True):
-            yield (result, f"{result} ({count})")
-
-    def queryset(self, request, queryset):
-        if self.value():
-            return queryset.filter(stock_count=self.value())
-
-
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Part
     readonly_fields = ("created", "modified")
@@ -78,7 +58,7 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         "get_num_of_stock_updates",
     )
     search_fields = ["reference"]
-    list_filter = ["source", "modified", StockCountFilter]
+    list_filter = ["source", "modified"]
     inlines = [StockInlineAdmin]
     actions = ["search_stocks"]
 
