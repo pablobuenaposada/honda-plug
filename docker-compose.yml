@@ -59,6 +59,14 @@ services:
       - "3060:3000"
     volumes:
       - ./grafana-data:/var/lib/grafana
+  rq-exporter:
+    image: pablobuenaposada/rq-exporter
+    ports:
+      - "9726:9726"
+    environment:
+      RQ_REDIS_HOST: "redis"
+    depends_on:
+      - redis
 
 volumes:
   postgres_data:

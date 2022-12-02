@@ -7,3 +7,4 @@ scrape_configs:
     static_configs:
       - targets:
         - django:8000
+        - rq-exporter:9726
