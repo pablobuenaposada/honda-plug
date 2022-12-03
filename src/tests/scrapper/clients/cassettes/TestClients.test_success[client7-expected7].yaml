@@ -4265,4 +4265,1341 @@ interactions:
       code: 200
       message: OK
     url: https://www.acuraexpressparts.com/search?search_str=74100-S2A-010
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Host:
+      - www.acuraexpressparts.com
+      User-Agent:
+      - Python/3.10 aiohttp/3.8.3
+    method: GET
+    uri: https://www.acuraexpressparts.com/search?search_str=31170-PND-013
+  response:
+    body: {}
+    headers:
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Sat, 03 Dec 2022 00:35:06 GMT
+      Location:
+      - /oem-parts/acura-tensioner-assembly-auto-31170pnd013
+      P3P:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Referrer-Policy:
+      - same-origin
+      Set-Cookie:
+      - __Secure-sid=6081eb02e6f8ccd886c7880b034de9a3; expires=Sat, 03-Dec-2022 01:35:06
+        GMT; Max-Age=3600; path=/; secure; HttpOnly; SameSite=None
+      - vid=2b234520b6c85a4dc14af508c2d894d1; Path=/; Expires=Fri, 03 Dec 2027 00:35:06
+        GMT; Secure; HttpOnly; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000;
+      - max-age=31536000;
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - prd
+      X-Frame-Options:
+      - DENY
+      X-Role:
+      - webstore
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 302
+      message: Found
+    url: https://www.acuraexpressparts.com/search?search_str=31170-PND-013
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Cookie:
+      - __Secure-sid=6081eb02e6f8ccd886c7880b034de9a3; vid=2b234520b6c85a4dc14af508c2d894d1
+      Host:
+      - www.acuraexpressparts.com
+      User-Agent:
+      - Python/3.10 aiohttp/3.8.3
+    method: GET
+    uri: https://www.acuraexpressparts.com/oem-parts/acura-tensioner-assembly-auto-31170pnd013
+  response:
+    body:
+      string: "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"utf-8\">
+        <title>Genuine OEM Acura Tensioner Assembly, Auto Part# 31170-PND-013 Fits
+        2002-2006 Acura RSX: Up To 35% Off On Every Order And Guaranteed Fit When
+        You Enter Your VIN | Acura Express Parts</title> <base href=\"https://www.acuraexpressparts.com\">
+        <meta name=\"description\" content=\"Featuring the highest quality OEM parts
+        online, Acura Express Parts has what you are looking for.\_2002-2006 Acura
+        RSX part # 31170-PND-013 - Tensioner Assembly, Auto\"> <link rel=\"preload\"
+        href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/common.js\" as=\"script\">
+        <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/webstore-package.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/product.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_images/product_images.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_purchase/product_purchase.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/scripts/browse_fitting_products.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_tab_nav/product_tab_nav.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_details/product_details.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_recommended/product_recommended.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_fitment/product_fitment.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/custom_html/custom_html.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/promotional_banner/promotional_banner.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/store_logo/store_logo.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/help_modal/help_modal.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/search_bar/auto_suggest.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/payments_accepted/payments_accepted.js\"
+        as=\"script\"> <link rel=\"preload\" href=\"https://s3.amazonaws.com/rparts-sites/f611090d92384573b94c104bcd04c1ed/images/logo.png\"
+        as=\"image\"> <link rel=\"preload\" href=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/017c3f027ae480abc93aa96a5aff929d.png\"
+        as=\"image\"> <link rel=\"preload\" href=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/fb890e6cb1488c238615ae2e8faf4eca.png\"
+        as=\"image\"> <link rel=\"preload\" href=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/ca2043c5c8a0cb1ec033bfab6e9e5734.png\"
+        as=\"image\"> <link rel=\"preload\" href=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/3f35fba9c6ee41930d0e99eb31a02063.png\"
+        as=\"image\"> <link rel=\"preconnect\" href=\"https://s3.amazonaws.com\">
+        <link rel=\"preconnect\" href=\"https://www.google-analytics.com\"> <link
+        rel=\"preconnect\" href=\"https://www.paypal.com\"> <meta http-equiv=\"x-ua-compatible\"
+        content=\"ie=edge\"> <meta name=\"msapplication-config\" content=\"none\"/>
+        <link rel=\"canonical\" href=\"https://www.acuraexpressparts.com/oem-parts/acura-tensioner-assembly-auto-31170pnd013\"
+        /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+        <link rel=\"preconnect\" href=\"//d3s44e87wooplq.cloudfront.net\" crossorigin>
+        <link href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/styles/fonts.css\"
+        rel=\"stylesheet\"> <style type=\"text/css\">html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:sans-serif;line-height:1.15}body{margin:0}header,nav{display:block}[hidden]{display:none}a{-webkit-text-decoration-skip:objects;background-color:transparent}strong{font-weight:inherit;font-weight:bolder}h1{font-size:2em;margin:.67em
+        0}img{border-style:none}button,input{font:inherit;margin:0}button,input{overflow:visible}button{text-transform:none}[type=submit],button,html
+        [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px
+        dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em
+        .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;white-space:normal}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}@-ms-viewport{width:device-width}html{-ms-overflow-style:scrollbar;font-size:16px}body{background-color:#fff;color:#373a3c;font-family:-apple-system,BlinkMacSystemFont,Segoe
+        UI,Roboto,Helvetica Neue,Arial,sans-serif;font-size:1rem;line-height:1.5}h1,h2,h3{margin-bottom:.5rem;margin-top:0}p{margin-bottom:1rem;margin-top:0}address{font-style:normal;line-height:inherit}address,ul{margin-bottom:1rem}ul{margin-top:0}a{color:#0275d8;text-decoration:none}img{vertical-align:middle}a,button,input{-ms-touch-action:manipulation;touch-action:manipulation}caption{caption-side:bottom;color:#818a91;padding-bottom:.75rem;padding-top:.75rem}caption{text-align:left}button,input{line-height:inherit}fieldset{border:0;margin:0;min-width:0;padding:0}legend{display:block;font-size:1.5rem;line-height:inherit;margin-bottom:.5rem;padding:0;width:100%}[hidden]{display:none!important}h1,h2,h3{color:inherit;font-family:inherit;font-weight:500;line-height:1.1;margin-bottom:.5rem}h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}.container-fluid{margin-left:auto;margin-right:auto;padding-left:15px;padding-right:15px}.container-fluid:after{clear:both;content:\"\";display:table}.row{margin-left:-15px;margin-right:-15px}.row:after{clear:both;content:\"\";display:table}@media
+        (min-width:576px){.row{margin-left:-15px;margin-right:-15px}}@media (min-width:768px){.row{margin-left:-15px;margin-right:-15px}}@media
+        (min-width:992px){.row{margin-left:-15px;margin-right:-15px}}@media (min-width:1200px){.row{margin-left:-15px;margin-right:-15px}}.col-md-12,.col-md-4,.col-md-6,.col-md-8{min-height:1px;padding-left:15px;padding-right:15px;position:relative}@media
+        (min-width:576px){.col-md-12,.col-md-4,.col-md-6,.col-md-8{padding-left:15px;padding-right:15px}}@media
+        (min-width:768px){.col-md-12,.col-md-4,.col-md-6,.col-md-8{padding-left:15px;padding-right:15px}}@media
+        (min-width:992px){.col-md-12,.col-md-4,.col-md-6,.col-md-8{padding-left:15px;padding-right:15px}}@media
+        (min-width:1200px){.col-md-12,.col-md-4,.col-md-6,.col-md-8{padding-left:15px;padding-right:15px}}@media
+        (min-width:768px){.col-md-4{float:left;width:33.33333%}.col-md-6{float:left;width:50%}.col-md-8{float:left;width:66.66667%}.col-md-12{float:left;width:100%}}.fade{opacity:0}base::-moz-progress-bar{background-color:#eee;border-radius:.25rem}.close{color:#000;float:right;font-size:1.5rem;font-weight:700;line-height:1;opacity:.2;text-shadow:0
+        1px 0 #fff}button.close{-webkit-appearance:none;background:0 0;border:0;padding:0}.modal{overflow:hidden}.modal{bottom:0;display:none;left:0;outline:0;position:fixed;right:0;top:0;z-index:1050}.modal-content{background-clip:padding-box;background-color:#fff;border:1px
+        solid rgba(0,0,0,.2);border-radius:.3rem;outline:0;position:relative}.modal-body{padding:15px;position:relative}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.page-content{min-height:500px}.container-wrap{margin:0
+        auto;max-width:1000px}@media (min-width:768px){.row-full-height-md{display:table;height:100%;margin:0;table-layout:fixed;width:100%}.row-full-height-md
+        .col-full-height{display:table-cell;float:none;height:100%;vertical-align:top}.row-full-height-md
+        .col-full-height:first-child{padding-left:0}.row-full-height-md .col-full-height:last-child{padding-right:0}.row-full-height-md
+        .col-full-height.inline-modules{vertical-align:middle}.row-full-height-md
+        .col-full-height.inline-modules .full-height-wrapper{height:auto;vertical-align:middle}.row-full-height-md
+        .col-full-height .full-height-wrapper{height:100%;margin:0}}.page-builder-page-layout
+        .page-builder-layout-section .container-wrap{padding:20px 0}.container-header
+        .page-builder-page-layout .page-builder-layout-section .container-wrap{padding-bottom:10px;padding-top:10px}.page-builder-page-layout
+        .page-builder-layout-section.normal-content>.container-wrap{max-width:1000px;width:auto}.page-builder-page-layout
+        .page-builder-layout-section.normal-content .col-md-12.page-builder-layout-column{padding-left:0;padding-right:0}@media
+        (max-width:1000px){.page-builder-page-layout .page-builder-layout-section.normal-content>.container-wrap{padding-left:15px;padding-right:15px}}@media
+        (max-width:767px){.page-builder-page-layout .page-builder-layout-section.normal-content>.container-wrap{padding-left:10px;padding-right:10px}}.page-builder-page-layout
+        .page-builder-layout-section.wide-content>.container-wrap{max-width:1250px;width:auto}.page-builder-page-layout
+        .page-builder-layout-section.wide-content .col-md-12.page-builder-layout-column{padding-left:0;padding-right:0}@media
+        (max-width:1250px){.page-builder-page-layout .page-builder-layout-section.wide-content>.container-wrap{padding-left:10px;padding-right:10px}}.page-builder-page-layout
+        .page-builder-layout-section.full-content>.container-wrap{max-width:none;padding-left:0;padding-right:0;width:auto}.page-builder-page-layout
+        .page-builder-layout-section.full-content .row.page-builder-layout-row{margin-left:0;margin-right:0}.page-builder-page-layout
+        .page-builder-layout-section.full-content .col-md-12.page-builder-layout-column{padding-left:0;padding-right:0}.page-builder-page-layout
+        .page-builder-layout-section.padding-0 .container-wrap{padding-bottom:0;padding-top:0}.page-builder-page-layout
+        .page-builder-layout-section.less-padding .container-wrap{padding-bottom:10px;padding-top:10px}.page-builder-page-layout
+        .page-builder-layout-section.mobile-only{display:none}@media (max-width:767px){.page-builder-page-layout
+        .page-builder-layout-section.mobile-only{display:block}.page-builder-page-layout
+        .page-builder-layout-section.desktop-only{display:none}}.page-builder-page-layout
+        .page-builder-layout-row{margin-left:0;margin-right:0}@media (min-width:576px){.page-builder-page-layout
+        .page-builder-layout-row{margin-left:0;margin-right:0}}@media (min-width:767px){.page-builder-page-layout
+        .page-builder-layout-row{margin-left:0;margin-right:0}}@media (max-width:575px){.page-builder-page-layout
+        .page-builder-layout-row .row{margin:0}}.page-builder-page-layout .page-builder-layout-row+.page-builder-layout-row{margin-top:20px}.page-builder-page-layout
+        .page-builder-layout-column.text-center{text-align:center}.page-builder-page-layout
+        .page-builder-layout-column.text-right{text-align:right}.page-builder-page-layout
+        .page-builder-layout-column.inline-modules .page-builder-layout-column-wrap
+        .page-builder-layout-module{display:inline-block;margin-right:20px;vertical-align:middle}.page-builder-page-layout
+        .page-builder-layout-column.inline-modules .page-builder-layout-column-wrap
+        .page-builder-layout-module:last-child{margin-right:0}.page-builder-page-layout
+        .page-builder-layout-module.mobile-only{display:none}@media (max-width:767px){.page-builder-page-layout
+        .page-builder-layout-module.mobile-only{display:block}.page-builder-page-layout
+        .page-builder-layout-module.desktop-only{display:none}}.page-builder-page-layout
+        .page-builder-layout-column.block-modules .page-builder-layout-module+.page-builder-layout-module{margin-top:20px}.container-header
+        .page-builder-page-layout .page-builder-layout-column.block-modules .page-builder-layout-module+.page-builder-layout-module{margin-top:0}@font-face{font-display:fallback;font-family:Open
+        Sans;font-style:normal;font-weight:400;src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Regular-webfont.eot);src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Regular-webfont.eot#iefix)
+        format(\"embedded-opentype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Regular-webfont.woff)
+        format(\"woff\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Regular-webfont.ttf)
+        format(\"truetype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Regular-webfont.svg#open_sanssemibold)
+        format(\"svg\")}@font-face{font-display:fallback;font-family:Open Sans;font-style:normal;font-weight:500;src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.eot);src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.eot#iefix)
+        format(\"embedded-opentype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.woff)
+        format(\"woff\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.ttf)
+        format(\"truetype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Semibold-webfont.svg#open_sanssemibold)
+        format(\"svg\")}@font-face{font-display:fallback;font-family:Open Sans;font-style:normal;font-weight:700;src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Bold-webfont.eot);src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Bold-webfont.eot#iefix)
+        format(\"embedded-opentype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Bold-webfont.woff)
+        format(\"woff\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Bold-webfont.ttf)
+        format(\"truetype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSans/OpenSans-Bold-webfont.svg#open_sanssemibold)
+        format(\"svg\")}@font-face{font-display:fallback;font-family:Open Sans Condensed;font-style:normal;font-weight:700;src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondBold-webfont.eot);src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondBold-webfont.eot#iefix)
+        format(\"embedded-opentype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondBold-webfont.woff)
+        format(\"woff\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondBold-webfont.ttf)
+        format(\"truetype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondBold-webfont.svg#open_sans_condensedbold)
+        format(\"svg\")}@font-face{font-display:fallback;font-family:Open Sans Condensed;font-style:normal;font-weight:400;src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLight-webfont.eot);src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLight-webfont.eot#iefix)
+        format(\"embedded-opentype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLight-webfont.woff)
+        format(\"woff\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLight-webfont.ttf)
+        format(\"truetype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLight-webfont.svg#open_sans_condensedbold)
+        format(\"svg\")}@font-face{font-display:fallback;font-family:Open Sans Condensed;font-style:italic;font-weight:400;src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLightItalic-webfont.eot);src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLightItalic-webfont.eot#iefix)
+        format(\"embedded-opentype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLightItalic-webfont.woff)
+        format(\"woff\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLightItalic-webfont.ttf)
+        format(\"truetype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/OpenSansCondensed/OpenSans-CondLightItalic-webfont.svg#open_sans_condensedbold)
+        format(\"svg\")}@font-face{font-family:FontAwesome;font-style:normal;font-weight:400;src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(//d3s44e87wooplq.cloudfront.net/assets/fonts/font-awesome/4.7.0/fonts/fontawesome-webfont.eot#iefix&v=4.7.0)
+        format(\"embedded-opentype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0)
+        format(\"woff2\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0)
+        format(\"woff\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0)
+        format(\"truetype\"),url(//d3s44e87wooplq.cloudfront.net/assets/fonts/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular)
+        format(\"svg\")}.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font:normal
+        normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto}.fa-spin{animation:fa-spin
+        2s linear infinite}@keyframes fa-spin{0%{transform:rotate(0)}to{transform:rotate(359deg)}}.fa-search:before{content:\"\\F002\"}.fa-user:before{content:\"\\F007\"}.fa-check:before{content:\"\\F00C\"}.fa-times:before{content:\"\\F00D\"}.fa-search-plus:before{content:\"\\F00E\"}.fa-clock-o:before{content:\"\\F017\"}.fa-refresh:before{content:\"\\F021\"}.fa-tag:before{content:\"\\F02B\"}.fa-question-circle:before{content:\"\\F059\"}.fa-plus:before{content:\"\\F067\"}.fa-chevron-down:before{content:\"\\F078\"}.fa-shopping-cart:before{content:\"\\F07A\"}.fa-phone:before{content:\"\\F095\"}.fa-facebook:before{content:\"\\F09A\"}.fa-bars:before{content:\"\\F0C9\"}.fa-caret-down:before{content:\"\\F0D7\"}.fa-angle-right:before{content:\"\\F105\"}.fa-angle-up:before{content:\"\\F106\"}.fa-car:before{content:\"\\F1B9\"}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.flyout{background:#fff;border:1px
+        solid #bdbdbd;border-radius:5px;box-shadow:1px 8px 9px -8px #4b4a4a,1px -5px
+        9px -8px #4b4a4a;color:#000;display:none;font-size:14px;line-height:normal;position:absolute;right:0;text-align:left;z-index:100}.flyout
+        .upper-arrow,.flyout .upper_arrow{border-color:transparent transparent #fff;border-style:solid;border-width:0
+        10px 10px;height:0;left:0;position:absolute;top:-10px;width:0}.flyout ul{display:block;list-style:none;margin:10px
+        5px;padding:0}.flyout ul a{border-left:2px solid #e6e6e6;color:#333;display:block;padding:6px}.flyout
+        ul a i{color:#ccc;margin-right:8px}.button{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;background-image:linear-gradient(180deg,#fff
+        0,#d8d8d8);background-repeat:repeat-x;border:1px solid #ccc;border-radius:.2em;color:#333!important;display:inline-block;font-size:1em;font-weight:700;margin:0
+        0 4px;padding:.3em 1em!important;text-decoration:none!important;text-shadow:#eee
+        0 1px 0;width:auto!important}.call-to-action-button{display:inline-block}.action-button{background-color:#bababa;border:none;border-radius:3px;color:#fff;font-family:Open
+        Sans,sans-serif;font-weight:700;padding:6px 15px;text-align:center;text-decoration:none;text-transform:uppercase}.action-button,.action-button:after{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}.action-button:after{content:\"\\F105\";display:inline-block;font-family:FontAwesome;font-size:16px;font-style:normal;font-weight:400;line-height:1;margin-left:10px;vertical-align:bottom}.action-button.wide{padding-left:30px;padding-right:30px}.action-button.big-button{font-size:14px;padding:12px
+        30px}.action-button.big-button:after{font-size:20px}.action-button.place-order-button{background-color:#38841a}.action-button.no-icon:after{content:\"\";margin-left:0}table
+        caption{display:none}.cart-component{min-width:110px;position:relative}.cart-component
+        .cart-button{display:block;text-align:center}.cart-component .cart-button
+        .cart-icon{margin-right:3px;position:relative}.cart-component .cart-button
+        .cart-icon .fa{font-size:15px}.cart-component .cart-button .cart-text{font-size:12px;text-transform:uppercase}.cart-component
+        .cart-button .cart-items{background:#fff;border-radius:20px;color:#000;display:none;font-size:9px;font-weight:700;left:5px;padding:1px
+        4px 0;position:absolute;top:-8px}.cart-component .cart-flyout{box-sizing:border-box;color:#686868;font-family:Open
+        Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:500;margin-top:-1px;padding:10px
+        20px 20px;text-align:right;width:300px}.cart-component .cart-flyout .upper-arrow{left:200px}.cart-component
+        .cart-flyout .empty-cart-message{color:#333;margin:0;text-align:center}.garage-component{display:inline-block;position:relative}.garage-component
+        .garage-text{color:#595959;line-height:25px}.garage-component .garage.flyout{border-radius:3px
+        3px 5px 5px;box-sizing:border-box;left:0;margin-top:0;outline:0;padding:5px;top:100%;width:350px}.garage-component
+        .garage.flyout .closeicon{color:#ccc;position:absolute;right:5px;top:4px}.garage-component
+        .garage.flyout ul a{margin:0;text-decoration:none}.garage-search-bar-component{display:table;position:relative;width:100%}.garage-search-bar-component
+        .garage-component{display:table-cell;vertical-align:middle;width:100px}.garage-search-bar-component
+        .garage-component .garage-text{background-color:#fff;border:1px solid #e1e1e1;border-right-width:0;color:#595959;display:block;font-size:12px;line-height:34px;outline:0;padding:0
+        10px;position:relative;white-space:nowrap;z-index:1}.garage-search-bar-component
+        .garage-component .garage-text:after{background:#e1e1e1;bottom:0;content:\"\";height:80%;margin:auto;position:absolute;right:0;top:0;width:1px}.garage-search-bar-component
+        .garage-component .garage-text>.fa{font-size:9px;margin-left:5px;position:relative;top:-1px}.garage-search-bar-component
+        .garage-component .garage.flyout{border-radius:0 0 5px 5px;border-top-width:0;box-shadow:1px
+        8px 9px -8px #4b4a4a}.garage-search-bar-component .search-bar-component{display:table-cell;vertical-align:middle;width:auto}.garage-search-bar-component
+        .search-bar-component input{border-left-color:#fff;left:-2px;position:relative}.page-subheader-component{display:table;overflow:hidden;width:100%}.page-subheader-component
+        .left-content{display:table-cell;padding:0 0 5px;text-align:left;vertical-align:top;width:75%}.page-subheader-component
+        .page-bread-crumbs{font-size:12px;font-weight:500;margin:0}.page-subheader-component
+        .page-bread-crumbs .tail{color:#757575}.page-subheader-component.just-bread-crumbs{min-height:0}@media
+        (max-width:900px){.page-subheader-component .left-content{width:70%}}@media
+        (max-width:767px){.page-subheader-component .left-content{display:block;padding-left:0;width:100%}}.search-bar-component{position:relative;width:auto}.search-bar-component
+        .main-search-wrapper{display:block}.search-bar-component form{position:relative}.search-bar-component
+        input{border:1px solid #e1e1e1;color:#333;font-size:12px;height:36px;padding:5px
+        20px 5px 10px;position:relative;width:100%}.search-bar-component button{-webkit-filter:none;border:0;border-radius:0;bottom:0;display:block;filter:none;font-size:18px;line-height:18px;position:absolute;right:0;top:0;z-index:3}.actions-bar-module{display:table;font-size:11px;margin:5px
+        0;width:100%}.actions-bar-module .garage.flyout{left:5px}.actions-bar-module
+        .garage-text{background-color:#fff;border:1px solid #e1e1e1;border-right-width:0;color:#929291;display:block;font-size:12px;line-height:34px;outline:0;padding:0
+        10px;position:relative;right:-4px;white-space:nowrap;z-index:1}.actions-bar-module
+        .garage-text:after{background:#e1e1e1;bottom:0;content:\"\";height:80%;margin:auto;position:absolute;right:0;top:0;width:1px}.actions-bar-module
+        #cart_column{display:table-cell;margin-left:0;vertical-align:middle;width:110px}.actions-bar-module
+        #cart_column .fa{font-size:15px}.actions-bar-module #cart_column .call-to-action-button{display:block}.actions-bar-module
+        #cart_column .cart-items{background:#fff;border-radius:20px;color:#000;display:none;font-size:9px;font-weight:700;left:5px;padding:1px
+        4px 0;position:absolute;top:-8px}#action_account{display:table-cell;padding-left:20px;position:relative;vertical-align:bottom;width:150px}#action_account
+        .content-wrap{display:inline-block}#action_account .design-text{color:#333;display:block;font-family:Helvetica
+        Neue,Helvetica,Arial,sans-serif;font-size:12px;font-weight:300;line-height:15px;margin-bottom:2px;padding:0;text-shadow:none}#action_account
+        .your-account{-webkit-filter:none;background:#dedddc;border:none;border-radius:0;color:#333;filter:none;font-size:12px;font-weight:300;padding:1px
+        10px}#action_account .your-account .fa{margin-left:2px;position:relative;top:-1px}#action_account
+        .your-account .fa:before{content:\"\\F078\";font-size:9px}#action_account
+        .account.flyout{left:-50px;margin-top:7px;outline:0;padding:5px;top:100%;width:175px}#action_account
+        .account.flyout .upper_arrow{left:135px}#action_account .account.flyout #account_login{border-bottom:1px
+        solid #ccc;padding:10px;text-align:center}#action_account .account.flyout
+        #account_login .button{-webkit-filter:none;background:#dedddc;border:none;border-radius:0;color:#686968!important;filter:none;font-weight:400;line-height:normal;margin:0
+        0 0 10px;padding:7px 13px!important;text-shadow:none;text-transform:uppercase}#action_account
+        .account.flyout #account_login a{display:block}#action_account .account.flyout
+        #account_login a.button{padding:7px!important;text-align:center}#action_account
+        .account.flyout #account_login .register-link{font-size:11px}#action_account
+        .account.flyout{left:-35px}#action_account .account.flyout #account_login
+        .button{margin:0 0 5px}.car-selected-module .garage-text{color:#555;font-weight:500}@media
+        (max-width:767px){.car-selected-module .garage-text{display:inline-block;padding-left:5px;padding-top:10px}}@media
+        (max-width:375px){.car-selected-module .garage.flyout{bottom:0;left:0;position:fixed;right:0;top:0;width:100%;z-index:1050}.car-selected-module
+        .garage.flyout .closeicon{font-size:40px;right:10px;top:0}}.contact-us-module{padding:5px
+        0}.contact-us-module .contact-message,.contact-us-module .contact-type-info{vertical-align:middle}.contact-us-module
+        .contact-type-phone i.fa{font-size:1.1em;vertical-align:middle}.contact-us-module.contact-us-display-block
+        .contact-message{margin-right:.3em}.contact-us-module.contact-us-display-block
+        .contact-message,.contact-us-module.contact-us-display-block .contact-type-phone{font-size:15px}.links-list-module
+        .links-list{list-style:none;margin:0;padding:0}.links-list-module.links-display-inline
+        .links-list,.links-list-module.links-display-inline .links-list>li{display:inline-block}.links-list-module.links-display-inline
+        .links-list>li a{display:block}.links-list-module.links-display-inline .links-list>li+li{margin-left:15px}.links-list-module.list-style-header
+        .links-list a{color:#555;font-weight:700;padding:2px 10px}.links-list-module.list-style-header
+        .links-list>li+li{margin-left:0}@media (max-width:767px){.search-bar-module
+        .search-bar-component input{font-size:16px}.search-bar-module .search-bar-component
+        button{padding:5px 13px 6px}}.call-to-action-button{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;background-color:#222;color:#fff;padding:9px
+        15px;text-decoration:none}.text-right{text-align:right}*{box-sizing:border-box}body{background-color:#fff;color:#383838;font:100%
+        Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400}a{color:#1a7db7;text-decoration:none}form,input{font-size:12px}form,h1,h2,h3,input{font-family:Open
+        Sans,Helvetica Neue,Helvetica,Arial,sans-serif}h1,h2,h3{background:0 0;border:none;box-shadow:none;font-size:23px;font-style:normal;height:auto;letter-spacing:normal;padding:0}h2{font-size:20px}h3{font-size:18px}input{color:#383838;font-size:12px;font-weight:400;margin:0;width:auto}ul{padding:0}img{max-width:100%}::-webkit-input-placeholder{color:#888;font-size:12px;font-weight:400;opacity:1;text-overflow:ellipsis}:-moz-placeholder,::-moz-placeholder{color:#888;font-size:12px;font-weight:400;opacity:1;text-overflow:ellipsis}:-ms-input-placeholder{color:#888;font-size:12px;font-weight:400;opacity:1;text-overflow:ellipsis}input[type=text]{border:1px
+        solid #dadada;border-radius:3px}html body .action-button{background-color:#bababa;border:none;border-radius:3px;color:#fff;font-family:Open
+        Sans,sans-serif;font-weight:700;padding:6px 15px;text-align:center;text-decoration:none;text-transform:uppercase}html
+        body .action-button,html body .action-button:after{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}html
+        body .action-button:after{content:\"\\F105\";display:inline-block;font-family:FontAwesome;font-size:16px;font-style:normal;font-weight:400;line-height:1;margin-left:10px;vertical-align:bottom}html
+        body .action-button.wide{padding-left:30px;padding-right:30px}html body .action-button.big-button{font-size:14px;padding:12px
+        30px}html body .action-button.big-button:after{font-size:20px}html body .action-button.place-order-button{background-color:#38841a}html
+        body .action-button.no-icon:after{content:\"\";margin-left:0}.suggestion-container{background-color:#fff;border-radius:4px;box-shadow:0
+        2px 6px 0 rgba(0,0,0,.15);padding:10px 0;position:absolute;width:100%;z-index:550}img.lazy-load{position:absolute}img.lazy-load.full-res{opacity:0}img.lazy-load.placeholder{height:100%;opacity:1;width:100%}.lazy-load-wrap{position:relative}.lazy-load-wrap.flip
+        .full-res{opacity:1}.lazy-load-wrap.flip .placeholder{opacity:0}.product-page-layout.page-builder-page-layout
+        .page-builder-layout-section .container-wrap{padding-bottom:10px;padding-top:10px}.product-page-layout
+        ul.field-list{display:table;font-size:13px;font-weight:400;list-style:none;margin:0;padding:0;vertical-align:baseline}.product-page-layout
+        ul.field-list li{display:table-row;height:30px;line-height:1}.product-page-layout
+        ul.field-list li .list-label{display:table-cell;font-size:13px;font-weight:500;line-height:1.3;padding-right:15px;vertical-align:top;width:150px}.product-page-layout
+        ul.field-list li .list-value{color:#595959;display:table-cell;line-height:1.3;padding-bottom:10px}@media
+        (max-width:575px){.product-page-layout ul.field-list li .list-value{display:block}}.product-page-layout
+        h1{font-size:23px;line-height:30px;padding:3px 0}.product-page-layout h1.product-title{color:#383838;letter-spacing:.5px;margin-bottom:5px}.product-page-layout
+        h2{color:#383838;font-size:15px;font-weight:400;line-height:1;padding:8px
+        0;position:relative}.product-page-layout .product-section-title{border-bottom:3px
+        solid transparent;display:inline-block;position:relative}.product-page-layout
+        .more_info{font-size:14px}@media (max-width:575px){.product-page-layout .page-builder-layout-column.block-modules
+        .page-builder-layout-module+.page-builder-layout-module{margin-top:10px}}@media
+        (max-width:575px){.product-page-layout .page-builder-layout-column.block-modules
+        .page-builder-layout-module:first-child+.page-builder-layout-module{margin-top:5px}}@media
+        (max-width:767px){.product-page-layout .col-md-6{padding:0}}@media (min-width:767px){.product-page-layout
+        .col-md-6:first-child .page-builder-layout-module{height:100%}}.product-page-layout
+        h1.product-title{margin:0;padding:0}.product-page-layout h2{-webkit-font-smoothing:antialiased;font-weight:500;margin-bottom:10px;margin-top:0;text-transform:uppercase}@media
+        (max-width:767px){.product-page-layout .split-column .left:last-child{width:100%}}.product-badges-module
+        .product-badges{margin:20px 0}@media (max-width:767px){.product-badges-module
+        .product-badges{margin:0}}.product-badges-module .product-badges .product-badge{display:inline-block;margin-bottom:10px;min-height:30px;position:relative;vertical-align:top;width:48%}.product-badges-module
+        .product-badges .product-badge .badge-icon{height:32px;left:0;margin-right:15px;position:absolute;top:0;width:32px}.product-badges-module
+        .product-badges .product-badge .badge-icon .icon{background-image:url(//d3s44e87wooplq.cloudfront.net/assets/modules/product-badges/badge-sprite.png);height:32px;width:32px}.product-badges-module
+        .product-badges .product-badge.warranty .badge-icon .icon{background-position:0
+        -1px}.product-badges-module .product-badges .product-badge.security .badge-icon
+        .icon{background-position:0 -35px}.product-badges-module .product-badges .product-badge.support
+        .badge-icon .icon{background-position:0 -69px}.product-badges-module .product-badges
+        .product-badge.fitment .badge-icon .icon{background-position:0 -103px}.product-badges-module
+        .product-badges .product-badge .badge-text{color:#595959;font-size:11px;font-weight:400;line-height:1;margin-left:40px;margin-top:4px}.product-badges-module
+        .product-badges .product-badge .badge-text strong{color:#333;display:block;font-family:Lato
+        Bold,Open Sans Condensed,Helvetica,Arial,sans-serif;font-family:Open Sans,sans-serif;font-size:10px;font-weight:700;line-height:1.3em;padding:0}@media
+        (max-width:767px){.product-badges-module .product-badges .product-badge{display:inline-block;margin:0
+        -1px 15px;width:50%}.product-badges-module .product-badges .product-badge
+        .badge-text{margin-top:0}.product-badges-module .product-badges .product-badge
+        .badge-text strong{font-size:10px;margin-bottom:.3em}}@media (max-width:767px)
+        and (min-width:435px){.product-badges-module .product-badges .product-badge
+        .badge-text strong{font-size:12px}}@media (max-width:767px) and (min-width:576px){.product-badges-module
+        .product-badges .product-badge .badge-text strong{font-size:13px}}@media (max-width:375px){.product-badges-module
+        .product-badges .product-badge{margin:0 0 15px;width:100%}}@media (min-width:768px){.product-details-module
+        h2.product-details-title{display:none}}.product-details-module ul.field-list
+        li{font-size:13px;font-weight:400;line-height:1;margin-bottom:0}@media (max-width:575px){.product-details-module
+        ul.field-list li span{margin-top:6px}}@media (max-width:575px){.product-details-module
+        ul.field-list li .list-label,.product-details-module ul.field-list li .list-value{display:block}}.product-details-module
+        ul.field-list li .list-label,.product-details-module ul.field-list li span{vertical-align:top}.product-details-module
+        ul.field-list li+li{margin-top:10px}.product-details-module .part-manufacturer
+        img{margin-right:15px;max-height:25px;max-width:100px}.product-details-module
+        .product-description{margin-top:0}.product-details-module .product-description
+        .description_body p{margin:0}.product-fitment-confirmation-module .product-fitment{font-size:14px;font-weight:500;padding:8px
+        20px;position:relative}@media (max-width:575px){.product-fitment-confirmation-module
+        .product-fitment{padding:10px}}.product-fitment-confirmation-module .product-fitment>a{display:inline-block;vertical-align:middle}@media
+        (max-width:449px){.product-fitment-confirmation-module .product-fitment>a{display:block;width:100%}}.product-fitment-confirmation-module
+        .product-fitment i.fa{display:inline-block;vertical-align:middle}.product-fitment-confirmation-module
+        .product-fitment .fitment-text{display:inline-block;letter-spacing:.5px}@media
+        (min-width:450px){.product-fitment-confirmation-module .product-fitment .fitment-text{display:inline-block;font-size:14px;vertical-align:middle}}@media
+        (max-width:449px){.product-fitment-confirmation-module .product-fitment .fitment-text{display:block;font-size:12px;text-align:center}}.product-fitment-confirmation-module
+        .product-fitment .icon-wrap{display:inline-block;margin-right:5px}.product-fitment-confirmation-module
+        .product-fitment .icon-wrap i.fa{font-size:20px}@media (max-width:450px){.product-fitment-confirmation-module
+        .product-fitment .icon-wrap{display:none}}.product-fitment-confirmation-module
+        .product-fitment.no-car-selected{border:1px solid;color:#1a7db7}.product-fitment-confirmation-module
+        .product-fitment.no-car-selected .fitment-text .fa{font-size:14px;font-weight:700;margin-left:3px}.product-fitment-confirmation-module
+        .product-fitment.no-car-selected i.fa{font-size:15px}.product-fitment-module
+        .fitment-table-wrap .fitment-table tr+tr{border-top:1px solid #e8e8e8}.product-fitment-module
+        .fitment-table-wrap .fitment-table td{padding:8px 10px 8px 25px}@media (max-width:449px){.product-fitment-module
+        .fitment-table-wrap .fitment-table td{padding-left:10px}}.product-fitment-module
+        .fitment-table-wrap .fitment-table .fitment-trim{max-width:300px}.product-fitment-module
+        .fitment-table-wrap .fitment-expander span.full-count{display:inline-block}.product-fitment-module
+        .fitment-table-wrap.fitment-closed .fitment-hidden{display:none}.product-fitment-module
+        .fitment-table-wrap.fitment-closed .fitment-expander span.full-count{display:none}.product-images-module{height:100%}.product-images-module
+        .product-images{height:100%;margin-bottom:10px;position:relative;width:100%}.product-images-module
+        .product-images.show-thumbnails .main-image{padding-left:88px}@media (max-width:767px){.product-images-module
+        .product-images.show-thumbnails .main-image{padding:0 0 68px}}.product-images-module
+        .product-images.show-thumbnails .main-image .main-image-text{padding-left:89px}@media
+        (max-width:767px){.product-images-module .product-images.show-thumbnails .main-image
+        .main-image-text{padding-left:0}}.product-images-module .product-images .main-image{height:100%}.product-images-module
+        .product-images .product-main-image-link,.product-images-module .product-images
+        .product-secondary-image{border:1px solid #cfcfcf;display:block;text-align:center}.product-images-module
+        .product-images .product-main-image-link img,.product-images-module .product-images
+        .product-secondary-image img{margin:0 auto;max-width:100%}.product-images-module
+        .product-images .product-secondary-image{border-color:#e8e8e8;display:inline-block;min-height:72px;vertical-align:middle;width:100%}@media
+        (max-width:767px){.product-images-module .product-images .product-secondary-image{min-height:60px}}.product-images-module
+        .product-images .product-main-image-link{height:100%;min-height:260px;position:relative}@media
+        (max-width:767px){.product-images-module .product-images .product-main-image-link{min-height:194px}}.product-images-module
+        .product-images .product-main-image-link img.centered{bottom:0;height:auto;left:0;margin:auto;max-height:100%;padding:0;position:absolute;right:0;top:0}.product-images-module
+        .product-images .product-main-image-link .enlarge-image-overlay{background:hsla(0,0%,100%,.6);bottom:0;display:none;left:0;position:absolute;right:0;top:0;z-index:10}.product-images-module
+        .product-images .product-main-image-link .enlarge-image-link{background:#fff;border-top-right-radius:5px;bottom:0;font-size:35px;font-weight:500;height:50px;left:0;line-height:35px;padding:5px
+        10px;position:absolute}@media (max-width:450px){.product-images-module .product-images
+        .product-main-image-link{height:194px}}.product-images-module .product-images
+        .main-image-text{bottom:1px;font-size:10px;font-weight:500;left:1px;padding-left:0;position:absolute;right:1px;text-align:center;text-transform:uppercase}@media
+        (max-width:767px){.product-images-module .product-images .main-image-text{bottom:-16px;font-size:8px;padding:0}}.product-images-module
+        .product-images .main-image-text p{background-color:hsla(0,0%,100%,.9);margin-bottom:0;padding:3px
+        0}.product-images-module .product-images .secondary-images-wrapper{bottom:1px;left:0;overflow:hidden;position:absolute;top:0;width:80px}@media
+        (max-width:767px){.product-images-module .product-images .secondary-images-wrapper{bottom:0;padding:0
+        28px;top:auto;width:100%}}@media (min-width:500px) and (max-width:767px){.product-images-module
+        .product-images .secondary-images-wrapper.owl-small{padding:0}}.product-images-module
+        .product-images ul.secondary-images{display:block;list-style:none;padding-bottom:20px;position:relative;text-align:center;top:0;vertical-align:top;width:100%}@media
+        (max-width:767px){.product-images-module .product-images ul.secondary-images{margin:0;padding:0}}.product-images-module
+        .product-images ul.secondary-images li{display:inline-block;margin-bottom:8px;width:99%}@media
+        (max-width:767px){.product-images-module .product-images ul.secondary-images
+        li{margin:0;max-width:75px}}.product-images-module .product-images ul.secondary-images
+        li a{overflow:hidden;position:relative}.product-images-module .product-images
+        ul.secondary-images li a img{bottom:0;left:0;margin:auto;overflow:auto;position:absolute;right:0;top:0}.product-images-module
+        .product-images ul.secondary-images li a.active{border:1px solid #1a7db7}.product-images-module
+        .product-images ul.secondary-images li+li{margin-left:1%}.product-images-module
+        .product-images .product-video{display:none;min-height:260px}.product-purchase-module{position:relative}.product-purchase-module
+        .purchase-box{padding:0}.product-purchase-module .purchase-box .product-display{display:-ms-flexbox;display:flex}.product-purchase-module
+        .purchase-box .product-price .list-label{color:#595959;font-size:13px;font-weight:500}@media
+        (max-width:575px){.product-purchase-module .purchase-box .product-price ul.field-list
+        li{height:25px}}.product-purchase-module .purchase-box .product-price .list-price
+        .list-value{color:#595959;text-decoration:line-through}.product-purchase-module
+        .purchase-box .product-price .you-save .list-value{color:#38841a;font-weight:500}.product-purchase-module
+        .purchase-box .product-price .sale-price .list-label{color:#383838;font-size:17px;font-weight:700}.product-purchase-module
+        .purchase-box .product-price .sale-price .list-value{color:#383838;font-size:20px;font-weight:700;vertical-align:top}.product-purchase-module
+        .purchase-box .product-price .cart-promo-message{color:#f49c2a;font-size:17px;font-weight:500;padding-bottom:20px}.product-purchase-module
+        .purchase-box .product-price .cart-promo-message i.fa{font-size:17px;margin-right:5px}@media
+        (max-width:450px){.product-purchase-module .purchase-box .product-price .cart-promo-message{font-size:14px}}.product-purchase-module
+        .purchase-box .product-price .manufacturer-logo{left:20px;position:relative}.product-purchase-module
+        .purchase-box .product-price .manufacturer-logo img{max-height:25px}@media
+        (max-width:767px){.product-purchase-module .purchase-box .product-price .manufacturer-logo{display:none}}.product-purchase-module
+        .purchase-box .purchase-wrapper{margin-top:7px}.product-purchase-module .purchase-box
+        .purchase-wrapper .add-to-cart{border-radius:0;width:100%}.product-purchase-module
+        .purchase-box .purchase-wrapper .add-to-cart:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;content:\"\\F07A\";display:inline-block;font-family:FontAwesome;font-size:14px;font-style:normal;font-weight:400;line-height:1;margin-right:8px;position:relative;top:0}@media
+        (max-width:450px){.product-purchase-module .purchase-box .purchase-wrapper
+        .add-to-cart{display:block;margin:0 auto}}.product-purchase-module .purchase-box
+        .product-fitment{text-align:center}.product-purchase-module .purchase-box
+        .product-in-stock-message{color:#38841a;font-size:13px;font-weight:600;margin-bottom:10px}.product-purchase-module
+        .purchase-box .product-inventory-msg{color:#383838;display:inline-block;font-size:13px;margin-bottom:14px}.product-purchase-module
+        .product-purchase-loading-overlay{background:hsla(0,0%,96.9%,.5);bottom:0;display:none;left:0;position:absolute;right:0;text-align:center;top:0;width:100%}.product-purchase-module
+        .product-purchase-loading-overlay .loading-content{bottom:0;color:#595959;font-size:30px;height:30px;left:0;margin:auto;position:absolute;right:0;top:0}.product-recommended-module
+        .product-recommendations{display:none}.product-title-module{padding:15px 0}@media
+        (max-width:575px){.product-title-module{padding:0}}@media (max-width:449px){.product-title-module
+        .product-title{font-size:18px;letter-spacing:0;line-height:1.3}}.product-title-module
+        .product-subtitle{color:#757575;font-size:14px;margin:4px 0}.product-tab-nav-module
+        .tab-nav-wrap{border-bottom:3px solid #ebebeb;list-style:none;margin:0 0 12px;padding:10px
+        0 0}.product-tab-nav-module .tab-nav-wrap li{display:inline-block;display:none;margin-bottom:-3px;padding:0
+        25px 0 0}.product-tab-nav-module .tab-nav-wrap li a{-webkit-font-smoothing:antialiased;border-bottom:3px
+        solid transparent;color:#595959;display:block;font-size:15px;font-weight:500;padding:10px
+        0;text-transform:uppercase}.product-tab-nav-module .tab-nav-wrap li a:visited{text-decoration:none}.product-tab-nav-module
+        .tab-nav-wrap li.tab-active a{border-color:#1a7db7;color:#1a7db7}#page-product
+        .product-page-layout .product-images{margin-bottom:12px}@media (max-width:767px){#page-product
+        .product-page-layout .product-badges{margin-bottom:-15px}}.promotional-banner-wrap{display:none;padding:0
+        35px 0 0;position:relative}.promotional-banner-wrap:after{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;bottom:8px;content:\"\";display:inline-block;font-family:FontAwesome;font-size:14pt;font-style:normal;font-weight:400;line-height:1;position:absolute;right:12px}.promotional-banner-wrap
+        .promotional-banner-text{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;overflow:hidden;padding-right:15px;text-align:center;text-overflow:ellipsis;white-space:normal}.promotional-banner-wrap
+        .promotional-banner-link{display:block;padding:8px 10px}.promotional-banner-wrap
+        .promo-close{display:block;font-size:13px;line-height:12px;padding:12px;position:absolute;right:2px;top:-2px;z-index:2}.text-color-dark
+        .promotional-banner-wrap .promotional-banner-link{color:#333}@media (max-width:767px){.promotional-banner-wrap{position:fixed;width:100%;z-index:600}}.store-logo-module
+        .store-logo-link{display:block}.store-logo-module .store-logo-link.lazy-load-wrap{min-width:170px}.store-logo-module
+        .store-logo-link.lazy-load-wrap.flip{min-width:auto}.store-logo-module .store-logo-link
+        img{margin:10px 0;max-height:60px;max-width:100%}.store-logo-module .store-logo-link
+        img.lazy-load{position:relative}.store-logo-module .store-logo-link img.lazy-load.placeholder{position:absolute}.store-logo-module
+        .store-logo-link img.lazy-load.placeholder.loaded{display:none}.mobile-logo-col{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;display:-ms-flexbox;display:flex;justify-content:center;overflow:hidden}.help-color-text{color:#c0272d}.help-button{font-family:lato,Helvetica
+        Neue,Helvetica,Arial,sans-serif;font-size:10pt;z-index:1051}.help-modal{margin:-1px;text-align:left;z-index:1051}.help-modal
+        address,.help-modal p{color:#000}.help-modal address:after,.help-modal p:after{color:#7d7d7d}.help-modal
+        a{color:#545454}.help-modal .help-half{float:left;width:50%}.help-modal .help-half:first-child{padding-right:20px}.help-modal
+        .help-half:last-child{padding-left:20px}@media (max-width:767px){.help-modal
+        .help-half{width:100%}.help-modal .help-half:first-child,.help-modal .help-half:last-child{padding:0}}.help-modal
+        .help-modal-wrapper{margin:50px auto 0;max-width:800px;position:relative;width:95%}@media
+        (max-width:575px){.help-modal .help-modal-wrapper{margin:10px auto 120px}}.help-modal
+        .help-icon{margin:0 auto -36px;position:relative;text-align:center;width:100px;z-index:1}.help-modal
+        .help-icon i{background-color:#fff;border-radius:50%;box-shadow:0 3px 16px
+        rgba(0,0,0,.3);font-size:35pt;line-height:30pt;padding:18px}.help-modal .modal-content{border-radius:0;padding:30px}.help-modal
+        .modal-content .modal-body{padding:15px 15px 0}@media (max-width:767px){.help-modal
+        .modal-content .modal-body{padding:0}}@media (max-width:419px){.help-modal
+        .modal-content{padding:15px}}.help-modal .help-title-row{position:relative}.help-modal
+        .help-title-row h2{font-family:lato,helvetica,sans-serif;font-size:30pt;font-weight:900;line-height:24pt;margin:0;padding:0;text-align:left;text-transform:uppercase}.help-modal
+        .help-title-row button{font-size:30pt;line-height:24pt;position:absolute;right:0;top:-10px}.help-modal
+        .help-columns .section-heading{clear:both;margin-bottom:7px}.help-modal .help-columns
+        .section-heading h3{border-bottom:2px solid #ccc;font-family:lato,Helvetica
+        Neue,helvetica,sans-serif;font-size:18pt;font-weight:300;margin:12px 0 15px;padding:0
+        0 15px;text-transform:uppercase}.help-modal .help-columns .section-heading
+        a{display:block}.help-modal .help-columns .section-heading address,.help-modal
+        .help-columns .section-heading p{display:inline-block;font-family:lato,Helvetica
+        Neue,helvetica,sans-serif;font-size:11pt;font-weight:500;margin:0;max-width:100%;padding:5px
+        0 10px;position:relative;word-wrap:break-word}@media (max-width:800px){.help-modal
+        .help-columns .section-heading address,.help-modal .help-columns .section-heading
+        p{font-size:10pt}}.help-modal .help-columns .section-heading .help-inner-list{margin-bottom:7px}.help-modal
+        .help-columns .section-heading .help-inner-list p{width:100%}.help-modal .help-columns
+        .section-heading .help-inner-list p:after{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;content:\"\\F105\";display:inline-block;font-family:FontAwesome;font-size:15pt;font-style:normal;font-weight:400;line-height:1;position:absolute;right:10px;top:3px}.help-modal
+        .help-columns .contact-section p{padding-left:40px}.help-modal .help-columns
+        .contact-section p:before{color:#7d7d7d;left:0;position:absolute;top:0;top:8px}.help-modal
+        .help-columns .contact-section .help-phone:before{content:\"\\F095\";font-size:11pt}.help-modal
+        .help-columns .contact-section .help-email:before,.help-modal .help-columns
+        .contact-section .help-phone:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:1}.help-modal
+        .help-columns .contact-section .help-email:before{content:\"\\F0E0\";font-size:10pt}.help-modal
+        .help-columns .contact-section .social-custom{margin:7px 0 12.4px;padding-left:40px;position:relative}.help-modal
+        .help-columns .contact-section .social-custom ul{line-height:16pt;margin:0}.help-modal
+        .help-columns .contact-section .social-custom li{display:inline-block;font-size:12pt;list-style:none;margin-right:10px}.help-modal
+        .help-columns .contact-section .social-custom:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:#7d7d7d;content:\"\\F0C0\";display:inline-block;font-family:FontAwesome;font-size:10pt;font-style:normal;font-weight:400;left:0;line-height:1;position:absolute;top:3px}.help-modal
+        .help-columns .address-section address{padding-left:40px;position:relative;width:100%}.help-modal
+        .help-columns .address-section .help-address:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:#7d7d7d;content:\"\\F041\";display:inline-block;font-family:FontAwesome;font-size:14pt;font-style:normal;font-weight:400;left:0;line-height:1;position:absolute;top:5px}@media
+        (max-width:767px){.help-modal .help-title-row h2{margin-bottom:20px}.help-modal
+        .help-columns .section-heading h3{border-width:1px}.help-modal .help-columns
+        .section-heading .help-inner-list p:after{right:30px}.help-modal .section-heading{height:0;margin:0;overflow:hidden;padding-bottom:60px;position:relative}.help-modal
+        .section-heading.contact-section.help-section-expand{padding-bottom:190px}.help-modal
+        .section-heading.contact-section.help-section-expand:after{content:\"\\F056\"}.help-modal
+        .section-heading:after{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:#ccc;content:\"\\F055\";display:inline-block;font-family:FontAwesome;font-size:15pt;font-style:normal;font-weight:400;line-height:1;position:absolute;right:25px;top:12px}.help-modal
+        .section-heading .help-half,.help-modal .section-heading .help-half.help-inner-list{margin:0}}@media
+        (max-width:575px){.help-modal .help-columns .section-heading{margin-bottom:0}.help-modal
+        .help-columns .section-heading h3{font-size:15pt}}.call-to-action-button{background-color:#e82c2a;border-radius:2px;border:none;color:#fff;font-family:Lato,sans-serif;font-weight:400;-webkit-font-smoothing:antialiased}.call-to-action-button:visited{background-color:#ed5a58;color:#fff}div.modal-content{border:none;border-radius:0!important}#mobile-header-custom{position:fixed;width:100%;background-color:#fff;z-index:1050;height:61px;top:0;border-bottom:1px
+        solid #cdcdcd;overflow:hidden}#mobile-header-custom .container-fluid.container-wrap{padding:0;background-color:transparent}#mobile-header-custom
+        .mobile-logo-col{width:50%;float:left;padding:10px;border-right:1px solid
+        #cdcdcd;height:60px;background-color:#fff}#mobile-header-custom .mobile-logo-col
+        .image-logo{margin:0;max-height:45px}#mobile-header-custom .one-fifth{width:16.6666666667%;float:left}#mobile-header-custom
+        .mobile-menu-col,#mobile-header-custom .mobile-search-col{border-right:1px
+        solid #cdcdcd;height:60px}#mobile-header-custom .mobile-menu-col .icon-wrap,#mobile-header-custom
+        .mobile-search-col .icon-wrap{padding:16px 0}#mobile-header-custom .mobile-menu-col
+        .icon-wrap i,#mobile-header-custom .mobile-search-col .icon-wrap i{font-size:20pt;color:#000}#mobile-header-custom
+        .mobile-cart-col .call-to-action-button{background-color:transparent;padding:17px
+        15px 16px 13px}#mobile-header-custom .mobile-cart-col .cart-component{min-width:0}#mobile-header-custom
+        .mobile-cart-col .cart-component .cart-flyout,#mobile-header-custom .mobile-cart-col
+        .cart-component .flyout{display:none!important}#mobile-header-custom .mobile-cart-col
+        .cart-wrapper .cart-icon i{font-size:20pt;color:#000}#mobile-header-custom
+        .mobile-cart-col .cart-wrapper .cart-text{display:none}#mobile-drop-downs{padding-top:58px;position:fixed;width:100%;z-index:500}#mobile-drop-downs
+        .container-wrap.container-fluid{padding:0}#mobile-drop-downs .page-builder-layout-column{padding:17px
+        12px}#mobile-drop-downs .slider-tab{padding:0;margin-top:-1px;border-bottom:1px
+        solid #cdcdcd;background-color:#eee;overflow:hidden;height:0;display:block;width:100%}@media
+        (min-width:576px){#mobile-drop-downs .slider-tab .col-md-12{display:block;width:100%}}@media
+        (min-width:768px) and (max-width:800px){#mobile-drop-downs .row.page-builder-layout-row{display:block}#mobile-drop-downs
+        .row.page-builder-layout-row .page-builder-layout-column{display:block}}#mobile-drop-downs
+        .close-row-custom{position:relative;z-index:1001;bottom:30px;height:0;padding:0;margin:0}#mobile-drop-downs
+        .close-row-custom .col-md-12.page-builder-layout-column{padding:0}#mobile-drop-downs
+        .close-row-custom .slider-close-wrap{position:relative}#mobile-drop-downs
+        .close-row-custom .slider-close-wrap .slider-close{width:60px;margin:0 auto;opacity:0}#mobile-drop-downs
+        .close-row-custom .slider-close-wrap .slider-close i{font-size:18pt;padding:0;text-align:center;background:linear-gradient(#fff,#eee);border-top:1px
+        solid #ccc;border-top-left-radius:5px;border-top-right-radius:5px;height:25px;width:60px}#mobile-drop-downs
+        .menu-row .help-modal-wrap,#mobile-drop-downs .menu-row .mobile-list-wrap{border-left:5px
+        solid #e82c2a}#mobile-drop-downs .menu-row .help-modal-wrap .help-button,#mobile-drop-downs
+        .menu-row .mobile-list-wrap div.menu-links{padding:10px;position:relative;font-family:Lato,sans-serif;font-size:14pt;color:#000;font-weight:400}#mobile-drop-downs
+        .menu-row .help-modal-wrap .help-button i,#mobile-drop-downs .menu-row .mobile-list-wrap
+        div.menu-links i{padding:0 20px 0 10px}#mobile-drop-downs .menu-row .help-modal-wrap
+        .help-button::after,#mobile-drop-downs .menu-row .mobile-list-wrap div.menu-links::after{content:\"\\f105\";font-family:FontAwesome;font-style:normal;font-weight:400;text-decoration:inherit;position:absolute;right:20px;top:12px;color:#000}#mobile-drop-downs
+        .help-modal-wrap .help-button i.fa-question-circle{padding:0 12px 0 10px}#mobile-drop-downs
+        .help-modal-wrap .help-modal{top:55px}#mobile-drop-downs .help-modal-wrap
+        .help-modal h2{text-align:left;font-family:lato,helvetica,sans-serif;font-size:25pt;font-weight:900;text-transform:uppercase;color:#c0272d}#mobile-drop-downs
+        .search-row .search-bar-module .search-bar-component input{height:45px;border-color:#7d7d7d}#mobile-drop-downs
+        .search-row .search-bar-module .search-bar-component button.call-to-action-button{height:43px;top:1px;padding:6px
+        16px 7px}#mobile-drop-downs .search-row #mobile-garage{padding:5px 0 15px
+        0}#mobile-drop-downs .search-row #mobile-garage .garage-component{width:100%;text-align:center}#mobile-drop-downs
+        .search-row #mobile-garage .garage-component .garage-text{font-family:Lato,sans-serif;font-size:12pt;color:400;font-weight:#000}#mobile-drop-downs
+        .search-row #mobile-garage .garage-component .garage.flyout{padding-top:70px}@media
+        (max-width:799px){#mobile-drop-downs .search-row #mobile-garage .garage-component
+        .garage.flyout{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;z-index:1050}#mobile-drop-downs
+        .search-row #mobile-garage .garage-component .garage.flyout .closeicon{top:67px;font-size:20pt;padding:0
+        15px}}#mobile-buffer-row{height:60px}.mobile-only{display:none}.page-builder-page-layout
+        .page-builder-layout-section.full-content>.container-wrap{padding:0 10px}.container-wrap
+        .row{margin-top:0!important}*{font-family:'open sans',sans-serif}.page-builder-page-layout
+        .page-builder-layout-column.inline-modules .page-builder-layout-column-wrap
+        .page-builder-layout-module{display:inline-block;margin-right:12px;vertical-align:middle}.promotional-banner-wrap
+        .promotional-banner-text{background-color:red}.text-color-dark .promotional-banner-wrap
+        .promotional-banner-link{color:#fff}.promotional-banner-wrap .promo-close{background-color:red;top:-3px}@font-face{font-family:Lato;font-style:normal;font-weight:100;src:url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHh30AXC-v.ttf)
+        format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPHA.ttf)
+        format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wWw.ttf)
+        format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPHA.ttf)
+        format('truetype')}@font-face{font-family:Lato;font-style:normal;font-weight:900;src:url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh50XSwiPHA.ttf)
+        format('truetype')}</style> <link rel=\"shortcut icon\" href=\"https://d354nuoz4t18d4.cloudfront.net/f611090d92384573b94c104bcd04c1ed/images/image-favicon.ico\"
+        type=\"image/x-icon\"/> <link rel=\"icon\" href=\"https://d354nuoz4t18d4.cloudfront.net/f611090d92384573b94c104bcd04c1ed/images/image-favicon.ico\"
+        type=\"image/x-icon\"/>   <link rel=\"apple-touch-icon-precomposed\" sizes=\"152x152\"
+        href=\"apple-touch-icon-152-precomposed.png\">   <link rel=\"apple-touch-icon-precomposed\"
+        sizes=\"144x144\" href=\"apple-touch-icon-144-precomposed.png\">   <link rel=\"apple-touch-icon-precomposed\"
+        sizes=\"120x120\" href=\"apple-touch-icon-120-precomposed.png\">   <link rel=\"apple-touch-icon-precomposed\"
+        sizes=\"114x114\" href=\"apple-touch-icon-114-precomposed.png\">   <link rel=\"apple-touch-icon-precomposed\"
+        sizes=\"76x76\" href=\"apple-touch-icon-76-precomposed.png\">   <link rel=\"apple-touch-icon-precomposed\"
+        sizes=\"72x72\" href=\"apple-touch-icon-72-precomposed.png\">   <link rel=\"apple-touch-icon-precomposed\"
+        href=\"apple-touch-icon-precomposed.png\">   <meta name=\"apple-mobile-web-app-capable\"
+        content=\"yes\"> <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\">
+        <meta name=\"google-site-verification\" content=\"5-6cYKTouoQLhf_pcFgzNHwvaCVsI5OQvVImz2vgd48\"
+        /> <meta name=\"google-site-verification\" content=\"hmRCmyFW8saJfeKP8tfcOZhOk0FNNZM731m7Da5RIcg\"
+        /> <meta name=\"msvalidate.01\" content=\"0CF699199320C1E11C0F0057ABA65529\"
+        /> <script type=\"text/javascript\"> window.dataLayer = [];\nwindow.gtm_container_id
+        = ''; </script> </head> <body id=\"rp_webstore\"> <input type=\"hidden\" name=\"csrf_name\"
+        value=\"csrf638a99bad2d46\" id=\"__csrf_name_field__\"> <input type=\"hidden\"
+        name=\"csrf_value\" value=\"766fa2d4fb938d73cd2acceb1403c7ac\" id=\"__csrf_value_field__\">
+        <div class=\"main\" id=\"page-product\"> <header class=\"container-header\">
+        <div class=\"page-builder-page-layout \" > <div  class=\"page-builder-layout-section
+        \ text-color-dark padding-0 full-content \"\n\t\t> <div class=\"container-wrap
+        container-fluid\"> <div  class=\"row page-builder-layout-row row-full-height-md
+        \"> <div class=\"col-md-12  block-modules page-builder-layout-column col-full-height
+        \"> <div  class=\"page-builder-layout-column-wrap full-height-wrapper \">
+        <div  class=\"page-builder-layout-module    \"> <div class=\"promotional-banner-wrap\"
+        style=\"background-color: #f9f9f9;\"> <div class=\"promo-close\"><i class=\"fa
+        fa-times\" aria-hidden=\"true\"></i></div> <div class=\"promotional-banner-text\">
+        <a href=\"https://www.acuraexpressparts.com\" class=\"promotional-banner-link\">DUE
+        TO LOW SUPPLY OR PARTS-ORDERS MAY EXPERIENCE DELAYS. EXPEDITED ORDERS WILL
+        BE DELAYED!!</a> </div> </div> </div>   </div>   </div>   </div>   </div>
+        \  </div>   <div id=\"mobile-header-custom\" class=\"page-builder-layout-section
+        \ text-color-dark mobile-header-click full-content mobile-only\"\n\t\t> <div
+        class=\"container-wrap container-fluid\"> <div  class=\"row page-builder-layout-row
+        row-full-height-md \"> <div class=\"col-md-12  block-modules page-builder-layout-column
+        col-full-height text-center\"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper text-center\"> <div  class=\"page-builder-layout-module
+        mobile-logo-col   \"> <div class=\"store-logo-module\"> <a href=\"/\" class=\"store-logo-link\"
+        data-test-id=\"store-logo-home-link\"> <img class=\"image-logo lazy-load placeholder\"
+        src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=\"
+        alt=\"Acura Express Parts Logo\" lazySrc=\"https://s3.amazonaws.com/rparts-sites/f611090d92384573b94c104bcd04c1ed/images/logo.png\">
+        </a> </div>   </div>   <div  class=\"page-builder-layout-module mobile-menu-col
+        one-fifth mobile-slider-button   \"> <div class=\"custom-html-module\"> <div
+        class=\"icon-wrap\"><i class=\"fa fa-bars\" aria-hidden=\"true\"></i></div>
+        </div>  </div>   <div  class=\"page-builder-layout-module mobile-search-col
+        one-fifth mobile-slider-button   \"> <div class=\"custom-html-module\"> <div
+        class=\"icon-wrap\"><i class=\"fa fa-search\" aria-hidden=\"true\"></i></div>
+        </div>  </div>   <div  class=\"page-builder-layout-module mobile-cart-col
+        one-fifth   \"> <div class=\"cart-button-module\"> <div class=\"cart-component
+        flyout-hover \" id=\"cart_1\" data-flyout=\"flyout_cart_1\"> <a class=\"cart-button
+        call-to-action-button flyout-select flyout-hover \" href=\"/cart\" data-flyout=\"cart-flyout\">
+        <div class=\"cart-wrapper\"> <span class=\"cart-icon\"> <span class=\"cart-items
+        \"></span> <i class=\"fa fa-shopping-cart\"></i> </span>   <span class=\"cart-text\">
+        <strong>Cart</strong> </span>   </div>   </a> <div id=\"flyout_cart_1\" class=\"cart-flyout
+        flyout\" data-flyout=\"cart-flyout\"> <div class=\"upper-arrow\"> </div> <div
+        class=\"cart-listing\"  > <p class=\"empty-cart-message\">Cart is Empty</p>
+        </div>   </div>  </div>   </div>   </div>   </div>   </div>   </div>   </div>
+        \  </div>   <div id=\"mobile-drop-downs\" class=\"page-builder-layout-section
+        \ text-color-dark mobile-header-click full-content mobile-only\"\n\t\t> <div
+        class=\"container-wrap container-fluid\"> <div  class=\"row page-builder-layout-row
+        row-full-height-md menu-row slider-tab\"> <div class=\"col-md-12  block-modules
+        page-builder-layout-column col-full-height left\"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module    \"> <div
+        class=\"custom-html-module\"> <div class=\"mobile-list-wrap\"><a href=\"v?mobilelink\"><div
+        class=\"mobile-parts menu-links\"><i class=\"fa fa-car\" aria-hidden=\"true\"></i>&nbsp;
+        Order Parts</div></a><a href=\"index.php?p=login\"><div class=\"mobile-account
+        menu-links\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i>&nbsp; My Account</div></a><a
+        href=\"contact-us\"><div class=\"mobile-contact menu-links\"><i class=\"fa
+        fa-phone\" aria-hidden=\"true\"></i>&nbsp; Contact Us</div></a></div> </div>
+        \ </div>   <div  class=\"page-builder-layout-module    \"> <div class=\"help-modal-wrap\">
+        <div class=\"help-button  help-color-text\" data-toggle=\"modal\"><i class=\"fa
+        fa-question-circle\" aria-hidden=\"true\"></i>&nbsp;&nbsp;Help Menu </div>
+        <div class=\"modal fade help-modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"helpModuleModal\">
+        <div class=\"help-modal-wrapper\"> <div class=\"help-icon\"><i class=\"fa
+        fa-question-circle help-color-text\" aria-hidden=\"true\"></i></div> <div
+        class=\"modal-content\"> <div class=\"help-title-row\"> <h2 class=\"help-color-text\"
+        id=\"helpModuleModal\">Help</h2> <button type=\"button\" class=\"close\" data-dismiss=\"modal\"
+        aria-label=\"Close\"><span aria-hidden=\"true\">\xD7</span></button> </div>
+        <div class=\"help-columns modal-body\"> <div class=\"row\"> <div class=\"help-half\">
+        <div class=\"contact-section section-heading help-section-expand\"> <h3 class=\"help-color-text\">Contact
+        Us :</h3>   <a href=\"tel:1-844-683-5958\"><p class=\"help-phone help-text-hover\">1-844-683-5958</p></a>
+        \  <a href=\"/contact-us\"><p class=\"help-email help-text-hover\"><span class=\"email-address\">service[at]acuraexpressparts.com</span></p></a>
+        \  <div class=\"social-custom\"> <ul> <li><a href=\"http://facebook.com/acuraexpressparts\"
+        target=\"_blank\" rel=\"noreferrer\" class=\"help-text-hover\" title=\"Visit
+        us on Facebook\"><i class=\"fa fa-facebook\"></i><span class=\"sr-only\">Facebook</span></a></li>
+        </ul> </div> </div>   <div class=\"address-section section-heading\"> <h3
+        class=\"help-color-text\">Address :</h3> <a href=\"https://www.google.com/maps/search/?api=1&query=illinois+distribution+center+service%40acuraexpressparts.com+Chicago+IL+60642+US\">
+        <address class=\"help-address\"> illinois distribution center\t\t\t\t\t\t\t\t\tservice@acuraexpressparts.com<br>
+        Chicago, 60642 </address> </a> </div> </div>   <div class=\"help-half\"> <div
+        class=\"policy-section section-heading\"> <h3 class=\"help-color-text\">Policies
+        :</h3> <div class=\"help-half help-inner-list\"> <a href=\"policies/returns\"><p
+        class=\"help-text-hover\">Return Policy</p></a> <a href=\"policies/privacy\"><p
+        class=\"help-text-hover\">Privacy Policy</p></a> </div> <div class=\"help-half
+        help-inner-list\"> <a href=\"policies/shipping\"><p class=\"help-text-hover\">Shipping
+        Policy</p></a> <a href=\"policies/terms-and-conditions\"><p class=\"help-text-hover\">Terms
+        & Conditions</p></a> </div> </div> <div class=\"account-section section-heading\">
+        <h3 class=\"help-color-text\">My Account :</h3> <div class=\"help-half help-inner-list\">
+        <a href=\"account/login\"><p class=\"help-text-hover\">My Account</p></a>
+        <a href=\"account/login\"><p class=\"help-text-hover\">Register</p></a> </div>
+        <div class=\"help-half help-inner-list\"> <a href=\"index.php?p=cart\"><p
+        class=\"help-text-hover\">My Cart</p></a> <a href=\"account/order-status\"><p
+        class=\"help-text-hover\">My Orders</p></a> </div> </div> <div class=\"navigation-section
+        section-heading\"> <h3 class=\"help-color-text\">Navigation :</h3> <div class=\"help-half
+        help-inner-list\"> <a href=\"#\" class=\"vehiclepicker_link\"><p class=\"help-text-hover\">Search
+        by Vehicle</p></a> </div> <div class=\"help-half help-inner-list\"> <a href=\"about\"><p
+        class=\"help-text-hover\">About Us</p></a> <a href=\"contact-us\"><p class=\"help-text-hover\">Contact
+        Us</p></a> </div> </div>   </div>   </div>   </div>   </div>   </div> </div>
+        </div> </div>   </div>   </div>   </div>   <div  class=\"row page-builder-layout-row
+        row-full-height-md search-row slider-tab\"> <div class=\"col-md-12  block-modules
+        page-builder-layout-column col-full-height left\"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div id=\"mobile-garage\" class=\"page-builder-layout-module
+        \   \"> <div class=\"car-selected-module \"> <div class=\"garage-component
+        search-car \"> <div class=\"garage-text-wrap\"> <a href=\"javascript:openVehiclePicker();\"
+        class=\"garage-text\"> No Vehicle Selected <i class=\"fa fa-chevron-down\"></i>
+        </a> </div> <div class=\"garage flyout\" data-flyout=\"garage_flyout\" tabindex=\"-1\">
+        <a href=\"javascript: void(0);\" class=\"closeicon\">&times;</a> <nav aria-label=\"Vehicle
+        Options\"> <ul> <li><a href=\"javascript:openVehiclePicker();\" class=\"search-all-vehicles\"><i
+        class=\"fa fa-plus\"></i>New Vehicle</a></li> <li><a href=\"/auto-parts/search-all-cars\"
+        class=\"search-all-vehicles\"><i class=\"fa fa-search\"></i>Search All Vehicles</a></li>
+        <li><a href=\"/auto-parts/clear-all-cars\" class=\"clear-all-vehicles\"><i
+        class=\"fa fa-times\"></i>Clear Recent Vehicles</a></li> </ul> </nav> </div>
+        </div>   </div>   </div>   <div  class=\"page-builder-layout-module    \">
+        <div class=\"search-bar-module\"> <div class=\"search-bar-component\"> <form
+        action=\"/search\" method=\"get\" class=\"search-box\">   <fieldset data-action=\"/search\"
+        data-method=\"get\"> <legend class=\"sr-only\">Search Bar 3</legend> <div
+        class=\"main-search-wrapper\"> <input\n\t\t\t\t\tid=\"main_search_2\"\n\t\t\t\t\ttype=\"text\"\n\t\t\t\t\tname=\"search_str\"\n\t\t\t\t\tvalue=\"\"\n\t\t\t\t\tplaceholder=\"Part
+        Number(s), Keywords, or VIN\"\n\t\t\t\t\ttitle=\"Part Number(s), Keywords,
+        or VIN\"\n\t\t\t\t\t\t\t\t\t\tautocomplete=\"off\"\n\t\t\t\t\t\t\t\t\t/> </div>
+        \  <button type=\"submit\" class=\"button-start-search submit call-to-action-button\">
+        <i class=\"fa fa-search\"></i> <span class=\"sr-only\">Search by Part Number(s),
+        Keywords, or VIN</span> </button> </fieldset> </form> </div>   </div>   </div>
+        \  </div>   </div>   </div>   <div  class=\"row page-builder-layout-row row-full-height-md
+        close-row-custom\"> <div class=\"col-md-12  block-modules page-builder-layout-column
+        col-full-height left\"> <div  class=\"page-builder-layout-column-wrap full-height-wrapper
+        \"> <div  class=\"page-builder-layout-module    \"> <div class=\"custom-html-module\">
+        <div class=\"slider-close-wrap\"> <div class=\"slider-close mobile-slider-button\"><i
+        class=\"fa fa-angle-up\" aria-hidden=\"true\"></i> </div> </div> </div>  </div>
+        \  </div>   </div>   </div>   </div>   </div>   <div id=\"mobile-buffer-row\"
+        class=\"page-builder-layout-section  text-color-dark  full-content mobile-only\"\n\t\t>
+        <div class=\"container-wrap container-fluid\"> <div  class=\"row page-builder-layout-row
+        row-full-height-md \"> <div class=\"col-md-12  block-modules page-builder-layout-column
+        col-full-height left\"> <div  class=\"page-builder-layout-column-wrap full-height-wrapper
+        \"> <div  class=\"page-builder-layout-module    \"> <div class=\"custom-html-module\">
+        </div>  </div>   </div>   </div>   </div>   </div>   </div>   <div  class=\"page-builder-layout-section
+        \ text-color-dark  wide-content desktop-only\"\n\t\t> <div class=\"container-wrap
+        container-fluid\"> <div  class=\"row page-builder-layout-row row-full-height-md
+        \"> <div class=\"col-md-8  inline-modules page-builder-layout-column col-full-height
+        \"> <div  class=\"page-builder-layout-column-wrap full-height-wrapper \">
+        <div  class=\"page-builder-layout-module    \"> <div class=\"store-logo-module\">
+        <a href=\"/\" class=\"store-logo-link\" data-test-id=\"store-logo-home-link\">
+        <img class=\"image-logo lazy-load placeholder\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=\"
+        alt=\"Acura Express Parts Logo\" lazySrc=\"https://s3.amazonaws.com/rparts-sites/f611090d92384573b94c104bcd04c1ed/images/logo.png\">
+        </a> </div>   </div>   <div  class=\"page-builder-layout-module    \"> <div
+        class=\"custom-html-module\"> <div class=\"links-list-module links-display-inline
+        list-style-header\"> <ul class=\"links-list\"> <li><a href=\"/\">Home</a></li>
+        <li><a href=\"about\">About Us</a></li> <li><a href=\"/redirect/order_status\">Order
+        Status</a></li> <li><a href=\"irunoem\">IRUNOEM</a></li> <li><a href=\"contact-us\">Contact
+        Us</a></li> </ul> </div> </div>  </div>   </div>   </div>   <div class=\"col-md-4
+        \ inline-modules page-builder-layout-column col-full-height text-right\">
+        <div  class=\"page-builder-layout-column-wrap full-height-wrapper \"> <div
+        \ class=\"page-builder-layout-module    \"> <div class=\"contact-us-module
+        contact-us-display-block\"> <span class=\"contact-message\"> <strong>Contact
+        Us:</strong> </span> <span class=\"contact-type contact-type-phone\"> <strong>
+        <i class=\"fa fa-phone\"></i> <span class=\"contact-type-info\"> 1-844-683-5958
+        </span>   </strong> </span> </div>   </div>   </div>   </div>   </div>   </div>
+        \  </div>   <div  class=\"page-builder-layout-section  text-color-dark less-padding
+        wide-content desktop-only\"\n\t\t\t\t\tstyle=\"background-color: #f4f4f4;
+        \"\n\t\t> <div class=\"container-wrap container-fluid\"> <div  class=\"row
+        page-builder-layout-row row-full-height-md \"> <div class=\"col-md-12  block-modules
+        page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module    \"> <div
+        class=\"actions-bar-module\"> <div class=\"garage-search-bar-component\">
+        <div class=\"garage-component search-car \"> <div class=\"garage-text-wrap\">
+        <a href=\"javascript:openVehiclePicker();\" class=\"garage-text\"> Search
+        All Vehicles <i class=\"fa fa-chevron-down\"></i> </a> </div> <div class=\"garage
+        flyout\" data-flyout=\"garage_flyout\" tabindex=\"-1\"> <a href=\"javascript:
+        void(0);\" class=\"closeicon\">&times;</a> <nav aria-label=\"Vehicle Options\">
+        <ul> <li><a href=\"javascript:openVehiclePicker();\" class=\"search-all-vehicles\"><i
+        class=\"fa fa-plus\"></i>New Vehicle</a></li> <li><a href=\"/auto-parts/search-all-cars\"
+        class=\"search-all-vehicles\"><i class=\"fa fa-search\"></i>Search All Vehicles</a></li>
+        <li><a href=\"/auto-parts/clear-all-cars\" class=\"clear-all-vehicles\"><i
+        class=\"fa fa-times\"></i>Clear Recent Vehicles</a></li> </ul> </nav> </div>
+        </div>   <div class=\"search-bar-component\"> <form action=\"/search\" method=\"get\"
+        class=\"search-box\">   <fieldset data-action=\"/search\" data-method=\"get\">
+        <legend class=\"sr-only\">Search Bar 5</legend> <div class=\"main-search-wrapper\">
+        <input\n\t\t\t\t\tid=\"main_search_4\"\n\t\t\t\t\ttype=\"text\"\n\t\t\t\t\tname=\"search_str\"\n\t\t\t\t\tvalue=\"\"\n\t\t\t\t\tplaceholder=\"Part
+        Number(s), Keywords, or VIN\"\n\t\t\t\t\ttitle=\"Part Number(s), Keywords,
+        or VIN\"\n\t\t\t\t\t\t\t\t\t\tautocomplete=\"off\"\n\t\t\t\t\t\t\t\t\t/> </div>
+        \  <button type=\"submit\" class=\"button-start-search submit call-to-action-button\">
+        <i class=\"fa fa-search\"></i> <span class=\"sr-only\">Search by Part Number(s),
+        Keywords, or VIN</span> </button> </fieldset> </form> </div>   </div>   <div
+        id=\"action_account\"> <div class=\"content-wrap\"> <strong class=\"design-text\">Welcome!</strong>
+        <button class=\"your-account gradient-button flyout-select\" data-flyout=\"account-flyout\">My
+        Account <i class=\"fa fa-caret-down\"></i></button> <div id=\"accountwrap\">
+        <div class=\"account flyout\" data-flyout=\"account-flyout\" tabindex=\"-1\">
+        <div class=\"upper_arrow\"> </div> <div id=\"account_login\"> <a href=\"/account/login\"
+        class=\"yellow button\">Login</a> <a href=\"/account/signup\" class=\"register-link\">No
+        Account? Register Now!</a> </div>   <nav> <ul> <li><a href=\"/account/order-status\"
+        tabindex=\"2\"><i class=\"fa fa-check\"></i>Order Status</a></li> </ul> </nav>
+        </div> </div> </div> </div> <div id=\"cart_column\"> <div class=\"cart-component
+        flyout-hover \" id=\"cart_6\" data-flyout=\"flyout_cart_6\"> <a class=\"cart-button
+        call-to-action-button flyout-select flyout-hover \" href=\"/cart\" data-flyout=\"cart-flyout\">
+        <div class=\"cart-wrapper\"> <span class=\"cart-icon\"> <span class=\"cart-items
+        \"></span> <i class=\"fa fa-shopping-cart\"></i> </span>   <span class=\"cart-text\">
+        <strong>My Cart</strong> </span>   </div>   </a> <div id=\"flyout_cart_6\"
+        class=\"cart-flyout flyout\" data-flyout=\"cart-flyout\"> <div class=\"upper-arrow\">
+        </div> <div class=\"cart-listing\"  > <p class=\"empty-cart-message\">Cart
+        is Empty</p> </div>   </div>  </div>   </div> </div>   </div>   </div>   </div>
+        \  </div>   </div>   </div>   </div>   </header> <div class=\"page-content\"
+        id=\"layout_product\"> <div class=\"page-content-inner\"> <div class=\"page-builder-page-layout
+        product-page-layout\" > <div  class=\"page-builder-layout-section  text-color-dark
+        \ normal-content \"\n\t\t> <div class=\"container-wrap container-fluid\">
+        <div  class=\"row page-builder-layout-row row-full-height-md \"> <div class=\"col-md-12
+        \ block-modules page-builder-layout-column col-full-height left\"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module    \"> <div
+        class=\"product-breadcrumbs-module\"> <header class=\"page-subheader-component
+        just-bread-crumbs\"> <div class=\"left-content \"> <div class=\"page-bread-crumbs\">
+        <a href=\"/\" >Home</a> <i class=\"fa fa-angle-right\"></i> <a href=\"https://www.acuraexpressparts.com/oem-parts/acura-tensioner-assembly-auto-31170pnd013\"
+        class=\"tail\">ACURA 31170-PND-013</a> </div> </div> </header> </div>   </div>
+        \  <div  class=\"page-builder-layout-module    \"> <div class=\"product-title-module\">
+        <h1 class=\"product-title\">Tensioner Assembly, Auto - Acura (31170-PND-013)</h1>
+        <p class=\"product-subtitle\">2002-2006 Acura RSX</p> </div>   </div>   </div>
+        \  </div>   </div>   </div>   </div>   <div  class=\"page-builder-layout-section
+        \ text-color-dark  normal-content \"\n\t\t> <div class=\"container-wrap container-fluid\">
+        <div  class=\"row page-builder-layout-row row-full-height-md split-column\">
+        <div class=\"col-md-6  block-modules page-builder-layout-column col-full-height
+        left\"> <div  class=\"page-builder-layout-column-wrap full-height-wrapper
+        product-left\"> <div  class=\"page-builder-layout-module    desktop-only\">
+        <div class=\"product-images-module\" data-module-id=\"module_8\"> <div class=\"product-images
+        show-thumbnails\"> <div class=\"secondary-images-wrapper owl-small\"> <ul
+        class=\"secondary-images\"> <li> <a href=\"javascript:;\"\n\t\t\t\t\tclass=\"product-secondary-image
+        type-part active\"\n\t\t\t\t\tdata-image-id=\"7ccff61b86a14adc38061ceae748c1eb\"\n\t\t\t\t\tdata-image-type=\"PART\"\n\t\t\t\t\tdata-image-main-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/7ccff61b86a14adc38061ceae748c1eb.png\"\n\t\t\t\t\tdata-image-preview-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/017c3f027ae480abc93aa96a5aff929d.png\"\n\t\t\t\t\t\t\t\t\t><img\n\t\t\t\t\titemprop=\"image\"\n\t\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/3f35fba9c6ee41930d0e99eb31a02063.png\"\n\t\t\t\t\t/>
+        </a> </li> <li> <a href=\"javascript:;\"\n\t\t\t\t\tclass=\"product-secondary-image
+        type-part \"\n\t\t\t\t\tdata-image-id=\"568ed354fefc53b4fe39acd9776c1299\"\n\t\t\t\t\tdata-image-type=\"PART\"\n\t\t\t\t\tdata-image-main-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/568ed354fefc53b4fe39acd9776c1299.png\"\n\t\t\t\t\tdata-image-preview-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/956921fecbfff194f2ac3968a77ce741.png\"\n\t\t\t\t\t\t\t\t\t><img\n\t\t\t\t\titemprop=\"image\"\n\t\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/ca2043c5c8a0cb1ec033bfab6e9e5734.png\"\n\t\t\t\t\t/>
+        </a> </li> <li> <a href=\"javascript:;\"\n\t\t\t\t\tclass=\"product-secondary-image
+        type-diagram \"\n\t\t\t\t\tdata-image-id=\"87e5eb5b264d6e48113da732d7161527\"\n\t\t\t\t\tdata-image-type=\"DIAGRAM\"\n\t\t\t\t\tdata-image-main-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/87e5eb5b264d6e48113da732d7161527.png\"\n\t\t\t\t\tdata-image-preview-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/f83a62be8d950b0fe28e132c03ab622d.png\"\n\t\t\t\t\t\t\t\t\t\tdata-caption=\"Part
+        can be found as reference #12 in illustration\"\n\t\t\t\t\t\t\t\t\t><img\n\t\t\t\t\titemprop=\"image\"\n\t\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/fb890e6cb1488c238615ae2e8faf4eca.png\"\n\t\t\t\t\t/>
+        </a> </li> </ul>   </div> <div class=\"main-image\"> <div class=\"product-video\">
+        <div id=\"product_image_video_module_8\"></div> </div> <a href=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/7ccff61b86a14adc38061ceae748c1eb.png\"\n\t\t\t\tclass=\"product-main-image-link\"\n\t\t\t\tdata-routing=\"ignore\"\n\t\t\t\t\t\t\t><img\n\t\t\t\titemprop=\"image\"\n\t\t\t\tclass=\"product-main-image
+        centered\"\n\t\t\t\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/017c3f027ae480abc93aa96a5aff929d.png\"\n\t\t\t\t\n\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\ttitle=\"Tensioner Assembly,
+        Auto - Acura (31170-PND-013)\"\n\t\t\t\t/> <div class=\"enlarge-image-overlay\">
+        <span class=\"enlarge-image-link\"><i class=\"fa fa-search-plus\"></i></span>
+        </div> </a> <div class=\"main-image-text\"> <p class=\"product-main-image-caption
+        \"> </p> </div>   </div>   </div> </div>   </div>   </div>   </div>   <div
+        class=\"col-md-6  block-modules page-builder-layout-column col-full-height
+        left\"> <div  class=\"page-builder-layout-column-wrap full-height-wrapper
+        product-right\"> <div  class=\"page-builder-layout-module    \"> <div class=\"product-purchase-module
+        data-needed\" data-sku-stripped=\"31170pnd013\" data-catalog=\"acura\" data-sale-price=\"173.32\">
+        <div class=\"purchase-box \"> <div class=\"product-price \"> <div class=\"product-display\">
+        <ul class=\"field-list\"> <li class=\"list-price\"> <span class=\"list-label
+        price-label compared\">MSRP:</span> <span id=\"product_price2\" class=\"list-value
+        list-price-value price-amount compared\">$240.72</span> </li> <li class=\"you-save\">
+        <span class=\"list-label price-label compared\">Discount:</span> <span class=\"list-value
+        price-amount compared\"><span class=\"savings-amount-value\">$67.40</span>
+        (<span class=\"savings-percent-value\">28%</span> off)</span> </li> <li class=\"sale-price\">
+        <span class=\"list-label sale-price-label\">Sale Price:</span> <span id=\"product_price\"
+        class=\"list-value sale-price-value sale-price-amount\">$173.32</span> </li>
+        </ul> <div class=\"manufacturer-logo\"> <img src=\"https://d3s44e87wooplq.cloudfront.net/assets/images/acura.png\"
+        alt=\"Acura Parts\"/> </div> </div> </div> <div class=\"product-options-section\">
+        </div> <div class=\"product-in-stock-message\"></div> <div class=\"product-inventory-msg\"\n\t
+        data-catalog=\"acura\"\n\t data-sku-stripped=\"31170pnd013\"\n\t data-in-stock=\"\"\n\t
+        data-price=\"173.32\"\n\t data-quantity=\"\"\n\t data-is-variant-master=\"\"\n\t>
+        <div id=\"inventory_wrap\" hidden> <span class=\"inventory-icon-wrap\"><i
+        class=\"fa fa-clock-o\"></i></span> <span id=\"rp_inventory_message\"> </div>
+        </span> </div> <div class=\"product-fitment-confirmation-module\"> <div class=\"product-fitment
+        no-car-selected\"> <span class=\"icon-wrap\"><i class=\"fa fa-car\"></i></span>
+        <a href=\"javascript:;\" class=\"vehiclepicker_link\" id=\"part-fitment-info\"
+        data-fitment-info=\"no-car-selected\" data-redirect=\"/oem-parts/acura-tensioner-assembly-auto-31170pnd013\">
+        <span class=\"fitment-text\">Make sure this part fits your Car<i class=\"fa
+        fa-angle-right\"></i></span> </a> </div> </div>   <div class=\"product-purchase\">
+        <div class=\"purchase-wrapper\"> <form id=\"add_item_form\" action=\"/cart/add-to-cart\"
+        method=\"post\"> <input type=\"hidden\" name=\"item\" class=\"sku-stripped-value\"
+        value=\"31170pnd013\"> <input type=\"hidden\" name=\"brand\" value=\"acura\">
+        <input type=\"hidden\" name=\"quantity\" value=\"1\"> <button type=\"submit\"\n\tclass=\"action-button
+        place-order-button no-icon add-to-cart enabled big-button wide\"\n\tdata-sku=\"31170-PND-013\"\n\tdata-sku-stripped=\"31170pnd013\"\n\tdata-catalog=\"acura\"\n\tdata-name=\"Tensioner
+        Assembly, Auto\"\n\tdata-quantity=\"1\"\n\tdata-msrp=\"240.72\"\n\tdata-estimated-msrp=\"\"\n\tdata-sale-price=\"173.32\"\n\tdata-price-wholesale=\"0\"\n\tdata-core-charge=\"0\"\n\tdata-brand=\"Acura\"\n\tdata-in-stock=\"\"\n\tdata-from-search=\"\"\n\tdata-currency-code=\"USD\"\n\tdata-core-charge-tooltip-link=\"\"\n\tdata-core-charge-alert=\"The
+        manufacturer requires a product core charge of $0.00 for each item shipped.
+        If you return the product, this amount will be refunded to you. Any retailer
+        must charge you this core charge, and you WILL BE CHARGED this amount regardless
+        of which retailer you use. Some retailers will not be up-front with you about
+        the core charge, and will call you to collect this amount after you place
+        the order.\"\n\tdata-make=\"\"\n\tdata-model=\"\"\n\tdata-year=\"\"\n\tdata-trim=\"\"\n\tdata-engine=\"\"\n\tdata-vin=\"\"\n\tdata-group=\"\"\n\tdata-subgroup=\"\"\n\tdata-recommended=\"\"\n\tdata-hazmat=\"\"\n\tdata-hazmat-alert=\"This
+        part contains hazardous materials. Extra shipping costs apply.\"\n\tdata-component-skus-stripped=\"\"\n\tdata-fulfillment-hash=\"\"\n\t\tdata-image-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/3f35fba9c6ee41930d0e99eb31a02063.png\"\n\tdata-image-type=\"PART\"\n\t\n\tdata-display-msrp=\"1\"\n\tdata-msrp-custom-label=\"\"\n\taria-label=\"Add
+        to Cart Part 31170-PND-013\"\n>Add to Cart</button> </form> </div>   </div>
+        </div>   <script type=\"application/json\" id=\"product_data\"> {\"in_rp_catalog\":true,\"source\":\"product\",\"sku\":\"31170-PND-013\",\"sku_stripped\":\"31170pnd013\",\"catalog\":\"acura\",\"price\":173.32,\"msrp\":240.72,\"images\":[{\"main\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/7ccff61b86a14adc38061ceae748c1eb.png\",\"width\":640,\"height\":471.09278350515467},\"preview\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/017c3f027ae480abc93aa96a5aff929d.png\",\"width\":300,\"height\":220.82474226804126},\"thumb\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/3f35fba9c6ee41930d0e99eb31a02063.png\",\"width\":150,\"height\":110.41237113402063},\"type\":\"PART\",\"image_id\":\"7ccff61b86a14adc38061ceae748c1eb\",\"alt_text\":\"\",\"is_primary\":false,\"is_visible\":true,\"filename\":\"\",\"has_watermark\":\"Unknown\",\"md5\":\"\",\"perceptual_hash\":\"\",\"product_sku_stripped\":null,\"hotspot\":{\"reference_number\":\"12\",\"x_loc\":\"92\",\"y_loc\":\"148\",\"width\":\"24\",\"height\":\"19\"},\"caption\":null},{\"main\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/568ed354fefc53b4fe39acd9776c1299.png\",\"width\":640,\"height\":471.09278350515467},\"preview\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/956921fecbfff194f2ac3968a77ce741.png\",\"width\":300,\"height\":220.82474226804126},\"thumb\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/ca2043c5c8a0cb1ec033bfab6e9e5734.png\",\"width\":150,\"height\":110.41237113402063},\"type\":\"PART\",\"image_id\":\"568ed354fefc53b4fe39acd9776c1299\",\"alt_text\":\"\",\"is_primary\":false,\"is_visible\":true,\"filename\":\"\",\"has_watermark\":\"Unknown\",\"md5\":\"\",\"perceptual_hash\":\"\",\"product_sku_stripped\":null,\"hotspot\":{\"reference_number\":\"12\",\"x_loc\":\"92\",\"y_loc\":\"148\",\"width\":\"24\",\"height\":\"19\"},\"caption\":null},{\"main\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/87e5eb5b264d6e48113da732d7161527.png\",\"width\":640,\"height\":471.09278350515467},\"preview\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/f83a62be8d950b0fe28e132c03ab622d.png\",\"width\":300,\"height\":220.82474226804126},\"thumb\":{\"url\":\"\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/fb890e6cb1488c238615ae2e8faf4eca.png\",\"width\":150,\"height\":110.41237113402063},\"type\":\"DIAGRAM\",\"image_id\":\"87e5eb5b264d6e48113da732d7161527\",\"alt_text\":\"\",\"is_primary\":false,\"is_visible\":true,\"filename\":\"\",\"has_watermark\":\"Unknown\",\"md5\":\"\",\"perceptual_hash\":\"\",\"product_sku_stripped\":null,\"hotspot\":{\"reference_number\":\"12\",\"x_loc\":\"92\",\"y_loc\":\"148\",\"width\":\"24\",\"height\":\"19\"},\"caption\":\"Part
+        can be found as reference #12 in illustration\"}],\"title\":\"Tensioner Assembly,
+        Auto - Acura (31170-PND-013)\",\"fitment\":[{\"year\":\"2006\",\"make\":\"Acura\",\"model\":\"RSX\",\"trims\":[\"Base\",\"Type-S\"],\"engines\":[\"2.0L
+        L4 - Gas\"],\"idx\":0},{\"year\":\"2005\",\"make\":\"Acura\",\"model\":\"RSX\",\"trims\":[\"Base\",\"Type-S\"],\"engines\":[\"2.0L
+        L4 - Gas\"],\"idx\":1},{\"year\":\"2004\",\"make\":\"Acura\",\"model\":\"RSX\",\"trims\":[\"Base\",\"Type-S\"],\"engines\":[\"2.0L
+        L4 - Gas\"],\"idx\":2},{\"year\":\"2003\",\"make\":\"Acura\",\"model\":\"RSX\",\"trims\":[\"Base\",\"Type-S\"],\"engines\":[\"2.0L
+        L4 - Gas\"],\"idx\":3},{\"year\":\"2002\",\"make\":\"Acura\",\"model\":\"RSX\",\"trims\":[\"Base\",\"Type-S\"],\"engines\":[\"2.0L
+        L4 - Gas\"],\"idx\":4}],\"notes\":null,\"is_hazmat\":false,\"also_known_as\":\"Tensioner
+        Auto\",\"positions\":\"\",\"description\":null,\"description_updated\":false,\"footnotes\":\"\",\"applications\":\"<b>Body
+        Styles:<\\/b> Hatchback.\",\"quantity\":null,\"instock_message\":\"\",\"options\":[],\"variants\":[],\"content\":{\"images\":{\"no_image\":\"No
+        image available\",\"part_ref_caption\":\"Part can be found as reference #{ref_num}
+        in illustration\",\"representative_image_caption\":\"Image is not a representation
+        of the actual product\",\"brand_logo_alt_text\":\"{brand_name} logo\"},\"fitment\":{\"this_product_fits\":\"Vehicle
+        Fitment\",\"year\":\"Year\",\"make\":\"Make\",\"model\":\"Model\",\"body_trim\":\"Body
+        &amp; Trim\",\"engine_trans\":\"Engine &amp; Transmission\",\"more\":\"more\",\"fitments\":\"fitments\"},\"details\":{\"genuine\":\"Genuine\",\"product_details\":\"Details\",\"part_number\":\"SKU\",\"product_id\":\"Product
+        ID\",\"positions\":\"Positions\",\"also_known_as\":\"Other Names\",\"description\":\"Description\",\"description_vin_required\":\"You
+        will be required to provide a VIN in order to complete your order.\",\"description_non_returnable\":\"This
+        item is non-returnable.\",\"description_theft_related\":\"This item is considered
+        a theft relevant part and is not available for purchase online. Please contact
+        your local dealer for more information.\",\"condition\":\"Condition\",\"condition_new\":\"New\",\"condition_remanufactured\":\"Remanufactured\",\"notes\":\"Notes\",\"applications\":\"Applications\",\"manufacturers\":\"Manufacturers\",\"manufacturer\":\"Manufacturer\",\"hazmat\":\"HazMat\",\"replaces\":\"Replaces\",\"hazmat_message\":\"This
+        part contains hazardous materials. Extra shipping costs apply.\",\"includes\":\"Includes\",\"warranty\":\"Warranty\",\"sold_in_qty\":\"Sold
+        In Quantity\",\"disclaimer_text\":\"Disclaimer\",\"labor_time\":\"Install
+        Time\",\"labor_under_1_hr\":\"Under 1 hour\",\"labor_one_hr\":\"1 hour\",\"labor_hr_exact\":\"{hrs}
+        hours\",\"labor_hr_range\":\"{min}-{max} hours\",\"required_parts\":\"May
+        Be Required\",\"warning\":\"WARNING\",\"california_prop_65\":\"California
+        Proposition 65\",\"cancer_reproductive_harm\":\"Cancer and reproductive harm\"},\"purchase\":{\"price\":\"Price\",\"list_price\":\"MSRP\",\"discount\":\"Discount\",\"sale_price\":\"Sale
+        Price\",\"wholesale_price\":\"Wholesale Price\",\"percent_off\":\"<span class=\\\"savings-percent-value\\\">{percentage}%<\\/span>
+        off\",\"core_charge\":\"Core Charge\",\"core_charge_applies\":\"Core Charge
+        Applies\",\"core_charge_alert\":\"The manufacturer requires a product core
+        charge of {core_charge_amt} for each item shipped. If you return the product,
+        this amount will be refunded to you. Any retailer must charge you this core
+        charge, and you WILL BE CHARGED this amount regardless of which retailer you
+        use. Some retailers will not be up-front with you about the core charge, and
+        will call you to collect this amount after you place the order.\",\"select_options_tooltip\":\"Please
+        select an option before adding to cart\",\"bundle_includes_text\":\"Includes:\",\"out_of_stock\":\"Product
+        is out of stock\",\"not_for_sale\":\"Not for Sale\",\"discontinued_part\":\"Discontinued
+        Product\",\"discontinued_part_message\":\"No Longer Available For Purchase\",\"backordered_part\":\"On
+        Backorder\",\"backordered_part_message\":\"Temporarily Unavailable for Purchase\",\"unavailable_from_current_dealer\":\"This
+        item is not available from your selected dealer.\",\"choose_different_dealer\":\"Choose
+        a different dealer\",\"unable_to_ship\":\"Unable to Ship\",\"unable_to_ship_message\":\"Product
+        contains hazardous materials that we can't ship.\",\"call_for_price\":\"Contact
+        for Pricing\",\"call_for_availability\":\"Contact for Availability\",\"no_fitment_message\":\"Provide
+        your VIN at checkout and we will verify this part fits before shipping\",\"add_to_cart\":\"Add
+        to Cart\",\"in_stock_low_message\":\"Only {quantity} In Stock\",\"in_stock_medium_message\":\"{quantity}
+        In Stock\",\"in_stock_high_message\":\"In Stock\",\"in_stock_low_message_with_seller_name\":\"Only
+        {quantity} In Stock <span class=\\\"from-seller\\\">from {seller_name}<\\/span>\",\"in_stock_medium_message_with_seller_name\":\"{quantity}
+        In Stock <span class=\\\"from-seller\\\">from {seller_name}<\\/span>\",\"in_stock_high_message_with_seller_name\":\"In
+        Stock <span class=\\\"from-seller\\\">from {seller_name}<\\/span>\",\"ships_from_seller_message\":\"<span
+        class=\\\"from-seller\\\">Ships from {seller_name}<\\/span>\",\"shop_now\":\"Shop
+        Now >>\",\"miles_from_location\":\"miles from your location\",\"pick_up_today\":\"Pick
+        up today\",\"submit\":\"Submit\",\"change_location\":\"Change Location\",\"enter_zip_code\":\"Enter
+        Zip Code\",\"view_offers\":\"View offers from other dealers\",\"msrp\":\"MSRP\",\"offers_error_message\":\"We
+        could not find offers from suppliers. Please try again later.\",\"interested_in_product\":\"Interested
+        in this Product? Purchase this item from our partner.\",\"alt_text\":\"{brandList}
+        Parts\"}},\"all_product_variants\":{\"31170pnd013\":[]},\"current_product_availabilty\":\"Available
+        for Sale\",\"all_product_availabilty\":{\"31170pnd013\":{\"product_url\":\"\\/oem-parts\\/acura-tensioner-assembly-auto-31170pnd013\",\"availability\":\"Available
+        for Sale\"}},\"all_product_options\":{\"31170pnd013\":[]},\"all_product_details\":{\"31170pnd013\":{\"title\":\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\",\"options\":[],\"display_title\":false,\"product_id\":null,\"price\":173.32,\"msrp\":240.72,\"sku_stripped\":\"31170pnd013\",\"bundle_quantity\":0,\"catalog\":\"acura\",\"quantity\":null,\"instock_message\":\"\",\"source\":\"product\",\"variants\":[]}},\"hide_option_without_variant\":false,\"kit_contains_master_variant\":false}
+        </script> <div class=\"product-purchase-loading-overlay\"> <div class=\"loading-content\">
+        <i class=\"fa fa-spin fa-refresh\"></i> </div> </div> </div>   </div>   <div
+        \ class=\"page-builder-layout-module    desktop-only\"> <div class=\"product-badges-module
+        data-needed\"> <div class=\"product-badges\"> <div class=\"warranty product-badge
+        small-icon\"> <div class=\"badge-icon\"> <div class=\"icon\"></div> </div>
+        \  <div class=\"badge-text\"> <strong>Manufacturer Warranty</strong> Minimum
+        of 12 Months </div>   </div>   <div class=\"fitment product-badge small-icon\">
+        <div class=\"badge-icon\"> <div class=\"icon\"></div> </div>   <div class=\"badge-text\">
+        <strong>Guaranteed Fitment</strong> Always the correct parts </div>   </div>
+        \  <div class=\"security product-badge small-icon\"> <div class=\"badge-icon\">
+        <div class=\"icon\"></div> </div>   <div class=\"badge-text\"> <strong>Shop
+        with Confidence</strong> Your information is safe and secure </div>   </div>
+        \  <div class=\"support product-badge small-icon\"> <div class=\"badge-icon\">
+        <div class=\"icon\"></div> </div>   <div class=\"badge-text\"> <strong>In-House
+        Experts</strong> We know our products </div>   </div>   </div>   </div>   </div>
+        \  <div  class=\"page-builder-layout-module    mobile-only\"> <div class=\"product-images-module\"
+        data-module-id=\"module_6\"> <div class=\"product-images show-thumbnails\">
+        <div class=\"secondary-images-wrapper owl-small\"> <ul class=\"secondary-images\">
+        <li> <a href=\"javascript:;\"\n\t\t\t\t\tclass=\"product-secondary-image type-part
+        active\"\n\t\t\t\t\tdata-image-id=\"7ccff61b86a14adc38061ceae748c1eb\"\n\t\t\t\t\tdata-image-type=\"PART\"\n\t\t\t\t\tdata-image-main-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/7ccff61b86a14adc38061ceae748c1eb.png\"\n\t\t\t\t\tdata-image-preview-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/017c3f027ae480abc93aa96a5aff929d.png\"\n\t\t\t\t\t\t\t\t\t><img\n\t\t\t\t\titemprop=\"image\"\n\t\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/3f35fba9c6ee41930d0e99eb31a02063.png\"\n\t\t\t\t\t/>
+        </a> </li> <li> <a href=\"javascript:;\"\n\t\t\t\t\tclass=\"product-secondary-image
+        type-part \"\n\t\t\t\t\tdata-image-id=\"568ed354fefc53b4fe39acd9776c1299\"\n\t\t\t\t\tdata-image-type=\"PART\"\n\t\t\t\t\tdata-image-main-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/568ed354fefc53b4fe39acd9776c1299.png\"\n\t\t\t\t\tdata-image-preview-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/956921fecbfff194f2ac3968a77ce741.png\"\n\t\t\t\t\t\t\t\t\t><img\n\t\t\t\t\titemprop=\"image\"\n\t\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/ca2043c5c8a0cb1ec033bfab6e9e5734.png\"\n\t\t\t\t\t/>
+        </a> </li> <li> <a href=\"javascript:;\"\n\t\t\t\t\tclass=\"product-secondary-image
+        type-diagram \"\n\t\t\t\t\tdata-image-id=\"87e5eb5b264d6e48113da732d7161527\"\n\t\t\t\t\tdata-image-type=\"DIAGRAM\"\n\t\t\t\t\tdata-image-main-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/87e5eb5b264d6e48113da732d7161527.png\"\n\t\t\t\t\tdata-image-preview-url=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/f83a62be8d950b0fe28e132c03ab622d.png\"\n\t\t\t\t\t\t\t\t\t\tdata-caption=\"Part
+        can be found as reference #12 in illustration\"\n\t\t\t\t\t\t\t\t\t><img\n\t\t\t\t\titemprop=\"image\"\n\t\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/fb890e6cb1488c238615ae2e8faf4eca.png\"\n\t\t\t\t\t/>
+        </a> </li> </ul>   </div> <div class=\"main-image\"> <div class=\"product-video\">
+        <div id=\"product_image_video_module_6\"></div> </div> <a href=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/7ccff61b86a14adc38061ceae748c1eb.png\"\n\t\t\t\tclass=\"product-main-image-link\"\n\t\t\t\tdata-routing=\"ignore\"\n\t\t\t\t\t\t\t><img\n\t\t\t\titemprop=\"image\"\n\t\t\t\tclass=\"product-main-image
+        centered\"\n\t\t\t\t\t\t\t\tsrc=\"//dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/017c3f027ae480abc93aa96a5aff929d.png\"\n\t\t\t\t\n\t\t\t\talt=\"Tensioner
+        Assembly, Auto - Acura (31170-PND-013)\"\n\t\t\t\ttitle=\"Tensioner Assembly,
+        Auto - Acura (31170-PND-013)\"\n\t\t\t\t/> <div class=\"enlarge-image-overlay\">
+        <span class=\"enlarge-image-link\"><i class=\"fa fa-search-plus\"></i></span>
+        </div> </a> <div class=\"main-image-text\"> <p class=\"product-main-image-caption
+        \"> </p> </div>   </div>   </div> </div>   </div>   <div  class=\"page-builder-layout-module
+        \   mobile-only\"> <div class=\"product-badges-module data-needed\"> <div
+        class=\"product-badges\"> <div class=\"warranty product-badge small-icon\">
+        <div class=\"badge-icon\"> <div class=\"icon\"></div> </div>   <div class=\"badge-text\">
+        <strong>Manufacturer Warranty</strong> Minimum of 12 Months </div>   </div>
+        \  <div class=\"fitment product-badge small-icon\"> <div class=\"badge-icon\">
+        <div class=\"icon\"></div> </div>   <div class=\"badge-text\"> <strong>Guaranteed
+        Fitment</strong> Always the correct parts </div>   </div>   <div class=\"security
+        product-badge small-icon\"> <div class=\"badge-icon\"> <div class=\"icon\"></div>
+        </div>   <div class=\"badge-text\"> <strong>Shop with Confidence</strong>
+        Your information is safe </div>   </div>   <div class=\"support product-badge
+        small-icon\"> <div class=\"badge-icon\"> <div class=\"icon\"></div> </div>
+        \  <div class=\"badge-text\"> <strong>In-House Experts</strong> We know our
+        products </div>   </div>   </div>   </div>   </div>   </div>   </div>   </div>
+        \  </div>   </div>   <div  class=\"page-builder-layout-section  text-color-dark
+        \ normal-content desktop-only\"\n\t\t> <div class=\"container-wrap container-fluid\">
+        <div  class=\"row page-builder-layout-row row-full-height-md \"> <div class=\"col-md-12
+        \ block-modules page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module    \"> <div
+        class=\"product-tab-nav-module \"> <ul class=\"tab-nav-wrap\"> <li class=\"tab-nav
+        product-details-button tab-active\"><a href=\"javascript:void(0);\">Details</a></li>
+        <li class=\"tab-nav product-also-purchased-button\"><a href=\"javascript:void(0);\">Also
+        Purchased</a></li> <li class=\"tab-nav product-fitment-button\"><a href=\"javascript:void(0);\">Vehicle
+        Fitment</a></li> <li class=\"tab-nav product-reviews-button\"><a href=\"javascript:void(0);\">Product
+        Reviews</a></li> <li class=\"tab-nav product-questions-button\"><a href=\"javascript:void(0);\">Ask
+        Our Team</a></li> <li class=\"tab-nav product-warranty-button\"><a href=\"javascript:void(0);\">Warranty
+        & Disclosures</a></li> <li class=\"tab-nav product-installation-button\"><a
+        href=\"javascript:void(0);\">Installation Instructions</a></li> <li class=\"tab-nav
+        product-policies-button\"><a href=\"javascript:void(0);\">Policies</a></li>
+        </ul> </div> </div>   </div>   </div>   </div>   </div>   </div>   <div  class=\"page-builder-layout-section
+        \ text-color-dark  normal-content \"\n\t\t> <div class=\"container-wrap container-fluid\">
+        <div  class=\"row page-builder-layout-row row-full-height-md \"> <div class=\"col-md-12
+        \ block-modules page-builder-layout-column col-full-height left\"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module    \"> <div
+        class=\"product-details-module\" tabindex=\"-1\"> <div class=\"product-details-inner\">
+        <h2 class=\"product-details-title\">Details</h2> <ul class=\"field-list\">
+        <li class=\"manufacturer\"> <span class=\"list-label\">Genuine:</span> <span
+        class=\"list-value\"><div class=\"part-manufacturer\"> <div class=\"manufacturer-logos\">
+        <img src=\"https://d3s44e87wooplq.cloudfront.net/assets/images/acura.png\"
+        alt=\" Parts\"/> </div>   </div> </span> </li> <li class=\"part_number\">
+        <span class=\"list-label\">SKU:</span> <span class=\"list-value sku-display\">31170-PND-013</span>
+        </li> <li class=\"also_known_as\"> <span class=\"list-label\">Other Names:</span>
+        <span class=\"list-value\">Tensioner Auto</span> </li> <li class=\"applications\">
+        <span class=\"list-label\">Applications:</span> <span class=\"list-value\"><b>Body
+        Styles:</b> Hatchback.</span> </li> <li class=\"product-superseded-list\">
+        <span class=\"list-label\">Replaces:</span> <span class=\"list-value\">31170-PND-003</span>
+        </li> <li class=\"sold-in-qty\"> <span class=\"list-label\">Sold In Quantity:</span>
+        <span class=\"list-value\">1</span> </li> </ul>   </div>   </div>   </div>
+        \  <div  class=\"page-builder-layout-module    \"> <div class=\"product-recommended-module
+        stub\" tabindex=\"-1\"> <div class=\"product-recommendations\" data-catalog=\"acura\"\n\t\tdata-sku-stripped=\"31170pnd013\"
+        data-recommendation-limit=\"8\" data-display-list=\"\"> <h2 class=\"product-section-title\">Also
+        Purchased</h2> <div class=\"recommended-products-response\"></div> </div>
+        </div>   </div>   <div  class=\"page-builder-layout-module    \"> <div class=\"product-fitment-module\"
+        tabindex=\"-1\"> <div class=\"product-fitment\"> <h2 class=\"product-fitment-title
+        product-section-title\">Vehicle Fitment</h2> <div class=\"fitment-table-wrap
+        \"> <table class=\"fitment-table\"> <caption>Vehicle Fitment</caption> <thead>
+        <tr> <th scope=\"col\" class=\"fitment-year\">Year</th> <th scope=\"col\"
+        class=\"fitment-make\">Make</th> <th scope=\"col\" class=\"fitment-model\">Model</th>
+        <th scope=\"col\" class=\"fitment-trim\">Body &amp; Trim</th> <th scope=\"col\"
+        class=\"fitment-engine\">Engine &amp; Transmission</th> </tr> </thead> <tbody>
+        <tr class=\"fitment-row \"> <td class=\"fitment-year\">2006 </td> <td class=\"fitment-make\">Acura
+        </td> <td class=\"fitment-model\">RSX</td> <td class=\"fitment-trim\">Base,
+        Type-S</td> <td class=\"fitment-engine\">2.0L L4 - Gas</td> </tr> <tr class=\"fitment-row
+        \"> <td class=\"fitment-year\">2005 </td> <td class=\"fitment-make\">Acura
+        </td> <td class=\"fitment-model\">RSX</td> <td class=\"fitment-trim\">Base,
+        Type-S</td> <td class=\"fitment-engine\">2.0L L4 - Gas</td> </tr> <tr class=\"fitment-row
+        \"> <td class=\"fitment-year\">2004 </td> <td class=\"fitment-make\">Acura
+        </td> <td class=\"fitment-model\">RSX</td> <td class=\"fitment-trim\">Base,
+        Type-S</td> <td class=\"fitment-engine\">2.0L L4 - Gas</td> </tr> <tr class=\"fitment-row
+        \"> <td class=\"fitment-year\">2003 </td> <td class=\"fitment-make\">Acura
+        </td> <td class=\"fitment-model\">RSX</td> <td class=\"fitment-trim\">Base,
+        Type-S</td> <td class=\"fitment-engine\">2.0L L4 - Gas</td> </tr> <tr class=\"fitment-row
+        \"> <td class=\"fitment-year\">2002 </td> <td class=\"fitment-make\">Acura
+        </td> <td class=\"fitment-model\">RSX</td> <td class=\"fitment-trim\">Base,
+        Type-S</td> <td class=\"fitment-engine\">2.0L L4 - Gas</td> </tr> </tbody>
+        </table> </div> </div>   </div>   </div>   <div  class=\"page-builder-layout-module
+        \   \"> </div>   </div>   </div>   </div>   </div>   </div>   <div  class=\"page-builder-layout-section
+        \ text-color-dark  normal-content \"\n\t\t> <div class=\"container-wrap container-fluid\">
+        <div  class=\"row page-builder-layout-row row-full-height-md \"> <div class=\"col-md-4
+        \ block-modules page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module Product-Page-Policies
+        \  \"> <div class=\"custom-html-module\"> <p><a href=\"https://www.acuraexpressparts.com/policies/shipping\">Shipping
+        Policy</a></p> </div>  </div>   </div>   </div>   <div class=\"col-md-4  block-modules
+        page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module Product-Page-Policies
+        \  \"> <div class=\"custom-html-module\"> <p><a href=\"https://www.acuraexpressparts.com/policies/returns\">Return
+        Policy</a></p> </div>  </div>   </div>   </div>   <div class=\"col-md-4  block-modules
+        page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module Product-Page-Policies
+        \  \"> <div class=\"custom-html-module\"> <p><a href=\"https://www.acuraexpressparts.com/policies/privacy\">Privacy
+        Policy</a></p> </div>  </div>   </div>   </div>   </div>   <div  class=\"row
+        page-builder-layout-row row-full-height-md \"> <div class=\"col-md-12  block-modules
+        page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module    \"> <div
+        class=\"product-store-description-module\"> <div class=\"product-description\">
+        <h3>Acura Express Parts</h3> <div class=\"description_body\"> <p>&nbsp;Our
+        goal at&nbsp;<a href=\"http://acuraexpressparts.com/\">Acuraexpressparts.com</a>&nbsp;is
+        to give our online customers the finest&nbsp;service at the best prices&nbsp;possible.
+        We sell only Acura OEM Parts online, backed by a factory, 12 month 12,000
+        mile limited warranty*.&nbsp;<a href=\"http://www.acuraexpressparts.com/contact-us\"
+        target=\"_blank\">Call us</a>&nbsp;today and see the difference for yourself.</p>
+        <p><strong><a href=\"https://www.acuraexpressparts.com/about\">Learn More
+        About Acura Express Parts</a></strong></p> </div> </div> </div>   </div>   <div
+        \ class=\"page-builder-layout-module    \"> <div class=\"product-brand-description-module\">
+        <div class=\"product-description\"> <h3>Acura</h3> <div class=\"description_body\">
+        <p>Acura Express Parts is your leader for genuine OEM Acura Parts and Accessories.&nbsp;Our
+        OEM&nbsp;Tensioner Assembly, Auto&nbsp;is guaranteed to fit your&nbsp;2002-2006
+        Acura RSX vehicle when you enter your VIN.</p> <p><strong><a href=\"https://www.acuraexpressparts.com/v-acura\">Order
+        Your Acura Parts Here</a></strong></p> </div> </div> </div>   </div>   </div>
+        \  </div>   </div>   </div>   </div>   </div>   </div> </div> <footer class=\"container-footer\">
+        <div class=\"page-builder-page-layout \" > <div  class=\"page-builder-layout-section
+        \ text-color-dark  normal-content \"\n\t\t\t\t\tstyle=\"background-color:
+        #efefef; \"\n\t\t> <div class=\"container-wrap container-fluid\"> <div  class=\"row
+        page-builder-layout-row row-full-height-md \"> <div class=\"col-md-12  block-modules
+        page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module   padding-15
+        \"> <div class=\"custom-html-module\"> <h2 style=\"text-align:center;\">Factory
+        Direct Acura Parts and Accessories</h2> </div>  </div>   <div  class=\"page-builder-layout-module
+        \  padding-20 \"> <div class=\"featured-pages-module\"> <ul class=\"featured-pages-list
+        \"> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Air & Fuel
+        Delivery\" class=\"normal text-ellipsis\"><a href=\"/air-fuel-delivery\">Air
+        & Fuel Delivery</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\"
+        title=\"Belts & Cooling\" class=\"normal text-ellipsis\"><a href=\"/belts-cooling\">Belts
+        & Cooling</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Brake
+        Pads\" class=\"normal text-ellipsis\"><a href=\"/brake-pads\">Brake Pads</a></li>
+        <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Brakes\" class=\"normal
+        text-ellipsis\"><a href=\"/brakes\">Brakes</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Cabin Filters\" class=\"normal text-ellipsis\"><a
+        href=\"/cabin-filters\">Cabin Filters</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Cargo\" class=\"normal text-ellipsis\"><a href=\"/cargo\">Cargo</a></li>
+        <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Cargo Nets\" class=\"normal
+        text-ellipsis\"><a href=\"/cargo-nets\">Cargo Nets</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Cargo Trays\" class=\"normal text-ellipsis\"><a
+        href=\"/cargo-trays\">Cargo Trays</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\"
+        title=\"Door Sills\" class=\"normal text-ellipsis\"><a href=\"/door-sills\">Door
+        Sills</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Electrical
+        Alternator\" class=\"normal text-ellipsis\"><a href=\"/electrical-alternator\">Electrical
+        Alternator</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Electrical
+        Ignition\" class=\"normal text-ellipsis\"><a href=\"/electrical-ignition\">Electrical
+        Ignition</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Electrical
+        Starter\" class=\"normal text-ellipsis\"><a href=\"/electrical-starter\">Electrical
+        Starter</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Electronics\"
+        class=\"normal text-ellipsis\"><a href=\"/electronics\">Electronics</a></li>
+        <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Engine\" class=\"normal
+        text-ellipsis\"><a href=\"/engine\">Engine</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Exhaust\" class=\"normal text-ellipsis\"><a
+        href=\"/exhaust\">Exhaust</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\"
+        title=\"HVAC\" class=\"normal text-ellipsis\"><a href=\"/hvac\">HVAC</a></li>
+        <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Radiators\" class=\"normal
+        text-ellipsis\"><a href=\"/radiators\">Radiators</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Roof Racks\" class=\"normal text-ellipsis\"><a
+        href=\"/roof-racks\">Roof Racks</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\"
+        title=\"Shift Knobs\" class=\"normal text-ellipsis\"><a href=\"/shift-knobs\">Shift
+        Knobs</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Spark
+        Plugs\" class=\"normal text-ellipsis\"><a href=\"/spark-plugs\">Spark Plugs</a></li>
+        <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Spoilers\" class=\"normal
+        text-ellipsis\"><a href=\"/spoilers\">Spoilers</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Starters\" class=\"normal text-ellipsis\"><a
+        href=\"/starters\">Starters</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\"
+        title=\"Steering\" class=\"normal text-ellipsis\"><a href=\"/steering\">Steering</a></li>
+        <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Sun Shades\" class=\"normal
+        text-ellipsis\"><a href=\"/sun-shades\">Sun Shades</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Suspension\" class=\"normal text-ellipsis\"><a
+        href=\"/suspension\">Suspension</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\"
+        title=\"Tire & Wheel\" class=\"normal text-ellipsis\"><a href=\"/tire-wheel\">Tire
+        & Wheel</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Transmission
+        & Transaxle\" class=\"normal text-ellipsis\"><a href=\"/transmission-transaxle\">Transmission
+        & Transaxle</a></li> <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Wheel
+        Locks\" class=\"normal text-ellipsis\"><a href=\"/wheel-locks\">Wheel Locks</a></li>
+        <li data-toggle=\"tooltip\" data-placement=\"top\" title=\"Wheels\" class=\"normal
+        text-ellipsis\"><a href=\"/wheels\">Wheels</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Windshield Wipers\" class=\"normal text-ellipsis\"><a
+        href=\"/windshield-wipers\">Windshield Wipers</a></li> <li data-toggle=\"tooltip\"
+        data-placement=\"top\" title=\"Wipers\" class=\"normal text-ellipsis\"><a
+        href=\"/wipers\">Wipers</a></li> </ul> </div> </div>   </div>   </div>   </div>
+        \  </div>   </div>   <div id=\"footer-custom\" class=\"page-builder-layout-section
+        \ text-color-dark  wide-content \"\n\t\t> <div class=\"container-wrap container-fluid\">
+        <div  class=\"row page-builder-layout-row row-full-height-md \"> <div class=\"col-md-3
+        \ block-modules page-builder-layout-column col-full-height text-center\">
+        <div  class=\"page-builder-layout-column-wrap full-height-wrapper \"> <div
+        \ class=\"page-builder-layout-module    \"> <div class=\"links-list-module
+        links-display-block list-style-footer\"> <strong class=\"heading\">Navigation</strong>
+        <ul class=\"links-list\"> <li><a  href=\"blog\">Acura Blog </a></li> <li><a
+        \ href=\"about\">About Us </a></li> <li><a  href=\"contact-us\">Contact Us
+        </a></li> <li><a  href=\"account/login\">My Account </a></li> <li><a  href=\"account/order-status\">My
+        Orders </a></li> </ul>   </div>   </div>   </div>   </div>   <div class=\"col-md-3
+        \ block-modules page-builder-layout-column col-full-height text-center\">
+        <div  class=\"page-builder-layout-column-wrap full-height-wrapper \"> <div
+        \ class=\"page-builder-layout-module    \"> <div class=\"custom-html-module\">
+        <strong class=\"heading\">Shop Parts</strong> </div>  </div>   <div  class=\"page-builder-layout-module
+        \   \"> <div class=\"links-list-module links-display-block list-style-footer\">
+        <ul class=\"links-list\"> <li><a  href=\"javascript: openVehiclePickerRedirect(null,
+        null, null, null, null, null);\">OEM Parts </a></li> <li><a  href=\"sitemap\">Sitemap
+        </a></li> </ul>   </div>   </div>   <div  class=\"page-builder-layout-module
+        \   \"> <div class=\"social-links-module\"> <div class=\"layout-inline style-circle\">
+        <strong class=\"heading\">Stay Connected</strong> <ul class=\"nav_social size-small\">
+        <li> <a href=\"http://facebook.com/acuraexpressparts\" target=\"_blank\" rel=\"noreferrer\"
+        class=\"facebook\" title=\"Visit us on Facebook\"> <div class=\"social-circle
+        social-bg\"><i class=\"fa fa-facebook fa-inverse\"></i></div> <span class=\"sr-only\">Facebook</span>
+        </a> </li> </ul>   </div>   </div>   </div>   </div>   </div>   <div class=\"col-md-3
+        \ block-modules page-builder-layout-column col-full-height text-center\">
+        <div  class=\"page-builder-layout-column-wrap full-height-wrapper \"> <div
+        \ class=\"page-builder-layout-module    \"> <div class=\"links-list-module
+        links-display-block list-style-footer\"> <strong class=\"heading\">Policies</strong>
+        <ul class=\"links-list\"> <li><a  href=\"policies/terms-and-conditions\">Terms
+        & Conditions </a></li> <li><a  href=\"policies/returns\">Returns </a></li>
+        <li><a  href=\"policies/shipping\">Shipping </a></li> <li><a  href=\"policies/privacy\">Privacy
+        </a></li> </ul>   </div>   </div>   </div>   </div>   <div class=\"col-md-3
+        \ block-modules page-builder-layout-column col-full-height text-center\">
+        <div  class=\"page-builder-layout-column-wrap full-height-wrapper \"> <div
+        \ class=\"page-builder-layout-module    \"> <div class=\"custom-html-module\">
+        <p><strong class=\"heading\">Contact Us</strong></p> </div>  </div>   <div
+        \ class=\"page-builder-layout-module    \"> <div class=\"dealer-address-module\">
+        <address class=\"dealer-address\"> <div class=\"dealer-store-name dealer-name\">Acura
+        Express Parts</div> <div class=\"dealer-address\"> <div class=\"dealer-street-address\">
+        \  <div>illinois distribution center</div> <div>service@acuraexpressparts.com</div>
+        <div> <span class=\"dealer-address-locality\">Chicago,</span> <span class=\"dealer-address-region\">IL</span>
+        <span class=\"dealer-postal-code\">60642</span> </div>     <div class=\"dealer-phone\"><a
+        href=\"tel:1-844-683-5958\">1-844-683-5958</a></div> </div> </div> </address>
+        </div> </div>   </div>   </div>   </div>   </div>   </div>   <div id=\"payment-row-custom\"
+        class=\"page-builder-layout-section  text-color-dark use-padding wide-content
+        \"\n\t\t> <div class=\"container-wrap container-fluid\"> <div  class=\"row
+        page-builder-layout-row row-full-height-md \"> <div class=\"col-md-6  inline-modules
+        page-builder-layout-column col-full-height \"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper \"> <div  class=\"page-builder-layout-module    \"> <div
+        class=\"payments-accepted-module\"> <div class=\"payments-accepted\"> <img
+        class=\"paypal lazy-load placeholder animated\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=\"
+        alt=\"PayPal\" lazySrc=\"https://d3s44e87wooplq.cloudfront.net/assets/payment/paypal.svg\">
+        <img class=\"visa lazy-load placeholder animated\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=\"
+        alt=\"Visa\" lazySrc=\"https://d3s44e87wooplq.cloudfront.net/assets/payment/visa.svg\">
+        <img class=\"mastercard lazy-load placeholder animated\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=\"
+        alt=\"Master Card\" lazySrc=\"https://d3s44e87wooplq.cloudfront.net/assets/payment/mc.svg\">
+        <img class=\"amex lazy-load placeholder animated\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=\"
+        alt=\"Amex\" lazySrc=\"https://d3s44e87wooplq.cloudfront.net/assets/payment/amex.svg\">
+        <img class=\"discover lazy-load placeholder animated\" src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN8Vw8AAmEBb87E6jIAAAAASUVORK5CYII=\"
+        alt=\"Discover\" lazySrc=\"https://d3s44e87wooplq.cloudfront.net/assets/payment/discover.svg\">
+        </div>   </div>   </div>   </div>   </div>   <div class=\"col-md-6  inline-modules
+        page-builder-layout-column col-full-height left\"> <div  class=\"page-builder-layout-column-wrap
+        full-height-wrapper text-right\"> <div  class=\"page-builder-layout-module
+        \   \"> <div class=\"powered-by-rp-module\"> <a class=\"powered-by\" rel=\"nofollow\"
+        target=\"_blank\" href=\"https://www.revolutionparts.com/\">Powered by <img
+        src=\"https://d3s44e87wooplq.cloudfront.net/assets/images/rp/r_square_sm_bnw.jpg\"
+        alt=\"\"/> RevolutionParts &copy; 2022 </a> </div>   </div>   </div>   </div>
+        \  </div>   </div>   </div>   </div>   </footer> </div> <script type=\"application/ld+json\">
+        [{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"WebSite\",\"url\":\"https:\\/\\/www.acuraexpressparts.com\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https:\\/\\/www.acuraexpressparts.com\\/search?search_str={search}\",\"query-input\":\"required
+        name=search\"}},{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"AutoPartsStore\",\"name\":\"Acura
+        Express Parts\",\"telephone\":\"1-844-683-5958\",\"image\":\"https:\\/\\/s3.amazonaws.com\\/rparts-sites\\/f611090d92384573b94c104bcd04c1ed\\/images\\/logo.png\",\"url\":\"https:\\/\\/www.acuraexpressparts.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"illinois
+        distribution center service@acuraexpressparts.com\",\"addressLocality\":\"Chicago\",\"addressRegion\":\"IL\",\"postalCode\":\"60642\"},\"sameAs\":[\"http:\\/\\/facebook.com\\/acuraexpressparts\"]},{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@id\":\"https:\\/\\/www.acuraexpressparts.com\\/\",\"name\":\"Home\"}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@id\":\"https:\\/\\/www.acuraexpressparts.com\\/oem-parts\\/acura-tensioner-assembly-auto-31170pnd013\",\"name\":\"ACURA
+        31170-PND-013\"}}]},{\"@context\":\"http:\\/\\/schema.org\",\"@type\":\"Product\",\"productID\":\"31170-PND-013\",\"sku\":\"31170-PND-013\",\"mpn\":\"31170pnd013\",\"url\":\"https:\\/\\/www.acuraexpressparts.com\\/oem-parts\\/acura-tensioner-assembly-auto-31170pnd013\",\"name\":\"Tensioner
+        Assembly, Auto\",\"image\":[\"https:\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/7ccff61b86a14adc38061ceae748c1eb.png\",\"https:\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/568ed354fefc53b4fe39acd9776c1299.png\",\"https:\\/\\/dz310nzuyimx0.cloudfront.net\\/strapr1\\/6b459a35bf4f3904748f8a61ff2d40fa\\/87e5eb5b264d6e48113da732d7161527.png\"],\"description\":\"Featuring
+        the highest quality OEM parts online, Acura Express Parts has what you are
+        looking for.\\u00a02002-2006 Acura RSX part # 31170-PND-013 - Tensioner Assembly,
+        Auto\",\"brand\":{\"@type\":\"Organization\",\"name\":\"Acura\"},\"offers\":[{\"@type\":\"Offer\",\"itemCondition\":\"http:\\/\\/schema.org\\/NewCondition\",\"availability\":\"http:\\/\\/schema.org\\/OnlineOnly\",\"url\":\"https:\\/\\/www.acuraexpressparts.com\\/oem-parts\\/acura-tensioner-assembly-auto-31170pnd013\",\"price\":173.32,\"priceCurrency\":\"USD\"},{\"@type\":\"Offer\",\"itemCondition\":\"http:\\/\\/schema.org\\/NewCondition\",\"availability\":\"http:\\/\\/schema.org\\/OnlineOnly\",\"url\":\"https:\\/\\/www.acuraexpressparts.com\\/oem-parts\\/acura-tensioner-assembly-auto-31170pnd013\",\"price\":173.32,\"priceCurrency\":\"CAD\"}],\"manufacturer\":{\"@type\":\"Organization\",\"name\":\"Acura\"}}]
+        </script> <script> //This is an WCAG AA target (All iFrames must have a title:
+        http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html)\n\t\tonLoadCallback
+        = function () {\n\t\t\tconst googleIFrames = document.querySelectorAll('.grecaptcha-logo
+        iframe');\n\t\t\tif(googleIFrames) {\n\t\t\t\t//Array.prototype.forEach used
+        for IE compatibility\n\t\t\t\tArray.prototype.forEach.call(googleIFrames,
+        function (iframe) {\n\t\t\t\t\tif(!iframe.getAttribute('title')) {\n\t\t\t\t\t\tiframe.setAttribute('title',
+        'Google Recaptcha Logo');\n\t\t\t\t\t}\n\t\t\t\t});\n\t\t\t}\n\t\t}; </script>
+        <meta name=\"og:site_name\" content=\"Acura Express Parts\" type=\"property\"
+        /> <meta name=\"og:type\" content=\"product\" type=\"property\" /> <meta name=\"og:url\"
+        content=\"https://www.acuraexpressparts.com/oem-parts/acura-tensioner-assembly-auto-31170pnd013\"
+        type=\"property\" /> <meta name=\"og:image\" content=\"https://dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/7ccff61b86a14adc38061ceae748c1eb.png\"
+        type=\"property\" /> <meta name=\"og:image\" content=\"https://dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/568ed354fefc53b4fe39acd9776c1299.png\"
+        type=\"property\" /> <meta name=\"og:image\" content=\"https://dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/87e5eb5b264d6e48113da732d7161527.png\"
+        type=\"property\" /> <meta name=\"og:title\" content=\"Tensioner Assembly,
+        Auto\" type=\"property\" /> <meta name=\"og:description\" content=\"\" type=\"property\"
+        /> <script type=\"text/javascript\"> var rp_app = window.rp_app || {};\n\t\trp_app.env
+        = {\"page\":\"product\\/manufacturer\\/illustration\",\"google_analytics_enabled\":true,\"paypal\":null,\"is_webstore_plugin\":false,\"html_lang\":\"en\",\"vehicle_display_text\":\"vehicle\"};\n\t\trp_app.data
+        = {\"captcha_enabled\":true,\"captcha_site\":\"6LdQkgIaAAAAAP9_ppDwGIrgmaVWFJDJh1SL5LbW\"};\n\t\t\n\t\tvar
+        tracking = {\"adobe\":{\"adobe_dtm_enabled\":false,\"adobe_dtm_script_source\":\"\"},\"google\":{\"analytics_ua_numbers\":[\"UA-72392576-1\"],\"rp_ua_numbers\":[{\"id\":\"rollup\",\"ua\":\"UA-46033321-1\"},{\"id\":\"virtual\",\"ua\":\"UA-46033321-2\"},{\"id\":\"rpcust\",\"ua\":\"UA-37232695-48\"}],\"enhanced_ecommerce_enabled\":false,\"rp_enhanced_ecommerce_enabled\":false,\"adwords_id\":\"773318015\",\"adwords_label\":\"BOF0CJb1-oYCEP_K3_AC\",\"tag_manager_id\":\"\",\"merchant_center_id\":\"129003645\",\"customer_reviews_enabled\":true,\"customer_reviews_badge_visible\":false,\"page_type\":\"product\",\"use_gtag_analytics\":false,\"default_analytics_id\":\"UA-46033321-1\"},\"facebook\":{\"pixel_id\":\"https:\\/\\/www.facebook.com\\/AcuraExpressParts\\/\",\"event\":\"ViewContent\"},\"rp-reporting\":{\"enabled\":false},\"category\":null,\"transaction\":null,\"products\":[{\"product_id\":\"31170pnd013\",\"title\":\"Tensioner
+        Assembly, Auto\",\"catalog\":\"acura\"}],\"ec\":{\"products\":null,\"product_detail\":{\"id\":\"31170pnd013\",\"name\":\"Tensioner
+        Assembly, Auto\",\"brand\":\"Acura\",\"price\":173.32},\"product_click\":{\"list\":null,\"position\":null},\"completed_cart_products\":null,\"transaction_details\":null},\"value\":173.32,\"page\":\"product\\/manufacturer\\/illustration\",\"dimensions\":{\"domain\":\"www.acuraexpressparts.com\",\"hash\":\"f611090d92384573b94c104bcd04c1ed\",\"isLoggedIn\":\"NotLoggedIn\",\"carSelected\":\"NotSelected\",\"stockLevelMessaging\":\"NoInventoryMessaging\"},\"vid\":\"2b234520b6c85a4dc14af508c2d894d1\",\"fullstory\":{\"fullstory_tracking_enabled\":\"\",\"fullstory_organization_id\":\"\"},\"heap\":{\"heap_tracking_enabled\":\"\",\"heap_app_id\":\"\"}};\n\t\tvar
+        digitalData = null;\n\t\tvar javascriptContent = {\"form_submission_general_error\":\"There
+        was a problem with your form submission. Please try again.\",\"general_request_error\":\"There
+        was a problem with your request. Please wait a few moments and try again.\",\"invalid_vin_error\":\"The
+        VIN you entered was not valid, please retry.\",\"single_warehouse_cart_restriction_error\":\"One
+        or more of the brands already in your cart can't ship with the brand you are
+        attempting to add. Would you like to proceed with your existing cart or <a
+        href=\\\"javascript:;\\\" class=\\\"replace-cart\\\">continue with the new
+        part<\\/a>?\",\"single_warehouse_no_brand_support_error\":\"Unfortunately,
+        we're unable to ship this item at this time.\",\"save_cart_error\":\"Sorry,
+        we can't save this item to the cart right now. Please try again later.\",\"are_you_sure_confirmation\":\"Are
+        you sure?\",\"year\":\"Year\",\"make\":\"Make\",\"model\":\"Model\",\"trim\":\"Trim\",\"engine_transmission\":\"Engine\\/Trans\",\"choose_vehicle_text\":\"Choose
+        Your Vehicle\",\"start_over\":\"Start Over\",\"close\":\"Close\",\"recent_vehicles\":\"Recent
+        Vehicles\",\"server_problem_heading\":\"Server Problem\",\"server_problem_body\":\"We
+        seem to be having a problem connecting with our system. Please try again in
+        a few moments. If the problem persists, let us know!\",\"loading\":\"Loading\",\"search_error\":\"We're
+        sorry, but the search results failed to load. Please refresh and try again
+        or contact support.\",\"cart_item_updated\":\"Item has been updated in your
+        cart\",\"cart_item_added\":\"Item has been added to your cart\",\"cart_item_add_error\":\"Problem
+        adding item to cart\",\"no_image_available\":\"No Image Available\",\"extra_shipping_applies\":\"Extra
+        Shipping Applies\",\"hazardous_materials\":\"Hazardous Materials\",\"part_number\":\"Part
+        Number\",\"product\":\"Product\",\"quantity_required\":\"Quantity Required\",\"quantity\":\"Quantity\",\"msrp\":\"MSRP\",\"core_charge\":\"Core
+        Charge\",\"click_for_more_info\":\"Click for more information\",\"core_charge_applies\":\"Core
+        Charge Applies\",\"wholesale_price\":\"Wholesale Price\",\"our_price\":\"Our
+        Price\",\"subtotal\":\"Subtotal\",\"item\":\"item\",\"items\":\"items\",\"continue_shopping\":\"Continue
+        Shopping\",\"punchout\":\"Punchout\",\"checkout\":\"Checkout\",\"not_for_sale\":\"Not
+        for Sale\",\"discontinued_part_message\":\"No Longer Available For Purchase\",\"backordered_part\":\"On
+        Backorder\",\"backordered_part_message\":\"Temporarily Unavailable for Purchase\",\"call_for_price\":\"Call
+        for Price\",\"call_for_availability\":\"Call for Availability\",\"discontinued_part\":\"Discontinued
+        Product\",\"available_for_sale\":\"Available for Sale\",\"discontinued\":\"Discontinued\",\"on_backorder\":\"On
+        Backorder\"}; </script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/common.js\"
+        type=\"text/javascript\" ></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/webstore-package.js\"
+        type=\"text/javascript\" ></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/product.js\"
+        type=\"text/javascript\" ></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_images/product_images.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_purchase/product_purchase.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/scripts/browse_fitting_products.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_tab_nav/product_tab_nav.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_details/product_details.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_recommended/product_recommended.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/product_fitment/product_fitment.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/custom_html/custom_html.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/promotional_banner/promotional_banner.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/store_logo/store_logo.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/help_modal/help_modal.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/search_bar/auto_suggest.js\"
+        type=\"text/javascript\" async></script> <script src=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/payments_accepted/payments_accepted.js\"
+        type=\"text/javascript\" async></script> <script type=\"text/javascript\">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n\t(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+        Date();a=s.createElement(o),\n\tm=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n\t})(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n\trp_app.track.init();\n\trp_app.track.page_tracking(tracking.page);\n\trp_app.track.track_pageview_all_trackers();
+        </script> <script type=\"text/javascript\"> var google_tag_params = {};\n\tif(tracking.google.page_type)
+        {\n\t\tgoogle_tag_params.ecomm_pagetype = tracking.google.page_type;\n\t}\n\tif(tracking.value)
+        {\n\t\tgoogle_tag_params.ecomm_totalvalue = tracking.value;\n\t}\n\tif(tracking.products)
+        {\n\t\tvar ecomm_prodid = [];\n\t\tfor (var i = 0; i < tracking.products.length;
+        i++) {\n\t\t\tecomm_prodid.push(tracking.products[i].product_id);\n\t\t}\n\t\tgoogle_tag_params.ecomm_prodid
+        = ecomm_prodid;\n\t}\n\tif(tracking.category) {\n\t\tgoogle_tag_params.ecomm_category
+        = tracking.category;\n\t} </script> <script type=\"text/javascript\"> /* <![CDATA[
+        */\n\tvar google_conversion_id = 773318015;\n\tvar google_custom_params =
+        window.google_tag_params;\n\tvar google_remarketing_only = true;\n\tvar google_conversion_format
+        = 3;\n\t/* ]]> */ </script> <script type=\"text/javascript\" src=\"//www.googleadservices.com/pagead/conversion.js\">
+        </script> <noscript> <div style=\"display:inline;\"> <img height=\"1\" width=\"1\"
+        style=\"border-style:none;\" alt=\"\" src=\"//googleads.g.doubleclick.net/pagead/viewthroughconversion/773318015/?value=0&amp;guid=ON&amp;script=0\"/>
+        </div> </noscript>   <script> !function(f,b,e,v,n,t,s)\n\t{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\n\t\t\tn.callMethod.apply(n,arguments):n.queue.push(arguments)};\n\t\tif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\n\t\tn.queue=[];t=b.createElement(e);t.async=!0;\n\t\tt.src=v;s=b.getElementsByTagName(e)[0];\n\t\ts.parentNode.insertBefore(t,s)}(window,document,'script',\n\t\t\t'https://connect.facebook.net/en_US/fbevents.js');\n\tvar
+        facebook_pixel = {\n\t\tcontent_ids: null,\n\t\tproduct_name: null,\n\t\tvalue:
+        null\n\t};\n\tif(tracking.products) {\n\t\tvar content_ids = [];\n\t\tvar
+        productTitles = [];\n\t\tfor (var i = 0; i < tracking.products.length; i++)
+        {\n\t\t\tcontent_ids.push(tracking.products[i].product_id);\n\t\t\tproductTitles.push(tracking.products[i].title);\n\t\t}\n\t\tfacebook_pixel.content_ids
+        = content_ids;\n\t\tfacebook_pixel.product_name = (productTitles.length >
+        0) ? productTitles[0] : null\n\t}\n\tif(tracking.value) {\n\t\tfacebook_pixel.value
+        = tracking.value;\n\t}\n\tfbq('init', tracking.facebook.pixel_id);\n\tfbq('track',
+        'PageView');\n\tswitch(tracking.facebook.event){\n\t\tcase 'ViewContent':\n\t\t\tfbq('track',
+        'ViewContent', {\n\t\t\t\t'content_name' : facebook_pixel.title,\n\t\t\t\t'content_ids'
+        : facebook_pixel.content_ids,\n\t\t\t\t'content_type' : 'product',\n\t\t\t});\n\t\t\tbreak;\n\t\tcase
+        'Purchase':\n\t\t\tfbq('track', 'Purchase', {\n\t\t\t\t'content_ids' : facebook_pixel.content_ids,\n\t\t\t\t'value'
+        : facebook_pixel.value,\n\t\t\t\t'currency' : 'USD',\n\t\t\t\t'content_type'
+        : 'product',\n\t\t\t});\n\t\t\tbreak;\n\t} </script> <noscript> <img height=\"1\"
+        width=\"1\"\n\t\t src=\"https://www.facebook.com/tr?id=https://www.facebook.com/AcuraExpressParts/&ev=ViewContent&noscript=1\"/>
+        </noscript>   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900'
+        rel='stylesheet' type='text/css'> <script> // Top Menu\n\t$(document).ready(function(){\n\t\t//
+        Mobile Header Slide down script\n\t\tvar mobileSliders = $(\".mobile-slider-button\"),
+        j;\n\t\tfor(j=0; j < mobileSliders.length; j++) {\n\t\t\tmobileSliders[j].onclick
+        = function() {\n\t\t\t\t// If top menu item has class menu-selected\n\t\t\t\tif
+        (!$(this).is(\".menu-selected\")) {\n\t\t\t\t\t$(this).toggleClass(\"menu-selected\");\n\t\t\t\t\t//
+        If that top menu button is also mobile-search-col\n\t\t\t\t\tif ($(this).is(\".mobile-search-col\"))
+        {\n\t\t\t\t\t\t$(\".search-row\").toggleClass(\"open\");\n\t\t\t\t\t\t$(\".menu-row\").removeClass(\"open\");\n\t\t\t\t\t\t$(\".mobile-menu-col\").removeClass(\"menu-selected\");\n\t\t\t\t\t\t$(\".slider-close\").addClass(\"close-display\");\n\t\t\t\t\t}\n\t\t\t\t\telse
+        if ($(this).is(\".mobile-menu-col\")) {\n\t\t\t\t\t\t$(\".menu-row\").toggleClass(\"open\");\n\t\t\t\t\t\t$(\".search-row\").removeClass(\"open\");\n\t\t\t\t\t\t$(\".mobile-search-col\").removeClass(\"menu-selected\");\n\t\t\t\t\t\t$(\".slider-close\").addClass(\"close-display\");\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\telse
+        if ($(this).is(\".menu-selected\"))\t{\n\t\t\t\t\t$(this).removeClass(\"menu-selected\");\n\t\t\t\t\t$(\".slider-close\").removeClass(\"close-display\");\n\t\t\t\t\tif
+        ($(this).is(\".mobile-search-col\")) {\n\t\t\t\t\t\t$(\".search-row\").removeClass(\"open\");\n\t\t\t\t\t}\n\t\t\t\t\telse
+        if ($(this).is(\".mobile-menu-col\")) {\n\t\t\t\t\t\t$(\".menu-row\").removeClass(\"open\");\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\t//
+        Close everything when the close arrow is clicked\n\t\t$(\".slider-close\").click(function(){\n\t\t\t$(\".slider-tab\").removeClass(\"open\");\n\t\t\t$(\".mobile-slider-button\").removeClass(\"menu-selected\");\n\t\t\t$(this).removeClass(\"close-display\");\n\t\t});\n\t\t//
+        Close on off click\n\t\t$(document).on('click', function(event){\n\t\t\tif(!$(event.target).closest(\".mobile-header-click\").length)
+        {\n\t\t\t\t$(\".slider-tab\").removeClass(\"open\");\n\t\t\t\t$(\".mobile-slider-button\").removeClass(\"menu-selected\");\n\t\t\t\t$(\".slider-close\").removeClass(\"close-display\");\n\t\t\t}\n\t\t})\n\t});
+        </script> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/common.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/webstore-package.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/product.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/custom_html/custom_html.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/promotional_banner/promotional_banner.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/store_logo/store_logo.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/help_modal/help_modal.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://dgjfe4w8gdxne.cloudfront.net/webstore/9077/modules/payments_accepted/payments_accepted.css\"
+        \ /> <link rel=\"stylesheet\" href=\"https://d354nuoz4t18d4.cloudfront.net/f611090d92384573b94c104bcd04c1ed/design/theme.css?v=fe346df70bcbfb56aed3e22588895cd7\"
+        \ /> <link rel=\"stylesheet\" href=\"https://d354nuoz4t18d4.cloudfront.net/f611090d92384573b94c104bcd04c1ed/design/custom.css?v=b0a2051397b017de849bfbd25478e643\"
+        \ /> </body> </html> "
+    headers:
+      Cache-Control:
+      - public, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '25203'
+      Content-Security-Policy:
+      - frame-ancestors 'none'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Sat, 03 Dec 2022 00:35:06 GMT
+      P3P:
+      - CP="IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT"
+      Referrer-Policy:
+      - same-origin
+      Set-Cookie:
+      - __Secure-sid=6081eb02e6f8ccd886c7880b034de9a3; expires=Sat, 03-Dec-2022 01:35:06
+        GMT; Max-Age=3600; path=/; secure; HttpOnly; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000;
+      - max-age=31536000;
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - prd
+      X-Frame-Options:
+      - DENY
+      X-Role:
+      - webstore
+      X-XSS-Protection:
+      - 1; mode=block
+      parent-id:
+      - cc12619d1bedd0e6
+      sampled:
+      - '1'
+      trace-id:
+      - 875a4073c3d24b01
+    status:
+      code: 200
+      message: OK
+    url: https://www.acuraexpressparts.com/oem-parts/acura-tensioner-assembly-auto-31170pnd013
 version: 1

@@ -2839,4 +2839,69 @@ interactions:
       code: 200
       message: OK
     url: https://nnvjvcwb78-dsn.algolia.net/1/indexes/magento2_en_products/query?x-algolia-application-id=NNVJVCWB78&x-algolia-api-key=YmM2ZWQ3MGQwMjI2OGJiNjI2ZDdlYjQzZTM0ZjBiNDlhNTQzYzk4ZDhkMWExYWJjNGU0YzMwYWVjY2U1YjJkOXRhZ0ZpbHRlcnM9
+- request:
+    body: '{"params": "query=31170-PND-013"}'
+    headers: {}
+    method: POST
+    uri: https://nnvjvcwb78-dsn.algolia.net/1/indexes/magento2_en_products/query?x-algolia-application-id=NNVJVCWB78&x-algolia-api-key=YmM2ZWQ3MGQwMjI2OGJiNjI2ZDdlYjQzZTM0ZjBiNDlhNTQzYzk4ZDhkMWExYWJjNGU0YzMwYWVjY2U1YjJkOXRhZ0ZpbHRlcnM9
+  response:
+    body:
+      string: "{\"hits\":[{\"name\":\"OEM Honda tensioner multi rib belt (Civic 01-06/Integra
+        01-06)\",\"url\":\"https://www.a4h-tech.com/en/oem-honda-spanner-multiriem\",\"visibility_search\":1,\"visibility_catalog\":1,\"type_id\":\"simple\",\"ordered_qty\":1,\"rating_summary\":\"\",\"categories\":{\"level0\":[\"Engine\",\"Brands\",\"All
+        Products\",\"Sale\"],\"level1\":[\"Engine /// Internal Engine Parts\",\"Brands
+        /// OEM Honda\"],\"level2\":[\"Engine /// Internal Engine Parts /// Belts
+        | Tensioners | Accessories\"]},\"categories_without_path\":[\"Belts | Tensioners
+        | Accessories\",\"OEM Honda\",\"All Products\",\"Sale\"],\"categoryIds\":[\"1054\",\"1059\",\"1483\",\"1189\",\"1337\",\"1482\",\"1541\"],\"thumbnail_url\":\"//www.a4h-tech.com/media/catalog/product/cache/6c5c5e8d5ee382759c9efb3a86300c19/3/1/31170-pnd-013-oem-honda-spanner-multiriem-civic-01-06-integra-01-06-all4honda.jpg\",\"image_url\":\"//www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/3/1/31170-pnd-013-oem-honda-spanner-multiriem-civic-01-06-integra-01-06-all4honda.jpg\",\"in_stock\":1,\"stock_qty\":1,\"sku\":\"31170-PND-013\",\"created_at\":\"2018-04-04
+        12:13:33\",\"price\":{\"EUR\":{\"default\":206.99,\"default_formated\":\"\u20AC206.99\",\"special_from_date\":1524044762,\"special_to_date\":false,\"default_original_formated\":\"\u20AC243.50\"}},\"manufacturer\":\"OEM
+        Honda\",\"ribbon\":null,\"partfinder_lvl0\":[\"Honda\"],\"partfinder_lvl1\":[\"Honda
+        > Integra\",\"Honda > Civic 3 deurs/hatchback\",\"Honda > Civic 5 deurs/hatchback\"],\"partfinder_lvl2\":[\"Honda
+        > Integra > 2001-2006\",\"Honda > Civic 3 deurs/hatchback > 2001-2003\",\"Honda
+        > Civic 3 deurs/hatchback > 2004-2006\",\"Honda > Civic 5 deurs/hatchback
+        > 2004-2006\"],\"partfinder_lvl3\":[\"Honda > Integra > 2001-2006 > 2.0i Type
+        R (JDM)\",\"Honda > Integra > 2001-2006 > 2.0i Acura RSX Type S\",\"Honda
+        > Civic 3 deurs/hatchback > 2001-2003 > 2.0i Type R\",\"Honda > Civic 3 deurs/hatchback
+        > 2004-2006 > 2.0i Type R\",\"Honda > Civic 5 deurs/hatchback > 2004-2006
+        > 2.0i Sport\"],\"partfinder_universal\":false,\"algoliaLastUpdateAtCET\":\"2022-12-02
+        19:16:15\",\"objectID\":\"41463\",\"_highlightResult\":{\"name\":{\"value\":\"OEM
+        Honda tensioner multi rib belt (Civic 01-06/Integra 01-06)\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"ordered_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"rating_summary\":{\"value\":\"\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"categories\":{\"level0\":[{\"value\":\"Engine\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All
+        Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level1\":[{\"value\":\"Engine
+        /// Internal Engine Parts\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Brands
+        /// OEM Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"level2\":[{\"value\":\"Engine
+        /// Internal Engine Parts /// Belts | Tensioners | Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]}]},\"categories_without_path\":[{\"value\":\"Belts
+        | Tensioners | Accessories\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"OEM
+        Honda\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"All Products\",\"matchLevel\":\"none\",\"matchedWords\":[]},{\"value\":\"Sale\",\"matchLevel\":\"none\",\"matchedWords\":[]}],\"stock_qty\":{\"value\":\"1\",\"matchLevel\":\"none\",\"matchedWords\":[]},\"sku\":{\"value\":\"<em>31170-PND-013</em>\",\"matchLevel\":\"full\",\"fullyHighlighted\":true,\"matchedWords\":[\"31170\",\"pnd\",\"013\"]},\"created_at\":{\"value\":\"2018-04-04
+        12:13:33\",\"matchLevel\":\"none\",\"matchedWords\":[]}}}],\"nbHits\":1,\"page\":0,\"nbPages\":1,\"hitsPerPage\":20,\"exhaustiveNbHits\":true,\"exhaustiveTypo\":true,\"exhaustive\":{\"nbHits\":true,\"typo\":true},\"query\":\"31170-PND-013\",\"params\":\"query=31170-PND-013&tagFilters=\",\"processingTimeMS\":1,\"processingTimingsMS\":{\"total\":1}}"
+    headers:
+      Accept-Encoding:
+      - deflate, gzip
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - keep-alive
+      Content-Disposition:
+      - inline; filename=a.txt
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sat, 03 Dec 2022 00:35:07 GMT
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Timing-Allow-Origin:
+      - '*'
+      Transfer-Encoding:
+      - chunked
+      X-Alg-PT:
+      - '1'
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+    url: https://nnvjvcwb78-dsn.algolia.net/1/indexes/magento2_en_products/query?x-algolia-application-id=NNVJVCWB78&x-algolia-api-key=YmM2ZWQ3MGQwMjI2OGJiNjI2ZDdlYjQzZTM0ZjBiNDlhNTQzYzk4ZDhkMWExYWJjNGU0YzMwYWVjY2U1YjJkOXRhZ0ZpbHRlcnM9
 version: 1

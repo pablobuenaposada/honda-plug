@@ -14,6 +14,7 @@ from part.constants import (
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
+    SOURCE_JAPSERVICEPARTS,
     SOURCE_NENGUN,
     SOURCE_ONLINETEILE,
     SOURCE_PIECESAUTOHONDA,
@@ -34,9 +35,21 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert Stock.objects.count() == len(
-            CLIENTS
-        )  # one more because amayama finds 2 more stocks but nengun doesn't have it
+        assert {stock.source for stock in Stock.objects.all()} == {
+            "hondapartsnow",
+            "hondapartsonline",
+            "hondaautomotiveparts",
+            "tegiwa",
+            "hondaspareparts",
+            "pieces-auto-honda",
+            "amayama",
+            "acuraexpressparts",
+            "all4honda",
+            "acurapartsforless",
+            "cms",
+            "akr",
+            "online-teile",
+        }
 
     @patch("part.tasks.search_for_stocks")
     def test_part_already_exists(self, m_search_for_stocks):
@@ -45,9 +58,21 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert Stock.objects.count() == len(
-            CLIENTS
-        )  # one more because amayama finds 2 more stocks but nengun doesn't have it
+        assert {stock.source for stock in Stock.objects.all()} == {
+            "hondapartsnow",
+            "hondapartsonline",
+            "hondaautomotiveparts",
+            "tegiwa",
+            "hondaspareparts",
+            "pieces-auto-honda",
+            "amayama",
+            "acuraexpressparts",
+            "all4honda",
+            "acurapartsforless",
+            "cms",
+            "akr",
+            "online-teile",
+        }
 
     @patch("part.tasks.search_for_stocks")
     def test_part_and_stock_already_exists(self, m_search_for_stocks):
@@ -67,6 +92,7 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_NENGUN, country="JP")
         baker.make(Stock, part=part, source=SOURCE_AKR, country="NL")
         baker.make(Stock, part=part, source=SOURCE_ONLINETEILE, country="DE")
+        baker.make(Stock, part=part, source=SOURCE_JAPSERVICEPARTS, country="GB")
 
         assert Part.objects.count() == 1
         assert (
@@ -74,9 +100,23 @@ class TestSearchForStocks:
         )  # one more because amayama finds 2 more stocks
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert (
-            Stock.objects.count() == len(CLIENTS) + 1
-        )  # one more because amayama finds 2 more stocks
+        assert {stock.source for stock in Stock.objects.all()} == {
+            "nengun",
+            "japserviceparts",
+            "hondapartsnow",
+            "hondapartsonline",
+            "hondaautomotiveparts",
+            "tegiwa",
+            "hondaspareparts",
+            "pieces-auto-honda",
+            "amayama",
+            "acuraexpressparts",
+            "all4honda",
+            "acurapartsforless",
+            "cms",
+            "akr",
+            "online-teile",
+        }
 
     @patch("part.tasks.search_for_stocks")
     @patch(
@@ -95,6 +135,17 @@ class TestSearchForStocks:
         assert Stock.objects.count() == 0
         search_for_stocks(REFERENCE)
         assert Part.objects.count() == 1
-        assert (
-            Stock.objects.count() == len(CLIENTS) - 1
-        )  # amayama finds 2 more stocks but nengun doesn't have it
+        assert {stock.source for stock in Stock.objects.all()} == {
+            "hondapartsnow",
+            "hondapartsonline",
+            "tegiwa",
+            "hondaspareparts",
+            "pieces-auto-honda",
+            "amayama",
+            "acuraexpressparts",
+            "all4honda",
+            "acurapartsforless",
+            "cms",
+            "akr",
+            "online-teile",
+        }

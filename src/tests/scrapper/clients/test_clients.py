@@ -12,6 +12,7 @@ from part.constants import (
     SOURCE_HONDAPARTSNOW,
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
+    SOURCE_JAPSERVICEPARTS,
     SOURCE_NENGUN,
     SOURCE_ONLINETEILE,
     SOURCE_PIECESAUTOHONDA,
@@ -27,6 +28,7 @@ from scrapper.clients.hondaautomotiveparts import HondaautomotivepartsClient
 from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.hondaspareparts import HondasparepartsClient
+from scrapper.clients.japserviceparts import JapservicepartsClient
 from scrapper.clients.nengun import NengunClient
 from scrapper.clients.onlineteile import OnlineteileClient
 from scrapper.clients.piecesautohonda import PiecesAutoHondaClient
@@ -36,6 +38,7 @@ from scrapper.common.stock import Stock
 REFERENCES = {
     "12251-RBB-004",  # normal part
     "74100-S2A-010",  # normal part
+    "31170-PND-013",  # normal part
     "56483-PND-003",  # discontinued part but has new replacement
     "08F03-S02-180K",  # really discontinued part
     "31206-P3F-003",  # sold out in some sites
@@ -108,6 +111,18 @@ class TestClients:
                         discontinued=False,
                         quantity=None,
                     ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.hondapartsnow.com/genuine/honda~tensioner~assy~31170-pnd-013.html",
+                        source=SOURCE_HONDAPARTSNOW,
+                        country="US",
+                        title="Tensioner Assy., Auto",
+                        price=Money("173.32", "USD"),
+                        image="https://www.hondapartsnow.com/resources/encry/actual-picture/hpn/large/50ecb3c8cececa19b8c6ae8bcb75abb4/3a93565dcfb4deed1eb71f3f65e346ee.jpg",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -166,6 +181,18 @@ class TestClients:
                         title="Fender Assembly, R Front (Inner) - Honda (74100-S2A-010)",
                         price=Money(amount="111.76", currency="USD"),
                         image="https://dz310nzuyimx0.cloudfront.net/strapr1/15e978bce0ad5c894ee495fee5c38985/b4a6e695c020ba70dea25395b7a487d6.png",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.hondapartsonline.net/oem-parts/honda-tensioner-assembly-auto-31170pnd013",
+                        source=SOURCE_HONDAPARTSONLINE,
+                        country="US",
+                        title="Tensioner Assembly, Auto - Honda (31170-PND-013)",
+                        price=Money(amount="180.54", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/2c140daa05330a864950879e30006321/116e8798831fc2a67a05f99ab0a25a48.png",
                         available=True,
                         discontinued=False,
                         quantity=None,
@@ -232,6 +259,18 @@ class TestClients:
                         discontinued=False,
                         quantity=None,
                     ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.hondaautomotiveparts.com/oem-parts/honda-tensioner-assembly-auto-31170pnd013",
+                        source=SOURCE_HONDAAUTOMOTIVEPARTS,
+                        country="US",
+                        title="Tensioner Assembly, Auto - Honda (31170-PND-013)",
+                        price=Money("161.76", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/2c140daa05330a864950879e30006321/116e8798831fc2a67a05f99ab0a25a48.png",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -252,6 +291,21 @@ class TestClients:
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                     "74100-S2A-010": None,
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.tegiwaimports.com/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.html",
+                        source=SOURCE_TEGIWA,
+                        country="GB",
+                        title="GENUINE HONDA AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES",
+                        price=Money(
+                            amount="137.509999999999990905052982270717620849609375",
+                            currency="GBP",
+                        ),
+                        image="https://www.tegiwaimports.com/media/catalog/product/cache/1/image/470x470/4be6a58e18b1f94a8adc93cd75a4b5ce/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg",
+                        available=False,
+                        discontinued=None,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -295,6 +349,18 @@ class TestClients:
                         country="GB",
                         title="FENDER ASSY., R. FR. INNE",
                         price=Money(amount="145.05", currency="GBP"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=None,
+                    ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://hondaspareparts.co.uk/products/31170PND013",
+                        source=SOURCE_HONDASPAREPARTS,
+                        country="GB",
+                        title="TENSIONER ASSY., AUTO",
+                        price=Money(amount="244.42", currency="GBP"),
                         image=None,
                         available=True,
                         discontinued=None,
@@ -349,6 +415,18 @@ class TestClients:
                         country="FR",
                         title="Ens. garde-boue interieur",
                         price=Money(amount="186.5", currency="EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/31170PND013",
+                        source=SOURCE_PIECESAUTOHONDA,
+                        country="FR",
+                        title="ENS. DE TENDEUR,  AUTO",
+                        price=Money(amount="262.7", currency="EUR"),
                         image=None,
                         available=True,
                         discontinued=False,
@@ -428,6 +506,20 @@ class TestClients:
                             quantity=None,
                         )
                     ],
+                    "31170-PND-013": [
+                        Stock(
+                            reference="31170-PND-013",
+                            url="https://www.amayama.com/en/part/honda/31170pnd013",
+                            source=SOURCE_AMAYAMA,
+                            country="JP",
+                            title="TENSIONER ASSY., AUTO",
+                            price=Money(amount="102.06", currency="USD"),
+                            image="https://static.amayama.com/schema/honda-31170pnd013-1568785668661-big.jpg",
+                            available=True,
+                            discontinued=None,
+                            quantity=None,
+                        )
+                    ],
                 },
             ),
             (
@@ -460,6 +552,18 @@ class TestClients:
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                     "74100-S2A-010": None,
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.acuraexpressparts.com/oem-parts/acura-tensioner-assembly-auto-31170pnd013",
+                        source=SOURCE_ACURAEXPRESSPARTS,
+                        country="US",
+                        title="Tensioner Assembly, Auto - Acura (31170-PND-013)",
+                        price=Money(amount="173.32", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/7ccff61b86a14adc38061ceae748c1eb.png",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -478,6 +582,18 @@ class TestClients:
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                     "74100-S2A-010": None,
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.a4h-tech.com/en/oem-honda-spanner-multiriem",
+                        source=SOURCE_ALL4HONDA,
+                        country="NL",
+                        title="OEM Honda tensioner multi rib belt (Civic 01-06/Integra 01-06)",
+                        price=Money(amount="206.99", currency="EUR"),
+                        image="https://www.a4h-tech.com/media/catalog/product/cache/3558329f726a95ba08740a57c013e49b/3/1/31170-pnd-013-oem-honda-spanner-multiriem-civic-01-06-integra-01-06-all4honda.jpg",
+                        available=None,
+                        discontinued=None,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -508,6 +624,18 @@ class TestClients:
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                     "74100-S2A-010": None,
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.acurapartsforless.com/oem-parts/acura-tensioner-assembly-auto-31170pnd013",
+                        source=SOURCE_ACURAPARTSFORLESS,
+                        country="US",
+                        title="Tensioner Assembly, Auto - Acura (31170-PND-013)",
+                        price=Money(amount="171.87", currency="USD"),
+                        image="https://dz310nzuyimx0.cloudfront.net/strapr1/6b459a35bf4f3904748f8a61ff2d40fa/7ccff61b86a14adc38061ceae748c1eb.png",
+                        available=True,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -569,6 +697,18 @@ class TestClients:
                         discontinued=None,
                         quantity=None,
                     ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.cmsnl.com/products/tensioner-assyau_31170pnd013/",
+                        source=SOURCE_CMS,
+                        country="NL",
+                        title="Tensioner Assy, Au",
+                        price=Money(amount="262.57", currency="EUR"),
+                        image="https://images.cmsnl.com/img/partslists/engine-mounting-bracket_medium00027663E__06_b48f.jpg",
+                        available=False,
+                        discontinued=None,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -590,6 +730,7 @@ class TestClients:
                         discontinued=None,
                         quantity=None,
                     ),
+                    "31170-PND-013": None,
                 },
             ),
             (
@@ -611,6 +752,18 @@ class TestClients:
                     "08F03-S02-180K": None,
                     "31206-P3F-003": None,
                     "74100-S2A-010": None,
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.akr-performance.com/p/honda-multi-rib-belt-tensioner-assembly-31170-pnd-013",
+                        source=SOURCE_AKR,
+                        country="NL",
+                        title="Honda Multi-rib belt tensioner assembly",
+                        price=Money(amount="277.05", currency="EUR"),
+                        image="https://www.akr-performance.com/media/products/engine-parts-1-civic-3-door-hatchback-2001-2003-20i-type-r_honda-multi-rib-belt-tensioner-assembly-31170-pnd-013.jpg",
+                        available=False,
+                        discontinued=False,
+                        quantity=None,
+                    ),
                 },
             ),
             (
@@ -653,6 +806,40 @@ class TestClients:
                         available=True,
                         discontinued=None,
                         quantity=None,
+                    ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://www.online-teile.com/honda-ersatzteile/31170PND013_Tensioner-Assy-Auto.html",
+                        source=SOURCE_ONLINETEILE,
+                        country="DE",
+                        title="Tensioner Assy Auto",
+                        price=Money("304.16", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=None,
+                    ),
+                },
+            ),
+            (
+                JapservicepartsClient(),
+                {
+                    "12251-RBB-004": None,
+                    "56483-PND-003": None,
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
+                    "74100-S2A-010": None,
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://japserviceparts.co.uk/product/auto-tensioner-assy/",
+                        source=SOURCE_JAPSERVICEPARTS,
+                        country="GB",
+                        title="Auto Tensioner Assy",
+                        price=Money("138.01", "GBP"),
+                        image="https://japserviceparts.co.uk/wp-content/uploads/2021/06/90bac2d3-a415-4f98-b253-2093bb650399.jpg",
+                        available=True,
+                        discontinued=None,
+                        quantity=1,
                     ),
                 },
             ),

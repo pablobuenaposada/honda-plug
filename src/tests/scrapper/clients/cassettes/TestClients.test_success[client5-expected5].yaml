@@ -6677,4 +6677,571 @@ interactions:
       code: 200
       message: OK
     url: https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/74100S2A010
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/31170PND013
+  response:
+    body:
+      string: "\n<!DOCTYPE html>\n<html lang=\"fr-FR\">\n<head>\n                <!--
+        Global site tag (gtag.js) - Google Analytics -->\n            <script async
+        src=\"https://www.googletagmanager.com/gtag/js?id=G-93HG3Z774P\"></script>\n
+        \           <script>\n                window.dataLayer = window.dataLayer
+        || [];\n                function gtag(){dataLayer.push(arguments);}\n                gtag('js',
+        new Date());\n\n                gtag('config', 'G-93HG3Z774P');\n            </script>\n
+        \       \n    <title>ENS. DE TENDEUR, AUTO 31170-PND-013 Trouvez sur quels
+        Honda est mont\xE9e une r\xE9f\xE9rence # HONDA AUTO - Catalogue de Pi\xE8ces
+        D\xE9tach\xE9es d'Origine</title>\n    <meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=UTF-8\"/>\n    <meta name=\"viewport\" content=\"width=device-width,
+        initial-scale=1, maximum-scale=3\"/>\n            <meta name=\"google-site-verification\"
+        content=\"QaPQ0YLxMChuaQ48f_tGduDfFkMsg7Czf9d4i-RA6y0\"/>\n        <meta name=\"DESCRIPTION\"
+        content=\"31170PND013 ENS. DE TENDEUR, AUTO - Commandez en ligne vos pi\xE8ces
+        de voitures Honda \u2714\uFE0F Recherche simple par mod\xE8le ou r\xE9f\xE9rence
+        \u2714\uFE0F Vues \xE9clat\xE9es du constructeur - Paiement s\xE9curis\xE9\"/>\n
+        \   <meta name=\"KEYWORDS\" content=\"Voiture, auto, 4x4 Honda, parts, genuine,
+        microfiches, parts list, piece, pieces detachees, moto, bike, eclat\xE9 vue,
+        origine, catalogue, voiture, automobile, moteur, soupape\"/>\n    <meta name=\"CATEGORY\"
+        content=\"vente\"/>\n    <meta name=\"AUTHOR\" content=\"honda\"/>\n    <meta
+        name=\"COPYRIGHT\" content=\"Toute reproduction ou representation de ce site
+        Internet, en tout ou partie sur un quelconque support est interdite (sauf
+        accord de notre part). Le non-respect de cette interdiction constitue une
+        contrefacon pouvant engager la responsabilite civile et penale du contrefacteur.\"/>\n
+        \   <meta name=\"Robots\" content=\"All\"/>\n    \n                        <link
+        rel=\"alternate\" hreflang=\"en-GB\" href=\"https://www.parts-honda.uk/honda-cars/assignment_spare_parts/31170PND013\"/>\n
+        \                   <link rel=\"alternate\" hreflang=\"fr-FR\" href=\"https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/31170PND013\"/>\n
+        \                   <link rel=\"alternate\" hreflang=\"de-DE\" href=\"https://www.ersatzteile-honda.de/honda-auto/zuordnung_der_ersatzteile/31170PND013\"/>\n
+        \                   <link rel=\"alternate\" hreflang=\"es-ES\" href=\"https://www.repuestos-honda.es/honda-coche/piezas_de_repuesto_de_asignacion/31170PND013\"/>\n
+        \                   <link rel=\"alternate\" hreflang=\"nl-NL\" href=\"https://www.onderdelen-auto-honda.nl/auto-honda/assignment_spare_parts/31170PND013\"/>\n
+        \                   <link rel=\"alternate\" hreflang=\"it-IT\" href=\"https://www.ricambi-honda.it/honda-macchina/parti_di_ricambio_di_assegnazione/31170PND013\"/>\n
+        \                   <link rel=\"alternate\" hreflang=\"pt-PT\" href=\"https://www.pecas-honda.com/honda-automoveis/atribuicao_spare_parts/31170PND013\"/>\n
+        \           \n    <link rel=\"shortcut icon\"\n          href=\"/thumbs/favicons/hondacarsthemes/favicon.ico\"/>\n
+        \   <link rel=\"apple-touch-icon\"\n          href=\"/thumbs/favicons/hondacarsthemes/favicon.ico\"/>\n\n
+        \           <link rel=\"canonical\" href=\"https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/31170PND013\"/>\n
+        \   \n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\"
+        rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\"
+        crossorigin=\"anonymous\">\n    <link rel=\"stylesheet\" href=\"/assets/css/commun.min.css?ver='1.22'\"/>\n\n
+        \   \n            <link rel=\"stylesheet\" href=\"/assets/css/generated/hondacars.min.css\"/>\n
+        \       <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css\">\n\n\n
+        \       <script>\n        function defer_function(func_name) {\n            if
+        (typeof window[func_name] !== \"undefined\") {\n                window[func_name]();\n
+        \           } else {\n                setTimeout(function () {\n                    defer_function(func_name)\n
+        \               }, 50);\n            }\n        }\n    </script>\n\n    <!--
+        \   Connexion google one tap-->\n    <script src=\"https://accounts.google.com/gsi/client\"
+        async defer></script>\n\n    </head>\n\n<body class=\"full bg-light\" style=\"margin-top:58px\">\n
+        \ <div class=\"fixed-top\">\n    <nav class=\"navbar navbar-expand-lg navbar-dark
+        bg-dark h-100\" >\n      <div class=\"container-fluid container bg-dark \">\n
+        \       <a class=\"navbar-brand\" href=\"/\" >\n\n\n                      <img
+        src=\"/thumbs/themes/hondacars/170_30/logo_white.png\" class=\"center-block
+        img-fluid d-none d-xl-inline w-auto h-auto\" alt=\"Logo hondacars\" width=\"170\"
+        height=\"30\">\n            <button type=\"button\" class=\"btn btn-primary
+        ms-1\" aria-label=\"home\"><i class=\"bi bi-house-fill\"></i></button>\n                  </a>\n\n
+        \       <ul class=\"navbar-nav d-flex d-lg-none w-50\">\n          <li class=\"nav-item
+        \">\n            <a class=\"btn btn-primary text-light mx-1 w-100\" href=\"/panier\">\n
+        \             <i class=\"bi bi-cart2\"></i>\n              <span class=\"resultat_ajout_panier\">
+        \n(0)&nbsp;</span>\n              Mon Panier            </a>\n          </li>\n
+        \       </ul>\n\n        <button class=\"navbar-toggler me-1\" type=\"button\"
+        data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\"
+        aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <span
+        class=\"navbar-toggler-icon\"></span>\n        </button>\n\n        <div class=\"collapse
+        navbar-collapse\" id=\"navbarNavDropdown\">\n          <div class=\"d-grid
+        d-lg-flex flex-lg-grow-1\">\n            <ul class=\"navbar-nav ms-lg-auto
+        mb-2 mb-lg-0 order-3 order-lg-1 d-none d-xl-flex align-items-lg-center\">\n
+        \             \n            </ul>\n            <ul class=\"navbar-nav ms-lg-auto
+        mb-2 mb-lg-0 order-1 order-lg-2 align-items-lg-center\">\n\n                                <li
+        class=\"nav-item dropdown mb-1 mb-lg-0 mx-1 \">\n                    <a id=\"vehicule_types\"
+        class=\"btn_head btn btn-primary text-light nav-link dropdown-toggle \" href=\"#\"
+        \ data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n                      <span
+        class=\"bi bi-search\">\n                        Recherche                      </span>\n
+        \                   </a>\n                    <ul class=\"dropdown-menu dropdown-menu-dark\"
+        aria-labelledby=\"vehicule_types\">\n                      <li><a class=\"dropdown-item\"
+        href=\"/honda-voiture\">Pi\xE8ces d'origine</a></li>\n                                            <li><hr
+        class=\"dropdown-divider text-light\"></li>\n                                              <li><a
+        class=\"dropdown-item\" href=\"/honda-voiture/tarif/149950\">Recherche par
+        R\xE9f\xE9rence</a></li>\n                                                                    <li><a
+        class=\"dropdown-item\" href=\"/honda-voiture/recherche_vehicule/modeles\">Recherche
+        par Code Mod\xE8le / Mots Cl\xE9s</a></li>\n                                                                    <li><a
+        class=\"dropdown-item\" href=\"/honda-voiture/recherche_vehicule/chassis\">Recherche
+        par N\xB0 de s\xE9rie / VIN</a></li>\n                                            <li><hr
+        class=\"dropdown-divider text-light\"></li>\n\n                      <li><a
+        class=\"dropdown-item\" href=\"/honda-voiture/affectation_pieces_detachees\">Affectation
+        pi\xE8ce</a></li>\n                    \n                    </ul>\n                  </li>
+        \               <li class=\"nav-item mb-1 mb-lg-0\">\n                  <a
+        class=\"btn_head btn btn-primary nav-link text-light mx-1\" href=\"/user\">\n
+        \                   <span class=\"bi bi-person-fill\"> Mon Espace</span>\n
+        \                 </a>\n                </li>\n                \n              <li
+        class=\"nav-item mb-1 mb-lg-0\" >\n                <a class=\"btn_head btn
+        btn-primary nav-link text-light mx-1\" href=\"/contact\">\n                  <i
+        class=\"bi bi-envelope-fill\"></i>\n                  Contactez nous                </a>\n
+        \             </li>\n            </ul>\n            <ul class=\"navbar-nav
+        mb-2 mb-lg-0 d-none d-lg-flex order-lg-3 align-items-lg-center\">\n              <li
+        class=\"nav-item mb-1 mb-lg-0\">\n                <a class=\"btn_head btn
+        btn-primary nav-link text-light mx-1\" href=\"/panier\">\n                  <i
+        class=\"bi bi-cart2\"></i>\n                  <span class=\"resultat_ajout_panier\">
+        \n(0)&nbsp;</span>\n                  Mon Panier                </a>\n              </li>\n
+        \           </ul>\n                          <ul class=\"navbar-nav mb-2 mb-lg-0
+        text-left order-2 order-lg-4 mx-1 align-items-lg-center\">\n                <li
+        class=\"nav-item dropdown mb-1 mb-lg-0 mx-1\">\n                  \n\n<a href=\"#\"
+        class=\"btn text-white dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\"
+        role=\"button\" aria-expanded=\"false\" id=\"lang\">\n  <img class=\"flag\"
+        src=\"/thumbs/drapeau/30_30/Francais-France.png\" id=\"world\" alt=\"France\">\n</a>\n<ul
+        class=\"dropdown-menu dropdown-menu-dark dropdown-menu-end navbar-nav-scroll\"
+        role=\"menu\">\n  <li>\n    <div class=\"row d-flex\">\n              <a class=\"ms-lg-3
+        text-light col-6 col-lg-12 mb-1\" href=\"https://www.ersatzteile-honda.de/\">\n
+        \         <img class=\"ms-3 ms-lg-0 flag\" src=\"/thumbs/drapeau/30_30/Deutsch-Deutschland.png\"
+        alt=\"Deutschland\">\n          Deutsch\n        </a>\n              <a class=\"ms-lg-3
+        text-light col-6 col-lg-12 mb-1\" href=\"https://www.parts-honda.uk/\">\n
+        \         <img class=\"ms-3 ms-lg-0 flag\" src=\"/thumbs/drapeau/30_30/english-United_Kingdom.png\"
+        alt=\"United Kingdom\">\n          English\n        </a>\n              <a
+        class=\"ms-lg-3 text-light col-6 col-lg-12 mb-1\" href=\"https://www.repuestos-honda.es/\">\n
+        \         <img class=\"ms-3 ms-lg-0 flag\" src=\"/thumbs/drapeau/30_30/Espanol-Espana.png\"
+        alt=\"Espa\xF1a\">\n          Espa\xF1ol\n        </a>\n              <a class=\"ms-lg-3
+        text-light col-6 col-lg-12 mb-1\" href=\"https://www.pieces-auto-honda.fr/\">\n
+        \         <img class=\"ms-3 ms-lg-0 flag\" src=\"/thumbs/drapeau/30_30/Francais-France.png\"
+        alt=\"France\">\n          Fran\xE7ais\n        </a>\n              <a class=\"ms-lg-3
+        text-light col-6 col-lg-12 mb-1\" href=\"https://www.ricambi-honda.it/\">\n
+        \         <img class=\"ms-3 ms-lg-0 flag\" src=\"/thumbs/drapeau/30_30/Italiano-Italia.png\"
+        alt=\"Italia\">\n          Italiano\n        </a>\n              <a class=\"ms-lg-3
+        text-light col-6 col-lg-12 mb-1\" href=\"https://www.onderdelen-auto-honda.nl/\">\n
+        \         <img class=\"ms-3 ms-lg-0 flag\" src=\"/thumbs/drapeau/30_30/Nederlands-Netherlands.png\"
+        alt=\"Netherlands\">\n          Nederlands\n        </a>\n              <a
+        class=\"ms-lg-3 text-light col-6 col-lg-12 mb-1\" href=\"https://www.pecas-honda.com/\">\n
+        \         <img class=\"ms-3 ms-lg-0 flag\" src=\"/thumbs/drapeau/30_30/Portugues-Portugal.png\"
+        alt=\"Portugal\">\n          Portugu\xEAs\n        </a>\n          </div>\n
+        \ </li>\n</ul>                </li>\n              </ul>\n                      </div>\n
+        \       </div>\n      </div>\n    </nav>\n\n  </div>\n\n\n<span id=\"introuvable_modal\"></span>\n<span
+        id=\"panier_modal\">\n\n<div class=\"modal fade\" id=\"bb\">\n  <div class=\"modal-dialog
+        modal-lg modal-dialog-centered modal-dialog-scrollable\">\n    <div class=\"modal-content
+        bg-light\">\n      <div class=\"modal-header\">\n          <span class=\"modal-title
+        h4\">Mon Panier</span>\n          <img src=\"/thumbs/themes/hondacars/100_100/logo-panier.png\"
+        \ class=\"ms-auto text-center img-thumbnail\">\n          <button type=\"button\"
+        class=\"btn-close m-0\" data-bs-dismiss=\"modal\"  aria-hidden=\"true\"></button>\n
+        \     </div>\n      <div class=\"modal-body p-0 p-3\">\n        <div class=\"container-fluid
+        p-0\">\n\n        \n        <div class=\"overflow-auto mb-3 custom_scroll\"
+        style=\"max-height:300px;\">\n        <table class=\"table table-hover table-striped
+        table-light\">\n          <thead class=\"position-sticky top-0\">\n            <tr>\n
+        \             <th>D\xE9signation</th>\n              <th class=\"text-center\">R\xE9f\xE9rence</th>\n
+        \             <th class=\"text-center\">Qt\xE9</th>\n            </tr>\n          </thead>\n
+        \         <tbody>\n                      </tbody>\n        </table>\n      </div>\n
+        \       <form role=\"form\">\n          <div class=\"row\">\n            <div
+        class=\"col-md-6 ps-md-1 text-start pb-1 pe-md-5 \">\n              <button
+        type=\"button\" class=\"btn btn-primary w-100\" data-bs-dismiss=\"modal\">\n
+        \               <span class=\"bi bi-arrow-left\"></span>&nbsp;Continuer mes
+        achats              </button>\n            </div>\n            <div class=\"col-md-6
+        pe-md-1 text-end ps-md-5 \">\n              <a href=\"/panier\" id=\"btn-commande\"
+        class=\"btn btn-primary w-100\" shop=\"no\">\n                <span class=\"bi
+        bi-cart2\"></span>&nbsp;Voir mon panier              </a>\n            </div>\n
+        \         </div>\n        </form>\n\n        \n\n    </div>\n  </div>\n  </div>\n</div>\n</div>\n</span>\n<!--
+        <span id=\"panier_message\"></span> -->\n<span id=\"popin_garage\"></span>\n\n<div
+        class=\"section\">\n\t<div class=\"container\">\n\t\t<div class=\"row justify-content-center\">\n\t\t\t<div
+        class=\"my-3\"> <div class=\"card card-primary bg-light \" id=\"fiche_article\">\n
+        \   <div class=\"card-header bg-primary align-items-center row\">\n      <h1
+        class=\"col-md-10\">\n          <span id=\"part_ref\">31170PND013</span>\n
+        \         <span class=\"d-none d-md-inline\"> - Honda</span>\n      </h1>\n
+        \   </div>\n    <div class=\"card-body p-4\">\n    <div  itemscope itemtype=\"http://schema.org/Product\"
+        class=\"card-text row\">\n\n      <div class=\"col-sm-6 col-lg-7 text-center
+        position-relative mt-4\">\n        <div class=\"text-center mt-3\" id=\"etiquette_container\">\n
+        \   <div class=\"card card-primary border-0\" id=\"card_fiche_article\">\n
+        \       <div class=\"card-header text-end position-relative rounded-top\"
+        id=\"header_fiche_article\">\n            <span class=\"float-start position-absolute
+        top-50 start-0 translate-middle-y\" id=\"police_fiche_article_span\">\n                <img
+        src=\"/assets/images/themes/hondacars/new_logo_white_parts.png\"\n                     id=\"police_fiche_article\">\n
+        \           </span>                 <span class=\"col-md-12 d-none d-md-block\"
+        id=\"etiquette_origine\">\n                    GENUINE PARTS                </span>\n
+        \                       </div>\n        <div class=\"card-body text-center
+        fs-20px\" id=\"body_fiche_article\">\n            <span class=\"fw-bold\"
+        id=\"ref_etiquette\">\n                31170-PND-013            </span></br>\n
+        \           <img itemprop=\"image\" src=\"/thumbs/barcodes_new/hondacars/3/11/700_700/ENS-DE-TENDEUR-AUTO-31170PND013.png\"\n\n
+        \               \n                 class=\"img-fluid img-thumbnail mt-3\"
+        id=\"img_fiche_article\" alt=\"ENS. DE TENDEUR, AUTO\" width=\"350\"\n                 height=\"117\">\n
+        \       </div>\n    </div>\n    <div class=\"fw-bold d-none d-md-block\" id=\"certifie_origine\">\n
+        \       Certifi\xE9 Pi\xE8ce d'Origine Honda    </div>\n</div>\n      </div>\n
+        \     <div class=\"col-sm-6 col-lg-5 fs-18px\">\n\n                  <span
+        itemprop=\"mpn\" hidden>31170PND013</span>\n          <div itemprop=\"brand\"
+        itemtype=\"http://schema.org/Brand\" itemscope>\n            <meta itemprop=\"name\"
+        content=\"Honda\" />\n          </div>\n                        <div class=\"mt-4
+        mb-1 ms-3 ms-sm-0\" style=\"font-size: 1.5em;\" itemprop=\"name\">\n                  ENS.
+        DE TENDEUR,  AUTO              </div>\n\n                              <meta
+        itemprop=\"sku\" content=\"1\" />\n                <div itemprop=\"offers\"
+        itemscope itemtype=\"http://schema.org/Offer\">\n                  <link itemprop=\"url\"
+        href=\"https://www.pieces-auto-honda.fr//honda-voiture/affectation_pieces_detachees/31170PND013\"/>\n
+        \                 <meta itemprop=\"priceValidUntil\" content=\"2039-01-01\"
+        />\n                  <div id=\"table_panier_tarif\">\n                    <div
+        class=\"mt-4 mb-1 ms-3 ms-sm-0\">\n                                                <span
+        class=\"prix_fiche_article\">\n                            <span itemprop=\"price\"
+        content=\"262.7\" style=\"white-space:nowrap;\">262,70 &euro;</span><span
+        itemprop=\"priceCurrency\" content=\"EUR\" hidden></span>                          </span>\n
+        \                         <span class=\"fst-italic text-nowrap\">\n                             Prix
+        Unitaire TTC                          </span>\n                          <link
+        itemprop=\"availability\" href=\"http://schema.org/InStock\" />\n                                              </div>\n
+        \                   <form action=\"/honda-voiture/panier/ajout_panier_tarif\"
+        method=\"post\" accept-charset=\"utf-8\">\n                         <input
+        type=\"hidden\" name=\"csrf_test_name\" value=\"a863dd921fc0e8ebda307123a4d804ff\"
+        />\n                        <div class=\"mt-4 mb-1 row align-items-center\"
+        id=\"div_cmd_normal\">\n                          <div class=\"fiche_art_qte
+        col-sm-5 col-md-4 ms-3 ms-sm-0\">\n                            <span class=\"text-left
+        input-group\">\n                              <div class=\"input-group-btn\">\n
+        \                               <button type=\"button\" class=\"btn btn-default
+        btn-number rounded-0 rounded-start px-2 px-sm-1 px-lg-2\" id=\"minus-btn\"><i
+        class=\"bi bi-dash\"></i></button>\n                              </div>\n
+        \                             <input id=\"qty_shop\" name=\"qty_shop\" class=\"form-control
+        input_fiche_art_shop rounded-0\" value=\"1\" readonly>\n                              <div
+        class=\"input-group-btn\">\n                                <button type=\"button\"
+        class=\"btn btn-default btn-number rounded-0 rounded-end px-sm-1 px-lg-2\"
+        id=\"plus-btn\"><i class=\"bi bi-plus\"></i></button>\n                              </div>\n
+        \                           </span>\n                          </div>\n                          \n<input
+        type=\"hidden\" name=\"id\" value=\"1040210\" />\n\n<input type=\"hidden\"
+        name=\"marque\" value=\"honda-voiture\" />\n\n<input type=\"hidden\" name=\"route\"
+        value=\"panier\" />\n\n<input type=\"hidden\" name=\"tarif\" value=\"\" />\n\n<input
+        type=\"hidden\" name=\"libelle_piece\" value=\"ENS. DE TENDEUR, AUTO\" />\n\n<input
+        type=\"hidden\" name=\"type_commande\" value=\"\" />\n                          <div
+        class=\"col-sm-7 col-md-8 text-center pt-3 pt-sm-0\">\n                            <button
+        type=\"button\" class=\"btn btn-primary btn-lg btn_fiche_art w-90\" id=\"bt_affiche_tarif\">\n
+        \                             <i class=\"bi-cart2\"></i>&nbsp;Ajouter au panier
+        \                           </button>\n                          </div>\n
+        \                       </div>\n                        </form>                  </div>\n
+        \               </div>\n                          <div class=\"mt-4 mb-1\">\n
+        \           <hr style=\"border-color: inherit;\">\n            <div itemprop=\"description\"
+        id=\"part_desc_content\">\n              La pi\xE8ce ens. de tendeur,  auto
+        r\xE9f\xE9rence 31170PND013 est une pi\xE8ce d'origine du constructeur Honda
+        et est exactement la m\xEAme que celle mont\xE9e \xE0 la sortie de l'usine
+        du v\xE9hicule.            </div>\n          </div>\n              </div>\n\n
+        \   </div>\n  </div>\n</div>\n\t\t\t</div> \t\t\t\t<div class=\"col-lg-8 col-xxl-6
+        border shadow p-3 rounded mb-3 bg-light\"> \t\t\t\t\t\t<span class=\"d-block\">
+        <b><font size=3pt>Rechercher une nouvelle r\xE9f\xE9rence :</font></b>\t\t\t\t\t</span>
+        \n\t\t\t\t\t<div class=\"text-start mb-3\">\n\t\t\t\t\t\tIndiquez dans le
+        champ ci-dessous votre r\xE9f\xE9rence d'origine Honda\t\t\t\t\t</div>\n\n\t\t\t\t\t<div
+        id=\"form_container_affect\" class=\"d-flex mb-3\"> <form action=\"/honda-voiture/affectation_pieces_detachees\"
+        id=\"form_affect\" class=\"flex-grow-1\" method=\"post\" accept-charset=\"utf-8\">\n<input
+        type=\"hidden\" name=\"csrf_test_name\" value=\"a863dd921fc0e8ebda307123a4d804ff\"
+        />                               \n\n\t\t\t\t\t\t<div class=\"input-group\">\n\t\t\t\t\t\t\t<div
+        class=\"form-floating flex-grow-1\">\n\t\t\t\t\t\t\t\t<input type=\"text\"
+        class=\"form-control input-sm rounded-0 rounded-start\"\n\t\t\t\t\t\t\t\t
+        \      id=\"chercher_reference\" name=\"chercher_reference\"\n\t\t\t\t\t\t\t\t
+        \      placeholder=\"Exemple de r\xE9f\xE9rence : 04431-S1A-E51\" value=\"\">
+        <label for=\"chercher_reference\">Exemple de r\xE9f\xE9rence : 04431-S1A-E51</label>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<button
+        type=\"submit\" class=\"btn btn-primary btn-sm rounded-0\">\n\t\t\t\t\t\t\t\t<i
+        class=\"bi bi-search\"></i>&nbsp; <span class=\"d-none d-lg-inline\"> Nouvelle
+        recherche                    </span>\n\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</form>\t\t\t\t\t\t<button
+        type=\"button\" role=\"button\" class=\"btn rounded-0 rounded-end \" style=\"background:#bbb;\"
+        data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-trigger=\"hover\"
+        data-bs-placement=\"bottom\" title=\"Information\" data-bs-html=\"true\" data-bs-content=\"<p>Ici
+        vous pouvez entrer une r\xE9f\xE9rence pour connaitre tous les v\xE9hicules
+        \xE9quip\xE9s de cette m\xEAme pi\xE8ce.</p>\" ><i class=\"bi bi-info-circle-fill\"
+        ></i></button>\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t\n\t\t\t\t\t\t\t<div
+        class=\"mb-3\"> \t\t\t\t<table class=\"table table-hover table-striped table-light
+        \">\n\t\t\t\t\t<thead>\n\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t<th class=\"col-2\">Vue
+        Eclat\xE9e</th>\n\t\t\t\t\t\t<th class=\" col-8 col-sm-6 \">Informations v\xE9hicule</th>
+        \t\t\t\t\t\t\t<th class=\"col-2\"> Option\t\t\t\t\t\t\t</th> \t\t\t\t\t\t<th
+        class=\"d-none d-sm-table-cell col-sm-2\">\n\t\t\t\t\t\t\tVue \xE9clat\xE9e\t\t\t\t\t\t</th>\n\t\t\t\t\t</tr>\n\t\t\t\t\t</thead>\n\t\t\t\t\t<tbody>
+        \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td class=\"col-2\"> \t\t\t\t\t\t\t\t<a
+        class=\"btn btn-primary btn-sm parts_link\" href=\"/honda-voiture/CIVIC/2005/TYPE-R/MOTEUR/SUPPORT-DE-MOTEUR-TYPE-R-/17S5T501/E__0601/1/10435\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            TYPE R                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 3 portes / 6 speed manual / conduite a droite / climatisation
+        non d'origine / \t\t\t\t\t\t\t\t\t</td> \n\t\t\t\t\t\t\t<td class=\"col-2
+        d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT
+        DE MOTEUR (TYPE R)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr> \t\t\t\t\t\t<tr
+        class=\"row\">\n\t\t\t\t\t\t\t<td class=\"col-2\"> \t\t\t\t\t\t\t\t<a class=\"btn
+        btn-primary btn-sm parts_link\" href=\"/honda-voiture/CIVIC/2005/TYPE-R/MOTEUR/SUPPORT-DE-MOTEUR-TYPE-R-/17S5T501/E__0601/1/10436\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            TYPE R                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 3 portes / 6 speed manual / conduite a droite / \t\t\t\t\t\t\t\t\t</td>
+        \n\t\t\t\t\t\t\t<td class=\"col-2 d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td
+        class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT DE MOTEUR (TYPE
+        R)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr> \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td
+        class=\"col-2\"> \t\t\t\t\t\t\t\t<a class=\"btn btn-primary btn-sm parts_link\"
+        href=\"/honda-voiture/CIVIC/2005/TYPE-R-PREMIUM/MOTEUR/SUPPORT-DE-MOTEUR-TYPE-R-/17S5T501/E__0601/1/10437\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            TYPE R     PREMIUM                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 3 portes / 6 speed manual / conduite a droite / climatisation
+        non d'origine / \t\t\t\t\t\t\t\t\t</td> \n\t\t\t\t\t\t\t<td class=\"col-2
+        d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT
+        DE MOTEUR (TYPE R)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr> \t\t\t\t\t\t<tr
+        class=\"row\">\n\t\t\t\t\t\t\t<td class=\"col-2\"> \t\t\t\t\t\t\t\t<a class=\"btn
+        btn-primary btn-sm parts_link\" href=\"/honda-voiture/CIVIC/2005/TYPE-R-PREMIUM/MOTEUR/SUPPORT-DE-MOTEUR-TYPE-R-/17S5T501/E__0601/1/10438\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            TYPE R     PREMIUM                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 3 portes / 6 speed manual / conduite a droite / \t\t\t\t\t\t\t\t\t</td>
+        \n\t\t\t\t\t\t\t<td class=\"col-2 d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td
+        class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT DE MOTEUR (TYPE
+        R)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr> \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td
+        class=\"col-2\"> \t\t\t\t\t\t\t\t<a class=\"btn btn-primary btn-sm parts_link\"
+        href=\"/honda-voiture/CIVIC/2005/TYPE-R/MOTEUR/SUPPORT-DE-MOTEUR-TYPE-R-/17S5T501/E__0601/1/10478\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            TYPE R                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 3 portes / 6 speed manual / conduite a gauche / climatisation
+        non d'origine / \t\t\t\t\t\t\t\t\t</td> \n\t\t\t\t\t\t\t<td class=\"col-2
+        d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT
+        DE MOTEUR (TYPE R)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr> \t\t\t\t\t\t<tr
+        class=\"row\">\n\t\t\t\t\t\t\t<td class=\"col-2\"> \t\t\t\t\t\t\t\t<a class=\"btn
+        btn-primary btn-sm parts_link\" href=\"/honda-voiture/CIVIC/2005/TYPE-R/MOTEUR/SUPPORT-DE-MOTEUR-TYPE-R-/17S5T501/E__0601/1/10479\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            TYPE R                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 3 portes / 6 speed manual / conduite a gauche / \t\t\t\t\t\t\t\t\t</td>
+        \n\t\t\t\t\t\t\t<td class=\"col-2 d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td
+        class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT DE MOTEUR (TYPE
+        R)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr> \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td
+        class=\"col-2\"> \t\t\t\t\t\t\t\t<a class=\"btn btn-primary btn-sm parts_link\"
+        href=\"/honda-voiture/CIVIC/2005/20-IVTC/MOTEUR/SUPPORT-DE-MOTEUR-20L-/18S5H501/E__0601/1/14030\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            2.0 IVTC                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 4 portes / 5 speed automatic / conduite a gauche / srs conducteur
+        et passagers / \t\t\t\t\t\t\t\t\t</td> \n\t\t\t\t\t\t\t<td class=\"col-2 d-block
+        d-sm-none\"></td>\n\t\t\t\t\t\t\t<td class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT
+        DE MOTEUR (2.0L)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr> \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td
+        class=\"col-2\"> \t\t\t\t\t\t\t\t<a class=\"btn btn-primary btn-sm parts_link\"
+        href=\"/honda-voiture/CIVIC/2005/20-IVTC/MOTEUR/SUPPORT-DE-MOTEUR-20L-/18S5H501/E__0601/1/14032\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            2.0 IVTC                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 4 portes / 5 velocit\xE0 automatico / conduite a droite /
+        srs conducteur et passagers / \t\t\t\t\t\t\t\t\t</td> \n\t\t\t\t\t\t\t<td
+        class=\"col-2 d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td class=\"col-10
+        col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT DE MOTEUR (2.0L)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr>
+        \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td class=\"col-2\"> \t\t\t\t\t\t\t\t<a
+        class=\"btn btn-primary btn-sm parts_link\" href=\"/honda-voiture/CIVIC/2005/20VSA/MOTEUR/SUPPORT-DE-MOTEUR-20L-/17S6C501/E__0601/1/17299\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            2.0VSA                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 5 portes / 5 speed manual / siege cuir / conduite a droite
+        / navigation / climatisation(automatique) / lateral srs / \t\t\t\t\t\t\t\t\t</td>
+        \n\t\t\t\t\t\t\t<td class=\"col-2 d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td
+        class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT DE MOTEUR (2.0L)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr>
+        \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td class=\"col-2\"> \t\t\t\t\t\t\t\t<a
+        class=\"btn btn-primary btn-sm parts_link\" href=\"/honda-voiture/CIVIC/2005/20VSA/MOTEUR/SUPPORT-DE-MOTEUR-20L-/17S6C501/E__0601/1/17300\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            2.0VSA                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 5 portes / 5 speed manual / siege cuir / conduite a droite
+        / climatisation(automatique) / lateral srs / \t\t\t\t\t\t\t\t\t</td> \n\t\t\t\t\t\t\t<td
+        class=\"col-2 d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td class=\"col-10
+        col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT DE MOTEUR (2.0L)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr>
+        \t\t\t\t\t\t<tr class=\"row\">\n\t\t\t\t\t\t\t<td class=\"col-2\"> \t\t\t\t\t\t\t\t<a
+        class=\"btn btn-primary btn-sm parts_link\" href=\"/honda-voiture/CIVIC/2005/20VSA/MOTEUR/SUPPORT-DE-MOTEUR-20L-/17S6C501/E__0601/1/17327\">
+        <i\n\t\t\t\t\t\t\t\t\t\t\tclass=\"bi bi-search\"></i> </a>\n\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t\t<td
+        class=\" col-5 col-sm-3 \">\n                      <span class=\"row\">  \n
+        \                       <span class=\"col\">\n                          2005
+        \                       </span>\n\n                        <span class=\"col\">\n
+        \                         CIVIC                        </span> \t\t                      <span
+        class=\"col\">\n                            2.0VSA                          </span>
+        \                      </span>\n\t\t\t\t\t\t\t</td> \t\t\t\t\t\t\t\t\t<td
+        class=\"col-5\"> 5 portes / 5 velocidades manual / siege cuir / toit ouvrant
+        / conduite a gauche / climatisation(automatique) / lateral srs / \t\t\t\t\t\t\t\t\t</td>
+        \n\t\t\t\t\t\t\t<td class=\"col-2 d-block d-sm-none\"></td>\n\t\t\t\t\t\t\t<td
+        class=\"col-10 col-sm-2 text-break\">\n\t\t\t\t\t\t\t\tSUPPORT DE MOTEUR (2.0L)\t\t\t\t\t\t\t</td>\n\n\t\t\t\t\t\t</tr>
+        \t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t\t<div class=\"pagination\"></div>\n\t\t\t</div>
+        \t\t</div>\n\t</div>\n</div></div> \n\n<div class=\"section footer w-100 mt-md-auto\">\n
+        \   <div class=\"section position-fixed bottom-0 h-100 w-100\" style=\"z-index:-1;\">\n
+        \       <div class=\"container h-100\">\n            <div class=\"bg-white\">\n\n
+        \           </div>\n        </div>\n    </div>\n\n    <div class=\"border-2
+        bg-dark border-dark text-light \">\n        <div class=\"container bg-dark\"
+        id=\"div_block_footer\">\n            \n<div class=\"row py-3 pb-4 text-center
+        border-bottom \">\n  <div class=\"col-6 col-lg align-items-center text-break\">\n
+        \   <div class=\"\" style=\"font-size: 2.7rem!important;\"><i class=\"bi bi-cash\"></i></div>\n
+        \   Tarif officiel Honda  </div>\n  <div class=\"col-6 col-lg align-items-center
+        text-break \">\n    <div class=\"\" style=\"font-size: 2.7rem!important;\"><i
+        class=\"bi bi-credit-card-fill\"></i></div>\n    Paiement s\xE9curis\xE9  </div>\n
+        \ <div class=\"col-6 col-lg align-items-center text-break \">\n    <div class=\"\"
+        style=\"font-size: 2.7rem!important;\"><i class=\"bi bi-wrench\"></i></div>\n
+        \   Des pi\xE8ces neuves et d'origine constructeur  </div>\n  <div class=\"col-6
+        col-lg align-items-center text-break \">\n    <div class=\"\" style=\"font-size:
+        2.7rem!important;\"><i class=\"bi bi-box-seam\"></i></div>\n    Livraison
+        internationale  </div>\n  <div class=\"col-6 col-lg align-items-center text-break\">\n
+        \   <div class=\"\" style=\"font-size: 2.7rem!important;\"><i class=\"bi bi-headset\"></i></div>\n
+        \   Une \xE9quipe d'experts \xE0 votre \xE9coute  </div>\n</div>\n<div class=\"row
+        pt-3 \">\n  <div class=\"col-sm-6 col-lg-3 mb-3 px-3\">\n    <div class=\"text-uppercase
+        fs-20px pb-2 text-center\">Liens utiles<br>\n      <div class=\"border-bottom
+        border-2 pt-1 text-center mx-auto w-50 d-flex-row\"></div>\n    </div>\n    <a
+        href=\"/faq\">Foire aux questions</a><br>\n    <a href=\"/message/542 \" />Offres
+        d'emploi</a></br><a href=\"/message/218 \" />Comment Commander</a></br>  </div>\n
+        \ <div class=\"col-sm-6 col-lg-3 mb-3 px-3\">\n    <div class=\"text-uppercase
+        fs-20px pb-2 text-center\">Informations <br>\n      <div class=\"border-bottom
+        border-2 pt-1 text-center mx-auto w-50 d-flex-row\"></div>\n    </div>\n\n<!--
+        \     A Ajouter quand tout les templates seront cr\xE9\xE9s-->\n            <a
+        href=\"/pdf_handler/sales_conditions\">Conditions G\xE9n\xE9rales de Ventes</a><br>\n
+        \     <a href=\"/pdf_handler/privacy_policy\">Politique de Confidentialit\xE9</a><br>\n
+        \     <a href=\"/pdf_handler/legal_notice\">Mentions L\xE9gales</a><br>\n
+        \     <a href=\"/pdf_handler/shipping_and_delivery\">Exp\xE9dition et Livraison</a>\n
+        \     \n  </div>\n  <div class=\"col-lg-6 px-3 \">\n          <div class=\"text-uppercase
+        fs-20px pb-2 text-center\">Les avis de nos clients <br>\n        <div class=\"border-bottom
+        border-2 pt-1 text-center mx-auto w-50 d-flex-row\"></div>\n      </div>\n
+        \     <div class=\"row\">\n        \n\n<div class=\"mb-1 position-relative\">\n
+        \ <a href=\"http://fr.trust-certification.com/trust.php?partenaire=www.pieces-auto-honda.fr\"
+        target=\"_blank\" class=\"text-decoration-none d-md-flex me-lg-5\">\n          <div
+        class=\"text-center me-lg-5\">Toutes les notes sur Trust-certification.com
+        :      <span class=\"d-block d-lg-none text-center mt-1 mt-md-0 mx-md-3\">Trust
+        Certification</span>\n      <div class=\"position-absolute translate-middle-y\"
+        style=\"top:-30%!important;right: 5%!important;\">\n        <img class=\"d-none
+        d-xl-block mx-auto\" src=\"/thumbs/divers/80_80/trust-certification.png\"
+        alt=\"Trust Certification\" width=\"80\" height=\"80\">\n      </div>\n        <img
+        src=\"/thumbs/themes/trust/ETOILE/80_80/4.8.png\" class=\"etoileavis\" alt=\"Avis
+        Image\" width=\"80\" height=\"16\">\n        4.8 / 5\n      </div>\n      </a>\n</div>\n\n<div
+        class=\"overflow-auto mt-2 mb-2 mb-md-0 custom_scroll text-end\" style=\"height:95px\">\n
+        \     <div class=\"text-start\">\n      <b>Alain</b>&nbsp;:&nbsp;\n      <img
+        src=\"/thumbs/themes/trust/ETOILE/80_80/4.png\" class=\"etoileavis\" style=\"margin-top:
+        -4px;\" alt=\"Avis Image\" width=\"80\" height=\"16\">\n    </br>\n        <div
+        class=\"fst-italic mb-3 bottom-0 fs-13px\">Avis v\xE9rifi\xE9 et post\xE9
+        le 2022-12-02</div>\n  </div>\n  <hr>\n    <div class=\"text-start\">\n      <b>Aloys
+        prince</b>&nbsp;:&nbsp;\n      <img src=\"/thumbs/themes/trust/ETOILE/80_80/4.png\"
+        class=\"etoileavis\" style=\"margin-top: -4px;\" alt=\"Avis Image\" width=\"80\"
+        height=\"16\">\n    </br>\n    -qualit&eacute; du service est super \r\n-temps
+        de livraison respect&eacute; \r\n- pi&egrave;ce correspondante et authenticit&eacute;
+        \r\nJ`ai &eacute;t&eacute; ravis de faire un achat chez vous je vous reviendrai
+        prochainement en cas de besoin d`autres pi&egrave;ces.\r\nMerci bien.    <div
+        class=\"fst-italic mb-3 bottom-0 fs-13px\">Avis v\xE9rifi\xE9 et post\xE9
+        le 2022-12-02</div>\n  </div>\n  <hr>\n    <div class=\"text-start\">\n      <b>Christophe</b>&nbsp;:&nbsp;\n
+        \     <img src=\"/thumbs/themes/trust/ETOILE/80_80/5.png\" class=\"etoileavis\"
+        style=\"margin-top: -4px;\" alt=\"Avis Image\" width=\"80\" height=\"16\">\n
+        \   </br>\n    Tr\xC3\xA8s bon site, livraison rapide et s\xC3\xA9rieuse avec
+        un service apres-vente reactif en cas de probl\xC3\xA8me.     <div class=\"fst-italic
+        mb-3 bottom-0 fs-13px\">Avis v\xE9rifi\xE9 et post\xE9 le 2022-12-01</div>\n
+        \ </div>\n  <hr>\n    <div class=\"text-start\">\n      <b>Sebastien</b>&nbsp;:&nbsp;\n
+        \     <img src=\"/thumbs/themes/trust/ETOILE/80_80/4.png\" class=\"etoileavis\"
+        style=\"margin-top: -4px;\" alt=\"Avis Image\" width=\"80\" height=\"16\">\n
+        \   </br>\n    Bien, un peu cher, un peu long en envoi mais essentiel.    <div
+        class=\"fst-italic mb-3 bottom-0 fs-13px\">Avis v\xE9rifi\xE9 et post\xE9
+        le 2022-12-01</div>\n  </div>\n  <hr>\n    <div class=\"text-start\">\n      <b>Valentin</b>&nbsp;:&nbsp;\n
+        \     <img src=\"/thumbs/themes/trust/ETOILE/80_80/4.png\" class=\"etoileavis\"
+        style=\"margin-top: -4px;\" alt=\"Avis Image\" width=\"80\" height=\"16\">\n
+        \   </br>\n    Livraison et produits chers mais c'est le prix pour avoir de
+        l'officiel Honda. \r\nSuivi impeccable et commande facile sinon.     <div
+        class=\"fst-italic mb-3 bottom-0 fs-13px\">Avis v\xE9rifi\xE9 et post\xE9
+        le 2022-12-01</div>\n  </div>\n  <hr>\n<a href=\"http://fr.trust-certification.com/trust.php?partenaire=www.pieces-auto-honda.fr\"
+        target=\"_blank\">\n  <span class=\"pe-3\">...</span>\n</a>\n</div>\n\n      </div>\n
+        \     </div>\n</div>\n        </div>\n                <a class=\"footer_micro
+        text-light d-block position-relative\" href=\"https://fr.microfiches.net\"
+        target=\"_blank\">\n          <div class=\"container p-2 bg-transparent position-relative
+        ps-3\">\n            <span class=\"ps-3\">\n                <i class=\"bi
+        bi-house-fill text-light\"></i>&nbsp;Microfiches.net - Catalogue de pi\xE8ces
+        d\xE9tach\xE9es de toutes marques            </span>\n          </div>\n        </a>\n
+        \   </div>\n\n</div>\n\n<div id=\"cookieConsent\">\n  <span>\n    Nous utilisons
+        des cookies sur notre site pour r\xE9aliser des statistiques de visites. En
+        cliquant sur J'accepte ou en poursuivant sur ce site vous acceptez l'utilisation
+        de ces cookies.  </span>\n    <span id=\"cookieConsentLinks\">\n    <!-- <button
+        id=\"cookieConsentNO\" class=\"btn btn-default btn-cookie\">Je refuse</button>
+        -->\n    <button id=\"cookieConsentOK\" class=\"btn btn-primary btn-cookie\">J'accepte</button>\n
+        \           <a href=\"/message/221\">Plus d'infos...</a>\n      </span>\n</div>\n\n<div
+        class=\"card bg-light\" id=\"popin_contact\" name=\"popin_contact\"></div>\n\n<div
+        id=\"popin_geoloc\"></div>\n\n<div class=\"modal fade\" id=\"modal_confirm\"
+        tabindex=\"-1\" aria-hidden=\"true\" aria-labelledby=\"modal_confirm_label\">\n
+        \   <div class=\"modal-dialog modal-dialog-centered\">\n        <div class=\"modal-content
+        bg-light\">\n            <div class=\"modal-header\">\n                <span
+        class=\"modal-title fw-500 fs-5\" id=\"modal_confirm_label\">Confirmer?</span>\n
+        \               <i type=\"button\" class=\"bi bi-x-lg fs-5\" data-bs-dismiss=\"modal\"
+        aria-label=\"Close\"></i>\n            </div>\n            <div class=\"modal-footer\">\n
+        \               <button type=\"button\" data-bs-dismiss=\"modal\" class=\"btn
+        btn-default\">Annuler</button>\n                <button type=\"button\" id=\"confirm_button\"
+        class=\"btn btn-primary\">Valider</button>\n            </div>\n        </div>\n
+        \   </div>\n</div>\n\n<div class=\"toast-container fixed-top\" style=\"z-index:2000;\">\n
+        \   <div class=\"toast text-center align-items-center text-white bg-dark border-0
+        rounded-3 w-100 p-2\" id=\"admin_toast\" role=\"alert\" aria-live=\"assertive\"
+        aria-atomic=\"true\">\n        <div class=\"toast-body fs-5\"></div>\n    </div>\n</div>\n
+        \ <div id=\"fleche_popin_contact\" class=\"btn btn-primary\" style=\"\" >\n
+        \ Une Question ?</div>\n\n<div id=\"tooltip_flag\">\n  </div>\n\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js\"></script>\n<script
+        src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\"
+        integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\"
+        crossorigin=\"anonymous\"></script>\n<!-- <script src=\"https://ws.colissimo.fr/widget-point-retrait/resources/js/jquery.plugin.colissimo.min.js\"
+        type=\"text/javascript\"></script> -->\n\n  <script type=\"text/javascript\"
+        src=\"/assets/javascript/javascript_site.min.js?ver=1.71\"></script> \n\n
+        \     \n    <div id=\"ajax_loader\" style=\"display: none\">\n  <div id=\"ajax_loader_backg\"
+        class=\"modal fade\" style=\"display: block\"></div>\n  <div class=\"windows8\">\n
+        \   <div class=\"wBall\" id=\"wBall_1\">\n      <div class=\"wInnerBall\"></div>\n
+        \   </div>\n    <div class=\"wBall\" id=\"wBall_2\">\n      <div class=\"wInnerBall\"></div>\n
+        \   </div>\n    <div class=\"wBall\" id=\"wBall_3\">\n      <div class=\"wInnerBall\"></div>\n
+        \   </div>\n    <div class=\"wBall\" id=\"wBall_4\">\n      <div class=\"wInnerBall\"></div>\n
+        \   </div>\n    <div class=\"wBall\" id=\"wBall_5\">\n      <div class=\"wInnerBall\"></div>\n
+        \   </div>\n  </div>\n</div>\n<div id=\"js_tools\" style=\"display: none\">\n
+        \ <div id=\"tool_alert_form_input\">\n    <div class=\"alert alert-danger
+        alert-white rounded\" role=\"alert\" data-tool-id=\"tool_alert_form_input\">\n
+        \     <div class=\"icon\"><i class=\"bi bi-x-circle\"></i></div>\n      <p
+        data-tool-html=\"error_message\"></p>\n    </div>\n  </div>\n  <div id=\"tool_alert_success_text\">\n
+        \   <div class=\"alert alert-success rounded\" role=\"alert\" data-tool-id=\"tool_alert_success_text\">\n
+        \     <p data-tool-html=\"success_message\"></p>\n    </div>\n  </div>\n  <div
+        id=\"tool_alert_success\">\n    <div class=\"alert alert-success rounded\"
+        role=\"alert\" data-tool-id=\"tool_alert_success\">\n      <div class=\"icon\"><i
+        class=\"bi bi-check-circle\"></i></div>\n      <p data-tool-html=\"success_message\"></p>\n
+        \   </div>\n  </div>\n  <div id=\"tool_alert_pass\">\n    <div class=\"alert
+        alert-danger alert-white rounded bi bi-x-circle d-flex align-items-center
+        invalid-feedback py-1\" role=\"alert\" data-tool-id=\"tool_alert_pass\" style=\"margin-top:.25rem;\">\n
+        \     <p data-tool-html=\"error_message\"></p>\n    </div>\n  </div>\n</div>\n\n</body>\n</html>\n"
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Content-Encoding:
+      - gzip
+      Content-Language:
+      - fr
+      Content-Length:
+      - '8997'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Sat, 03 Dec 2022 00:34:57 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache
+      Set-Cookie:
+      - parts_csrf_cookie_name=a863dd921fc0e8ebda307123a4d804ff; expires=Mon, 05-Dec-2022
+        00:34:57 GMT; Max-Age=172800; path=/
+      - session=oqgg21765tt607qio99veodcjl36vf7e; expires=Tue, 06-Dec-2022 00:34:57
+        GMT; Max-Age=259200; path=/; HttpOnly
+      Vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+    url: https://www.pieces-auto-honda.fr/honda-voiture/affectation_pieces_detachees/31170PND013
 version: 1

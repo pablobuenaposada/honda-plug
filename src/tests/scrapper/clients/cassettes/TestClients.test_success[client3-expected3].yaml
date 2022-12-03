@@ -1281,4 +1281,933 @@ interactions:
       code: 200
       message: OK
     url: https://eucs4.klevu.com/cloud-search/n-search/search?ticket=klevu-14866558287345291&term=74100-S2A-010&responseType=json
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://eucs4.klevu.com/cloud-search/n-search/search?ticket=klevu-14866558287345291&term=31170-PND-013&responseType=json
+  response:
+    body:
+      string: "{\"meta\":{\"layoutId\":\"\",\"layoutType\":\"\",\"noOfResults\":12,\"paginationStartFrom\":0,\"powerdByLogo\":\"\",\"totalResultsFound\":1,\"typeOfQuery\":\"WILDCARD_AND\",\"storeBaseCurrency\":\"GBP\",\"notificationCode\":1,\"term\":\"31170-PND-013\",\"excludeIds\":null,\"isPersonalised\":false,\"idsUsedForPersonalisation\":null},\"result\":[{\"color\":\"N/A\",\"discount\":\"\",\"hideGroupPrices\":\"\",\"itemGroupId\":\"\",\"freeShipping\":\"\",\"storeBaseCurrency\":\"GBP\",\"price\":\"137.51\",\"toPrice\":\"\",\"imageUrl\":\"https://www.tegiwaimports.com/media/klevu_images/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\",\"currency\":\"GBP\",\"inStock\":\"yes\",\"id\":\"10058\",\"imageHover\":\"\",\"sku\":\"31170-PND-013\",\"basePrice\":\"137.51\",\"startPrice\":\"\",\"image\":\"https://www.tegiwaimports.com/media/klevu_images/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\",\"deliveryInfo\":\"\",\"hideAddToCart\":\"\",\"salePrice\":\"137.51\",\"oldPrice\":\"137.51\",\"swatches\":{\"swatch\":[],\"lowestPrice\":\"\",\"numberOfAdditionalVariants\":\"\"},\"weight\":\"0.5000\",\"klevu_category\":\"KLEVU_PRODUCT;;Brands;;Genuine
+        Honda ;;Engine Parts  @ku@kuCategory@ku@\",\"totalVariants\":\"0\",\"groupPrices\":\"9:Dealer_VAT:103.1300;10:Dealer_VATREG:103.1300;11:Trader_VAT:103.1300;12:Trader_VATREG:103.1300;15:Sponsor:103.1300;18:Distributor_VATREG:103.1300;23:Dealer_UK:103.1300\",\"url\":\"https://www.tegiwaimports.com/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.html\",\"name\":\"GENUINE
+        HONDA AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES\",\"shortDesc\":\"GENUINE
+        HONDA AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES by Genuine Honda from
+        only \xA3137.51\",\"category\":\"genuine honda;;engine parts\"}],\"filters\":[],\"price\":{\"min\":\"\",\"max\":\"\",\"start\":\"\",\"end\":\"\"},\"autoComplete\":[],\"popularTerm\":[],\"pages\":[],\"categories\":[],\"popularProducts\":[],\"recentlyViewedProducts\":[],\"ranges\":[],\"error\":{\"errorMessage\":\"\"}}"
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 773838533b411bb4-MAD
+      Cache-Control:
+      - max-age=300
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 03 Dec 2022 00:35:02 GMT
+      Last-Modified:
+      - Sat, 03 Dec 2022 00:35:02 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Application-Context:
+      - application
+    status:
+      code: 200
+      message: OK
+    url: https://eucs4.klevu.com/cloud-search/n-search/search?ticket=klevu-14866558287345291&term=31170-PND-013&responseType=json
+- request:
+    body: null
+    headers:
+      user-agent:
+      - curl/7.79.1
+    method: GET
+    uri: https://www.tegiwaimports.com/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.html
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\n<title>GENUINE HONDA AUTO TENSIONER
+        CIVIC EP3 INTEGRA DC5 K-SERIES from Genuine Honda only \xA3137.51  | Tegiwa
+        Imports</title>\n<meta name=\"description\" content=\"HONDA Auto Tensioner
+        Unit. The spring in these can wear over time and loose tension. These are
+        supplied from Honda complete with a new pulley which on its own is \uFFA340+.
+        Maintain your car just as Honda intended. As with all Honda parts expect a
+        perfect fit \" />\n<meta name=\"robots\" content=\"INDEX, FOLLOW\" />\n<link
+        href=\"https://fonts.googleapis.com/css?family=Oswald&display=swap\" rel=\"stylesheet\">\n<meta
+        property=\"og:title\" content=\"GENUINE HONDA AUTO TENSIONER CIVIC EP3 INTEGRA
+        DC5 K-SERIES\" />\n<meta property=\"og:type\" content=\"product\" />\n<meta
+        property=\"og:image\" content=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/small_image/200x200/d911a408d269df4946d4d14282cffb28/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\"
+        />\n<meta property=\"og:url\" content=\"https://www.tegiwaimports.com/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.html\"
+        />\n<meta property=\"og:description\" content=\"GENUINE HONDA AUTO TENSIONER
+        CIVIC EP3 INTEGRA DC5 K-SERIES by Genuine Honda from only \xA3137.51\" />\n<meta
+        property=\"og:site_name\" content=\"Tegiwa Imports Store View\" />\n<meta
+        name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n<link
+        rel=\"icon\" href=\"https://www.tegiwaimports.com/media/favicon/default/favicon.png\"
+        type=\"image/x-icon\" />\n<link rel=\"shortcut icon\" href=\"https://www.tegiwaimports.com/media/favicon/default/favicon.png\"
+        type=\"image/x-icon\" />\n<link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic&amp;v1&amp;subset=latin%2Clatin-ext\"
+        type=\"text/css\" media=\"screen\" />\n<link href='//fonts.googleapis.com/css?family=Shadows+Into+Light'
+        rel='stylesheet' type='text/css' />\n<link href=\"https://fonts.googleapis.com/css?family=Oswald:300,400,700\"
+        rel=\"stylesheet\">\n<link href=\"https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700\"
+        rel=\"stylesheet\">\n<script src='https://www.google.com/recaptcha/api.js'></script>\n<link
+        rel=\"stylesheet\" type=\"text/css\" href=\"https://www.tegiwaimports.com/media/css_secure/c304580ac780c82c65b5849a8f2b8f1a.css\"
+        />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://www.tegiwaimports.com/media/css_secure/c343fe4bbac009be1715520c42a226fc.css\"
+        media=\"all\" />\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://www.tegiwaimports.com/media/css_secure/aff404c5bb500bb497d71dfa52655a8b.css\"
+        media=\"print\" />\n<script type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/prototype/prototype.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/lib/ccard.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/prototype/validation.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/scriptaculous/builder.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/scriptaculous/effects.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/scriptaculous/dragdrop.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/scriptaculous/controls.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/scriptaculous/slider.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/varien/js.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/varien/form.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/varien/menu.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/mage/translate.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/mage/cookies.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/amasty/amfinder/finder.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/amasty/ampromo/items.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/etalage/jquery.etalage.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/etalage/jquery.zoom.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/varien/product_options.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/jquery-1.11.3.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/jquery-migrate-1.2.1.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/jquery-noconflict.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/jquery-ui.optimized.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/fancybox/js/jquery.fancybox.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/fancybox/js/jquery.mousewheel-3.0.6.pack.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/selectbox/jquery.selectbox.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/parallax/jquery.stellar.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/parallax/jquery.parallax.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/lazyload/jquery.lazyload.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/jquery.cookie.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/jquery/plugins/owl-carousel/owl.carousel.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/varien/product.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/varien/configurable.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/calendar/calendar.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/calendar/calendar-setup.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/smartwave/porto/js/lib/imagesloaded.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/smartwave/porto/js/configurableswatches/app.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/smartwave/porto/megamenu/js/megamenu.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/stripe_payments/js/stripe_payments.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/stripe_payments/js/cctype.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/stripe_payments/js/express.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/smartwave/porto/js/wow.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/smartwave/porto/js/porto.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/amasty/plugins/jquery-1.9.1.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/amasty/plugins/jquery.tooltipster.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/amasty/plugins/jquery.carouFredSel-6.2.1.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/amasty/plugins/jquery.elevatezoom.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/amasty/plugins/jquery.touchSwipe.min.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/amasty/plugins/fancybox/jquery.fancybox.js\"></script>\n<link
+        rel=\"canonical\" href=\"https://www.tegiwaimports.com/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.html\"
+        />\n<!--[if gt IE 7]>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"https://www.tegiwaimports.com/media/css_secure/e7e2527265355985ec076e04e8952418.css\"
+        media=\"all\" />\n<![endif]-->\n<!--[if lt IE 7]>\n<script type=\"text/javascript\"
+        src=\"https://www.tegiwaimports.com/js/lib/ds-sleight.js\"></script>\n<script
+        type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/ie6.js\"></script>\n<![endif]-->\n<!--[if
+        lt IE 9]>\n<script type=\"text/javascript\" src=\"https://www.tegiwaimports.com/js/smartwave/respond.min.js\"></script>\n<![endif]-->\n<script
+        type=\"text/javascript\">\n//<![CDATA[\nMage.Cookies.path     = '/';\nMage.Cookies.domain
+        \  = '.tegiwaimports.com';\n//]]>\n</script>\n<script type=\"text/javascript\">\n//<![CDATA[\noptionalZipCountries
+        = [\"HK\",\"IE\",\"MO\",\"PA\"];\n//]]>\n</script>\n\n<script type=\"text/javascript\">\n
+        \       //<![CDATA[\n            var _gaq = _gaq || [];\n            \n_gaq.push(['_setAccount',
+        'UA-137810520-1']);\n\n_gaq.push(['_trackPageview']);\n            \n            (function()
+        {\n                var ga = document.createElement('script'); ga.type = 'text/javascript';
+        ga.async = true;\n                ga.src = ('https:' == document.location.protocol
+        ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n                var
+        s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga,
+        s);\n            })();\n\n        //]]>\n        </script>\n\n\n\n<script>\n!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;\nn.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,\ndocument,'script','//connect.facebook.net/en_US/fbevents.js');\nfbq('init',
+        '268854786917296', {}, {agent: 'exmagento-1.9.3.7-2.3.6' });\nfbq('track',
+        'PageView', {\n  source: 'magento',\n  version: \"1.9.3.7\",\n  pluginVersion:
+        \"2.3.6\"\n});\n</script>\n<noscript><img height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=268854786917296&ev=PageView&noscript=1&a=exmagento-1.9.3.7-2.3.6\"\n/></noscript>\n\n\n<div
+        class=\"flashbanner-container\" style=\"width:100%; text-align:center; background:
+        #CFFF04\">\n<h1 style=\"display:block; margin:inherit; padding:10px; font-size:
+        18px; color: #000000;\"> <strong><a href=\"https://www.tegiwaimports.com/brands.html\">25
+        DAYS OF CHRISTMAS - </strong>Day 2: 15% off Eibach & Tein lowering springs!</a>
+        </h1> \n</div>\n<script type=\"text/javascript\">\r\n\tjQuery(function($){\r\n\t\tvar
+        scrolled = false;\r\n\t\t$(window).scroll(function(){\r\n\t\t\t    if(140<$(window).scrollTop()
+        && !scrolled){\r\n                    if(!$('.header-container .menu-wrapper
+        .mini-cart').length && !$('.header-container .menu-wrapper .sticky-logo').length){\r\n\t\t\t\t
+        \   $('.header-container').addClass(\"sticky-header\");\r\n\t\t\t\t    var
+        minicart = $('.header-container .mini-cart').html();\r\n\t\t\t\t    $('.header-container
+        .menu-wrapper').append('<div class=\"mini-cart\">'+minicart+'</div>');\r\n
+        \                                   var logo_image = $('<div>').append($('.header-container
+        .header > .logo').clone()).html();\r\n                    $('.header-container
+        .menu-wrapper').prepend('<div class=\"sticky-logo\">'+logo_image+'</div>');\r\n
+        \                                   \t\t\t\t    $('.header-container .header-wrapper
+        > div').each(function(){\r\n\t\t\t\t\t    if($(this).hasClass(\"container\")){\r\n\t\t\t\t\t\t
+        \   $(this).addClass(\"already\");\r\n\t\t\t\t\t    } else {\r\n\t\t\t\t\t\t
+        \   $(this).addClass(\"container\");\r\n\t\t\t\t\t    }\r\n\t\t\t\t    });\r\n\t\t\t\t
+        \   scrolled = true;\r\n                    }\r\n\t\t\t    }\r\n\t\t\t    if(140>=$(window).scrollTop()
+        && scrolled){\r\n\t\t\t\t    $('.header-container').removeClass(\"sticky-header\");\r\n\t\t\t\t
+        \   $('.header-container .menu-wrapper .mini-cart').remove();\r\n                                    $('.header-container
+        .menu-wrapper > .sticky-logo').remove();\r\n                    $('.header-container.type15
+        .header > .logo img.sticky-logo-image').remove();\r\n                    $('.header-container.type15
+        .header > .logo img').removeClass(\"hide\");\r\n                \t\t\t\t    scrolled
+        = false;\r\n\t\t\t\t    $('.header-container .header-wrapper > div').each(function(){\r\n\t\t\t\t\t
+        \   if($(this).hasClass(\"already\")){\r\n\t\t\t\t\t\t    $(this).removeClass(\"already\");\r\n\t\t\t\t\t
+        \   } else {\r\n\t\t\t\t\t\t    $(this).removeClass(\"container\");\r\n\t\t\t\t\t
+        \   }\r\n\t\t\t\t    });\r\n\t\t\t    }\r\n\t\t});\r\n\t});\r\n</script><script
+        type=\"text/javascript\" async>\n    var w = document.createElement(\"script\");\n
+        \   w.type = \"text/javascript\";\n    w.src = \"//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js\";\n
+        \   w.async = true;\n    document.head.appendChild(w);\n</script>\n<script
+        type=\"text/javascript\">\n\t(function(w,d,s,r,n){w.TrustpilotObject=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)};\n\ta=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0];\n\tf.parentNode.insertBefore(a,f)})(window,document,'script',
+        'https://invitejs.trustpilot.com/tp.min.js', 'tp');\n\ttp('register','6iUyn4gy8yyE9Tb1');\n</script>\n<script
+        type=\"text/javascript\">\n    function inIframe() {\n        try {\n            return
+        window.self !== window.top;\n        } catch (e) {\n            return false;\n
+        \       }\n    }\n\n    function tryParseJson(str) {\n        if (typeof str
+        === 'string') {\n            try {\n                return JSON.parse(str);\n
+        \           } catch (e) {\n                return false;\n            }\n
+        \       }\n        return false;\n    }\n\n    if (inIframe()) {\n        try
+        {\n            window.addEventListener('message', function (e) {\n                var
+        adminOrign = new URL(window.location).hostname;\n                if (!e.data
+        || e.origin.indexOf(adminOrign) === -1) {\n                    return;\n                }\n
+        \               if (typeof TrustpilotPreview !== 'undefined') {\n                    if
+        (typeof e.data === 'string' && e.data === 'submit') {\n                        TrustpilotPreview.sendTrustboxes();\n
+        \                   } else {\n                        jsonData = JSON.parse(e.data);\n
+        \                       if (jsonData.trustbox) {\n                            TrustpilotPreview.setSettings(jsonData.trustbox);\n
+        \                       } else if (jsonData.customised) {\n                            TrustpilotPreview.updateActive(jsonData.customised);\n
+        \                       }\n                    }\n                } else {\n
+        \                   var settings = tryParseJson(e.data);\n                    if
+        (settings) {\n                        var p = document.createElement(\"script\");\n
+        \                       p.type = \"text/javascript\";\n                        p.onload
+        = function () {\n                            const iFrame = e.source.parent.document.getElementById('configuration_iframe').contentWindow;\n
+        \                           TrustpilotPreview.init(['//ecommplugins-scripts.trustpilot.com/v2.1/css/preview.css'],
+        settings, iFrame, e.source);\n                        };\n                        p.src
+        = '//ecommplugins-scripts.trustpilot.com/v2.1/js/preview.js';\n                        document.head.appendChild(p);\n
+        \                   }\n                }\n            });\n        }\n        catch
+        (e) {\n            if (typeof logTrustpilotError !== \"function\") {\n                var
+        script = document.createElement(\"script\");\n                script.src =
+        '//ecommplugins-scripts.trustpilot.com/js/sentryLog.js'\n                script.onload
+        = function() {\n                    logTrustpilotError(e);\n                };\n
+        \               document.head.appendChild(script);\n            } else {\n
+        \               logTrustpilotError(e)\n            }\n        }\n    }\n</script>\n<script
+        type=\"text/javascript\" async>\n    const trustpilot_trustbox_settings =
+        {\"trustboxes\":[]};\n    if (trustpilot_trustbox_settings) {\n        document.addEventListener('DOMContentLoaded',
+        function() {\n            tp('trustBox', trustpilot_trustbox_settings);\n
+        \       });\n    }\n</script><script type=\"application/ld+json\">{\"@context\":\"http:\\/\\/schema.org\\/\",\"@type\":\"WebPage\",\"speakable\":{\"@type\":\"SpeakableSpecification\",\"cssSelector\":[\".short-description\"],\"xpath\":[\"\\/html\\/head\\/title\"]}}</script><script
+        type=\"text/javascript\">//<![CDATA[\n        var Translator = new Translate([]);\n
+        \       //]]></script>\n<script type=\"text/javascript\">\nwindow.$zopim||(function(d,s){var
+        z=$zopim=function(c){z._.push(c)},$=z.s=\nd.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.\n_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute(\"charset\",\"utf-8\");\n$.src=\"https://v2.zopim.com/?3sPZm8fEbbzgSBGd6VdTKYIma3jPb1rp\";z.t=+new
+        Date;$.\ntype=\"text/javascript\";e.parentNode.insertBefore($,e)})(document,\"script\");\n</script>\n\n\n<script
+        async src=\"https://www.googletagmanager.com/gtag/js?id=AW-760392294\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'AW-760392294');\n</script>\n\n<script
+        async src=\"https://www.googletagmanager.com/gtag/js?id=UA-137810520-1\"></script>\n<script>\n
+        \ window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n
+        \ gtag('js', new Date());\n\n  gtag('config', 'UA-137810520-1');\n</script>\n\n<script
+        type=\"text/javascript\">\n//<![CDATA[\nif (typeof dailydealTimeCountersCategory
+        == 'undefined') {\n\tvar dailydealTimeCountersCategory = new Array();\n\tvar
+        i = 0;\n}\n//]]>\n</script>\n\n<script type=\"text/javascript\" src=\"https://secure.dekopay.com/js_api/FinanceDetails.js.php?api_key=23cef95ba072a720d87b89b209188dc3\"></script>\n<script
+        type=\"text/javascript\">\n\t\tfunction loadFinanceDetails(product_type, cost_of_goods,
+        deposit_percentage, deposit_amount) {\n\t\t\tconsole.log(product_type + cost_of_goods
+        + deposit_percentage + deposit_amount);\n\t\t\tvar my_fd_obj = new FinanceDetails(product_type,
+        cost_of_goods, deposit_percentage, deposit_amount);\n\t\t\t  console.log(\"cost
+        per month: \" + my_fd_obj.m_inst);\n\t\t\t  console.log(\"Finance term: \"
+        + my_fd_obj.term);\n\t\t\t  console.log(\"Cost of goods: \" + my_fd_obj.goods_val);\n\t\t\t
+        \ jQuery(\"#product_namep4l\").html(my_fd_obj.p_name);\n\t\t\t  jQuery(\"#finance_term\").html(my_fd_obj.term
+        + \" Month(s)\");\n\t\t\t  jQuery(\"#cost_per_month\").html(\"\xA3\" + my_fd_obj.m_inst);\n\t\t\t
+        \ jQuery(\"#cost_per_month3\").html(\"\xA3\" + my_fd_obj.m_inst);\n\t\t\t
+        \ jQuery(\"#p4lcostofgoods\").html(\"\xA3\" + cost_of_goods);\n\t\t\t  jQuery(\"#deposit_percentage\").html(my_fd_obj.d_pc
+        + \"%\");\n\t\t\t  jQuery(\"#deposit_amount\").html(\"\xA3\" + my_fd_obj.d_amount);\n\t\t\t
+        \ jQuery(\"#apr\").html(my_fd_obj.apr + \"% APR\");\n\t\t\t  jQuery(\"#monthly_repayment\").html(\"\xA3\"
+        + my_fd_obj.l_repay);\n\t\t\t  jQuery(\"#total\").html(\"\xA3\" + my_fd_obj.total);\n\t\t\t
+        \ jQuery(\"#credit_amount\").html(\"\xA3\" + my_fd_obj.l_amount);\n\t\t\t
+        \ jQuery(\"#loan_cost\").html(\"\xA3\" + my_fd_obj.l_cost);\n\t\t\t  jQuery(\"#loan_true_cost\").html(my_fd_obj.l_truecost);\n\n\t\t}
+        \n\t\tfunction getFinanceOptions(total,product_type){\n\t\t\tif (total < 280.00){\n\t\t\t\tcalcmessage.textContent
+        = \"The amount you entered is under the minimum threshold of \xA3280. Please
+        enter a new amount, thank you.\";\n\t\t\t\treturn;\n\t\t\t\t}\n\t\t\telse
+        calcmessage.textContent = \"The amount entered qualifies for PayPal Credit.
+        The example shown below outlines what you would pay.\";\n\t\t\tconsole.log(product_type);\n\t\t\tvar
+        type = 0;\n\t\t\tvar name = \"\";\n\t\t\tif (product_type==6){ type = 0; name
+        = \"6 Months Interest Free Credit\"; }\n\t\t\telse if (product_type==12){
+        type = 12; name = \"12 Months Interest Free Credit\"; }\n\t\t\telse if (product_type==18){
+        type = 8; name = \"18 Months Credit\"; }\n\t\t\telse if (product_type==24){
+        type = 4; name = \"24 Months Credit\"; }\n\t\t\tvar xhttp = new XMLHttpRequest();\n\t\t\txhttp.onreadystatechange
+        = function() {\n  \t  \tif (xhttp.readyState == 4 && xhttp.status == 200)
+        {\n  \t  \t\t//document.getElementById(\"demo\").innerHTML = xhttp.responseText;\n
+        \   \t\tvar array = xhttp.responseText.split(\",\");\n    \t\tfor (var i =
+        0; i < array.length; i++) {\n\t\t\t\t\t\tconsole.log(array[i]); \n\t\t\t\t\t}\n\t\t\t
+        \ if (array[monthlycost] == null){\n\t\t\t  \t  array[monthlycost] = '';\n\t\t\t
+        \ \t  //financeBtnTextID.textContent = '';\n\t\t\t  \t}\n\t\t\t  var term
+        = 0+type;\n\t\t\t  var apr = 1+type;\n\t\t\t  var monthlycost = 2+type;\n\t\t\t
+        \ if (product_type==6 || product_type==12) var totalpay = total;\n\t\t\t  else
+        var totalpay = array[3+type];\n\t\t\t  console.log(\"type: \" + type); \n\t\t\t
+        \ console.log(\"term:\" + array[term]);\n\t\t\t  console.log(\"apr:\" + array[apr]);\n\t\t\t
+        \ console.log(\"monthlypay:\" + array[monthlycost]);\n\t\t\t  console.log(\"totalpay:\"
+        + totalpay);\n\t\t\t  product_name.textContent = name;\n\t\t\t  totalapr.textContent
+        = array[apr] + \"% p.a. (fixed)\";\n\t\t\t  document.getElementById(\"totalapr\").html
+        = array[apr] + \"%\";\n\t\t\t  totalrepayable.textContent = \"\xA3\" + totalpay;\n\t\t\t
+        \ document.getElementById(\"totalrepayable\").html = \"\xA3\" + totalpay;\n\t\t\t
+        \ financeterm.textContent = array[term] + \" Month(s)\";\n\t\t\t  costpermonth.textContent
+        = \"\xA3\" + array[monthlycost];\n\t\t\t  costofgoods.textContent = \"\xA3\"
+        + total;\n\t\t\t  creditamount.textContent = \"\xA3\" + total;\n\t\t\t  cost_per_month2.textContent
+        = \"\xA3\" + array[6];\n\n  \t  \t\t}\n\t\t  };\n  \t\t\txhttp.open(\"GET\",
+        \"/callbacks/financeapi.php?total=\"+total, true);\n  \t\t\txhttp.send();\n\t\t\treturn
+        false;\n\t\t}\n\tjQuery(function() {\n\n\t\tjQuery(\"#calcit\").click(function()
+        {\n\t\t\tconsole.log(\"Trace\");\n\t\t\tvar p1 = jQuery(\":input[name='product_type']\").val();\n\t\t\tvar
+        p2 = parseFloat(jQuery(\":input[name='cost_of_goods']\").val());\n\t\t\tif
+        (p1 == '' || isNaN(p2)) {\n\t\t\t\talert(\"Please enter all the required fields
+        in order to calculate finance.\");\n\t\t\t} else {\n\t\t\t\tgetFinanceOptions(p2,p1);\n\t\t\t\t//loadFinanceDetails(p1,p2);\t\t\t\t\t\n\t\t\t}\n\n\t\t\treturn
+        false;\n\t\t});\n\n\t});\n\t\tjQuery(function() {\n\t\t\tjQuery(\"#p4lcalc\").click(function()
+        {\n\t\t\t\t\tvar p1 = jQuery(\":input[name='var_product_type']\").val();\n\t\t\t\t\tvar
+        p2 = parseFloat(jQuery(\":input[name='var_cost_of_goods']\").val());\n\t\t\t\t\tvar
+        p3 = parseFloat(jQuery(\":input[name='var_deposit_percentage']\").val());\n\t\t\t\t\t//var
+        p4 = parseFloat(jQuery(\":input[name='var_deposit_amount']\").val())\n\t\t\tif
+        (p1 == '' || isNaN(p2) || isNaN(p3)) {\n\t\t\t\talert(\"Please enter all the
+        required fields in order to calculate finance.\");\n\t\t\t} else {\n\t\t\t\tloadFinanceDetails(p1,p2,p3);\t\t\t\t\t\n\t\t\t}\n\n\t\t\treturn
+        false;\n\t\t});\n\t\t});\n\t\t\n\t\t\n</script>\n\n</head>\n<body class=\"
+        catalog-product-view catalog-product-view product-genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series\">\n<script
+        async src=\"https://eu-library.klarnaservices.com/merchant.js?uci=2ad3ec7c-da8b-40ff-ba7c-bb3e7b33aeb9&country=GB\"></script>\n<div
+        id=\"cookiealert\" class=\"cookiealert\" style=\"display: none;\">\n<div class=\"message\">\n<p
+        style=\"margin-bottom:0;\">\nThis website uses cookies to ensure proper functionality
+        of the shopping cart and checkout progress. By continuing to browse the site
+        you are agreeing to the use of cookies. <br>\n<a href=\"http://www.tegiwaimports.com/privacy-policy-cookie-restriction-mode\"
+        style=\"color: #bdb7b7;\">Click here to learn about cookie settings.</a>\n<a
+        href=\"javascript:acceptCookieAlert();\" style=\"color: #cfff04; text-decoration:
+        none; margin-left:10px;\">Accept</a>\n|\n<a href=\"javascript:declineCookieAlert();\"
+        style=\"color: #d9242c; text-decoration: none;\">Decline</a>\n</p>\n</div>\n</div>\n<script
+        type=\"text/javascript\">\nfunction closeCookieAlert() {\n    Mage.Cookies.set('cookieAlertClosedFlag',
+        1, new Date(new Date().getTime() + (1000 * 60 * 60 * 24 * 364)));\n    document.getElementById('cookiealert').style.display
+        = 'none';\n}\n\nfunction acceptCookieAlert() {\n    closeCookieAlert();\n
+        \   Mage.Cookies.set('cookieAlertState', 1, new Date(new Date().getTime()
+        + (1000 * 60 * 60 * 24 * 364)));\n    loadCookieScript();\n}\n\nfunction declineCookieAlert()
+        {\n    closeCookieAlert();\n    Mage.Cookies.set('cookieAlertState', 0, new
+        Date(new Date().getTime() + (1000 * 60 * 60 * 24 * 364)));\n}\n\nfunction
+        loadCookieScript() {\n}\n\nif (!Mage.Cookies.get('cookieAlertClosedFlag'))
+        {\n    document.getElementById('cookiealert').style.display = '';\n}\n\nif
+        (Mage.Cookies.get('cookieAlertState') == 1) {\n    loadCookieScript();\n}\n</script>\n<div
+        class=\"wrapper\">\n<noscript>\n        <div class=\"global-site-notice noscript\">\n
+        \           <div class=\"notice-inner\">\n                <p>\n                    <strong>JavaScript
+        seems to be disabled in your browser.</strong><br />\n                    You
+        must have JavaScript enabled in your browser to utilize the functionality
+        of this website.                </p>\n            </div>\n        </div>\n
+        \   </noscript>\n<div class=\"header-container type3\">\n<div class=\"top-links-container\">\n<div
+        class=\"top-links container\">\n<div class=\"menu-icon\"><a href=\"javascript:void(0)\"
+        title=\"Menu\"><i class=\"fa fa-bars\"></i></a></div>\n<div class=\"top-links-area\">\n<div
+        class=\"top-links-icon\"><a href=\"javascript:void(0)\">links</a></div>\n<ul
+        class=\"links\">\n<li class=\"first\"><a href=\"https://www.tegiwaimports.com/customer/account/\"
+        title=\"My Account\">My Account</a></li>\n<li class=\" last\"><a href=\"https://www.tegiwaimports.com/customer/account/login/referer/aHR0cHM6Ly93d3cudGVnaXdhaW1wb3J0cy5jb20vZ2VudWluZS1ob25kYS1hdXRvLXRlbnNpb25lci1jaXZpYy1lcDMtaW50ZWdyYS1kYzUtay1zZXJpZXMuaHRtbA,,/\"
+        title=\"Log In\">Log In</a></li>\n</ul>\n</div>\n<p class=\"welcome-msg\">
+        </p>\n<div class=\"clearer\"></div>\n</div>\n</div>\n<div class=\"header container\">\n\n<a
+        href=\"https://www.tegiwaimports.com/\" title=\"Tegiwa Imports\" class=\"logo\"><strong>Tegiwa
+        Imports</strong><img src=\"https://www.tegiwaimports.com/skin/frontend/smartwave/porto_tegiwaimports/images/tegiwaimports_logo.png\"
+        alt=\"Tegiwa Imports\" /></a>\n<div class=\"header-payment-methods\">\n<img
+        src=\"/skin/frontend/smartwave/porto_tegiwaimports/images/header-info-cards.png\"
+        width=\"100%\" alt=\"\" />\n</div>\n</div>\n<div class=\"TopSearchContainer\">\n<div
+        class=\"TopSearchOuterContainer\">\n<div class=\"TopSearchInnerContainer\">\n<script
+        src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js\"></script>\n<script
+        src=\"/js/placeholderTypewriter/placeholderTypewriter.js\"></script>\n<form
+        id=\"search_mini_form\" action=\"//www.tegiwaimports.com/catalogsearch/result/\"
+        method=\"get\">\n<div class=\"form-search \">\n\n<input id=\"search\" type=\"text\"
+        name=\"q\" class=\"input-text\" />\n<select id=\"cat\" name=\"cat\">\n<option
+        value=\"\">All Categories</option>\n<option value=\"3\">Select Car</option>\n<option
+        value=\"4\">Brands</option>\n<option value=\"1206\">Wheels & Tyres</option>\n<option
+        value=\"1039\">Merchandise</option>\n<option value=\"1187\">Motorsport</option>\n</select>\n<button
+        type=\"submit\" title=\"Search\" class=\"button\"><i class=\"icon-search\"></i></button>\n<div
+        id=\"search_autocomplete\" class=\"search-autocomplete\"></div>\n<div class=\"clearer\"></div>\n</div>\n</form>\n<script>\nvar
+        jQuery_3_1_0 = $.noConflict(true);\n  /* Placeholder Typewriter */\n  var
+        placeholderText = [\n    \"Search for go faster parts here...\",\n    \"k-series
+        clutch\",\n    \"ep3 airbox\",\n    \"tein 350z\",\n    \"nankang\",\n    \"rota
+        grid\",\n    \"b18 cambelt\"\n  ];\n\n  jQuery_3_1_0('#search').placeholderTypewriter({text:
+        placeholderText});\n\n</script><script type=\"text/javascript\">\n//<![CDATA[\n
+        \   var searchForm = new Varien.searchForm('search_mini_form', 'search', '');\n
+        \   searchForm.initAutocomplete('https://www.tegiwaimports.com/catalogsearch/ajax/suggest/',
+        'search_autocomplete');\n//]]>\n</script>\n</div>\n<div class=\"cart-area\">\n<div
+        class=\"custom-block\"></div> <div class=\"mini-cart\">\n<a href=\"javascript:void(0)\"
+        class=\"mybag-link\">\n<span class=\"cart-qty\"><font style=\"color: #cfff04;\">0</font>
+        Item(s) in Cart</span>\n<span><span class=\"price\">\xA30.00</span></span>\n\n</a>\n<div
+        class=\"topCartContent block-content theme-border-color\">\n<div class=\"inner-wrapper\">
+        <p class=\"cart-empty\">\nYou have no items in your shopping cart. </p>\n</div>\n</div>\n<script
+        type=\"text/javascript\">\n    jQuery(function($){\n        $('.mini-cart').mouseover(function(e){\n
+        \           $(this).children('.topCartContent').fadeIn(200);\n            return
+        false;\n        }).mouseleave(function(e){\n            $(this).children('.topCartContent').fadeOut(200);\n
+        \           return false;\n        });\n    });\n</script>\n</div> </div>\n</div>\n</div>\n<div
+        class=\"header-wrapper\">\n<div class=\"main-nav\">\n<div class=\"container\">\n<div
+        class=\"menu-wrapper\">\n<div class=\"menu-all-pages-container\">\n<ul class=\"menu\">\n<li
+        class=\"\">\n<a href=\"//www.tegiwaimports.com/\">\n<span>Home</span>\n</a>\n</li>\n<li
+        class=\"menu-full-width  \">\n<a href=\"//www.tegiwaimports.com/select-car.html\">Select
+        Car</a>\n<div class=\"nav-sublist-dropdown\" style=\"display: none;\">\n<div
+        class=\"container\">\n<div class=\"top-mega-block\"><style>\r\n.menu-full-width
+        .category-name-area {\r\n    position: relative;\r\n    bottom: 0;\r\n    left:
+        0;\r\n    background: #d9242c;\r\n    width: 100%;\r\n    text-align: center;\r\n
+        \   padding: 10px 0;\r\n}\r\n</style>\n<div class=\"container\">\n\n<div class=\"col-md-4\"
+        style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\" style=\"margin:5px;\">\n<a
+        href=\"//www.tegiwaimports.com/select-car/honda.html\">\n<img src=\"/media/catalog/category/SelectCar_Honda.jpg\"
+        width=\"100%\" alt=\"Honda\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Honda</h2>\n</div>\n</a>\n</div>\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/select-car/mazda.html\">\n<img
+        src=\"/media/catalog/category/SelectCar_Mazda.jpg\" width=\"100%\" alt=\"Mazda\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Mazda</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/select-car/mitsubishi.html\">\n<img
+        src=\"/media/catalog/category/SelectCar_Mitsubishi.jpg\" width=\"100%\" alt=\"Mitsubishi\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Mitsubishi</h2>\n</div>\n</a>\n</div>\n</div>\n\n\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/select-car/nissan.html\">\n<img
+        src=\"/media/catalog/category/SelectCar_Nissan.jpg\" width=\"100%\" alt=\"Nissan\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Nissan</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/select-car/subaru.html\">\n<img
+        src=\"/media/catalog/category/SelectCar_Subaru.jpg\" width=\"100%\" alt=\"Subaru\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Subaru</h2>\n</div>\n</a>\n</div>\n</div>\n\n\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/select-car/suzuki.html\">\n<img
+        src=\"/media/catalog/category/SelectCar_Suzuki.jpg\" width=\"100%\" alt=\"Suzuki\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Suzuki</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/select-car/toyota.html\">\n<img
+        src=\"/media/catalog/category/SelectCar_Toyota.jpg\" width=\"100%\" alt=\"Toyota\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Toyota</h2>\n</div>\n</a>\n</div>\n</div>\n\n</div></div>\n<div
+        class=\"mega-columns row\">\n</div>\n</div>\n</div>\n</li>\n<li class=\" \">\n<a
+        href=\"//www.tegiwaimports.com/brands.html\">Brands</a>\n</li>\n<li class=\"menu-full-width
+        \ \">\n<a href=\"//www.tegiwaimports.com/wheels-tyres.html\">Wheels &amp;
+        Tyres</a>\n<div class=\"nav-sublist-dropdown\" style=\"display: none;\">\n<div
+        class=\"container\">\n<div class=\"top-mega-block\"><div class=\"container\">\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/wheels-tyres/wedssport.html\">\n<img
+        src=\"/media/catalog/category/WedsSport-Wheel.jpg\" width=\"100%\" alt=\"WedsSport\">\n<img
+        src=\"/media/catalog/category/WedsSport_1.png\" style=\"position: absolute;
+        top: 5px; right: 10px; width: 210px;\" alt=\"WedsSport\">\n<div class=\"category-name-area\">\n<h2
+        class=\"category-name\" style=\"margin-bottom:0;\">WedsSport</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/wheels-tyres/apex.html\">\n<img
+        src=\"/media/catalog/category/apex_3.jpg\" width=\"100%\" alt=\"Apex\">\n<img
+        src=\"/media/catalog/category/apex-logo.png\" style=\"position: absolute;
+        top: 5px; right: 10px; width: 210px;\" alt=\"Apex\">\n<div class=\"category-name-area\">\n<h2
+        class=\"category-name\" style=\"margin-bottom:0;\">Apex</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/wheels-tyres/enkei.html\">\n<img
+        src=\"/media/catalog/category/Wheels_Tyres_Eneki.jpg\" width=\"100%\" alt=\"Enkei\">\n<img
+        src=\"/media/catalog/category/Enkei_Logo.png\" style=\"position: absolute;
+        top: 5px; right: 10px; width: 210px;\" alt=\"Enkei\">\n<div class=\"category-name-area\">\n<h2
+        class=\"category-name\" style=\"margin-bottom:0;\">Enkei</h2>\n</div>\n</a>\n</div>\n</div>\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/wheels-tyres/rota.html\">\n<img
+        src=\"/media/catalog/category/Wheels_Tyres_Rota.jpg\" width=\"100%\" alt=\"Rota\">\n<img
+        src=\"/media/catalog/category/wheels-rota-logo.jpg\" style=\"position: absolute;
+        top: 5px; right: 10px; width: 210px;\" alt=\"Rota\">\n<div class=\"category-name-area\">\n<h2
+        class=\"category-name\" style=\"margin-bottom:0;\">Rota</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/wheels-tyres/team-dynamics.html\">\n<img
+        src=\"/media/catalog/category/Wheels_Tyres_TD.jpg\" width=\"100%\" alt=\"Team
+        Dynamics\">\n<img src=\"/media/catalog/category/team-dynamics_2.png\" style=\"position:
+        absolute; top: 5px; right: 10px; width: 210px;\" alt=\"Team Dynamics\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Team
+        Dynamics</h2>\n</div>\n</a>\n</div>\n<div class=\"category-image-area\" style=\"margin:5px;\">\n<a
+        href=\"//www.tegiwaimports.com/wheels-tyres/titan-7.html\">\n<img src=\"/media/catalog/category/Wheels_Tyres_Titan7.jpg\"
+        width=\"100%\" alt=\"Titan 7\">\n<img src=\"/media/catalog/category/titan-7-logo.png\"
+        style=\"position: absolute; top: 5px; right: 10px; width: 210px;\" alt=\"Titan
+        7\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Titan
+        7</h2>\n</div>\n</a>\n</div>\n</div>\n<div class=\"col-md-4\" style=\"padding:
+        0; float: left;\">\n<div class=\"category-image-area\" style=\"margin:5px;\">\n<a
+        href=\"//www.tegiwaimports.com/wheels-tyres/nankang.html\">\n<img src=\"/media/catalog/category/nankang-tyres_2.jpg\"
+        width=\"100%\" alt=\"Nankang\">\n<img src=\"/media/catalog/category/NANKANG.png\"
+        style=\"position: absolute; top: 5px; right: 10px; width: 210px;\" alt=\"Nankang\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Nankang</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/wheels-tyres/pirelli.html\">\n<img
+        src=\"/media/catalog/category/pirelli-banner.jpg\" width=\"100%\" alt=\"Nankang\">\n<img
+        src=\"/media/catalog/category/pirelli-logo.png\" style=\"position: absolute;
+        top: 5px; right: 10px; width: 210px;\" alt=\"Pirelli\">\n<div class=\"category-name-area\">\n<h2
+        class=\"category-name\" style=\"margin-bottom:0;\">Pirelli</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/wheels-tyres.html\">\n<img
+        src=\"/media/catalog/category/ViewAll.jpg\" width=\"100%\" alt=\"View All
+        >\">\n<img src=\"/media/catalog/category/VIEW-ALL-LOGO.png\" style=\"position:
+        absolute; top: 5px; right: 10px; width: 210px;\" alt=\"View All >\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">View
+        All &gt;</h2>\n</div>\n</a>\n</div>\n</div>\n</div></div>\n<div class=\"mega-columns
+        row\">\n</div>\n</div>\n</div>\n</li>\n<li class=\"menu-full-width  \">\n<a
+        href=\"//www.tegiwaimports.com/merchandise-2.html\">Merchandise</a>\n<div
+        class=\"nav-sublist-dropdown\" style=\"display: none;\">\n<div class=\"container\">\n<div
+        class=\"top-mega-block\"><div class=\"container\">\n\n<div class=\"col-md-4\"
+        style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\" style=\"margin:5px;\">\n<a
+        href=\"//www.tegiwaimports.com/merchandise-2/genuine-accessories.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_Accessories.jpg\" width=\"100%\"
+        alt=\"Accessories\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Accessories</h2>\n</div>\n</a>\n</div>\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/decals.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_Decals.jpg\" width=\"100%\" alt=\"Decals\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Decals</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/headwear.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_Headwear.jpg\" width=\"100%\" alt=\"Headwear\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Headwear</h2>\n</div>\n</a>\n</div>\n</div>\n\n\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/hoodies.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_Hoody.jpg\" width=\"100%\" alt=\"Hoodies\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Hoodies</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/lanyards-keyrings.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_Keychains.jpg\" width=\"100%\" alt=\"Keychains\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Keychains</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/plate-frames.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_PlatesFrame.jpg\" width=\"100%\"
+        alt=\"Plates & Frames\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Plates & Frames</h2>\n</div>\n</a>\n</div>\n</div>\n\n\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/t-shirts.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_TShirts.jpg\" width=\"100%\" alt=\"T-Shirts\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">T-Shirts</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/workshop-banners.html\">\n<img
+        src=\"/media/catalog/category/Merchandise_WorkshopBanners.jpg\" width=\"100%\"
+        alt=\"Workshop Banners\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Workshop Banners</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/merchandise-2/models.html\">\n<img
+        src=\"/media/catalog/category/model-merch.jpg\" width=\"100%\" alt=\"Models\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Models</h2>\n</div>\n</a>\n</div>\n</div>\n\n</div></div>\n<div
+        class=\"mega-columns row\">\n</div>\n</div>\n</div>\n</li>\n<li class=\"menu-full-width
+        \ \">\n<a href=\"//www.tegiwaimports.com/motorsport.html\">Motorsport</a>\n<div
+        class=\"nav-sublist-dropdown\" style=\"display: none;\">\n<div class=\"container\">\n<div
+        class=\"top-mega-block\"><div class=\"container\">\n\n<div class=\"col-md-4\"
+        style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\" style=\"margin:5px;\">\n<a
+        href=\"//www.tegiwaimports.com/motorsport/electrical-gauges.html\">\n<img
+        src=\"/media/catalog/category/Motorsport_ElectricalGauges.jpg\" width=\"100%\"
+        alt=\"Electrical\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Electrical</h2>\n</div>\n</a>\n</div>\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/motorsport/oils-fluids.html\">\n<img
+        src=\"/media/catalog/category/Motorsport_OilsFluids.jpg\" width=\"100%\" alt=\"Fluids\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Fluids</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/motorsport/seats-harnesses.html\">\n<img
+        src=\"/media/catalog/category/Motorsport_SeatsHarnesses.jpg\" width=\"100%\"
+        alt=\"Seats & Harmesses\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Seats & Harnesses</h2>\n</div>\n</a>\n</div>\n</div>\n\n\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/motorsport/racewear.html\">\n<img
+        src=\"/media/catalog/category/Motorsport_Racewear.jpg\" width=\"100%\" alt=\"Racewear\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Racewear</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/motorsport/car-preparation.html\">\n<img
+        src=\"/media/catalog/category/Motorsport_Safety.jpg\" width=\"100%\" alt=\"Safety\">\n<div
+        class=\"category-name-area\">\n<h2 class=\"category-name\" style=\"margin-bottom:0;\">Safety</h2>\n</div>\n</a>\n</div>\n</div>\n\n\n<div
+        class=\"col-md-4\" style=\"padding: 0; float: left;\">\n<div class=\"category-image-area\"
+        style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/motorsport/pit-paddock.html\">\n<img
+        src=\"/media/catalog/category/Motorsport_PitPaddock.jpg\" width=\"100%\" alt=\"Pit
+        & Paddock\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Pit & Paddock</h2>\n</div>\n</a>\n</div>\n<div
+        class=\"category-image-area\" style=\"margin:5px;\">\n<a href=\"//www.tegiwaimports.com/motorsport/wheels-tyres.html\">\n<img
+        src=\"/media/catalog/category/Motorsport_WheelsTyres.jpg\" width=\"100%\"
+        alt=\"Wheels & Tyres\">\n<div class=\"category-name-area\">\n<h2 class=\"category-name\"
+        style=\"margin-bottom:0;\">Wheels & Tyres</h2>\n</div>\n</a>\n</div>\n</div>\n\n</div></div>\n<div
+        class=\"mega-columns row\">\n</div>\n</div>\n</div>\n</li>\n<li class=\"menu-item\"
+        style=\"list-style: none;\">\n<a class=\"level1\" href=\"/sim-racing-uk\"><span>Sim
+        Racing</span></a>\n</li>\n<li class=\"menu-item menu-item-has-children menu-parent-item
+        fl-right\">\n<a href=\"#\" style=\"border:0; color:#cfff04;\">More</a>\n<div
+        class=\"nav-sublist-dropdown\" style=\"display: none; list-style: none;\">\n<div
+        class=\"container\">\n<ul>\n<li class=\"menu-item\" style=\"list-style: none;\">\n<a
+        class=\"level1\" href=\"/about-us\"><span>About Us</span></a>\n</li>\n<li
+        class=\"menu-item\" style=\"list-style: none;\">\n<a class=\"level1\" href=\"/blog\"><span>Blog</span></a>\n</li>\n<li
+        class=\"menu-item\" style=\"list-style: none;\">\n<a class=\"level1\" href=\"/contacts\"><span>Customer
+        Services</span></a>\n</li>\n</ul>\n</div>\n</div>\n</li>\n</ul>\n</ul>\n</div>\n</div>\n</div>\n</div>\n</div>\n<script
+        type=\"text/javascript\">\r\nvar SW_MENU_POPUP_WIDTH = 0;\r\njQuery(function($){\r\n
+        \   $(document).ready(function(){\r\n        $('.main-nav .menu').et_menu({\r\n
+        \           type: \"default\",\r\n            delayTime: 0        });\r\n
+        \   });\r\n});\r\n</script></div>\n<div class=\"mobile-nav side-block container\">\n<span
+        class=\"close-sidebar-menu\"><i class=\"icon-cancel\"></i></span>\n<div class=\"menu-all-pages-container\">\n<ul
+        class=\"menu\">\n<li class=\"\">\n<a href=\"//www.tegiwaimports.com/\">\n<span>Home</span>\n</a>\n</li>\n<li
+        class=\" \">\n<a href=\"//www.tegiwaimports.com/select-car.html\">Select Car</a>\n</li>\n<li
+        class=\" \">\n<a href=\"//www.tegiwaimports.com/brands.html\">Brands</a>\n</li>\n<li
+        class=\" \">\n<a href=\"//www.tegiwaimports.com/wheels-tyres.html\">Wheels
+        &amp; Tyres</a>\n</li>\n<li class=\" \">\n<a href=\"//www.tegiwaimports.com/merchandise-2.html\">Merchandise</a>\n</li>\n<li
+        class=\" \">\n<a href=\"//www.tegiwaimports.com/motorsport.html\">Motorsport</a>\n</li>\n<ul>\n<li
+        class=\"menu-item \" style=\"list-style: none;\">\n<a class=\"level2\" href=\"/contacts\"><span>Customer
+        Services</span></a>\n</li>\n<li class=\"menu-item \" style=\"list-style: none;\">\n<a
+        class=\"level2\" href=\"/blog\"><span>Blog</span></a>\n</li>\n<li class=\"menu-item
+        \" style=\"list-style: none;\">\n<a class=\"level2\" style=\"background:#265ab9;\"
+        href=\"/sim-racing-uk\"><span>Sim Racing</span></a>\n</li>\n<li class=\"menu-item
+        \" style=\"list-style: none;\">\n<a class=\"level2\" style=\"background: #d42027;\"
+        href=\"/customer/account/\"><span>My Account</span></a>\n</li>\n</ul>\n</div>\n<div
+        class=\"custom-block\"></div></div>\n<div class=\"mobile-nav-overlay close-mobile-nav\"></div>\n<script
+        type=\"text/javascript\">\r\n</script> <div class=\"page\">\n<div class=\"top-container\"><div
+        class=\"breadcrumbs\">\n<div class=\"container\">\n<div class=\"row\">\n<div
+        class=\"col-md-12 a-left\">\n<ul>\n<li class=\"home\">\n<a href=\"https://www.tegiwaimports.com/\"
+        title=\"Go to Home Page\">Home</a>\n<span class=\"breadcrumbs-split\"><i class=\"icon-right-open\"></i></span>\n</li>\n<li
+        class=\"product\">\n<strong>GENUINE HONDA AUTO TENSIONER CIVIC EP3 INTEGRA
+        DC5 K-SERIES</strong>\n</li>\n</ul>\n</div>\n</div>\n</div>\n</div></div>
+        <div class=\"main-container col1-layout\">\n<div class=\"main container\">\n<div
+        class=\"col-main\">\n<script type=\"text/javascript\">\r\n    var optionsPrice
+        = new Product.OptionsPrice([]);\r\n</script>\n<div id=\"messages_product_view\"></div>\n<div
+        class=\"product-view   \">\n<div class=\"product-essential\">\n<form action=\"https://www.tegiwaimports.com/checkout/cart/add/uenc/aHR0cHM6Ly93d3cudGVnaXdhaW1wb3J0cy5jb20vZ2VudWluZS1ob25kYS1hdXRvLXRlbnNpb25lci1jaXZpYy1lcDMtaW50ZWdyYS1kYzUtay1zZXJpZXMuaHRtbA,,/product/10058/form_key/RfbgWnM8fnrIxZi4/\"
+        method=\"post\" id=\"product_addtocart_form\">\n<input name=\"form_key\" type=\"hidden\"
+        value=\"RfbgWnM8fnrIxZi4\" />\n<div class=\"no-display\">\n<input type=\"hidden\"
+        name=\"product\" value=\"10058\" />\n<input type=\"hidden\" name=\"related_product\"
+        id=\"related-products-field\" value=\"\" />\n</div>\n<div class=\"row\">\n<div
+        class=\"product-img-box col-md-4 \">\n<script type=\"text/javascript\" src=\"https://www.tegiwaimports.com/skin/frontend/base/default/js/amasty/amconf/zoomer.js\">\n
+        \   </script>\n<div class=\"product-image\">\n<img id=\"amasty_zoom\" width=\"470\"
+        data-zoom-image=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/image/4be6a58e18b1f94a8adc93cd75a4b5ce/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\"
+        src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/image/470x470/4be6a58e18b1f94a8adc93cd75a4b5ce/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\"
+        alt=\"GENUINE HONDA AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES\" title=\"GENUINE
+        HONDA AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES\" zoom-alt=\"GENUINE HONDA
+        AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES\" /> </div>\n<div class=\"more-views\">\n<h2>More
+        Views</h2>\n<div style=\"position: relative;\">\n<div id=\"amasty_gallery\">\n<a
+        rel=\"group\" title=\"\" class=\"fancybox\" href=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/559181b3b38b988a6e321725e517b6c3/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\"
+        data-image=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/470x470/559181b3b38b988a6e321725e517b6c3/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\"
+        data-zoom-image=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/559181b3b38b988a6e321725e517b6c3/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\">\n<img
+        src=\"\n                                https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/80x/559181b3b38b988a6e321725e517b6c3/g/e/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.jpg\"
+        width=\"80\" height=\"80\" alt=\"\" title=\"\" />\n</a>\n</div>\n</div>\n</div>\n<script
+        type=\"text/javascript\">\n        try {\n            AmZoomerObj = new AmZoomer({\"general\":{\"zoom_enable\":\"0\",\"lightbox_enable\":\"1\",\"carousel_enable\":\"0\",\"change_image\":\"mouseover
+        touchstart\",\"thumbnail_lignhtbox\":\"1\"},\"zoom\":{\"zoomType\":\"lens\",\"responsive\":true,\"preloading\":\"1\",\"loadingIcon\":\"https:\\/\\/www.tegiwaimports.com\\/skin\\/frontend\\/base\\/default\\/js\\/amasty\\/amconf\\/images\\/preloader.gif\",\"labelDisplay\":false,\"lensShape\":\"round\",\"lensSize\":\"200\",\"borderSize\":1,\"zoomWindowFadeIn\":500,\"zoomWindowFadeOut\":500,\"lensFadeIn\":630,\"easing\":true,\"scrollZoom\":true,\"gallery\":\"amasty_gallery\",\"cursor\":\"pointer\",\"galleryActiveClass\":\"active\",\"imageCrossfade\":false},\"lightbox\":{\"loop\":1,\"prevEffect\":\"fade\",\"nextEffect\":\"fade\",\"helpers\":{\"title\":{\"type\":\"float\"}}},\"carousel\":{\"items\":3,\"circular\":true,\"height\":80,\"prev\":{\"button\":\"#prevGallery\",\"key\":\"left\"},\"next\":{\"button\":\"#nextGallery\",\"key\":\"right\"},\"auto\":false,\"swipe\":{\"onTouch\":true,\"onMouse\":true},\"pagination\":\"#ampagination\",\"responsive\":false,\"infinite\":false}});\n
+        \           AmZoomerObj.loadCarousel();\n        }\n        catch(ex){console.debug(ex);}\n
+        \   </script>\n</div>\n\n<div class=\"product-shop col-md-4\">\n<div class=\"prev-next-products\">\n</div>\n<div
+        class=\"product-name\">\n<h1>GENUINE HONDA AUTO TENSIONER CIVIC EP3 INTEGRA
+        DC5 K-SERIES</h1>\n</div>\n<div class=\"ratings\">\n<div class=\"rating-box\">\n<div
+        class=\"rating\" style=\"width:0\"></div>\n</div>\n<p class=\"rating-links\">\n<a
+        href=\"javascript:void(0)\">0 Review(s)</a>\n</p>\n</div>\n<div class=\"attributes-custom-block\">\n<h4>SKU:
+        <span style=\"color: #d9242c;\" id=\"sku\">31170-PND-013</span> </h4>\n<h4>Manufacturer:
+        <span style=\"color: #d9242c;\">Genuine Honda</span> </h4>\n<div class=\"ProductBrandIcon\"><img
+        src=\"/media/catalog/brands/Genuine_Honda.jpg\" alt=\"Genuine Honda\"></div>\n</div>\n<div
+        class=\"short-description \">\n<h2>Quick Overview</h2>\n<div class=\"std\">GENUINE
+        HONDA AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES by Genuine Honda from
+        only \xA3137.51</div>\n</div>\n</div>\n<div class=\"col-md-4\">\n<div class=\"custom-product-col
+        col\">\n<div class=\"product-info\">\n<div class=\"price-box\">\n<span class=\"price-excluding-tax\">\n<span
+        class=\"price\" id=\"price-excluding-tax-10058\">\n\xA3114.59 </span>\n<span
+        class=\"label\">Excl. Tax</span>\n</span>\n<span class=\"price-including-tax\">\n<span
+        class=\"price\" id=\"price-including-tax-10058\">\n\xA3137.51 </span>\n<span
+        class=\"label\">Incl. Tax</span>\n</span>\n</div>\n<div>\n<p class=\"availability
+        in-stock\" id=\"status1\"> <span><span class=\"amstockstatus amsts_1615\"><span
+        class='mdb-non-stock' style='display: none;'>Not In Stock </span><span class='mdb-non-stock-eta'>ETA:
+        10-15 Working Days</span></span></span></p>\n<p class=\"custom-availability\"
+        id=\"custom-availability\" style=\"display:none; text-align:center;\"><span><span
+        class=\"mdb-in-stock\" style=\"display:none;\"> In Stock </span> <span class=\"mdb-in-stock-eta\"
+        id=\"supplier-eta\"></span></span></p>\n</div>\n<p class=\"email-friend\"><a
+        href=\"https://www.tegiwaimports.com/sendfriend/product/send/id/10058/\">Email
+        to a Friend</a></p>\n</div>\n<div class=\"clearer\"></div>\n<div class=\"add-to-box\">\n<div
+        class=\"add-to-cart\">\n<label for=\"qty\">Qty:</label>\n<div class=\"qty-holder\">\n<input
+        type=\"text\" name=\"qty\" id=\"qty\" maxlength=\"12\" value=\"1\" title=\"Qty\"
+        class=\"input-text qty\" />\n<div class=\"qty-changer\">\n<a href=\"javascript:void(0)\"
+        class=\"qty_inc\"><i class=\"icon-up-dir\"></i></a>\n<a href=\"javascript:void(0)\"
+        class=\"qty_dec\"><i class=\"icon-down-dir\"></i></a>\n</div>\n</div>\n<button
+        type=\"button\" title=\"Add to Cart\" class=\"button btn-cart\" onclick=\"productAddToCartForm.submit(this)\"><span><span><i
+        class=\"icon-cart\"></i>Add to Cart</span></span></button>\n</div>\n<ul class=\"add-to-links\">\n</ul>\n</div>\n<div
+        class=\"clearer\"></div>\n<a href=\"#\" class=\"amfaq-ask-link main\">Got
+        a question? Ask our team of experts.</a>\n<div class=\"klarna-info-box col\">\n<div
+        class=\"col-12\" style=\"padding:10px 0;\">\n\n<klarna-placement data-id=\"83ba7e71-b2b7-4dfb-b9f6-8a02c3c50634\"
+        data-purchase_amount=\"13800\"></klarna-placement>\n\n</div>\n</div>\n</div>\n</div>\n</div>\n</form>\n<script
+        type=\"text/javascript\">\r\n    //<![CDATA[\r\n        var productAddToCartForm
+        = new VarienForm('product_addtocart_form');\r\n        productAddToCartForm.submit
+        = function(button, url) {\r\n            if (this.validator.validate()) {\r\n
+        \               var form = this.form;\r\n                var oldUrl = form.action;\r\n\r\n
+        \               if (url) {\r\n                   form.action = url;\r\n                }\r\n
+        \               var e = null;\r\n                try {\r\n                    this.form.submit();\r\n
+        \               } catch (e) {\r\n                }\r\n                this.form.action
+        = oldUrl;\r\n                if (e) {\r\n                    throw e;\r\n
+        \               }\r\n\r\n                if (button && button != 'undefined')
+        {\r\n                    button.disabled = true;\r\n                }\r\n
+        \           } else {\r\n                if(jQuery('#product-options-wrapper'))\r\n
+        \                   jQuery('#product-options-wrapper').scrollToMe();\r\n            }\r\n
+        \       }.bind(productAddToCartForm);\r\n        //]]>\r\n        </script>\n<script
+        type=\"text/javascript\">\r\n        productAddToCartForm.submitLight = function(button,
+        url){\r\n            if(this.validator) {\r\n                var nv = Validation.methods;\r\n
+        \               delete Validation.methods['required-entry'];\r\n                delete
+        Validation.methods['validate-one-required'];\r\n                delete Validation.methods['validate-one-required-by-name'];\r\n
+        \               // Remove custom datetime validators\r\n                for
+        (var methodName in Validation.methods) {\r\n                    if (methodName.match(/^validate-datetime-.*/i))
+        {\r\n                        delete Validation.methods[methodName];\r\n                    }\r\n
+        \               }\r\n\r\n                if (this.validator.validate()) {\r\n
+        \                   if (url) {\r\n                        this.form.action
+        = url;\r\n                    }\r\n                    this.form.submit();\r\n
+        \               }\r\n                Object.extend(Validation.methods, nv);\r\n
+        \           } else {\r\n                if(jQuery('#product-options-wrapper'))\r\n
+        \                   jQuery('#product-options-wrapper').scrollToMe();\r\n            }\r\n
+        \       }.bind(productAddToCartForm);\r\n    </script>\n</div>\n<div class=\"product-collateral\">\n<div
+        class=\"collateral-inner\">\n<div class=\"row\">\n<div class=\"col-md-12\">\n<div
+        class=\"product-tabs horizontal\">\n<ul>\n<li id=\"tab_description_tabbed\"
+        class=\" active first\"><a href=\"#\">Description</a></li>\n<li id=\"tab_additional_tabbed\"
+        class=\"\"><a href=\"#\">More Info</a></li>\n<li id=\"tab_review_tabbed\"
+        class=\"\"><a href=\"#\">Reviews</a></li>\n</ul>\n<div class=\"clearer\"></div>\n<div
+        class=\"tab-content\" id=\"tab_description_tabbed_contents\"> <h2>Details</h2>\n<div
+        class=\"std\">\nHONDA Auto Tensioner Unit. The spring in these can wear over
+        time and loose tension. These are supplied from Honda complete with a new
+        pulley which on its own is \uFFA340+. Maintain your car just as Honda intended.
+        As with all Honda parts expect a perfect fit and performance every time. Suitable
+        for all K-series engines found in the Civic EP3 and Integra DC5 - K20A. </div>\n</div>\n<div
+        class=\"tab-content\" id=\"tab_additional_tabbed_contents\"><body onload=\"stockStatus();\"
+        onmousedown=\"stockStatus();\" onmouseup=\"stockStatus();\">\n<h2>More Info</h2>\n<table
+        class=\"data-table\" id=\"product-attribute-specs-table\">\n<col width=\"25%\"
+        />\n<col />\n<tbody>\n<tr style=\"display:none;\">\n<th class=\"label\">Supplier
+        Stock Level</th>\n<td class=\"data\" id=\"supplier-stock-level\" style=\"display:
+        block;\"> </td>\n</tr>\n<tr style=\"display:none;\">\n<th class=\"label\">Stock</th>\n<td
+        class=\"data\" id=\"tegiwa-stock-level\" style=\"display: block;\">0.0000
+        </td>\n</tr>\n<tr style=\"display:none;\">\n<th class=\"label\">Supplier OOS
+        Lead Time</th>\n<td class=\"data\" id=\"supplier-oos\" style=\"display: block;\">
+        </td>\n</tr>\n<tr style=\"display:none;\">\n<th class=\"label\">Supplier Lead
+        Time</th>\n<td class=\"data\" id=\"supplier-lead-time\" style=\"display: block;\">
+        </td>\n</tr>\n<tr>\n<th class=\"label\">Manufacturer</th>\n<td class=\"data\">Genuine
+        Honda</td>\n</tr>\n<tr>\n<th class=\"label\">Fitment</th>\n<td class=\"data\">See
+        Product Title</td>\n</tr>\n<tr>\n<th class=\"label\">Colour</th>\n<td class=\"data\">N/A</td>\n</tr>\n<tr>\n<th
+        class=\"label\">Note</th>\n<td class=\"data\">No</td>\n</tr>\n</tbody>\n</table>\n<script
+        type=\"text/javascript\">decorateTable('product-attribute-specs-table')</script>\n<script>\nfunction
+        stockStatus() { \n\n\n\tvar supplierstock = document.getElementById(\"supplier-stock-level\").innerHTML;\n\tvar
+        tegiwastock = document.getElementById(\"tegiwa-stock-level\").innerHTML;\n\tvar
+        oosstatus = document.getElementById(\"supplier-oos\").innerHTML;\n\tvar leadtime
+        = document.getElementById(\"supplier-lead-time\").innerHTML;\n\t\n\t\n\t\n\tif
+        (tegiwastock >=1) {\n\t\t//Show Default Tegiwa Stock Info.\n\t\tdocument.getElementById('status1').style.display
+        = \"block\";\n\t\tdocument.getElementById('custom-availability').style.display
+        = \"none\";\n\n\t}\n\telse if (supplierstock >=1) {\n\t\t//Show Supplier In
+        Stock Lead Time\n\t\tdocument.getElementById('status1').style.display = \"none\";\n\t\tdocument.getElementById('custom-availability').style.display
+        = \"block\";\n\t\t//document.getElementById('supplier-level').innerHTML =
+        supplierstock;\n\t\tdocument.getElementById('supplier-eta').innerHTML = leadtime;\n\t}\n\t\n\telse
+        if (oosstatus !=0) {\n\t\t//Show Supplier Out Of Stock Lead Time\n\t\tdocument.getElementById('status1').style.display
+        = \"none\";\n\t\tdocument.getElementById('custom-availability').style.display
+        = \"block\";\n\t\tdocument.getElementById('supplier-level').innerHTML = supplierstock;\n\t\tdocument.getElementById('supplier-eta').innerHTML
+        = oosstatus;\n\t}\n\t\n\telse {\n\t\tdocument.getElementById('status1').style.display
+        = \"block\";\n\t\tdocument.getElementById('custom-availability').style.display
+        = \"none\";\n\n\t}\n\t\n}\n</script>\n<script defer src=\"https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993\"
+        integrity=\"sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==\"
+        data-cf-beacon='{\"rayId\":\"7738385668ca660b\",\"token\":\"b457ced8336e4478a1fdad7edbd54f59\",\"version\":\"2022.11.3\",\"si\":100}'
+        crossorigin=\"anonymous\"></script>\n</body></div>\n<div class=\"tab-content\"
+        id=\"tab_review_tabbed_contents\">\n<div class=\"collateral-box\" id=\"product-customer-reviews\">\n<ol><li>Be
+        the first to review this product</li></ol>\n</div>\n<div class=\"add-review\">\n</div></div>\n<script
+        type=\"text/javascript\">\r\n    //<![CDATA[\r\n        new Varien.Tabs('.product-tabs
+        > ul');\r\n        //]]>\r\n    </script>\n<div class=\"clearer\"></div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div
+        class=\"box-collateral box-up-sell category-products\">\n<h2 style=\"margin-top:20px;\"><span>You
+        may also be interested in</span></h2>\n<ul class=\"products-grid columns4\">\n<li
+        class=\"item\"><div class=\"item-area\">\n<div class=\"product-image-area\">\n<a
+        href=\"https://www.tegiwaimports.com/genuine-honda-clutch-kit-honda-nsx-na1-3-0l-c30.html\"
+        title=\"GENUINE HONDA CLUTCH KIT HONDA NSX NA1 3.0L C30\" class=\"product-image\">\n<img
+        class=\"defaultImage\" src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/small_image/300x/bd049d03bc634ec5154df793a9a83c73/g/e/genuine-honda-clutch-kit-honda-nsx-na1-3.0l-c30.jpg\"
+        alt=\"GENUINE HONDA CLUTCH KIT HONDA NSX NA1 3.0L C30\" />\n<img class=\"hoverImage\"
+        src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/300x/643607f7bf94db6386fdfd96cdb92b71/g/e/genuine-honda-clutch-kit-honda-nsx-na1-3.0l-c30.jpg\"
+        alt=\"GENUINE HONDA CLUTCH KIT HONDA NSX NA1 3.0L C30\" />\n</a>\n</div>\n<div
+        class=\"details-area\">\n<h2 class=\"product-name\"><a href=\"https://www.tegiwaimports.com/genuine-honda-clutch-kit-honda-nsx-na1-3-0l-c30.html\"
+        title=\"GENUINE HONDA CLUTCH KIT HONDA NSX NA1 3.0L C30\">GENUINE HONDA CLUTCH
+        KIT HONDA NSX NA1 3.0L C30</a></h2>\n<div class=\"ratings\">\n<div class=\"rating-box\">\n<div
+        class=\"rating\" style=\"width:0\"></div>\n</div>\n</div>\n<div class=\"price-box\">\n<span
+        class=\"price-excluding-tax\">\n<span class=\"price\" id=\"price-excluding-tax-9955\">\n\xA31,300.00
+        </span>\n<span class=\"label\">Excl. Tax</span>\n</span>\n<span class=\"price-including-tax\">\n<span
+        class=\"price\" id=\"price-including-tax-9955\">\n\xA31,560.00 </span>\n<span
+        class=\"label\">Incl. Tax</span>\n</span>\n</div>\n<div class=\"actions\">\n<a
+        href=\"javascript:void(0)\" class=\"addtocart\" title=\"Add to Cart\" onclick=\"document.getElementById('addtocart_form_9955').submit()\"><i
+        class=\"icon-cart\"></i><span>&nbsp;Add to Cart</span></a>\n<div class=\"clearer\"></div>\n</div>\n</div>\n</div></li>\n
+        <li class=\"item\"><div class=\"item-area\">\n<div class=\"product-image-area\">\n<a
+        href=\"https://www.tegiwaimports.com/genuine-honda-rear-lower-bench-pad-seat-cushion-civic-type-r-fk8.html\"
+        title=\"Genuine Honda Rear Lower Bench Pad Seat Cushion Civic Type R FK8\"
+        class=\"product-image\">\n<img class=\"defaultImage\" src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/small_image/300x/bd049d03bc634ec5154df793a9a83c73/8/2/82137-tgg-k31.jpg\"
+        alt=\"Genuine Honda Rear Lower Bench Pad Seat Cushion Civic Type R FK8\" />\n<img
+        class=\"hoverImage\" src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/300x/643607f7bf94db6386fdfd96cdb92b71/8/2/82137-tgg-k31.jpg\"
+        alt=\"Genuine Honda Rear Lower Bench Pad Seat Cushion Civic Type R FK8\" />\n</a>\n</div>\n<div
+        class=\"details-area\">\n<h2 class=\"product-name\"><a href=\"https://www.tegiwaimports.com/genuine-honda-rear-lower-bench-pad-seat-cushion-civic-type-r-fk8.html\"
+        title=\"Genuine Honda Rear Lower Bench Pad Seat Cushion Civic Type R FK8\">Genuine
+        Honda Rear Lower Bench Pad Seat Cushion Civic Type R FK8</a></h2>\n<div class=\"ratings\">\n<div
+        class=\"rating-box\">\n<div class=\"rating\" style=\"width:0\"></div>\n</div>\n</div>\n<div
+        class=\"price-box\">\n<span class=\"price-excluding-tax\">\n<span class=\"price\"
+        id=\"price-excluding-tax-186473\">\n\xA3250.00 </span>\n<span class=\"label\">Excl.
+        Tax</span>\n</span>\n<span class=\"price-including-tax\">\n<span class=\"price\"
+        id=\"price-including-tax-186473\">\n\xA3300.00 </span>\n<span class=\"label\">Incl.
+        Tax</span>\n</span>\n</div>\n<div class=\"actions\">\n<a href=\"javascript:void(0)\"
+        class=\"addtocart\" title=\"Add to Cart\" onclick=\"document.getElementById('addtocart_form_186473').submit()\"><i
+        class=\"icon-cart\"></i><span>&nbsp;Add to Cart</span></a>\n<div class=\"clearer\"></div>\n</div>\n</div>\n</div></li>\n<li
+        class=\"item\"><div class=\"item-area\">\n<div class=\"product-image-area\">\n<a
+        href=\"https://www.tegiwaimports.com/genuine-honda-jdm-access-window-visors-wind-deflectors-cr-z-zf1-10-14.html\"
+        title=\"Genuine Honda JDM Access Window Visors Wind Deflectors CR-Z ZF1 10-14\"
+        class=\"product-image\">\n<img class=\"defaultImage\" src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/small_image/300x/bd049d03bc634ec5154df793a9a83c73/0/8/08r04-szt-001.jpg\"
+        alt=\"Genuine Honda JDM Access Window Visors Wind Deflectors CR-Z ZF1 10-14\"
+        />\n<img class=\"hoverImage\" src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/300x/643607f7bf94db6386fdfd96cdb92b71/0/8/08r04-szt-001.jpg\"
+        alt=\"Genuine Honda JDM Access Window Visors Wind Deflectors CR-Z ZF1 10-14\"
+        />\n</a>\n</div>\n<div class=\"details-area\">\n<h2 class=\"product-name\"><a
+        href=\"https://www.tegiwaimports.com/genuine-honda-jdm-access-window-visors-wind-deflectors-cr-z-zf1-10-14.html\"
+        title=\"Genuine Honda JDM Access Window Visors Wind Deflectors CR-Z ZF1 10-14\">Genuine
+        Honda JDM Access Window Visors Wind Deflectors CR-Z ZF1 10-14</a></h2>\n<div
+        class=\"ratings\">\n<div class=\"rating-box\">\n<div class=\"rating\" style=\"width:0\"></div>\n</div>\n</div>\n<div
+        class=\"price-box\">\n<span class=\"price-excluding-tax\">\n<span class=\"price\"
+        id=\"price-excluding-tax-196524\">\n\xA3125.00 </span>\n<span class=\"label\">Excl.
+        Tax</span>\n</span>\n<span class=\"price-including-tax\">\n<span class=\"price\"
+        id=\"price-including-tax-196524\">\n\xA3150.00 </span>\n<span class=\"label\">Incl.
+        Tax</span>\n</span>\n</div>\n<div class=\"actions\">\n<a href=\"javascript:void(0)\"
+        class=\"addtocart\" title=\"Add to Cart\" onclick=\"document.getElementById('addtocart_form_196524').submit()\"><i
+        class=\"icon-cart\"></i><span>&nbsp;Add to Cart</span></a>\n<div class=\"clearer\"></div>\n</div>\n</div>\n</div></li>\n<li
+        class=\"item\"><div class=\"item-area\">\n<div class=\"product-image-area\">\n<a
+        href=\"https://www.tegiwaimports.com/genuine-honda-front-brake-discs-262mm-4x100-various-models-pair.html\"
+        title=\"Genuine Honda Front Brake Discs 262mm 4x100 Various Models Pair\"
+        class=\"product-image\">\n<img class=\"defaultImage\" src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/small_image/300x/bd049d03bc634ec5154df793a9a83c73/4/5/45251-s5h-t10.jpg\"
+        alt=\"Genuine Honda Front Brake Discs 262mm 4x100 Various Models Pair\" />\n<img
+        class=\"hoverImage\" src=\"https://www.tegiwaimports.com/media/catalog/product/cache/1/thumbnail/300x/643607f7bf94db6386fdfd96cdb92b71/4/5/45251-s5h-t10.jpg\"
+        alt=\"Genuine Honda Front Brake Discs 262mm 4x100 Various Models Pair\" />\n</a>\n</div>\n<div
+        class=\"details-area\">\n<h2 class=\"product-name\"><a href=\"https://www.tegiwaimports.com/genuine-honda-front-brake-discs-262mm-4x100-various-models-pair.html\"
+        title=\"Genuine Honda Front Brake Discs 262mm 4x100 Various Models Pair\">Genuine
+        Honda Front Brake Discs 262mm 4x100 Various Models Pair</a></h2>\n<div class=\"ratings\">\n<div
+        class=\"rating-box\">\n<div class=\"rating\" style=\"width:0\"></div>\n</div>\n</div>\n<div
+        class=\"price-box\">\n<span class=\"price-excluding-tax\">\n<span class=\"price\"
+        id=\"price-excluding-tax-291996\">\n\xA3186.81 </span>\n<span class=\"label\">Excl.
+        Tax</span>\n</span>\n<span class=\"price-including-tax\">\n<span class=\"price\"
+        id=\"price-including-tax-291996\">\n\xA3224.17 </span>\n<span class=\"label\">Incl.
+        Tax</span>\n</span>\n</div>\n<div class=\"actions\">\n<a href=\"javascript:void(0)\"
+        class=\"addtocart\" title=\"Add to Cart\" onclick=\"document.getElementById('addtocart_form_291996').submit()\"><i
+        class=\"icon-cart\"></i><span>&nbsp;Add to Cart</span></a>\n<div class=\"clearer\"></div>\n</div>\n</div>\n</div></li>\n</ul>\n<script
+        type=\"text/javascript\">\n                    jQuery('.col-main .products-grid
+        li:nth-child(2n), .bottom-container .products-grid li:nth-child(2n)').addClass('nth-child-2n');\n
+        \                   jQuery('.col-main .products-grid li:nth-child(2n+1), .bottom-container
+        .products-grid li:nth-child(2n+1)').addClass('nth-child-2np1');\n                    jQuery('.col-main
+        .products-grid li:nth-child(3n), .bottom-container .products-grid li:nth-child(3n)').addClass('nth-child-3n');\n
+        \                   jQuery('.col-main .products-grid li:nth-child(3n+1), .bottom-container
+        .products-grid li:nth-child(3n+1)').addClass('nth-child-3np1');\n                    jQuery('.col-main
+        .products-grid li:nth-child(4n), .bottom-container .products-grid li:nth-child(4n)').addClass('nth-child-4n');\n
+        \                   jQuery('.col-main .products-grid li:nth-child(4n+1), .bottom-container
+        .products-grid li:nth-child(4n+1)').addClass('nth-child-4np1');\n                </script>\n</div>\n</div>\n<script
+        type=\"text/javascript\">\r\n    jQuery(function($){\r\n        $(\"body.quickview-index-view
+        .no-rating a, body.quickview-index-view .ratings a\").off('click').on(\"click\",function(e){\r\n
+        \           window.parent.location.href = $(this).attr(\"href\");\r\n            window.parent.jQuery.fancybox.close();\r\n
+        \       });\r\n            });\r\n</script>\n<style type=\"text/css\">\r\n</style>\n<script
+        type=\"text/javascript\">\n    var lifetime = 3600;\n    var expireAt = Mage.Cookies.expires;\n
+        \   if (lifetime > 0) {\n        expireAt = new Date();\n        expireAt.setTime(expireAt.getTime()
+        + lifetime * 1000);\n    }\n    Mage.Cookies.set('external_no_cache', 1, expireAt);\n</script>\n</div>\n</div>\n</div>\n</div>\n<div
+        class=\"footer-container \">\n<div class=\"footer\">\n<div class=\"footer-middle\">\n<div
+        class=\"container\">\n<div class=\"row\">\n<div class=\"col-sm-3\"><div class=\"block\">\n<div
+        class=\"block-title\"><strong><span>Contact Information</span></strong></div>\n<div
+        class=\"block-content\">\n<ul class=\"contact-info\" style=\"padding-top:
+        7px;\">\n<li><p><b style=\"color: #fff;text-transform:uppercase;\">TEGIWA
+        IMPORTS LTD</b><br />Tegiwa House, Sutherland Road,<br />Stoke-on-Trent. ST3
+        1HZ</p></li>\n<li><p><b style=\"color: #fff;text-transform:uppercase;\">Phone</b><br
+        />01782 33 44 40</p></li>\n<li><p><b style=\"color: #fff;text-transform:uppercase;\">Email</b><br
+        /><a href=\"/cdn-cgi/l/email-protection#c5b2a0a7b6a4a9a0b685b1a0a2acb2a4aca8b5aab7b1b6eba6aaa8\"><span
+        class=\"__cf_email__\" data-cfemail=\"4b3c2e29382a272e380b3f2e2c223c2a22263b24393f3865282426\">[email&#160;protected]</span></a></p></li>\n<li><p><b
+        style=\"color: #fff;text-transform:uppercase;\">Working Days/Hours</b><br
+        />Mon - Fri / 9:00AM - 5:00PM</p></li>\n</ul>\n<div class=\"social-icons\"
+        style=\"float:left;margin-top: 15px;\">\n<a href=\"https://www.facebook.com/TEGIWA\"
+        title=\"Facebook\" target=\"_blank\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a>\n<a
+        href=\"https://www.instagram.com/tegiwa/\" title=\"Instagram\" target=\"_blank\"><i
+        class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a>\n<a href=\"https://www.youtube.com/user/tegiwa\"
+        title=\"YouTube\" target=\"_blank\"><i class=\"fa fa-youtube\" aria-hidden=\"true\"></i></a>\n</div>\n</div>\n</div></div>
+        <div class=\"col-sm-9\">\n<div class=\"row\">\n<div class=\"col-sm-12\">\n<div
+        class=\"block-bottom\">\n<div class=\"row\">\n<div class=\"col-sm-12\">\n<div
+        class=\"block\">\n<div class=\"block-content\">\n<div class=\"row\">\n<div
+        class=\"col-sm-3\">\n<div class=\"block-title\"><strong><span>ORDERING</span></strong></div>\n<ul
+        class=\"links\">\n<li><a href=\"/delivery\" title=\"Delivery\">Shipping</a></li>\n<li><a
+        href=\"/customer/account\" title=\"My Account\">My Account</a></li>\n\n<li><a
+        href=\"/klarna-faq\" title=\"My Account\">Klarna</a></li>\n\n<li><a href=\"/paypal-credit\"
+        title=\"My Account\">PayPal Credit</a></li>\n</ul>\n</div>\n<div class=\"col-sm-3\">\n<div
+        class=\"block-title\"><strong><span>TEGIWA</span></strong></div>\n<ul class=\"links\">\n<li><a
+        href=\"/about-us\" title=\"About Us\">About Us</a></li>\n<li><a href=\"/contacts\"
+        title=\"Contact Us\">Contact Us</a></li>\n<li><a href=\"/manufacturer-view.html\"
+        style=\"color: #cfff04;\" title=\"Pricelist View\">Pricelist View</a></li>\n<li><a
+        href=\"http://www.tegiwaimports.com/blog\" title=\"Blog\">Blog</a></li>\n<li><a
+        href=\"/latest-products.html\" style=\"color: #cfff04;\" title=\"Latest Products\">Latest
+        Products</a></li>\n<li><a href=\"/tegiwa-logo-download\" title=\"Tegiwa Logo
+        Download\">Tegiwa Logo Download</a></li>\n<li><a href=\"/distribution\" style=\"color:
+        #cfff04;\" title=\"Distribution\">Distribution</a></li>\n</ul>\n</div>\n<div
+        class=\"col-sm-3\">\n<div class=\"block-title\"><strong><span>OTHER LINKS</span></strong></div>\n<ul
+        class=\"links\">\n<li><a href=\"/installation-guides.html\" title=\"Fitting
+        Guides\">Fitting Guides</a></li>\n<li><a href=\"http://www.tegiwaeuro.com\"
+        title=\"Tegiwa Euro\">Tegiwa Euro</a></li>\n<li><a href=\"http://www.skunk2europe.com\"
+        title=\"Skunk2 Europe\">SKUNK2 Europe</a></li>\n<li><a href=\"http://www.ysreurope.com\"
+        title=\"YSR Europe\">YSR Europe</a></li>\n<li><a href=\"http://www.mfactoryeurope.com/\"
+        title=\"MFactory Europe\">MFactory Europe</a></li>\n</ul>\n</div>\n<div class=\"col-sm-3\">\n<div
+        class=\"block-title\"><strong><span>WEBSITE</span></strong></div>\n<ul class=\"links\">\n<li><a
+        href=\"/terms\" title=\"Terms &amp; Conditions\">Terms &amp; Conditions</a></li>\n<li><a
+        href=\"/returns\" title=\"Returns\">Returns</a></li>\n<li><a href=\"/privacy-policy-cookie-restriction-mode\"
+        title=\"Privacy &amp; Cookies\">Privacy &amp; Cookies</a></li>\n<li><a href=\"/dealers\"
+        title=\"Dealer Account Request\">Dealer Account Request</a></li>\n<li><a href=\"/skunk2-warranty\"
+        title=\"Skunk2 Warranty Return\">Skunk2 Warranty Return</a></li>\n<li><a href=\"/vacancies\"
+        title=\"Privacy &amp; Cookies\">Job Vacancies</a></li>\n</ul>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div></div>
+        </div>\n</div>\n</div>\n<div class=\"footer-bottom\">\n<div class=\"container\">\n<div
+        class=\"custom-block f-right\"></div> <address>\n<span style=\"color: #999;\">&copy;
+        Tegiwa Imports Ltd</span> | Registered in England Number 5798174<br />\nTegiwa
+        Imports Limited acts as a broker and offers credit from PayPal Credit and
+        other providers. Subject to status, terms and conditions apply.<br />\nPayPal
+        Credit is a trading name of PayPal (Europe) S.\xE0.r.l. et Cie, S.C.A., 22-24
+        Boulevard Royal L-2449, Luxembourg.<br />\n</address>\n<div class=\"footer-payment-methods\">\n<img
+        src=\"/skin/frontend/smartwave/porto_tegiwaimports/images/payment-method-icons.png\"
+        width=\"100%\" alt=\"\" />\n</div>\n</div>\n</div>\n</div>\n</div>\n<a href=\"#\"
+        id=\"totop\"><i class=\"icon-up-open\"></i></a>\n<script data-cfasync=\"false\"
+        src=\"/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js\"></script><script
+        type=\"text/javascript\">\n    var windowScroll_t;\n    jQuery(window).scroll(function(){\n
+        \       clearTimeout(windowScroll_t);\n        windowScroll_t = setTimeout(function(){\n
+        \           if(jQuery(this).scrollTop() > 100){\n                jQuery('#totop').fadeIn();\n
+        \           }else{\n                jQuery('#totop').fadeOut();\n            }\n
+        \       }, 500);\n    });\n    jQuery('#totop').click(function(){\n        jQuery('html,
+        body').animate({scrollTop: 0}, 600);\n        return false;\n    });\n    jQuery(function($){\n
+        \       $(\".cms-index-index .footer-container.fixed-position .footer-top,.cms-index-index
+        .footer-container.fixed-position .footer-middle\").remove();\n    });\n</script>\n<script
+        type=\"text/javascript\">\r\nfunction klevu_addtocart(id,url,qty) {\r\n    var
+        form_key = 'RfbgWnM8fnrIxZi4';\r\n    var url = 'https://www.tegiwaimports.com/checkout/cart/add/'+'product/'+id+'/qty/'+qty+'/form_key/'+form_key;\r\n
+        \   window.location.assign(url);\r\n}\r\n\r\n//var klevu_addtocartLbl = \"More
+        Info\";\r\n</script>\n<script type=\"text/javascript\">\n\tvar klevu_sessionId
+        = 'eb1b4cd124b25f98c64bbe8bb6bd1550';\n    var allInputs = document.getElementsByTagName(
+        'input' );\n    var klevu_current_version = '1.2.19';\n    \t\t(function ()
+        {\n\t\t\t// Remove Magento event observers from the search box\n\t\t\t// Redirect
+        to klevu js page\n\t\t\tfor( i = 0, len = allInputs.length; i < len; i++ ){\n\t\t\t\tif(
+        allInputs[i].type === \"text\" || allInputs[i].type === \"search\" ){\n\t\t\t\t\tif(
+        allInputs[i].name === \"q\" ||  allInputs[i].id === \"search\" ){\n\t\t\t\t\t\tvar
+        search_input = allInputs[i];\n\t\t\t\t\t\tsearch_input.stopObserving('click');\n\t\t\t\t\t\tsearch_input.stopObserving('keydown');\n\t\t\t\t\t\tsearch_input.form.action='https://www.tegiwaimports.com/search/'
+        ;//?q=\"+search_input.value;\n\t\t\t\t\t\tsearch_input.form.observe('submit',
+        function (e) {\n\t\t\t\t\t\t\t//if(search_input.value.length!= 0){\n\t\t\t\t\t\t\t\t//Event.stop(e);\n\t\t\t\t\t\t\t\t//return
+        false;\n\t\t\t\t\t\t\t//}\n\t\t\t\t\t\t});\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t})();\n\t\t
+        var klevu_storeLandingPageUrl = 'https://www.tegiwaimports.com/search/';\n\t\t
+        var klevu_showQuickSearchOnEnter=false;\n    \t\t// call store js\n\t\tvar
+        klevu_apiKey = 'klevu-14866558287345291',\n\t\t\tsearchTextBoxName = 'search',\n\t\t\tklevu_lang
+        = 'en',\n\t\t\tklevu_result_top_margin = '',\n\t\t\tklevu_result_left_margin
+        = '';\n\t\t(function () { var ws = document.createElement('script'),kl_protocol
+        =(\"https:\"===document.location.protocol?\"https://\":\"http://\"); ws.type
+        = 'text/javascript'; ws.async = true; ws.src = kl_protocol+'js.klevu.com/klevu-js-v1/js/klevu-webstore.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ws,
+        s); })();\n</script>\n<script type=\"text/javascript\">\r\n    var klevu_cms_module_enabled=true;\r\n</script>\n<script
+        type=\"text/javascript\">\r\n// Enable cms for klevu template\r\n        var
+        klevu_cmsSearchEnabled = false;\r\n          \r\n</script> <script>\n  fbq('track',
+        'ViewContent', {\n    source: 'magento',\n    version: \"1.9.3.7\",\n    pluginVersion:
+        \"2.3.6\",\n    content_type: \"product\",\n    content_ids: [\"10058\"]\n
+        \         , content_name: \"GENUINE HONDA AUTO TENSIONER CIVIC EP3 INTEGRA
+        DC5 K-SERIES\"\n                  , value: 114.5900              , currency:
+        \"GBP\"\n      });\n </script>\n<script type=\"text/javascript\">\n    (function()
+        {\n        var referrer, search_term, klevu_search_product_tracking;\n        referrer
+        = document.referrer;\n        search_term = referrer.toQueryParams().q;\n
+        \       if (referrer.indexOf('catalogsearch/result') > -1 && search_term)
+        {\n            klevu_search_product_tracking = {\"klevu_apiKey\":\"klevu-14866558287345291\",\"klevu_term\":\"\",\"klevu_type\":\"clicked\",\"klevu_productId\":\"10058\",\"klevu_productName\":\"GENUINE
+        HONDA AUTO TENSIONER CIVIC EP3 INTEGRA DC5 K-SERIES\",\"klevu_productUrl\":\"https:\\/\\/www.tegiwaimports.com\\/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.html\",\"klevu_sessionId\":\"272d33d4ae96bfab722761570cb09859\",\"Klevu_typeOfRecord\":\"KLEVU_PRODUCT\"};\n
+        \           klevu_search_product_tracking.klevu_term = search_term;\n\n            //
+        Send the ajax request\n            new Ajax.Request('//stats.klevu.com/analytics/productTracking',
+        {\n                method: \"GET\",\n                parameters: klevu_search_product_tracking,\n\n
+        \               // We need to remove the AJAX headers so the request does
+        not get preflighted and break cross-origin request policy\n                onCreate:
+        function(response) {\n                    var t = response.transport;\n                    t.setRequestHeader
+        = t.setRequestHeader.wrap(function(original, k, v) {\n                        if
+        (/^(accept|accept-language|content-language)$/i.test(k))\n                            return
+        original(k, v);\n                        if (/^content-type$/i.test(k) &&\n
+        \                           /^(application\\/x-www-form-urlencoded|multipart\\/form-data|text\\/plain)(;.+)?$/i.test(v))\n
+        \                           return original(k, v);\n                        return;\n
+        \                   });\n                }\n            });\n        }\n    })();\n</script>\n</div>\n</body>\n</html>\n"
+    headers:
+      Age:
+      - '1062'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 7738385668ca660b-MAD
+      Cache-Control:
+      - no-store, no-cache, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Sat, 03 Dec 2022 00:35:03 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Pragma:
+      - no-cache
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=a7DJZx5P%2BGXS5vlOu2j7zz25tn%2F16Gkb3TnOGQX5%2BofiimrAl4e07VTF1GMY2oKy20mBhql5SvYtYqj0UTDt7h1mtgH4CX%2FZuUhI756FCuTa88NHSdXZeONYn5t7TK1LvsJ4Tn7BfQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Server-Timing:
+      - cf-q-config;dur=5.9999983932357e-06
+      Set-Cookie:
+      - frontend=272d33d4ae96bfab722761570cb09859; expires=Sat, 03-Dec-2022 10:35:02
+        GMT; Max-Age=36000; path=/; domain=tegiwaimports.com
+      - frontend_cid=vsvONfVYfsYzbbCa; expires=Sat, 03-Dec-2022 10:35:02 GMT; Max-Age=36000;
+        path=/; domain=tegiwaimports.com; secure
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      x-frame-options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+    url: https://www.tegiwaimports.com/genuine-honda-auto-tensioner-civic-ep3-integra-dc5-k-series.html
 version: 1
