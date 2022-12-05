@@ -15,6 +15,7 @@ SOURCE_NENGUN = "nengun"
 SOURCE_AKR = "akr"  # old 12tune
 SOURCE_ONLINETEILE = "online-teile"
 SOURCE_JAPSERVICEPARTS = "japserviceparts"
+SOURCE_ICB = "icb"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -35,6 +36,7 @@ STOCK_SOURCES = (
     (SOURCE_AKR, "www.akr-performance.com"),
     (SOURCE_ONLINETEILE, "www.online-teile.com"),
     (SOURCE_JAPSERVICEPARTS, "www.japserviceparts.co.uk"),
+    (SOURCE_ICB, "www.icbmotorsport.com"),
 )
 
 PART_SOURCES = (

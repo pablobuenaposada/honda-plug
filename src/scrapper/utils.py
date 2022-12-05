@@ -23,7 +23,7 @@ class RequestLimiter:
                 if response.content_type == "application/json":
                     return await response.json(), response.url, response.status
                 elif response.content_type == "text/html":
-                    return await response.text(), response.url, response.status
+                    return await response.read(), response.url, response.status
 
     async def post(self, url, *, data=None, **kwargs):
         delta = (datetime.now() - self.last_time).seconds

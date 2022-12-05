@@ -20486,4 +20486,39 @@ interactions:
       code: 200
       message: OK
     url: https://japserviceparts.co.uk/product/head-gasket-civic-fn2-type-r-k20z4-oe-japan/
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.icbmotorsport.com/__lsearch/?q=12251-RBB-004&storeid=yhst-1408381693991
+  response:
+    body:
+      string: '{"code":0,"filters":[{"key":"brand","label":"Brand","results":[]},{"key":"category","label":"Category","results":[]},{"key":"price","label":"Price","results":[{"count":0,"name":"0.0-10.0"}]}],"msg":"success","pagination":{"ends_at":0,"number_of_pages":0,"page_number":1,"page_size":50,"starts_at":1,"total_results_count":0},"results":[]}
+
+        '
+    headers:
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=3600, private
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 06 Dec 2022 00:00:38 GMT
+      Expires:
+      - Tue, 06 Dec 2022 01:00:38 GMT
+      P3P:
+      - policyref="http://info.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV
+        TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY
+        ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV"
+      Server:
+      - ATS
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+    url: https://www.icbmotorsport.com/__lsearch/?q=12251-RBB-004&storeid=yhst-1408381693991
 version: 1
