@@ -44,9 +44,10 @@ docker/migrations/check:
 	 docker run $(DOCKER_IMAGE) /bin/sh -c 'make migrations/check'
 
 docker/run/shell:
-	docker exec -it honda-django-1 bash
+	docker exec -it honda-plug-django-1 bash
 
 docker/run/prod:
+	crontab $(shell pwd)/cron/cron
 	docker compose -f docker-compose.prod.yml up -d --build
 
 docker/run/local:

@@ -1,0 +1,1 @@
+0 9 * * * /usr/bin/docker exec -i honda-plug-django-1 venv/bin/python src/manage.py stock 100
