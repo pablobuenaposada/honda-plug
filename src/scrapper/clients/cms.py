@@ -62,4 +62,3 @@ class CmsClient(ClientInterface):
                         available=available,
                         image=image,
                     )
-        return None

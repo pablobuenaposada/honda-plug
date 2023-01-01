@@ -51,4 +51,3 @@ class OnlineteileClient(ClientInterface):
                         "EUR",
                     ),
                 )
-        return None

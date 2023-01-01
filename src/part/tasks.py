@@ -15,6 +15,7 @@ from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.hondaspareparts import HondasparepartsClient
 from scrapper.clients.icb import IcbClient
+from scrapper.clients.ipgparts import IpgpartsClient
 from scrapper.clients.japserviceparts import JapservicepartsClient
 from scrapper.clients.nengun import NengunClient
 from scrapper.clients.onlineteile import OnlineteileClient
@@ -39,6 +40,7 @@ CLIENTS = (
     OnlineteileClient,
     JapservicepartsClient,
     IcbClient,
+    IpgpartsClient,
 )
 
 

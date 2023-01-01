@@ -15,6 +15,7 @@ from part.constants import (
     SOURCE_HONDAPARTSONLINE,
     SOURCE_HONDASPAREPARTS,
     SOURCE_ICB,
+    SOURCE_IPGPARTS,
     SOURCE_JAPSERVICEPARTS,
     SOURCE_NENGUN,
     SOURCE_ONLINETEILE,
@@ -95,6 +96,7 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_ONLINETEILE, country="DE")
         baker.make(Stock, part=part, source=SOURCE_JAPSERVICEPARTS, country="GB")
         baker.make(Stock, part=part, source=SOURCE_ICB, country="US")
+        baker.make(Stock, part=part, source=SOURCE_IPGPARTS, country="US")
 
         assert Part.objects.count() == 1
         assert (
@@ -119,6 +121,7 @@ class TestSearchForStocks:
             "cms",
             "akr",
             "online-teile",
+            "ipgparts",
         }
 
     @patch("part.tasks.search_for_stocks")

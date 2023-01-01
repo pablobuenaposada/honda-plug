@@ -18,7 +18,7 @@ def _parse_availability(soup):
         case "mdb-in-stock":
             return True
         case _:
-            return None
+            return
 
 
 class TegiwaClient(ClientInterface):

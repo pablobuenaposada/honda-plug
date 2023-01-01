@@ -29,6 +29,7 @@ from scrapper.clients.hondapartsnow import HondapartsnowClient
 from scrapper.clients.hondapartsonline import HondapartsonlineClient
 from scrapper.clients.hondaspareparts import HondasparepartsClient
 from scrapper.clients.icb import IcbClient
+from scrapper.clients.ipgparts import IpgpartsClient
 from scrapper.clients.japserviceparts import JapservicepartsClient
 from scrapper.clients.nengun import NengunClient
 from scrapper.clients.onlineteile import OnlineteileClient
@@ -846,6 +847,18 @@ class TestClients:
             ),
             (
                 IcbClient(),
+                {
+                    # great testing :)
+                    "12251-RBB-004": None,
+                    "56483-PND-003": None,
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": None,
+                    "74100-S2A-010": None,
+                    "31170-PND-013": None,
+                },
+            ),
+            (
+                IpgpartsClient(),
                 {
                     # great testing :)
                     "12251-RBB-004": None,

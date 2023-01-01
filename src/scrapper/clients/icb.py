@@ -38,5 +38,3 @@ class IcbClient(ClientInterface):
                     image=result["image"],
                     price=Money(result["price"], "USD"),
                 )
-
-        return None

@@ -15,7 +15,7 @@ class JapservicepartsClient(ClientInterface):
             f"https://japserviceparts.co.uk/?wc-ajax=yith_ajax_search_products&query={reference}"
         )
         if response["suggestions"][0]["url"] == "":
-            return None
+            return
 
         for result in response["suggestions"]:
             item_response, _, _ = await self.request_limiter.get(result["url"])
@@ -60,5 +60,3 @@ class JapservicepartsClient(ClientInterface):
                     price=Money(price, currency),
                     quantity=quantity,
                 )
-
-        return None

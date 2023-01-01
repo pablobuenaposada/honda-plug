@@ -44,4 +44,3 @@ class All4hondaClient(ClientInterface):
                         price=Money(price.amount, "EUR"),
                         image=f'https://{hit["image_url"][2:]}',
                     )
-        return
