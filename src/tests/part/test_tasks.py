@@ -9,6 +9,7 @@ from part.constants import (
     SOURCE_AKR,
     SOURCE_ALL4HONDA,
     SOURCE_AMAYAMA,
+    SOURCE_BERNARDIPARTS,
     SOURCE_CMS,
     SOURCE_HONDAAUTOMOTIVEPARTS,
     SOURCE_HONDAPARTSNOW,
@@ -51,6 +52,7 @@ class TestSearchForStocks:
             "cms",
             "akr",
             "online-teile",
+            "bernardiparts",
         }
 
     @patch("part.tasks.search_for_stocks")
@@ -74,6 +76,7 @@ class TestSearchForStocks:
             "cms",
             "akr",
             "online-teile",
+            "bernardiparts",
         }
 
     @patch("part.tasks.search_for_stocks")
@@ -97,6 +100,7 @@ class TestSearchForStocks:
         baker.make(Stock, part=part, source=SOURCE_JAPSERVICEPARTS, country="GB")
         baker.make(Stock, part=part, source=SOURCE_ICB, country="US")
         baker.make(Stock, part=part, source=SOURCE_IPGPARTS, country="US")
+        baker.make(Stock, part=part, source=SOURCE_BERNARDIPARTS, country="US")
 
         assert Part.objects.count() == 1
         assert (
@@ -122,6 +126,7 @@ class TestSearchForStocks:
             "akr",
             "online-teile",
             "ipgparts",
+            "bernardiparts",
         }
 
     @patch("part.tasks.search_for_stocks")
@@ -154,4 +159,5 @@ class TestSearchForStocks:
             "cms",
             "akr",
             "online-teile",
+            "bernardiparts",
         }
