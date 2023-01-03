@@ -8,6 +8,7 @@ from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
 from scrapper.clients.acurapartsforless import AcurapartsforlessClient
 from scrapper.clients.akr import AkrClient
 from scrapper.clients.all4honda import All4hondaClient
+from scrapper.clients.alvadi import AlvadiClient
 from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.bernardiparts import BernardipartsClient
 from scrapper.clients.cms import CmsClient
@@ -43,6 +44,7 @@ CLIENTS = (
     IcbClient,
     IpgpartsClient,
     BernardipartsClient,
+    AlvadiClient,
 )
 
 

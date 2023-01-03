@@ -6,6 +6,7 @@ from part.constants import (
     SOURCE_ACURAPARTSFORLESS,
     SOURCE_AKR,
     SOURCE_ALL4HONDA,
+    SOURCE_ALVADI,
     SOURCE_AMAYAMA,
     SOURCE_BERNARDIPARTS,
     SOURCE_CMS,
@@ -23,6 +24,7 @@ from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
 from scrapper.clients.acurapartsforless import AcurapartsforlessClient
 from scrapper.clients.akr import AkrClient
 from scrapper.clients.all4honda import All4hondaClient
+from scrapper.clients.alvadi import AlvadiClient
 from scrapper.clients.amayama import AmayamaClient
 from scrapper.clients.bernardiparts import BernardipartsClient
 from scrapper.clients.cms import CmsClient
@@ -945,6 +947,72 @@ class TestClients:
                         available=True,
                         discontinued=False,
                         quantity=None,
+                    ),
+                },
+            ),
+            (
+                AlvadiClient(),
+                {
+                    "12251-RBB-004": Stock(
+                        reference="12251-RBB-004",
+                        url="https://alvadi.ee/en/original/4696996-12251RBB004-HONDA?sv=5",
+                        source=SOURCE_ALVADI,
+                        country="EE",
+                        title="GASKET COMP,CYLN",
+                        price=Money("152.70", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=5,
+                    ),
+                    "56483-PND-003": Stock(
+                        reference="56483-PND-003",
+                        url="https://alvadi.ee/en/original/5219889-56483PND003-HONDA?sv=5",
+                        source=SOURCE_ALVADI,
+                        country="EE",
+                        title="PULLEY COMP,P/S P",
+                        price=Money("107.56", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=5,
+                    ),
+                    "08F03-S02-180K": None,
+                    "31206-P3F-003": Stock(
+                        reference="31206-P3F-003",
+                        url="https://alvadi.ee/en/original/4905600-31206P3F003-HONDA?sv=5",
+                        source=SOURCE_ALVADI,
+                        country="EE",
+                        title="ARMATUR KOMPL.",
+                        price=Money("545.93", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=5,
+                    ),
+                    "74100-S2A-010": Stock(
+                        reference="74100-S2A-010",
+                        url="https://alvadi.ee/en/original/5344554-74100S2A010-HONDA?sv=5",
+                        source=SOURCE_ALVADI,
+                        country="EE",
+                        title="FENDER ASSY R,FR",
+                        price=Money("246.56", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=5,
+                    ),
+                    "31170-PND-013": Stock(
+                        reference="31170-PND-013",
+                        url="https://alvadi.ee/en/original/4903494-31170PND013-HONDA?sv=5",
+                        source=SOURCE_ALVADI,
+                        country="EE",
+                        title="TENSIONER ASSY,AU",
+                        price=Money("377.40", "EUR"),
+                        image=None,
+                        available=True,
+                        discontinued=None,
+                        quantity=5,
                     ),
                 },
             ),
