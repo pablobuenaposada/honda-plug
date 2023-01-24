@@ -6,7 +6,6 @@ import part.validators
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("part", "0006_alter_part_reference"),
     ]

@@ -6,7 +6,6 @@ import part.validators
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("part", "0003_part_source_stock_source_alter_image_url"),
     ]

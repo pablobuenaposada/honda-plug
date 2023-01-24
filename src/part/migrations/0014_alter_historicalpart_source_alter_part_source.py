@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("part", "0013_alter_stock_unique_together_historicalstock_country_and_more"),
     ]

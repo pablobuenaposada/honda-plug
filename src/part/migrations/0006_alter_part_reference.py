@@ -6,7 +6,6 @@ import part.validators
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("part", "0005_alter_stock_options_stock_quantity_and_more"),
     ]

@@ -53,7 +53,7 @@ docker/run/prod:
 docker/run/local:
 	docker compose -f docker-compose.yml up --force-recreate -d --build
 
-# example: make docker/run/restore-db FILE=/dump_29-11-2022_14_23_27.sql PASSWORD=whatever
+# example: make docker/run/local/restore-db FILE=/dump_29-11-2022_14_23_27.sql PASSWORD=whatever
 docker/run/local/restore-db:
 	PGPASSWORD=$(PASSWORD) psql -U postgres -h localhost -d honda_plug_test -f $(FILE)
 	PGPASSWORD=$(PASSWORD) psql -h localhost -U postgres -c 'SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = '\''honda_plug_test'\'';'

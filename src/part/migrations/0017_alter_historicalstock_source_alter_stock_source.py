@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("part", "0016_alter_historicalpart_source_and_more"),
     ]

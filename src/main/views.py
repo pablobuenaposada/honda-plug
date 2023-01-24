@@ -7,7 +7,7 @@ from part.models import Image, Part, Stock
 
 def prometheus_override_view(request):
     """
-    Override the main Prometheus view to update custom metrics
+    Override the main Prometheus view to include custom metrics
     """
     parts.set(Part.objects.all().count())
     stocks.labels("all").set(Stock.objects.all().count())

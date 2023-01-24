@@ -41,7 +41,6 @@ def set_country_historical(apps, schema_editor):
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("part", "0012_alter_historicalstock_source_alter_stock_source"),
     ]

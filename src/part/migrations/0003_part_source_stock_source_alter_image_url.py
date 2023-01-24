@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         ("part", "0002_rename_reference_stock_part_stock_available_and_more"),
     ]

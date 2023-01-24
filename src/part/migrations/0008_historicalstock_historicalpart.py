@@ -11,7 +11,6 @@ import part.validators
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ("part", "0007_alter_part_reference"),
