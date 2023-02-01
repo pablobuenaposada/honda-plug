@@ -1,5 +1,4 @@
 import pytest
-
 from scrapper.clients.amayama import AmayamaClient
 
 

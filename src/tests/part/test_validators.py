@@ -1,6 +1,5 @@
 import pytest
 from django.core.exceptions import ValidationError
-
 from part.validators import validate_reference
 
 

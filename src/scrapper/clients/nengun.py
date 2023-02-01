@@ -2,7 +2,6 @@ import json
 
 from bs4 import BeautifulSoup
 from money import Money
-
 from part.constants import SOURCE_NENGUN
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock

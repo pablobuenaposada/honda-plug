@@ -2,7 +2,6 @@ from unittest.mock import patch
 
 import pytest
 from model_bakery import baker
-
 from part.constants import (
     SOURCE_ACURAEXPRESSPARTS,
     SOURCE_ACURAPARTSFORLESS,

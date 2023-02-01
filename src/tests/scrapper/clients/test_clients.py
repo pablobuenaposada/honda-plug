@@ -1,6 +1,5 @@
 import pytest
 from money import Money
-
 from part.constants import (
     SOURCE_ACURAEXPRESSPARTS,
     SOURCE_ACURAPARTSFORLESS,

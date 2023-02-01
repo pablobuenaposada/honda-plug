@@ -1,5 +1,4 @@
 from django_prometheus import exports
-
 from part.constants import STOCK_SOURCES
 from part.metrics import images, parts, stocks
 from part.models import Image, Part, Stock

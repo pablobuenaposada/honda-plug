@@ -2,9 +2,8 @@ import json
 
 from bs4 import BeautifulSoup
 from money import Money
-from price_parser import Price
-
 from part.constants import SOURCE_AKR
+from price_parser import Price
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
 from scrapper.utils import flatten_reference

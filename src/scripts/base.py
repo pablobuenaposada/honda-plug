@@ -2,10 +2,9 @@ import asyncio
 import logging
 from datetime import datetime
 
-from sentry_sdk import capture_exception
-
 from part.lambdas import add_stock
 from part.models import Part
+from sentry_sdk import capture_exception
 
 logger = logging.getLogger(__name__)
 
@@ -19,10 +18,11 @@ def run():
     client = Config.client()
     current = 0
     for part in getattr(Part.objects, Config.manager_method)().iterator():
-        log_message = (
-            lambda message: f"{datetime.now()}: Stock:{part.reference} {message}"
-        )
-        logger.info(log_message("searching stock"))
+
+        def log_message(message, part):
+            return f"{datetime.now()}: Stock:{part.reference} {message}"
+
+        logger.info(log_message("searching stock", part))
         try:
             parsed_stock = asyncio.run(client.get_part(part.reference))
             if parsed_stock:

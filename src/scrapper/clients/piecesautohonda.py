@@ -3,7 +3,6 @@ import re
 
 from bs4 import BeautifulSoup
 from money import Money
-
 from part.constants import SOURCE_PIECESAUTOHONDA
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock

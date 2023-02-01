@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 from money import Money
-
 from part.constants import SOURCE_JAPSERVICEPARTS
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock

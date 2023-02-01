@@ -1,9 +1,8 @@
 from bs4 import BeautifulSoup
 from money import Money
-from price_parser import Price
-
 from part.constants import SOURCE_CLOCKWISEMOTION
 from part.lambdas import add_stock
+from price_parser import Price
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
 

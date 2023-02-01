@@ -3,7 +3,6 @@ from unittest.mock import patch
 import pytest
 from freezegun import freeze_time
 from model_bakery import baker
-
 from part.constants import SOURCE_EPCDATA, SOURCE_HONDAPARTSNOW
 from part.models import Part, Stock
 

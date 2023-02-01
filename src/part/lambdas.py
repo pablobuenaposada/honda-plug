@@ -3,18 +3,17 @@ from datetime import datetime
 
 import pycountry
 from djmoney.money import Money
-
-from part.models import Image, Part, Stock
 from scrapper.common.stock import Stock as ParsedStock
 from scrapper.utils import flatten_reference
+
+from part.models import Image, Part, Stock
 
 logger = logging.getLogger(__name__)
 
 
 def add_part(reference: str, source: str, message_prefix: str = ""):
-    log_message = (
-        lambda message: f"{datetime.now()}: {message_prefix} Part:{reference} {message}"
-    )
+    def log_message(message):
+        return f"{datetime.now()}: {message_prefix} Part:{reference} {message}"
 
     try:
         # format the reference so the search ignores hyphens since they don't really matter for uniqueness
@@ -43,9 +42,10 @@ def add_stock(
     if not stock_parsed:
         return
     part = add_part(stock_parsed.reference, stock_parsed.source, message_prefix)
-    log_message = (
-        lambda message: f"{datetime.now()}: {message_prefix} Stock:{stock_parsed.reference} Source: {stock_parsed.source} Country: {pycountry.countries.get(alpha_2=stock_parsed.country).flag}  {message}"
-    )
+
+    def log_message(message):
+        return f"{datetime.now()}: {message_prefix} Stock:{stock_parsed.reference} Source: {stock_parsed.source} Country: {pycountry.countries.get(alpha_2=stock_parsed.country).flag}  {message}"
+
     try:
         stock, created = Stock.objects.update_or_create(
             part=part,

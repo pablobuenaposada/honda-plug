@@ -2,8 +2,6 @@ import asyncio
 import logging
 
 from django_rq import job
-from sentry_sdk import capture_exception
-
 from scrapper.clients.acuraexpressparts import AcuraexpresspartsClient
 from scrapper.clients.acurapartsforless import AcurapartsforlessClient
 from scrapper.clients.akr import AkrClient
@@ -23,6 +21,7 @@ from scrapper.clients.nengun import NengunClient
 from scrapper.clients.onlineteile import OnlineteileClient
 from scrapper.clients.piecesautohonda import PiecesAutoHondaClient
 from scrapper.clients.tegiwa import TegiwaClient
+from sentry_sdk import capture_exception
 
 logger = logging.getLogger(__name__)
 CLIENTS = (

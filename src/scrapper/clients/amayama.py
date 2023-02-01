@@ -4,7 +4,6 @@ import pycountry
 import requests
 from bs4 import BeautifulSoup
 from money import Money
-
 from part.constants import SOURCE_AMAYAMA
 from scrapper.clients.interface import ClientInterface
 from scrapper.common.stock import Stock
@@ -32,7 +31,7 @@ class AmayamaClient(ClientInterface):
         except AttributeError:
             image = None
         for stock in soup.find("tbody", {"class": "part-table__body"}).findAll(
-            "tr", {"class": lambda L: L and L.startswith("part-table__row")}
+            "tr", {"class": lambda x: x and x.startswith("part-table__row")}
         ):
             country = self.regex.sub(
                 "", stock.find("span", {"class": "warehouse-name"}).text
@@ -134,8 +133,8 @@ class AmayamaClient(ClientInterface):
                             ).findAll(
                                 "tr",
                                 {
-                                    "class": lambda L: L
-                                    and L.startswith("part-table__row")
+                                    "class": lambda x: x
+                                    and x.startswith("part-table__row")
                                 },
                             )
 

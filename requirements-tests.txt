@@ -4,7 +4,6 @@ pytest-django
 pytest-asyncio
 model-bakery
 black
-isort
-flake8
+ruff
 ipdb
 freezegun

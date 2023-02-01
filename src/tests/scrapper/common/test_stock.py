@@ -1,7 +1,6 @@
 import pydantic
 import pytest
 from money import Money
-
 from part.constants import SOURCE_AMAYAMA
 from scrapper.common.stock import Stock
 

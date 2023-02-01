@@ -1,2 +1,32 @@
-[tool.isort]
-profile = "black"
+[tool.ruff]
+target-version = "py310"
+select = [
+    "F", # Pyflakes
+    "E", # pycodestyle
+    "W", # Warning
+    "C90", # mccabe
+    "I",  # isort
+    "B", # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "T10", # flake8-debugger
+    "ISC", # flake8-implicit-str-concat
+    "ICN", # flake8-import-conventions
+    "PIE", # flake8-pie
+    "Q", # flake8-quotes
+    "PGH", # pygrep-hooks
+    "PLE", # Error
+    "PLW", # Warning
+    "RSE", # flake8-raise
+    # TODO: DTZ, PT, SIM, TID, RET, ERA, PLR, TRY, UP, N
+]
+ignore = [
+    "E501",
+    "E999" # https://github.com/charliermarsh/ruff/issues/282
+]
+# ruff doesn't get along with python 'match' syntax for now, so files containing this are excluded
+exclude = [
+    "src/scrapper/clients/tegiwa.py",
+    "src/scrapper/clients/hondapartsnow.py",
+    "src/part/migrations/0013_alter_stock_unique_together_historicalstock_country_and_more.py",
+    "src/scrapper/clients/common.py",
+]
