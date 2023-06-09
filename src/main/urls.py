@@ -20,7 +20,7 @@ from main.views import prometheus_override_view
 
 
 def trigger_error(request):
-    1 / 0
+    return 1 / 0
 
 
 urlpatterns = [
