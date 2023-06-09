@@ -8,7 +8,7 @@ from part.models import Part, Stock
 
 
 @pytest.mark.django_db
-@patch("part.tasks.search_for_stocks")
+@patch("part.models.search_for_stocks")
 class TestPartManager:
     def test_stocked_parts_first(self, m_search_for_stocks):
         part1 = baker.make(Part, reference="foooo-bar-ban", source=SOURCE_EPCDATA)

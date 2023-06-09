@@ -14,7 +14,7 @@ REFERENCE = "56483-PND-003"
 
 
 @pytest.mark.django_db
-@patch("part.tasks.search_for_stocks")
+@patch("part.models.search_for_stocks")
 class TestAddStock:
     url = "http://foo.com"
     title = "foo"
@@ -97,7 +97,7 @@ class TestAddStock:
 
 
 @pytest.mark.django_db
-@patch("part.tasks.search_for_stocks")
+@patch("part.models.search_for_stocks")
 class TestAddPart:
     source = SOURCE_UNKNOWN
 
