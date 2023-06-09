@@ -14,3 +14,29 @@ class PartOutputSerializer(serializers.ModelSerializer):
     class Meta:
         model = Part
         fields = ["reference", "stock"]
+
+
+class HistoricalStockNestedOutputSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Stock
+        fields = ["price", "price_currency", "modified"]
+
+
+class StockOutputSerializer(serializers.ModelSerializer):
+    history = HistoricalStockNestedOutputSerializer(many=True)
+
+    class Meta:
+        model = Stock
+        fields = [
+            "id",
+            "title",
+            "price",
+            "price_currency",
+            "available",
+            "discontinued",
+            "source",
+            "quantity",
+            "url",
+            "country",
+            "history",
+        ]
