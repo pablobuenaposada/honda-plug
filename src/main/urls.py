@@ -28,4 +28,5 @@ urlpatterns = [
     path("sentry-debug/", trigger_error),
     path("django-rq/", include("django_rq.urls")),
     path("metrics", prometheus_override_view, name="prometheus-django-metrics"),
+    path("api/", include("api.urls", namespace="api")),
 ]
