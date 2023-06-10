@@ -59,6 +59,6 @@ docker/run/local/restore-db:
 	PGPASSWORD=$(PASSWORD) psql -h localhost -U postgres -c 'ALTER DATABASE honda_plug RENAME TO honda_plug_test;'
 
 docker/run/backup-db:
-	docker exec -t honda-db-1 pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+	docker exec -t honda-plug-db-1 pg_dumpall -c -U postgres > dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
 
 
