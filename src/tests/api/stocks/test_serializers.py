@@ -2,13 +2,13 @@ from unittest.mock import patch
 
 import pytest
 from api.parts.serializers import HistoricalStockNestedOutputSerializer
-from api.stocks.serializers import StockOutputSerializer
+from api.stocks.serializers import ImageNestedOutputSerializer, StockOutputSerializer
 from django.conf import settings
 from django.utils.timezone import get_current_timezone
 from djmoney.money import Money
 from model_bakery import baker
 from part.constants import SOURCE_TEGIWA
-from part.models import Part, Stock
+from part.models import Image, Part, Stock
 
 REFERENCE = "56483-PND-003"
 
@@ -42,6 +42,19 @@ class TestsHistoricalStockNestedOutputSerializer:
 
 @pytest.mark.django_db
 @patch("part.models.search_for_stocks")
+class TestsImageNestedOutputSerializer:
+    serializer_class = ImageNestedOutputSerializer
+
+    def test_success(self, m_search_for_stocks):
+        part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+        stock = baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
+        image = baker.make(Image, stock=stock, url="http://www.foo.com")
+
+        assert self.serializer_class(image).data == {"url": image.url}
+
+
+@pytest.mark.django_db
+@patch("part.models.search_for_stocks")
 class TestStockOutputSerializer:
     serializer_class = StockOutputSerializer
 
@@ -59,6 +72,7 @@ class TestStockOutputSerializer:
         )
         stock.price = Money(2, "USD")
         stock.save()
+        image = baker.make(Image, stock=stock, url="http://www.foo.com")
 
         assert self.serializer_class(stock).data == {
             "id": stock.id,
@@ -71,6 +85,7 @@ class TestStockOutputSerializer:
             "source": stock.source,
             "title": stock.title,
             "url": stock.url,
+            "images": [ImageNestedOutputSerializer(image).data],
             "history": [
                 {
                     "price": "{:,.2f}".format(historic.price.amount),
