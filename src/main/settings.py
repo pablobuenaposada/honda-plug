@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     "django_countries",
     "django_rq",
     "django_prometheus",
+    "rest_framework",
 ]
 
 MIDDLEWARE = [
