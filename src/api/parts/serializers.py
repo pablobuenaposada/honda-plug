@@ -16,6 +16,12 @@ class PartOutputSerializer(serializers.ModelSerializer):
         fields = ["reference", "stock"]
 
 
+class SearchOutputSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Part
+        fields = ["reference"]
+
+
 class HistoricalStockNestedOutputSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stock

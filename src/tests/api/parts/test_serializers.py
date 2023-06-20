@@ -3,6 +3,7 @@ from unittest.mock import patch
 import pytest
 from api.parts.serializers import (
     PartOutputSerializer,
+    SearchOutputSerializer,
     StockNestedOutputSerializer,
 )
 from model_bakery import baker
@@ -35,4 +36,17 @@ class TestsPartOutputSerializer:
         assert self.serializer_class(part).data == {
             "reference": part.reference,
             "stock": [],
+        }
+
+
+@pytest.mark.django_db
+@patch("part.models.search_for_stocks")
+class TestsSearchOutputSerializer:
+    serializer_class = SearchOutputSerializer
+
+    def test_success(self, m_search_for_stocks):
+        part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+
+        assert self.serializer_class(part).data == {
+            "reference": part.reference,
         }
