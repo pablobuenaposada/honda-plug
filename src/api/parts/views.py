@@ -1,4 +1,6 @@
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
+from django.db.models import Value
+from django.db.models.functions import Replace
 from part.models import Part
 from rest_framework import filters
 from rest_framework.generics import ListAPIView, RetrieveAPIView
@@ -17,7 +19,9 @@ class PartsView(RetrieveAPIView):
 
 
 class SearchView(ListAPIView):
-    queryset = Part.objects.all()
+    queryset = Part.objects.annotate(
+        cleaned_reference=Replace("reference", Value("-"), Value(""))
+    )
     serializer_class = SearchOutputSerializer
     filter_backends = [filters.SearchFilter]
-    search_fields = ["reference", "stock__title"]
+    search_fields = ["cleaned_reference", "stock__title"]
