@@ -47,6 +47,7 @@ services:
     build: ./nginx
     ports:
       - 80:80
+      - 443:443
     volumes:
       - static_volume:/app/staticfiles
     depends_on:

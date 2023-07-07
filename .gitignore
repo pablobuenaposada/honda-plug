@@ -162,3 +162,6 @@ cython_debug/
 # Honda Plug specifics
 postgres-data/
 grafana-data/
+
+nginx/fullchain.pem
+nginx/privkey.pem
