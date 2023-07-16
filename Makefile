@@ -46,7 +46,7 @@ docker/run/shell:
 
 docker/run/prod:
 	crontab $(shell pwd)/cron/cron
-	docker compose -f docker-compose.prod.yml up --force-recreate -d --build
+	docker compose -f docker-compose.prod.yml up --force-recreate -d --build nginx
 
 docker/run/local:
 	docker compose -f docker-compose.yml up --force-recreate -d --build
