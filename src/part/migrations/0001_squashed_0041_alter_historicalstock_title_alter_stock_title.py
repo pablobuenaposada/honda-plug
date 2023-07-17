@@ -11,93 +11,8 @@ from django.db import migrations, models
 
 import part.validators
 
-# Functions from the following migrations need manual copying.
-# Move them and any dependencies into this file, then update the
-# RunPython operations to refer to the local versions:
-# part.migrations.0013_alter_stock_unique_together_historicalstock_country_and_more
-
-
-def set_country(apps, schema_editor):
-    Stock = apps.get_model("part", "Stock")
-    for stock in Stock.objects.all():
-        match stock.source:
-            case "hondaautomotiveparts":
-                stock.country = "US"
-                stock.save()
-            case "hondapartsnow":
-                stock.country = "US"
-                stock.save()
-            case "hondapartsonline":
-                stock.country = "US"
-                stock.save()
-            case "tegiwa":
-                stock.country = "GB"
-                stock.save()
-
-
-def set_country_historical(apps, schema_editor):
-    Stock = apps.get_model("part", "Historicalstock")
-    for stock in Stock.objects.all():
-        match stock.source:
-            case "hondaautomotiveparts":
-                stock.country = "US"
-                stock.save()
-            case "hondapartsnow":
-                stock.country = "US"
-                stock.save()
-            case "hondapartsonline":
-                stock.country = "US"
-                stock.save()
-            case "tegiwa":
-                stock.country = "GB"
-                stock.save()
-
 
 class Migration(migrations.Migration):
-    replaces = [
-        ("part", "0001_initial"),
-        ("part", "0002_rename_reference_stock_part_stock_available_and_more"),
-        ("part", "0003_part_source_stock_source_alter_image_url"),
-        ("part", "0004_alter_part_reference"),
-        ("part", "0005_alter_stock_options_stock_quantity_and_more"),
-        ("part", "0006_alter_part_reference"),
-        ("part", "0007_alter_part_reference"),
-        ("part", "0008_historicalstock_historicalpart"),
-        ("part", "0009_alter_historicalstock_title_alter_stock_title"),
-        ("part", "0010_historicalstock_url_stock_url"),
-        ("part", "0011_alter_historicalpart_source_alter_part_source"),
-        ("part", "0012_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0013_alter_stock_unique_together_historicalstock_country_and_more"),
-        ("part", "0014_alter_historicalpart_source_alter_part_source"),
-        ("part", "0015_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0016_alter_historicalpart_source_and_more"),
-        ("part", "0017_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0018_alter_historicalpart_source_alter_part_source"),
-        ("part", "0019_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0020_alter_historicalpart_source_alter_part_source"),
-        ("part", "0021_alter_historicalpart_source_alter_part_source"),
-        ("part", "0022_alter_historicalpart_source_alter_part_source"),
-        ("part", "0023_alter_historicalpart_source_and_more"),
-        ("part", "0024_alter_historicalpart_source_alter_part_source"),
-        ("part", "0025_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0026_alter_image_url"),
-        ("part", "0027_alter_historicalpart_source_alter_part_source"),
-        ("part", "0028_alter_historicalpart_source_alter_part_source"),
-        ("part", "0029_alter_historicalpart_source_and_more"),
-        ("part", "0030_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0031_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0032_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0033_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0034_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0035_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0036_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0037_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0038_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0039_alter_historicalstock_source_alter_stock_source"),
-        ("part", "0040_alter_historicalstock_price_currency_and_more"),
-        ("part", "0041_alter_historicalstock_title_alter_stock_title"),
-    ]
-
     initial = True
 
     dependencies = [
@@ -1032,14 +947,6 @@ class Migration(migrations.Migration):
                 "get_latest_by": ("history_date", "history_id"),
             },
             bases=(simple_history.models.HistoricalChanges, models.Model),
-        ),
-        migrations.RunPython(
-            code=set_country_historical,
-            reverse_code=django.db.migrations.operations.special.RunPython.noop,
-        ),
-        migrations.RunPython(
-            code=set_country,
-            reverse_code=django.db.migrations.operations.special.RunPython.noop,
         ),
         migrations.AlterField(
             model_name="stock",
