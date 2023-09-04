@@ -32,20 +32,13 @@ class JapservicepartsClient(ClientInterface):
                     "content"
                 ]
                 available = (
-                    True
-                    if soup.find("meta", {"property": "product:availability"})[
-                        "content"
-                    ]
+                    soup.find("meta", {"property": "product:availability"})["content"]
                     == "instock"
-                    else False
                 )
                 try:
                     quantity = soup.find("input", {"name": "quantity"})["max"]
                 except (KeyError, TypeError):
-                    if available:
-                        quantity = 1
-                    else:
-                        quantity = None
+                    quantity = 1 if available else None
 
                 return Stock(
                     country="GB",

@@ -13,6 +13,7 @@ select = [
     "ICN", # flake8-import-conventions
     "PIE", # flake8-pie
     "Q", # flake8-quotes
+    "SIM", # flake8-simplify
     "PGH", # pygrep-hooks
     "PLE", # Error
     "PLW", # Warning

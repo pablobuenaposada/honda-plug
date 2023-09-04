@@ -29,10 +29,8 @@ class BernardipartsClient(ClientInterface):
             country="US",
             source=SOURCE_BERNARDIPARTS,
             reference=reference,
-            discontinued=True
-            if soup.find("meta", {"itemprop": "availability"})["content"]
-            == "Discontinued"
-            else False,
+            discontinued=soup.find("meta", {"itemprop": "availability"})["content"]
+            == "Discontinued",
             available=bool(
                 soup.find(
                     "a", {"id": "ctl00_MainContentHolder_AddToCartButton1_btnAdd"}

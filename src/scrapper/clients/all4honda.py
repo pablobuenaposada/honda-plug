@@ -19,7 +19,7 @@ class All4hondaClient(ClientInterface):
         formatted_referenced = reference.upper().replace("-", "")
 
         for hit in response["hits"]:
-            if type(hit["sku"]) == list:
+            if isinstance(hit["sku"], list):
                 for sku in hit["sku"]:
                     if sku.upper().replace("-", "") == formatted_referenced:
                         return Stock(
