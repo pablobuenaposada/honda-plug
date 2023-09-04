@@ -15,6 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from drf_spectacular.views import (
+    SpectacularAPIView,
+    SpectacularRedocView,
+)
 
 from main.views import prometheus_override_view
 
@@ -29,4 +33,6 @@ urlpatterns = [
     path("django-rq/", include("django_rq.urls")),
     path("metrics", prometheus_override_view, name="prometheus-django-metrics"),
     path("api/", include("api.urls", namespace="api")),
+    path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
+    path("api/docs/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
 ]
