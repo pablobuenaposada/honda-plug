@@ -1,3 +1,4 @@
+import contextlib
 import csv
 
 from part.constants import SOURCE_EPC_4_00
@@ -13,7 +14,5 @@ def run(*args):
         reader = csv.reader(csvfile)
         next(reader, None)  # skip the headers
         for row in reader:
-            try:
+            with contextlib.suppress(Exception):
                 add_part(format_reference(row[5]), SOURCE_EPC_4_00, f"row {row[0]}")
-            except Exception:
-                pass

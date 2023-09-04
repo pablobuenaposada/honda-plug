@@ -13,11 +13,12 @@ select = [
     "ICN", # flake8-import-conventions
     "PIE", # flake8-pie
     "Q", # flake8-quotes
+    "SIM", # flake8-simplify
     "PGH", # pygrep-hooks
     "PLE", # Error
     "PLW", # Warning
     "RSE", # flake8-raise
-    # TODO: DTZ, PT, SIM, TID, RET, ERA, PLR, TRY, UP, N
+    # TODO: DTZ, PT, TID, RET, ERA, PLR, TRY, UP, N
 ]
 ignore = [
     "E501",

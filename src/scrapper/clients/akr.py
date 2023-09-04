@@ -32,9 +32,7 @@ class AkrClient(ClientInterface):
                     if len(result["productImages"]) > 0
                     else None
                 )
-                discontinued = (
-                    True if int(result["productDiscontinued"]) == 1 else False
-                )
+                discontinued = int(result["productDiscontinued"]) == 1
                 break
         if not url:
             return

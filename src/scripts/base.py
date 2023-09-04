@@ -26,7 +26,7 @@ def run():
         try:
             parsed_stock = asyncio.run(client.get_part(part.reference))
             if parsed_stock:
-                if type(parsed_stock) == list:
+                if isinstance(parsed_stock, list):
                     for stock in parsed_stock:
                         add_stock(stock)
                 else:

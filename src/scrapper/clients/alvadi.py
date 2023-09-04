@@ -29,10 +29,8 @@ class AlvadiClient(ClientInterface):
                     country="EE",
                     source=SOURCE_ALVADI,
                     reference=reference,
-                    available=True
-                    if soup.find("meta", {"itemprop": "availability"})["content"]
-                    == "InStock"
-                    else False,
+                    available=soup.find("meta", {"itemprop": "availability"})["content"]
+                    == "InStock",
                     price=Money(
                         amount=soup.find("span", {"itemprop": "price"}).text,
                         currency="EUR",

@@ -28,11 +28,7 @@ class PiecesAutoHondaClient(ClientInterface):
             discontinued = True
             price = None
         else:
-            available = (
-                False
-                if soup.find("button", {"id": "bt_affiche_tarif"}) is None
-                else True
-            )
+            available = soup.find("button", {"id": "bt_affiche_tarif"}) is not None
             discontinued = False
             price = (
                 Money(

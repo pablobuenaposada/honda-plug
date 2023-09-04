@@ -16,26 +16,26 @@ class RequestLimiter:
         if delta < self.WAIT_SECONDS:
             time.sleep(self.WAIT_SECONDS - delta)
         self.last_time = datetime.now()
-        async with aiohttp.ClientSession() as session:
-            async with session.get(
-                url, allow_redirects=allow_redirects, **kwargs
-            ) as response:
-                if response.content_type == "application/json":
-                    return await response.json(), response.url, response.status
-                elif response.content_type == "text/html":
-                    return await response.read(), response.url, response.status
+        async with aiohttp.ClientSession() as session, session.get(
+            url, allow_redirects=allow_redirects, **kwargs
+        ) as response:
+            if response.content_type == "application/json":
+                return await response.json(), response.url, response.status
+            elif response.content_type == "text/html":
+                return await response.read(), response.url, response.status
 
     async def post(self, url, *, data=None, **kwargs):
         delta = (datetime.now() - self.last_time).seconds
         if delta < self.WAIT_SECONDS:
             time.sleep(self.WAIT_SECONDS - delta)
         self.last_time = datetime.now()
-        async with aiohttp.ClientSession() as session:
-            async with session.post(url, data=data, **kwargs) as response:
-                if response.content_type == "application/json":
-                    return await response.json(), response.url, response.status
-                elif response.content_type == "text/html":
-                    return await response.text(), response.url, response.status
+        async with aiohttp.ClientSession() as session, session.post(
+            url, data=data, **kwargs
+        ) as response:
+            if response.content_type == "application/json":
+                return await response.json(), response.url, response.status
+            elif response.content_type == "text/html":
+                return await response.text(), response.url, response.status
 
 
 def string_to_float(value: str):

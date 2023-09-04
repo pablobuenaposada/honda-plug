@@ -19,11 +19,9 @@ class IcbClient(ClientInterface):
             ):
                 result_response, _, _ = await self.request_limiter.get(result["url"])
                 soup = BeautifulSoup(result_response, "html.parser")
-                available = (
-                    True
-                    if result["price"] != 0
+                available = bool(
+                    result["price"] != 0
                     or soup.find("input", {"class": "addtocartImg"})
-                    else False
                 )
 
                 return Stock(
