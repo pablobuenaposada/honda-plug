@@ -46,8 +46,6 @@ class Stock(ExportModelOperationsMixin("stock"), TimeStampedModel):
     source = models.CharField(
         choices=STOCK_SOURCES,
         max_length=len(max([source[0] for source in STOCK_SOURCES], key=len)),
-        blank=False,
-        default=None,
         db_index=True,
     )
     quantity = models.IntegerField(null=True, blank=True)
