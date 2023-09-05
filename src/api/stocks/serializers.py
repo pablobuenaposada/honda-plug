@@ -29,3 +29,20 @@ class StockOutputSerializer(serializers.ModelSerializer):
             "history",
             "images",
         ]
+
+
+class StockInputSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Stock
+        fields = [
+            "part",
+            "title",
+            "price",
+            "price_currency",
+            "available",
+            "discontinued",
+            "source",
+            "quantity",
+            "url",
+            "country",
+        ]

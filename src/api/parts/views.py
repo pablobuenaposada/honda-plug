@@ -7,6 +7,7 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 
 class PartsView(RetrieveAPIView):
+    permission_classes = []
     serializer_class = PartOutputSerializer
     queryset = Part.objects.all()
     lookup_field = "reference"
@@ -19,6 +20,7 @@ class PartsView(RetrieveAPIView):
 
 
 class SearchView(ListAPIView):
+    permission_classes = []
     queryset = Part.objects.annotate(
         cleaned_reference=Replace("reference", Value("-"), Value(""))
     )
