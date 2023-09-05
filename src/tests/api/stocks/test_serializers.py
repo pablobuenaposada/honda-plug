@@ -2,13 +2,18 @@ from unittest.mock import patch
 
 import pytest
 from api.parts.serializers import HistoricalStockNestedOutputSerializer
-from api.stocks.serializers import ImageNestedOutputSerializer, StockOutputSerializer
+from api.stocks.serializers import (
+    ImageNestedOutputSerializer,
+    StockInputSerializer,
+    StockOutputSerializer,
+)
 from django.conf import settings
 from django.utils.timezone import get_current_timezone
 from djmoney.money import Money
 from model_bakery import baker
 from part.constants import SOURCE_TEGIWA
 from part.models import Image, Part, Stock
+from rest_framework.exceptions import ErrorDetail
 
 REFERENCE = "56483-PND-003"
 
@@ -96,4 +101,74 @@ class TestStockOutputSerializer:
                 }
                 for historic in stock.history.all()
             ],
+        }
+
+
+@pytest.mark.django_db
+class TestStockInputSerializer:
+    serializer_class = StockInputSerializer
+
+    @pytest.fixture(autouse=True)
+    def setup_class(self):
+        with patch("part.models.search_for_stocks"):
+            self.part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+
+    def test_mandatory(self):
+        serializer = self.serializer_class(data={})
+
+        assert not serializer.is_valid()
+        assert serializer.errors == {
+            "part": [ErrorDetail(string="This field is required.", code="required")],
+            "title": [ErrorDetail(string="This field is required.", code="required")],
+            "source": [ErrorDetail(string="This field is required.", code="required")],
+            "url": [ErrorDetail(string="This field is required.", code="required")],
+            "country": [ErrorDetail(string="This field is required.", code="required")],
+        }
+
+    def test_success_min(self):
+        serializer = self.serializer_class(
+            data={
+                "part": self.part.pk,
+                "title": "foo",
+                "source": SOURCE_TEGIWA,
+                "url": "https://www.foo.com",
+                "country": "US",
+            }
+        )
+
+        assert serializer.is_valid()
+        assert serializer.validated_data == {
+            "part": self.part,
+            "country": "US",
+            "source": SOURCE_TEGIWA,
+            "title": "foo",
+            "url": "https://www.foo.com",
+        }
+
+    def test_success_full(self):
+        serializer = self.serializer_class(
+            data={
+                "part": self.part.pk,
+                "title": "foo",
+                "source": SOURCE_TEGIWA,
+                "url": "https://www.foo.com",
+                "country": "US",
+                "available": True,
+                "discontinued": False,
+                "price": Money("1.90", "EUR"),
+                "quantity": 1,
+            }
+        )
+
+        assert serializer.is_valid()
+        assert serializer.validated_data == {
+            "part": self.part,
+            "country": "US",
+            "source": SOURCE_TEGIWA,
+            "title": "foo",
+            "url": "https://www.foo.com",
+            "available": True,
+            "discontinued": False,
+            "price": Money("1.90", "EUR"),
+            "quantity": 1,
         }

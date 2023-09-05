@@ -3,4 +3,5 @@ from django.urls import path
 
 urlpatterns = [
     path("<int:pk>/", StocksView.as_view(), name="stocks-detail"),
+    path("", StocksView.as_view(), name="stocks-create"),
 ]
