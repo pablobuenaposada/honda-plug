@@ -50,7 +50,7 @@ class Stock(ExportModelOperationsMixin("stock"), TimeStampedModel):
     )
     quantity = models.IntegerField(null=True, blank=True)
     url = models.URLField()
-    country = CountryField(blank=False, default=None)
+    country = CountryField()
 
     history = HistoricalRecords()
 
