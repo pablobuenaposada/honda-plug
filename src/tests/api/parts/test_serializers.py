@@ -37,6 +37,7 @@ class TestsPartOutputSerializer:
             "reference": part.reference,
             "stock": [],
             "title": None,
+            "last_time_delivered": None,
         }
 
     def test_success_with_stocks(self, m_search_for_stocks):
@@ -61,6 +62,7 @@ class TestsPartOutputSerializer:
                 for stock in part.stock_set.all()
             ],
             "title": stock.title,
+            "last_time_delivered": None,
         }
 
 

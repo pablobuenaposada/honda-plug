@@ -42,6 +42,7 @@ class TestPart:
             "created": part.created,
             "modified": part.modified,
             "reference": data["reference"].upper(),
+            "last_time_delivered": part.last_time_delivered,
         }
 
         for field in [

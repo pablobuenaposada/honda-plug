@@ -1,3 +1,6 @@
+from copy import deepcopy
+from datetime import datetime
+
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
 from django.db.models import Value
 from django.db.models.functions import Replace
@@ -17,6 +20,22 @@ class PartsView(RetrieveAPIView):
             # we expect the url to contain always the reference in lower case so to match it we need it in upper case
             self.kwargs["reference"] = self.kwargs["reference"].upper()
         return super().get_object()
+
+
+class PartsToScrapView(RetrieveAPIView):
+    permission_classes = []
+    serializer_class = PartOutputSerializer
+    queryset = Part.objects.parts_to_scrap()
+
+    def get_object(self):
+        queryset = self.filter_queryset(self.get_queryset())
+        obj = queryset.first()
+        self.check_object_permissions(self.request, obj)
+        obj_copy = deepcopy(obj)
+        obj.last_time_delivered = datetime.now()
+        obj.save(update_fields=["last_time_delivered"])
+
+        return obj_copy
 
 
 class SearchView(ListAPIView):

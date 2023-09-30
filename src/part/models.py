@@ -19,6 +19,9 @@ class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
         choices=PART_SOURCES,
         max_length=len(max([source[0] for source in PART_SOURCES], key=len)),
     )
+    last_time_delivered = models.DateTimeField(
+        null=True, help_text="last time when this part has been delivered to a scraper"
+    )
 
     history = HistoricalRecords()
     objects = PartManager()

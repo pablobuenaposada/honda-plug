@@ -34,6 +34,8 @@ class StocksCreateView(CreateAPIView):
                     ]
                 },
             ):
+                # this validation error is a special case where the stock already exists,
+                # so it's just about finding the instance and updating it
                 instance = Stock.objects.get(
                     part=serializer.data["part"],
                     source=serializer.data["source"],

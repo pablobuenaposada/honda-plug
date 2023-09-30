@@ -58,3 +58,26 @@ class TestPartManager:
                 )
                 == expected
             )
+
+    def test_parts_to_scrap(self, m_search_for_stocks):
+        part3 = baker.make(
+            Part,
+            reference="foooo-bar-ban3",
+            source=SOURCE_EPCDATA,
+            last_time_delivered="2022-12-30 10:00:00",
+        )
+        part4 = baker.make(
+            Part,
+            reference="foooo-bar-ban4",
+            source=SOURCE_EPCDATA,
+            last_time_delivered="2022-12-30 10:00:00",
+        )
+        part2 = baker.make(
+            Part,
+            reference="foooo-bar-ban2",
+            source=SOURCE_EPCDATA,
+            last_time_delivered="2022-12-01 10:00:00",
+        )
+        part1 = baker.make(Part, reference="foooo-bar-ban1", source=SOURCE_EPCDATA)
+
+        assert list(Part.objects.parts_to_scrap()) == [part1, part2, part3, part4]
