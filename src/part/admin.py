@@ -49,13 +49,14 @@ class ImageInlineAdmin(admin.TabularInline):
 
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Part
-    readonly_fields = ("created", "modified")
+    readonly_fields = ("created", "modified", "last_time_delivered")
     list_display = (
         "reference",
         "source",
         "stock_found",
         "modified",
         "get_num_of_stock_updates",
+        "last_time_delivered",
     )
     search_fields = ["reference"]
     list_filter = ["source", "modified"]

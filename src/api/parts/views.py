@@ -23,7 +23,10 @@ class PartsView(RetrieveAPIView):
 
 
 class PartsToScrapView(RetrieveAPIView):
-    permission_classes = []
+    """
+    Returns a part that needs to be scrapped and marks last_time_delivered to current time
+    """
+
     serializer_class = PartOutputSerializer
     queryset = Part.objects.parts_to_scrap()
 

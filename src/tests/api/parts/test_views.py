@@ -3,11 +3,13 @@ from unittest.mock import patch
 import pytest
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
 from django.conf import settings
+from django.contrib.auth.models import User
 from django.shortcuts import resolve_url
 from model_bakery import baker
 from part.constants import SOURCE_TEGIWA
 from part.models import Part, Stock
 from rest_framework import status
+from rest_framework.authtoken.models import Token
 
 REFERENCE = "56483-PND-003"
 
@@ -125,22 +127,32 @@ class TestsSearchView:
 class TestsPartsToScrapView:
     endpoint = resolve_url("api:to-scrap")
 
+    @pytest.fixture(autouse=True)
+    def setup_class(self):
+        user = baker.make(User)
+        self.token = baker.make(Token, user=user)
+
     def test_url(self, m_search_for_stocks):
         assert self.endpoint == "/api/parts/to-scrap/"
+
+    def test_no_token(self, m_search_for_stocks, client):
+        response = client.get(self.endpoint)
+
+        assert response.status_code == status.HTTP_401_UNAUTHORIZED
 
     def test_success(self, m_search_for_stocks, client):
         """
         we call two times the endpoint because the field "last_time_delivered" should change in the second one
         """
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
-        response = client.get(self.endpoint)
+        response = client.get(self.endpoint, HTTP_AUTHORIZATION=f"Token {self.token}")
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data == PartOutputSerializer(part).data
         assert response.data["last_time_delivered"] is None
 
         part.refresh_from_db()
-        response = client.get(self.endpoint)
+        response = client.get(self.endpoint, HTTP_AUTHORIZATION=f"Token {self.token}")
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data == PartOutputSerializer(part).data
