@@ -35,6 +35,7 @@ class TestAddStock:
     expected_part = {
         "reference": REFERENCE,
         "source": source,
+        "last_time_delivered": None,
     }
     expected_stock = {
         "reference": REFERENCE,

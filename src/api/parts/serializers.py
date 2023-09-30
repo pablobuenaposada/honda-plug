@@ -23,7 +23,7 @@ class PartOutputSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Part
-        fields = ["reference", "stock", "title"]
+        fields = ["reference", "stock", "title", "last_time_delivered"]
 
     def get_title(self, obj):
         stocks = obj.stock_set.all().values_list("title", "source")

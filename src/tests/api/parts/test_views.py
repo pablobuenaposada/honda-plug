@@ -2,6 +2,7 @@ from unittest.mock import patch
 
 import pytest
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
+from django.conf import settings
 from django.shortcuts import resolve_url
 from model_bakery import baker
 from part.constants import SOURCE_TEGIWA
@@ -117,3 +118,34 @@ class TestsSearchView:
             SearchOutputSerializer(Part.objects.get(reference=part)).data
             for part in expected_parts
         ]
+
+
+@pytest.mark.django_db
+@patch("part.models.search_for_stocks")
+class TestsPartsToScrapView:
+    endpoint = resolve_url("api:to-scrap")
+
+    def test_url(self, m_search_for_stocks):
+        assert self.endpoint == "/api/parts/to-scrap/"
+
+    def test_success(self, m_search_for_stocks, client):
+        """
+        we call two times the endpoint because the field "last_time_delivered" should change in the second one
+        """
+        part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+        response = client.get(self.endpoint)
+
+        assert response.status_code == status.HTTP_200_OK
+        assert response.data == PartOutputSerializer(part).data
+        assert response.data["last_time_delivered"] is None
+
+        part.refresh_from_db()
+        response = client.get(self.endpoint)
+
+        assert response.status_code == status.HTTP_200_OK
+        assert response.data == PartOutputSerializer(part).data
+        assert response.data[
+            "last_time_delivered"
+        ] == part.last_time_delivered.astimezone().strftime(
+            settings.REST_FRAMEWORK["DATETIME_FORMAT"]
+        )
