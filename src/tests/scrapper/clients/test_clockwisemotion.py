@@ -7,4 +7,3 @@ from scrapper.clients.clockwisemotion import ClockwiseMotionClient
 class TestClockwiseMotionClient:
     def test_success(self):
         ClockwiseMotionClient().get_parts()
-        pass
