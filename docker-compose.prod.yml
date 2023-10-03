@@ -67,6 +67,7 @@ services:
       - "3060:3000"
     volumes:
       - ./grafana-data:/var/lib/grafana
+      - ./grafana:/etc/grafana
     user: "0"
   rq-exporter:
     restart: always
