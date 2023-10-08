@@ -3,7 +3,7 @@ from unittest.mock import patch
 import pytest
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
 from django.conf import settings
-from django.contrib.auth.models import User
+from django.contrib.auth.models import Permission, User
 from django.shortcuts import resolve_url
 from model_bakery import baker
 from part.constants import SOURCE_TEGIWA
@@ -130,6 +130,7 @@ class TestsPartsToScrapView:
     @pytest.fixture(autouse=True)
     def setup_class(self):
         user = baker.make(User)
+        user.user_permissions.add(Permission.objects.get(name="Can view part"))
         self.token = baker.make(Token, user=user)
 
     def test_url(self, m_search_for_stocks):

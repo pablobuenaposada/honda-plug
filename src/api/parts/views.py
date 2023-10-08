@@ -1,6 +1,7 @@
 from copy import deepcopy
 from datetime import datetime
 
+from api.parts.permissions import HasScrapPermission
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
 from django.db.models import Value
 from django.db.models.functions import Replace
@@ -27,6 +28,7 @@ class PartsToScrapView(RetrieveAPIView):
     Returns a part that needs to be scrapped and marks last_time_delivered to current time
     """
 
+    permission_classes = [HasScrapPermission]
     serializer_class = PartOutputSerializer
     queryset = Part.objects.parts_to_scrap()
 
