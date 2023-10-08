@@ -24,6 +24,11 @@ migrate:
 gunicorn:
 	venv/bin/gunicorn src.main.wsgi:application --bind 0.0.0.0:8000 --pythonpath=src
 
+certificate:
+	sudo ufw allow 80/tcp
+	sudo certbot certonly --standalone --cert-name hondaplug -d hondaplug.com
+	sudo ufw delete allow 80/tcp
+
 tests: venv
 	venv/bin/pip install -r requirements-tests.txt
 	$(TEST_ENV_VARS) PYTHONPATH=src venv/bin/pytest src/tests
