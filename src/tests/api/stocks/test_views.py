@@ -10,6 +10,7 @@ from part.constants import SOURCE_TEGIWA
 from part.models import Part, Stock
 from rest_framework import status
 from rest_framework.authtoken.models import Token
+from rest_framework.exceptions import ErrorDetail
 
 REFERENCE = "56483-PND-003"
 
@@ -119,3 +120,27 @@ class TestsStocksCreateView:
         stock = Stock.objects.get()
         assert stock.history.count() == 2
         assert stock.price == Money(modified_price, "USD")
+
+    def test_validation_error(self, client):
+        response = client.post(
+            self.endpoint,
+            {
+                "part": self.part.pk,
+                "title": "foo",
+                "source": SOURCE_TEGIWA,
+                "url": "https://www.foo.com",
+                "country": "foo",  # wrong country
+                "price": "1.99",
+                "price_currency": "USD",
+            },
+            HTTP_AUTHORIZATION=f"Token {self.token}",
+        )
+
+        assert response.status_code == status.HTTP_400_BAD_REQUEST
+        assert response.data == {
+            "country": [
+                ErrorDetail(
+                    string='"foo" is not a valid choice.', code="invalid_choice"
+                )
+            ]
+        }

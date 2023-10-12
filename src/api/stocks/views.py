@@ -43,8 +43,9 @@ class StocksCreateView(CreateAPIView):
                 )
                 serializer = serializer_class(instance, data=request.data)
                 serializer.is_valid(raise_exception=True)
-        finally:
-            self.perform_create(serializer)
+            else:
+                raise e
+        self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
         return Response(
             self.get_serializer(serializer.instance).data,
