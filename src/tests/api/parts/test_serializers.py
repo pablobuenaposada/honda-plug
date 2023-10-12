@@ -34,6 +34,7 @@ class TestsPartOutputSerializer:
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
 
         assert self.serializer_class(part).data == {
+            "id": part.id,
             "reference": part.reference,
             "stock": [],
             "title": None,
@@ -56,6 +57,7 @@ class TestsPartOutputSerializer:
         )
 
         assert self.serializer_class(part).data == {
+            "id": part.id,
             "reference": part.reference,
             "stock": [
                 StockNestedOutputSerializer(stock).data
