@@ -1,9 +1,6 @@
 version: "3.9"
 
 services:
-  redis:
-    restart: always
-    image: redis:alpine3.16
   db:
     restart: always
     image: postgres:14.4-alpine
@@ -69,15 +66,6 @@ services:
       - ./grafana-data:/var/lib/grafana
       - ./grafana:/etc/grafana
     user: "0"
-  rq-exporter:
-    restart: always
-    image: pablobuenaposada/rq-exporter
-    ports:
-      - "9726:9726"
-    environment:
-      RQ_REDIS_HOST: "redis"
-    depends_on:
-      - redis
 
 volumes:
   postgres_data:

@@ -1,5 +1,3 @@
-from unittest.mock import patch
-
 import pytest
 from freezegun import freeze_time
 from model_bakery import baker
@@ -8,9 +6,8 @@ from part.models import Part, Stock
 
 
 @pytest.mark.django_db
-@patch("part.models.search_for_stocks")
 class TestPartManager:
-    def test_stocked_parts_first(self, m_search_for_stocks):
+    def test_stocked_parts_first(self):
         part1 = baker.make(Part, reference="foooo-bar-ban", source=SOURCE_EPCDATA)
         part2 = baker.make(Part, reference="foooo-bar-ban2", source=SOURCE_EPCDATA)
         baker.make(Stock, part=part2, source=SOURCE_HONDAPARTSNOW, country="US")
@@ -19,7 +16,7 @@ class TestPartManager:
         assert list(Part.objects.all()) == [part1, part2, part3]
         assert list(Part.objects.stocked_parts_first())[0] == part2
 
-    def test_stocked_parts_last(self, m_search_for_stocks):
+    def test_stocked_parts_last(self):
         part1 = baker.make(Part, reference="foooo-bar-ban1", source=SOURCE_EPCDATA)
         part2 = baker.make(Part, reference="foooo-bar-ban2", source=SOURCE_EPCDATA)
         baker.make(Stock, part=part2, source=SOURCE_HONDAPARTSNOW, country="US")
@@ -36,7 +33,7 @@ class TestPartManager:
             ("2022-01-04", 1, ["FOOOO-BAR-BAN2", "FOOOO-BAR-BAN1"]),
         ),
     )
-    def test_not_updated_since(self, m_search_for_stocks, date, days, expected):
+    def test_not_updated_since(self, date, days, expected):
         """
         part1 always is going to be returned since doesn't have stock so it always matches the "not updated since"
         part2 is only going to be returned if is within the range where more than x days passed
@@ -59,7 +56,7 @@ class TestPartManager:
                 == expected
             )
 
-    def test_parts_to_scrap(self, m_search_for_stocks):
+    def test_parts_to_scrap(self):
         part3 = baker.make(
             Part,
             reference="foooo-bar-ban3",

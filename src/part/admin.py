@@ -7,7 +7,6 @@ from django.utils.safestring import mark_safe
 from simple_history.admin import SimpleHistoryAdmin
 
 from part.models import Image, Part, Stock
-from part.tasks import enqueue_queryset
 
 
 class StockInlineAdmin(admin.TabularInline):
@@ -61,7 +60,6 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     search_fields = ["reference"]
     list_filter = ["source", "modified"]
     inlines = [StockInlineAdmin]
-    actions = ["search_stocks"]
 
     def get_queryset(self, request):
         """just to be able to order by column stock found"""
@@ -73,9 +71,6 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         return obj.stock_set.count()
 
     stock_found.admin_order_field = "stock_count"
-
-    def search_stocks(self, request, queryset):
-        enqueue_queryset.delay(queryset, at_front=True)
 
     def get_num_of_stock_updates(self, obj):
         updates = 0

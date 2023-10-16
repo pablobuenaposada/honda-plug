@@ -1,10 +1,6 @@
 version: "3.9"
 
 services:
-  redis:
-    image: redis:alpine3.16
-    ports:
-      - "6379:6379" # not needed but convenient for running django in true local
   db:
     image: postgres:14.4-alpine
     env_file:
@@ -59,14 +55,6 @@ services:
       - "3060:3000"
     volumes:
       - ./grafana-data:/var/lib/grafana
-  rq-exporter:
-    image: pablobuenaposada/rq-exporter
-    ports:
-      - "9726:9726"
-    environment:
-      RQ_REDIS_HOST: "redis"
-    depends_on:
-      - redis
 
 volumes:
   postgres_data:

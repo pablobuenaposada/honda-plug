@@ -1,5 +1,3 @@
-from unittest.mock import patch
-
 import pytest
 from api.parts.serializers import (
     PartOutputSerializer,
@@ -14,11 +12,10 @@ REFERENCE = "56483-PND-003"
 
 
 @pytest.mark.django_db
-@patch("part.models.search_for_stocks")
 class TestsStockNestedOutputSerializer:
     serializer_class = StockNestedOutputSerializer
 
-    def test_success(self, m_search_for_stocks):
+    def test_success(self):
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
         stock = baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
 
@@ -26,11 +23,10 @@ class TestsStockNestedOutputSerializer:
 
 
 @pytest.mark.django_db
-@patch("part.models.search_for_stocks")
 class TestsPartOutputSerializer:
     serializer_class = PartOutputSerializer
 
-    def test_success(self, m_search_for_stocks):
+    def test_success(self):
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
 
         assert self.serializer_class(part).data == {
@@ -41,7 +37,7 @@ class TestsPartOutputSerializer:
             "last_time_delivered": None,
         }
 
-    def test_success_with_stocks(self, m_search_for_stocks):
+    def test_success_with_stocks(self):
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
         baker.make(
             Stock,
@@ -69,11 +65,10 @@ class TestsPartOutputSerializer:
 
 
 @pytest.mark.django_db
-@patch("part.models.search_for_stocks")
 class TestsSearchOutputSerializer:
     serializer_class = SearchOutputSerializer
 
-    def test_success(self, m_search_for_stocks):
+    def test_success(self):
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
 
         assert self.serializer_class(part).data == {

@@ -7,7 +7,6 @@ from simple_history.models import HistoricalRecords
 
 from part.constants import PART_SOURCES, STOCK_SOURCES
 from part.managers import PartManager
-from part.tasks import search_for_stocks
 from part.validators import validate_empty, validate_reference
 
 
@@ -30,11 +29,7 @@ class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
         validate_empty(self.source)
         validate_reference(self.reference)
         self.reference = self.reference.upper()
-        is_new = self._state.adding
         super().save(**kwargs)
-        if is_new:
-            # if this is a new Part, let's try to find Stocks for it right away
-            search_for_stocks.delay(self.reference)
 
     def __str__(self):
         return self.reference

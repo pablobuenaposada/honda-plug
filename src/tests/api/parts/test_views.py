@@ -1,5 +1,3 @@
-from unittest.mock import patch
-
 import pytest
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
 from django.conf import settings
@@ -15,17 +13,16 @@ REFERENCE = "56483-PND-003"
 
 
 @pytest.mark.django_db
-@patch("part.models.search_for_stocks")
 class TestsPartsView:
     def endpoint(self, reference):
         return resolve_url("api:parts-detail", reference=reference)
 
-    def test_url(self, m_search_for_stocks):
+    def test_url(self):
         baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
 
         assert self.endpoint(REFERENCE.lower()) == f"/api/parts/{REFERENCE.lower()}/"
 
-    def test_success(self, m_search_for_stocks, client):
+    def test_success(self, client):
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
         baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
         response = client.get(self.endpoint(REFERENCE.lower()))
@@ -35,11 +32,10 @@ class TestsPartsView:
 
 
 @pytest.mark.django_db
-@patch("part.models.search_for_stocks")
 class TestsSearchView:
     endpoint = resolve_url("api:search")
 
-    def test_url(self, m_search_for_stocks):
+    def test_url(self):
         assert self.endpoint == "/api/parts/"
 
     @pytest.mark.parametrize(
@@ -55,9 +51,7 @@ class TestsSearchView:
             (["11111-PRB-000", "22222-RRC-000"], "11111-RRC", []),
         ),
     )
-    def test_success_part(
-        self, m_search_for_stocks, client, parts, search, expected_parts
-    ):
+    def test_success_part(self, client, parts, search, expected_parts):
         for part in parts:
             baker.make(Part, reference=part, source=SOURCE_TEGIWA)
 
@@ -100,9 +94,7 @@ class TestsSearchView:
             ),
         ),
     )
-    def test_success_stock(
-        self, m_search_for_stocks, client, parts, search, expected_parts
-    ):
+    def test_success_stock(self, client, parts, search, expected_parts):
         for part in parts:
             part_created = baker.make(Part, reference=part[0], source=SOURCE_TEGIWA)
             baker.make(
@@ -123,7 +115,6 @@ class TestsSearchView:
 
 
 @pytest.mark.django_db
-@patch("part.models.search_for_stocks")
 class TestsPartsToScrapView:
     endpoint = resolve_url("api:to-scrap")
 
@@ -133,15 +124,15 @@ class TestsPartsToScrapView:
         user.user_permissions.add(Permission.objects.get(name="Can view part"))
         self.token = baker.make(Token, user=user)
 
-    def test_url(self, m_search_for_stocks):
+    def test_url(self):
         assert self.endpoint == "/api/parts/to-scrap/"
 
-    def test_no_token(self, m_search_for_stocks, client):
+    def test_no_token(self, client):
         response = client.get(self.endpoint)
 
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
 
-    def test_success(self, m_search_for_stocks, client):
+    def test_success(self, client):
         """
         we call two times the endpoint because the field "last_time_delivered" should change in the second one
         """

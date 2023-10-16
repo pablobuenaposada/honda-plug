@@ -1,5 +1,3 @@
-from unittest.mock import patch
-
 import pytest
 from api.stocks.serializers import StockOutputSerializer
 from django.contrib.auth.models import Permission, User
@@ -19,11 +17,8 @@ REFERENCE = "56483-PND-003"
 class TestsStocksRetrieveView:
     @pytest.fixture(autouse=True)
     def setup_class(self):
-        with patch("part.models.search_for_stocks"):
-            part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
-            self.stock = baker.make(
-                Stock, part=part, source=SOURCE_TEGIWA, country="US"
-            )
+        part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+        self.stock = baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
 
     def endpoint(self, pk):
         return resolve_url("api:stocks-detail", pk=pk)
@@ -47,8 +42,7 @@ class TestsStocksCreateView:
         user = baker.make(User)
         user.user_permissions.add(Permission.objects.get(name="Can add stock"))
         self.token = baker.make(Token, user=user)
-        with patch("part.models.search_for_stocks"):
-            self.part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+        self.part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
 
     def test_url(self):
         assert self.endpoint == "/api/stocks/"
