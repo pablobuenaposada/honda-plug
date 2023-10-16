@@ -30,21 +30,21 @@ class PartOutputSerializer(serializers.ModelSerializer):
         if not stocks:
             return
         if stocks.filter(source=SOURCE_HONDASPAREPARTS).exists():
-            return stocks.get(source=SOURCE_HONDASPAREPARTS)[0]
+            return stocks.filter(source=SOURCE_HONDASPAREPARTS).first()[0]
         elif stocks.filter(source=SOURCE_HONDAPARTSNOW).exists():
-            return stocks.get(source=SOURCE_HONDAPARTSNOW)[0]
+            return stocks.filter(source=SOURCE_HONDAPARTSNOW).first()[0]
         elif stocks.filter(source=SOURCE_BERNARDIPARTS).exists():
-            return stocks.get(source=SOURCE_BERNARDIPARTS)[0]
+            return stocks.filter(source=SOURCE_BERNARDIPARTS).first()[0]
         elif stocks.filter(source=SOURCE_AMAYAMA).exists():
-            return stocks.get(source=SOURCE_AMAYAMA)[0]
+            return stocks.filter(source=SOURCE_AMAYAMA).first()[0]
         elif stocks.filter(source=SOURCE_ALVADI).exists():
-            return stocks.get(source=SOURCE_ALVADI)[0]
+            return stocks.filter(source=SOURCE_ALVADI).first()[0]
         elif stocks.filter(source=SOURCE_ONLINETEILE).exists():
-            return stocks.get(source=SOURCE_ONLINETEILE)[0]
+            return stocks.filter(source=SOURCE_ONLINETEILE).first()[0]
         elif stocks.filter(source=SOURCE_AKR).exists():
-            return stocks.get(source=SOURCE_AKR)[0]
+            return stocks.filter(source=SOURCE_AKR).first()[0]
         else:
-            return stocks[0][0]
+            return stocks.first()[0]
 
 
 class SearchOutputSerializer(serializers.ModelSerializer):
