@@ -38,5 +38,6 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd honda-plug
-            git pull
+            git fetch
+            git reset --hard origin/main
             make docker/run/prod

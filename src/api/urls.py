@@ -6,4 +6,5 @@ app_name = "api"
 urlpatterns = [
     re_path("parts/", include("api.parts.urls")),
     re_path("stocks/", include("api.stocks.urls")),
+    re_path("images/", include("api.images.urls")),
 ]
