@@ -95,6 +95,7 @@ class TestStock:
         for field in {field.name for field in Stock._meta.get_fields()} - {
             "price_currency",
             "image",
+            "stocks",
         }:
             assert getattr(stock, field) == expected[field]
 
@@ -123,5 +124,5 @@ class TestImage:
         image = Image.objects.create(**data)
         expected = data | {"id": image.id}
 
-        for field in {field.name for field in Image._meta.get_fields()}:
+        for field in {field.name for field in Image._meta.get_fields()} - {"stocks"}:
             assert getattr(image, field) == expected[field]
