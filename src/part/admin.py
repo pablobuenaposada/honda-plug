@@ -38,12 +38,7 @@ class StockInlineAdmin(admin.TabularInline):
 
 
 class ImageInlineAdmin(admin.TabularInline):
-    model = Image
-    readonly_fields = ("image",)
-    fields = ("url", "image")
-
-    def image(self, obj):
-        return mark_safe(f'<img src="{obj.url}" style="height: 200px"/>')
+    model = Image.stocks.through
 
 
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
@@ -129,13 +124,18 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
 
 class ImageAdmin(admin.ModelAdmin):
     model = Image
-    list_display = ("id", "url", "stock", "image")
-    search_fields = ["url", "id", "stock__part__reference"]
-    readonly_fields = ["image", "stock"]
-    fields = ["stock", "url", "image"]
+    list_display = ("id", "url", "get_stock_ids", "image")
+    search_fields = ["url", "id"]
+    readonly_fields = ["image", "stocks"]
+    fields = ["stocks", "url", "image"]
 
     def image(self, obj):
         return mark_safe(f'<img src="{obj.url}" style="height: 200px"/>')
+
+    def get_stock_ids(self, obj):
+        return ", ".join([str(stock.id) for stock in obj.stocks.all()])
+
+    get_stock_ids.short_description = "Stocks"
 
 
 admin.site.register(Part, PartAdmin)

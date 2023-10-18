@@ -1,5 +1,5 @@
 import pytest
-from api.images.serializers import ImageSerializer
+from api.images.serializers import ImageOutputSerializer
 from django.contrib.auth.models import Permission, User
 from django.shortcuts import resolve_url
 from model_bakery import baker
@@ -7,7 +7,6 @@ from part.constants import SOURCE_TEGIWA
 from part.models import Image, Part, Stock
 from rest_framework import status
 from rest_framework.authtoken.models import Token
-from rest_framework.exceptions import ErrorDetail
 
 REFERENCE = "56483-PND-003"
 
@@ -37,32 +36,33 @@ class TestsImagesCreateView:
         )
 
         assert response.status_code == status.HTTP_201_CREATED
-        assert response.data == ImageSerializer(Image.objects.get()).data
+        assert response.data == ImageOutputSerializer(Image.objects.get()).data
         assert Image.objects.count() == 1
 
     def test_duplicated_images(self, client):
         """Duplicated images per stock are not allowed"""
 
+        assert not Image.objects.exists()
+
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
         stock = baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
-        image = "http://www.foo.com"
+        image_url = "http://www.foo.com"
         response = client.post(
             self.endpoint,
-            {"stock": stock.id, "url": image},
+            {"stock": stock.id, "url": image_url},
             HTTP_AUTHORIZATION=f"Token {self.token}",
         )
 
         assert response.status_code == status.HTTP_201_CREATED
+        assert stock.image_set.exists()
+        image = Image.objects.get()
 
         response = client.post(
             self.endpoint,
-            {"stock": stock.id, "url": image},
+            {"stock": stock.id, "url": image_url},
             HTTP_AUTHORIZATION=f"Token {self.token}",
         )
 
-        assert response.status_code == status.HTTP_400_BAD_REQUEST
-        assert response.data == {
-            "url": [
-                ErrorDetail(string="image with this url already exists.", code="unique")
-            ]
-        }
+        assert response.status_code == status.HTTP_201_CREATED
+        assert response.data == ImageOutputSerializer(image).data
+        assert Image.objects.count() == 1

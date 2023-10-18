@@ -49,7 +49,7 @@ class TestsImageNestedOutputSerializer:
     def test_success(self):
         part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
         stock = baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
-        image = baker.make(Image, stock=stock, url="http://www.foo.com")
+        image = baker.make(Image, stocks=[stock], url="http://www.foo.com")
 
         assert self.serializer_class(image).data == {"url": image.url}
 
@@ -72,7 +72,7 @@ class TestStockOutputSerializer:
         )
         stock.price = Money(2, "USD")
         stock.save()
-        image = baker.make(Image, stock=stock, url="http://www.foo.com")
+        image = baker.make(Image, stocks=[stock], url="http://www.foo.com")
 
         assert self.serializer_class(stock).data == {
             "id": stock.id,

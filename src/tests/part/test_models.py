@@ -95,7 +95,6 @@ class TestStock:
         for field in {field.name for field in Stock._meta.get_fields()} - {
             "price_currency",
             "image",
-            "stocks",
         }:
             assert getattr(stock, field) == expected[field]
 
@@ -103,11 +102,9 @@ class TestStock:
 @pytest.mark.django_db
 class TestImage:
     def test_unique(self):
-        part = baker.make(Part, reference=REFERENCE)
-        stock = baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW, country="US")
-        Image.objects.create(stock=stock, url="http://www.foo.com")
+        Image.objects.create(url="http://www.foo.com")
         with pytest.raises(IntegrityError) as error:
-            Image.objects.create(stock=stock, url="http://www.foo.com")
+            Image.objects.create(url="http://www.foo.com")
 
         assert "duplicate key value violates unique constraint" in str(error.value)
 
@@ -118,9 +115,7 @@ class TestImage:
         assert "This field cannot be emtpy" in str(error.value)
 
     def test_valid(self):
-        part = baker.make(Part, reference=REFERENCE)
-        stock = baker.make(Stock, part=part, source=SOURCE_HONDAPARTSNOW, country="US")
-        data = {"stock": stock, "url": "http://www.foo.com"}
+        data = {"url": "http://www.foo.com"}
         image = Image.objects.create(**data)
         expected = data | {"id": image.id}
 

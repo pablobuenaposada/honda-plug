@@ -61,8 +61,7 @@ class Stock(ExportModelOperationsMixin("stock"), TimeStampedModel):
 
 class Image(ExportModelOperationsMixin("image"), models.Model):
     url = models.URLField(default=None, unique=True, max_length=300)
-    stock = models.ForeignKey(Stock, on_delete=models.CASCADE)
-    stocks = models.ManyToManyField(Stock, related_name="stocks")
+    stocks = models.ManyToManyField(Stock)
 
     def save(self, **kwargs):
         validate_empty(self.url)
