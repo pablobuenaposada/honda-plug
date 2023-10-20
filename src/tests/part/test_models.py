@@ -90,6 +90,7 @@ class TestStock:
             "id": stock.id,
             "created": stock.created,
             "modified": stock.modified,
+            "changed_by": None,
         }
 
         for field in {field.name for field in Stock._meta.get_fields()} - {

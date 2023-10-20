@@ -95,6 +95,8 @@ class TestsStocksCreateView:
             price=Money("0.99", "USD"),
         )
         assert Stock.objects.count() == 1
+        assert Stock.objects.get().changed_by is None
+
         modified_price = "1.99"
         response = client.post(
             self.endpoint,
@@ -114,6 +116,7 @@ class TestsStocksCreateView:
         stock = Stock.objects.get()
         assert stock.history.count() == 2
         assert stock.price == Money(modified_price, "USD")
+        assert stock.changed_by == self.token.user
 
     def test_validation_error(self, client):
         response = client.post(

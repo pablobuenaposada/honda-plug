@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 from django_countries.fields import CountryField
 from django_extensions.db.models import TimeStampedModel
@@ -49,8 +50,18 @@ class Stock(ExportModelOperationsMixin("stock"), TimeStampedModel):
     quantity = models.IntegerField(null=True, blank=True)
     url = models.URLField()
     country = CountryField()
+    # This next field is only added for grafana purposes.
+    # Do not update this field manually, it's automated through a signal.
+    # To know the last user better to use the historical model that this model has.
+    changed_by = models.ForeignKey(
+        User,
+        on_delete=models.PROTECT,
+        null=True,
+        blank=True,
+        help_text="Only for grafana purposes",
+    )
 
-    history = HistoricalRecords()
+    history = HistoricalRecords(excluded_fields=["changed_by"])
 
     class Meta:
         unique_together = ("part", "source", "country")
