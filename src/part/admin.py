@@ -37,10 +37,6 @@ class StockInlineAdmin(admin.TabularInline):
     get_num_of_updates.short_description = "Times updated"
 
 
-class ImageInlineAdmin(admin.TabularInline):
-    model = Image.stocks.through
-
-
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Part
     readonly_fields = ("created", "modified", "last_time_delivered")
@@ -106,7 +102,6 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     )
     search_fields = ["part__reference", "title"]
     list_filter = ["source", "available", "discontinued"]
-    inlines = [ImageInlineAdmin]
     formfield_overrides = {
         models.CharField: {"widget": TextInput(attrs={"size": "100"})},
     }
