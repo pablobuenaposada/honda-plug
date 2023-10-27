@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.db import models
 from django.db.models import Count
 from django.forms import TextInput
+from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 from simple_history.admin import SimpleHistoryAdmin
 
@@ -39,7 +40,7 @@ class StockInlineAdmin(admin.TabularInline):
 
 class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     model = Part
-    readonly_fields = ("created", "modified", "last_time_delivered")
+    readonly_fields = ("created", "modified", "last_time_delivered", "link")
     list_display = (
         "reference",
         "source",
@@ -68,6 +69,13 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
         for stock in obj.stock_set.all():
             updates += stock.history.count() - 1
         return updates
+
+    def link(self, obj):
+        return format_html(
+            '<a href="https://hondaplug.com/part/{}">https://hondaplug.com/part/{}</a>',
+            obj.reference,
+            obj.reference,
+        )
 
     get_num_of_stock_updates.short_description = "Times updated"
 
