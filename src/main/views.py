@@ -18,5 +18,8 @@ def prometheus_override_view(request):
         stocks_by_user.labels(token.user.username).set(
             Stock.objects.filter(changed_by=token.user).count()
         )
+    stocks_by_user.labels("empty").set(
+        Stock.objects.filter(changed_by__isnull=True).count()
+    )
 
     return exports.ExportToDjangoView(request)
