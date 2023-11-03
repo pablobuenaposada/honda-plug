@@ -113,7 +113,6 @@ class TestStockInputSerializer:
         assert not serializer.is_valid()
         assert serializer.errors == {
             "part": [ErrorDetail(string="This field is required.", code="required")],
-            "title": [ErrorDetail(string="This field is required.", code="required")],
             "source": [ErrorDetail(string="This field is required.", code="required")],
             "url": [ErrorDetail(string="This field is required.", code="required")],
             "country": [ErrorDetail(string="This field is required.", code="required")],
@@ -123,7 +122,7 @@ class TestStockInputSerializer:
         serializer = self.serializer_class(
             data={
                 "part": self.part.pk,
-                "title": "foo",
+                "title": "",
                 "source": SOURCE_TEGIWA,
                 "url": "https://www.foo.com",
                 "country": "US",
@@ -135,7 +134,7 @@ class TestStockInputSerializer:
             "part": self.part,
             "country": "US",
             "source": SOURCE_TEGIWA,
-            "title": "foo",
+            "title": "",
             "url": "https://www.foo.com",
         }
 
