@@ -19,6 +19,7 @@ SOURCE_ICB = "icb"
 SOURCE_IPGPARTS = "ipgparts"
 SOURCE_BERNARDIPARTS = "bernardiparts"
 SOURCE_ALVADI = "alvadi"
+SOURCE_RYWERKSPARTS = "rywerksparts"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -43,6 +44,7 @@ STOCK_SOURCES = (
     (SOURCE_IPGPARTS, "www.ipgparts.com"),
     (SOURCE_BERNARDIPARTS, "www.bernardiparts.com"),
     (SOURCE_ALVADI, "www.alvadi.ee"),
+    (SOURCE_RYWERKSPARTS, "www.rywerksparts.com"),
 )
 
 PART_SOURCES = (
