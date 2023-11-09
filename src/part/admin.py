@@ -1,5 +1,6 @@
 import pycountry
 from django.contrib import admin
+from django.core.cache import cache
 from django.db import models
 from django.db.models import Count
 from django.forms import TextInput
@@ -7,6 +8,7 @@ from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 from simple_history.admin import SimpleHistoryAdmin
 
+from part.constants import CACHE_KEY_PARTS_TO_SNEAK
 from part.models import Image, Part, Stock
 
 
@@ -52,6 +54,12 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     search_fields = ["reference"]
     list_filter = ["source", "modified"]
     inlines = [StockInlineAdmin]
+    actions = ["search_stocks"]
+
+    def search_stocks(self, request, queryset):
+        references = list(queryset.values_list("reference", flat=True))
+        parts_to_sneak = cache.get(CACHE_KEY_PARTS_TO_SNEAK, default=[])
+        cache.set(CACHE_KEY_PARTS_TO_SNEAK, references + parts_to_sneak)
 
     def get_queryset(self, request):
         """just to be able to order by column stock found"""

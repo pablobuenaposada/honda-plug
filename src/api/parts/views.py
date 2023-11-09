@@ -30,10 +30,9 @@ class PartsToScrapView(RetrieveAPIView):
 
     permission_classes = [HasScrapPermission]
     serializer_class = PartOutputSerializer
-    queryset = Part.objects.parts_to_scrap()
 
     def get_object(self):
-        queryset = self.filter_queryset(self.get_queryset())
+        queryset = self.filter_queryset(Part.objects.parts_to_scrap())
         obj = queryset.first()
         self.check_object_permissions(self.request, obj)
         obj_copy = deepcopy(obj)
