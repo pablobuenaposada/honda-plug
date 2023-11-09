@@ -57,3 +57,5 @@ PART_SOURCES = (
     (SOURCE_ACURAEXPRESSPARTS, "www.acuraexpressparts.com"),
     (SOURCE_EPC_4_00, "EPC 4.00"),
 )
+
+CACHE_KEY_PARTS_TO_SNEAK = "parts_to_sneak"

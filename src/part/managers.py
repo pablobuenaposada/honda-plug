@@ -1,8 +1,11 @@
 from datetime import timedelta
 
+from django.core.cache import cache
 from django.db import models
 from django.db.models import Case, Count, IntegerField, Value, When
 from django.utils import timezone
+
+from part.constants import CACHE_KEY_PARTS_TO_SNEAK
 
 
 class PartManager(models.Manager):
@@ -34,6 +37,13 @@ class PartManager(models.Manager):
         """
         Returns all the Parts that had not been delivered to a scraper followed by the ones that been by oldest order
         """
+        # first let's check if there is any part with more priority to scrap
+        if parts_to_sneak := cache.get(CACHE_KEY_PARTS_TO_SNEAK):
+            part_to_sneak = parts_to_sneak[:1][0]  # get the first part to sneak
+            cache.set(
+                CACHE_KEY_PARTS_TO_SNEAK, parts_to_sneak[1:]
+            )  # subtract the chosen part from the list to sneak
+            return super().get_queryset().filter(reference=part_to_sneak)
         return (
             super()
             .get_queryset()

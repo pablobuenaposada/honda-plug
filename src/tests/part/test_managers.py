@@ -1,7 +1,12 @@
 import pytest
+from django.core.cache import cache
 from freezegun import freeze_time
 from model_bakery import baker
-from part.constants import SOURCE_EPCDATA, SOURCE_HONDAPARTSNOW
+from part.constants import (
+    CACHE_KEY_PARTS_TO_SNEAK,
+    SOURCE_EPCDATA,
+    SOURCE_HONDAPARTSNOW,
+)
 from part.models import Part, Stock
 
 
@@ -78,3 +83,15 @@ class TestPartManager:
         part1 = baker.make(Part, reference="foooo-bar-ban1", source=SOURCE_EPCDATA)
 
         assert list(Part.objects.parts_to_scrap()) == [part1, part2, part3, part4]
+
+    def test_parts_to_scrap_with_sneak_parts(self):
+        part1 = baker.make(Part, reference="foooo-bar-ban1", source=SOURCE_EPCDATA)
+        part2 = baker.make(Part, reference="foooo-bar-ban2", source=SOURCE_EPCDATA)
+        part3 = baker.make(Part, reference="foooo-bar-ban3", source=SOURCE_EPCDATA)
+        cache.set(CACHE_KEY_PARTS_TO_SNEAK, [part1.reference, part2.reference])
+
+        assert list(Part.objects.parts_to_scrap()) == [part1]
+        assert cache.get(CACHE_KEY_PARTS_TO_SNEAK) == [part2.reference]
+        assert list(Part.objects.parts_to_scrap()) == [part2]
+        assert cache.get(CACHE_KEY_PARTS_TO_SNEAK) == []
+        assert list(Part.objects.parts_to_scrap()) == [part1, part2, part3]
