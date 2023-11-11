@@ -20,6 +20,10 @@ SOURCE_IPGPARTS = "ipgparts"
 SOURCE_BERNARDIPARTS = "bernardiparts"
 SOURCE_ALVADI = "alvadi"
 SOURCE_RYWERKSPARTS = "rywerksparts"
+SOURCE_MYHONDAOEMPARTS = "myhondaoemparts"
+SOURCE_HONDAPARTSFORLESS = "hondapartsforless"
+SOURCE_OEMHONDAPARTSWAREHOUSE = "oemhondapartswarehouse"
+SOURCE_HONDAPARTSCONNECTION = "hondapartsconnection"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -45,6 +49,10 @@ STOCK_SOURCES = (
     (SOURCE_BERNARDIPARTS, "www.bernardiparts.com"),
     (SOURCE_ALVADI, "www.alvadi.ee"),
     (SOURCE_RYWERKSPARTS, "www.rywerksparts.com"),
+    (SOURCE_MYHONDAOEMPARTS, "www.myhondaoemparts.com"),
+    (SOURCE_HONDAPARTSFORLESS, "www.hondapartsforless.com"),
+    (SOURCE_OEMHONDAPARTSWAREHOUSE, "www.oemhondapartswarehouse.com"),
+    (SOURCE_HONDAPARTSCONNECTION, "www.hondapartsconnection.com"),
 )
 
 PART_SOURCES = (
