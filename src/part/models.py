@@ -38,7 +38,7 @@ class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
 
 class Stock(ExportModelOperationsMixin("stock"), TimeStampedModel):
     part = models.ForeignKey(Part, on_delete=models.CASCADE)
-    title = models.CharField(max_length=100, db_index=True, blank=True)
+    title = models.CharField(max_length=128, db_index=True, blank=True)
     price = MoneyField(max_digits=10, null=True, default_currency=None)
     available = models.BooleanField(null=True, default=None)
     discontinued = models.BooleanField(null=True, default=None)
