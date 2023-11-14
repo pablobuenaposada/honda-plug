@@ -89,6 +89,7 @@ class PartAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
 
 
 class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
+    change_form_template = "admin/custom_stock_change_form.html"
     model = Stock
     readonly_fields = ("created", "modified", "part")
     fields = (
@@ -121,6 +122,13 @@ class StockAdmin(SimpleHistoryAdmin, admin.ModelAdmin):
     formfield_overrides = {
         models.CharField: {"widget": TextInput(attrs={"size": "100"})},
     }
+
+    def change_view(self, request, object_id, form_url="", extra_context=None):
+        extra_context = extra_context or {}
+        extra_context["images"] = Stock.objects.get(id=object_id).image_set.all()
+        return super().change_view(
+            request, object_id, form_url, extra_context=extra_context
+        )
 
     def get_country_flag(self, obj):
         return pycountry.countries.get(alpha_2=obj.country.code).flag
