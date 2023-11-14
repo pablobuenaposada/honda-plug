@@ -25,6 +25,7 @@ SOURCE_HONDAPARTSFORLESS = "hondapartsforless"
 SOURCE_OEMHONDAPARTSWAREHOUSE = "oemhondapartswarehouse"
 SOURCE_HONDAPARTSCONNECTION = "hondapartsconnection"
 SOURCE_DESERTCART = "desertcart"
+SOURCE_COXMOTORPARTS = "coxmotorparts"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -55,6 +56,7 @@ STOCK_SOURCES = (
     (SOURCE_OEMHONDAPARTSWAREHOUSE, "www.oemhondapartswarehouse.com"),
     (SOURCE_HONDAPARTSCONNECTION, "www.hondapartsconnection.com"),
     (SOURCE_DESERTCART, "www.desertcart.ae"),
+    (SOURCE_COXMOTORPARTS, "www.coxmotorparts.co.uk"),
 )
 
 PART_SOURCES = (
