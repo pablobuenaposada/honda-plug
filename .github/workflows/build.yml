@@ -37,7 +37,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            docker system prune --volumes
+            docker system prune --all --volumes -f
             cd honda-plug
             git fetch
             git reset --hard origin/main
