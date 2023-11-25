@@ -27,6 +27,26 @@ SOURCE_HONDAPARTSCONNECTION = "hondapartsconnection"
 SOURCE_DESERTCART = "desertcart"
 SOURCE_COXMOTORPARTS = "coxmotorparts"
 SOURCE_DREAMSHOP_AIRPORT = "dreamshop-airport-honda"
+SOURCE_DREAMSHOP_AIRPORT_MARINA = "dreamshop-airport-marina-honda"
+SOURCE_DREAMSHOP_ALL_STAR = "dreamshop-all-star-honda"
+SOURCE_DREAMSHOP_ANDERSON = "dreamshop-anderson-honda"
+SOURCE_DREAMSHOP_ANTRIM_WAY = "dreamshop-antrim-way-honda"
+SOURCE_DREAMSHOP_APPLE = "dreamshop-apple-honda"
+SOURCE_DREAMSHOP_APPLE_TREE = "dreamshop-apple-tree-honda"
+SOURCE_DREAMSHOP_APPLE_VALLEY = "dreamshop-apple-valley-honda"
+SOURCE_DREAMSHOP_ARROWHEAD = "dreamshop-arrowhead-honda"
+SOURCE_DREAMSHOP_ASCENSION = "dreamshop-ascension-honda"
+SOURCE_DREAMSHOP_ATAMIAN = "dreamshop-atamian-honda"
+SOURCE_DREAMSHOP_ATLANTIC = "dreamshop-atlantic-honda"
+SOURCE_DREAMSHOP_AUBURN = "dreamshop-auburn-honda"
+SOURCE_DREAMSHOP_AUTONATION_104 = "dreamshop-autonation-honda-104"
+SOURCE_DREAMSHOP_AUTONATION_385 = "dreamshop-autonation-honda-385"
+SOURCE_DREAMSHOP_AUTONATION_BEL_AIR_MALL = "dreamshop-autonation-honda-bel-air-mall"
+SOURCE_DREAMSHOP_AUTONATION_CHANDLER = "dreamshop-autonation-honda-chandler"
+SOURCE_DREAMSHOP_AUTONATION_CLEARWATER = "dreamshop-autonation-honda-clearwater"
+SOURCE_DREAMSHOP_AUTONATION_COLUMBUS = "dreamshop-autonation-honda-columbus"
+SOURCE_DREAMSHOP_AUTONATION_COSTA_MESA = "dreamshop-autonation-honda-costa-mesa"
+SOURCE_DREAMSHOP_AUTONATION_COVINGTON_PIKE = "dreamshop-autonation-covington-pike"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -59,6 +79,44 @@ STOCK_SOURCES = (
     (SOURCE_DESERTCART, "www.desertcart.ae"),
     (SOURCE_COXMOTORPARTS, "www.coxmotorparts.co.uk"),
     (SOURCE_DREAMSHOP_AIRPORT, "dreamshop.honda.com - Airport Honda"),
+    (SOURCE_DREAMSHOP_AIRPORT_MARINA, "dreamshop.honda.com - Airport Marina Honda"),
+    (SOURCE_DREAMSHOP_ALL_STAR, "dreamshop.honda.com - All Star Honda"),
+    (SOURCE_DREAMSHOP_ANDERSON, "dreamshop.honda.com - Anderson Honda"),
+    (SOURCE_DREAMSHOP_ANTRIM_WAY, "dreamshop.honda.com - Antrim Way Honda"),
+    (SOURCE_DREAMSHOP_APPLE, "dreamshop.honda.com - Apple Honda"),
+    (SOURCE_DREAMSHOP_APPLE_TREE, "dreamshop.honda.com - Apple Tree Honda"),
+    (SOURCE_DREAMSHOP_APPLE_VALLEY, "dreamshop.honda.com - Apple Valley Honda"),
+    (SOURCE_DREAMSHOP_ARROWHEAD, "dreamshop.honda.com - Arrowhead Honda"),
+    (SOURCE_DREAMSHOP_ASCENSION, "dreamshop.honda.com - Ascension Honda"),
+    (SOURCE_DREAMSHOP_ATAMIAN, "dreamshop.honda.com - Atamian Honda"),
+    (SOURCE_DREAMSHOP_ATLANTIC, "dreamshop.honda.com - Atlantic Honda"),
+    (SOURCE_DREAMSHOP_AUBURN, "dreamshop.honda.com - Auburn Honda"),
+    (SOURCE_DREAMSHOP_AUTONATION_104, "dreamshop.honda.com - AutoNation Honda 104"),
+    (SOURCE_DREAMSHOP_AUTONATION_385, "dreamshop.honda.com - AutoNation Honda 385"),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_BEL_AIR_MALL,
+        "dreamshop.honda.com - AutoNation Honda at Bel Air Mall",
+    ),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_CHANDLER,
+        "dreamshop.honda.com - AutoNation Honda Chandler",
+    ),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_CLEARWATER,
+        "dreamshop.honda.com - AutoNation Honda Clearwater",
+    ),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_COLUMBUS,
+        "dreamshop.honda.com - AutoNation Honda Columbus",
+    ),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_COSTA_MESA,
+        "dreamshop.honda.com - AutoNation Honda Costa Mesa",
+    ),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_COVINGTON_PIKE,
+        "dreamshop.honda.com - AutoNation Honda Covington Pike",
+    ),
 )
 
 PART_SOURCES = (
