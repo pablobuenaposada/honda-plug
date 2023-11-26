@@ -26,12 +26,6 @@ services:
     depends_on:
       db:
         condition: service_healthy
-  worker:
-    restart: always
-    build: .
-    command: venv/bin/python src/manage.py rqworker
-    env_file:
-      - .env.prod
   migration:
     build: .
     command: venv/bin/python src/manage.py migrate
