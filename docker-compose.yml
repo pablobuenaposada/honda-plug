@@ -31,9 +31,9 @@ services:
       - .env.local
     depends_on:
       - django
-  create-superuser:
+  fixtures:
     build: .
-    command: venv/bin/python src/manage.py createsuperuser --noinput
+    command: venv/bin/python src/manage.py loaddata fixtures.json
     env_file:
       - .env.local
     depends_on:
