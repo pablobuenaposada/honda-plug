@@ -1,3 +1,4 @@
+from django_elasticsearch_dsl_drf.serializers import DocumentSerializer
 from part.constants import (
     SOURCE_AKR,
     SOURCE_ALVADI,
@@ -7,6 +8,7 @@ from part.constants import (
     SOURCE_HONDASPAREPARTS,
     SOURCE_ONLINETEILE,
 )
+from part.documents import StockDocument
 from part.models import Part, Stock
 from rest_framework import serializers
 
@@ -47,13 +49,18 @@ class PartOutputSerializer(serializers.ModelSerializer):
             return stocks.first()[0]
 
 
-class SearchOutputSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Part
-        fields = ["reference"]
-
-
 class HistoricalStockNestedOutputSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stock
         fields = ["price", "price_currency", "modified"]
+
+
+class StockDocumentSerializer(DocumentSerializer):
+    class Meta:
+        document = StockDocument
+        fields = ("title", "part")
+
+
+class SearchOutputSerializer(serializers.Serializer):
+    reference = serializers.CharField()
+    title = serializers.CharField()

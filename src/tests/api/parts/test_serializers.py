@@ -64,13 +64,10 @@ class TestsPartOutputSerializer:
         }
 
 
-@pytest.mark.django_db
 class TestsSearchOutputSerializer:
     serializer_class = SearchOutputSerializer
 
     def test_success(self):
-        part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
-
-        assert self.serializer_class(part).data == {
-            "reference": part.reference,
-        }
+        assert self.serializer_class(
+            {"reference": "56483-PND-003", "title": "foo"}
+        ).data == {"reference": "56483-PND-003", "title": "foo"}

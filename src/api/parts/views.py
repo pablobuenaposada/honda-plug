@@ -3,10 +3,9 @@ from datetime import datetime
 
 from api.parts.permissions import HasScrapPermission
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
-from django.db.models import Value
-from django.db.models.functions import Replace
+from elasticsearch_dsl import Q, Search
+from part.documents import PART_INDEX_NAME
 from part.models import Part
-from rest_framework import filters
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 
@@ -44,9 +43,19 @@ class PartsToScrapView(RetrieveAPIView):
 
 class SearchView(ListAPIView):
     permission_classes = []
-    queryset = Part.objects.annotate(
-        cleaned_reference=Replace("reference", Value("-"), Value(""))
-    )
     serializer_class = SearchOutputSerializer
-    filter_backends = [filters.SearchFilter]
-    search_fields = ["cleaned_reference", "stock__title"]
+
+    def get_queryset(self):
+        query_param = self.request.GET.get("query", "")
+        es_search = Search(index=PART_INDEX_NAME).query(
+            Q("multi_match", query=query_param, fields=["title", "part.reference"])
+        )
+        response = es_search.execute()
+
+        unique_references = {hit.part.reference for hit in response.hits}
+        references = [
+            {"reference": reference, "title": hit.title}
+            for hit, reference in zip(response.hits, unique_references, strict=False)
+        ]
+
+        return references

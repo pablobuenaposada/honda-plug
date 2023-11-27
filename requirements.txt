@@ -17,3 +17,5 @@ aiohttp==3.8.3
 django-prometheus==2.2.0
 djangorestframework==3.14.0
 drf-spectacular==0.26.4
+django-elasticsearch-dsl==8.0
+django-elasticsearch-dsl-drf==0.22.5

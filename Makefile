@@ -37,7 +37,7 @@ docker/build:
 	docker build --no-cache	--tag=$(DOCKER_IMAGE) .
 
 docker/tests:
-	 docker compose up -d --force-recreate db django
+	 docker compose up -d --force-recreate db django elasticsearch
 	 docker exec $(DOCKER_IMAGE)-django-1 make tests
 
 docker/format/check:
@@ -48,6 +48,9 @@ docker/migrations/check:
 
 docker/run/shell:
 	docker exec -it honda-plug-django-1 bash
+
+docker/run/index:
+	docker exec -d honda-plug-django-1 venv/bin/python src/manage.py search_index --rebuild -f
 
 docker/run/prod:
 	crontab $(shell pwd)/cron/cron

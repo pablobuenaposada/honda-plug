@@ -8,6 +8,9 @@ from part.models import Stock
 @receiver(post_save, sender=Stock)
 def post_save_stock(sender, instance, **kwargs):
     signals.post_save.disconnect(post_save_stock, sender=Stock)
-    instance.changed_by = instance.history.first().history_user
+    try:
+        instance.changed_by = instance.history.first().history_user
+    except AttributeError:
+        instance.changed_by = None
     instance.save_without_historical_record(update_fields=["changed_by"])
     signals.post_save.connect(post_save_stock, sender=Stock)

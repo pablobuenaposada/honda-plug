@@ -63,8 +63,24 @@ services:
       - ./grafana-data:/var/lib/grafana
       - ./grafana:/etc/grafana
     user: "0"
+  elasticsearch:
+    restart: always
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.1
+    ports:
+      - "9200:9200"
+    environment:
+      - "discovery.type=single-node"
+      - "xpack.security.enabled=false"
+    healthcheck:
+      test: curl -s http://localhost:9200 >/dev/null || exit 1
+      interval: 15s
+      timeout: 10s
+      retries: 50
+    volumes:
+      - ./elasticsearch-data:/usr/share/elasticsearch/data
 
 volumes:
   postgres_data:
   static_volume:
   grafana-data:
+  elasticsearch-data:

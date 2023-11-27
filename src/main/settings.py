@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "drf_spectacular",
     "rest_framework.authtoken",
+    "django_elasticsearch_dsl",
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,10 @@ REST_FRAMEWORK = {
 SPECTACULAR_SETTINGS = {
     "TITLE": "Honda Plug API docs",
     "SERVE_INCLUDE_SCHEMA": False,
+}
+
+ELASTICSEARCH_DSL = {
+    "default": {"hosts": env("ELASTICSEARCH_DSL_HOST")},
 }
 
 # Password validation
