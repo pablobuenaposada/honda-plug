@@ -1,6 +1,7 @@
 from django_prometheus import exports
 from part.constants import STOCK_SOURCES
-from part.metrics import images, parts, stocks, stocks_by_user
+from part.documents import StockDocument
+from part.metrics import elasticsearch_stocks, images, parts, stocks, stocks_by_user
 from part.models import Image, Part, Stock
 from rest_framework.authtoken.models import Token
 
@@ -21,5 +22,6 @@ def prometheus_override_view(request):
     stocks_by_user.labels("empty").set(
         Stock.objects.filter(changed_by__isnull=True).count()
     )
+    elasticsearch_stocks.set(StockDocument.search().count())
 
     return exports.ExportToDjangoView(request)
