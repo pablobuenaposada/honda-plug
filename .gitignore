@@ -162,6 +162,7 @@ cython_debug/
 # Honda Plug specifics
 postgres-data/
 grafana-data/
+elasticsearch-data/
 
 nginx/fullchain.pem
 nginx/privkey.pem

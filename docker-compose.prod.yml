@@ -54,6 +54,8 @@ services:
     command:
       - "--config.file=/etc/prometheus/prometheus.yml"
       - "--storage.tsdb.retention.time=180d"
+      - "--web.route-prefix=/"
+      - "--web.external-url=http://hondaplug.com/prometheus"
   grafana:
     restart: always
     image: grafana/grafana:latest
