@@ -47,6 +47,32 @@ SOURCE_DREAMSHOP_AUTONATION_CLEARWATER = "dreamshop-autonation-honda-clearwater"
 SOURCE_DREAMSHOP_AUTONATION_COLUMBUS = "dreamshop-autonation-honda-columbus"
 SOURCE_DREAMSHOP_AUTONATION_COSTA_MESA = "dreamshop-autonation-honda-costa-mesa"
 SOURCE_DREAMSHOP_AUTONATION_COVINGTON_PIKE = "dreamshop-autonation-covington-pike"
+SOURCE_DREAMSHOP_BARBER = "dreamshop-barber-honda"
+SOURCE_DREAMSHOP_BARBOUR = "dreamshop-barbour-hendrick-honda-greenville"
+SOURCE_DREAMSHOP_BARKER = "dreamshop-barker-honda"
+SOURCE_DREAMSHOP_BARON = "dreamshop-baron-honda"
+SOURCE_DREAMSHOP_BATTISON = "dreamshop-battison-honda"
+SOURCE_DREAMSHOP_BATTLE_CREEK = "dreamshop-battle-creek-honda"
+SOURCE_DREAMSHOP_BAY_RIDGE = "dreamshop-bay-ridge-honda"
+SOURCE_DREAMSHOP_BEDARD_BROS = "dreamshop-bedard-bros-honda"
+SOURCE_DREAMSHOP_BELL = "dreamshop-bell-honda"
+SOURCE_DREAMSHOP_BEND = "dreamshop-bend-honda"
+SOURCE_DREAMSHOP_BERKELEY = "dreamshop-berkeley-honda-autocenter"
+SOURCE_DREAMSHOP_BERLIN = "dreamshop-berlin-city-honda-of-portland"
+SOURCE_DREAMSHOP_BIG_STAR = "dreamshop-big-star-honda"
+SOURCE_DREAMSHOP_BILL_PAGE = "dreamshop-bill-page-honda"
+SOURCE_DREAMSHOP_BILL_PEARCE = "dreamshop-bill-pearce-courtesy-honda"
+SOURCE_DREAMSHOP_BOMMARITO = "dreamshop-bommarito-honda-superstore"
+SOURCE_DREAMSHOP_BRAMAN = "dreamshop-braman-honda"
+SOURCE_DREAMSHOP_PALM_BEACH = "dreamshop-braman-honda-of-palm-beach"
+SOURCE_DREAMSHOP_AUTONATION_CORPUS = "dreamshop-autonation-honda-south-corpus-christi"
+SOURCE_DREAMSHOP_AUTONATION_TUCSON = "dreamshop-autonation-honda-tucson-auto-mall"
+SOURCE_DREAMSHOP_AUTONATION_VALENCIA = "dreamshop-autonation-honda-valencia"
+SOURCE_DREAMSHOP_BRILLIANCE = "dreamshop-brilliance-honda-of-crystal-lake"
+SOURCE_DREAMSHOP_CANOBIE = "dreamshop-canobie-lake-honda"
+SOURCE_DREAMSHOP_CAPE = "dreamshop-cape-girardeau-honda"
+SOURCE_DREAMSHOP_CAPITAL_CITY = "dreamshop-capital-city-honda"
+SOURCE_DREAMSHOP_CAPITAL = "dreamshop-capital-honda"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -117,6 +143,47 @@ STOCK_SOURCES = (
         SOURCE_DREAMSHOP_AUTONATION_COVINGTON_PIKE,
         "dreamshop.honda.com - AutoNation Honda Covington Pike",
     ),
+    (SOURCE_DREAMSHOP_BARBER, "dreamshop.honda.com - Barber Honda"),
+    (
+        SOURCE_DREAMSHOP_BARBOUR,
+        "dreamshop.honda.com - Barbour Hendrick Honda Greenville",
+    ),
+    (SOURCE_DREAMSHOP_BARKER, "dreamshop.honda.com - Barker Honda"),
+    (SOURCE_DREAMSHOP_BARON, "dreamshop.honda.com - Baron Honda"),
+    (SOURCE_DREAMSHOP_BATTISON, "dreamshop.honda.com - Battison Honda"),
+    (SOURCE_DREAMSHOP_BATTLE_CREEK, "dreamshop.honda.com - Battle Creek Honda"),
+    (SOURCE_DREAMSHOP_BAY_RIDGE, "dreamshop.honda.com - Bay Ridge Honda"),
+    (SOURCE_DREAMSHOP_BEDARD_BROS, "dreamshop.honda.com - Bedard Bros. Honda"),
+    (SOURCE_DREAMSHOP_BELL, "dreamshop.honda.com - Bell Honda"),
+    (SOURCE_DREAMSHOP_BEND, "dreamshop.honda.com - Bend Honda"),
+    (SOURCE_DREAMSHOP_BERKELEY, "dreamshop.honda.com - Berkeley Honda Autocenter"),
+    (SOURCE_DREAMSHOP_BERLIN, "dreamshop.honda.com - Berlin City Honda of Portland"),
+    (SOURCE_DREAMSHOP_BIG_STAR, "dreamshop.honda.com - Big Star Honda"),
+    (SOURCE_DREAMSHOP_BILL_PAGE, "dreamshop.honda.com - Bill Page Honda"),
+    (SOURCE_DREAMSHOP_BILL_PEARCE, "dreamshop.honda.com - Bill Pearce Courtesy Honda"),
+    (SOURCE_DREAMSHOP_BOMMARITO, "dreamshop.honda.com - Bommarito Honda Superstore"),
+    (SOURCE_DREAMSHOP_BRAMAN, "dreamshop.honda.com - Braman Honda"),
+    (SOURCE_DREAMSHOP_PALM_BEACH, "dreamshop.honda.com - Braman Honda of Palm Beach"),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_CORPUS,
+        "dreamshop.honda.com - AutoNation Honda South Corpus Christi",
+    ),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_TUCSON,
+        "dreamshop.honda.com - AutoNation Honda Tucson Auto Mall",
+    ),
+    (
+        SOURCE_DREAMSHOP_AUTONATION_VALENCIA,
+        "dreamshop.honda.com - AutoNation Honda Valencia",
+    ),
+    (
+        SOURCE_DREAMSHOP_BRILLIANCE,
+        "dreamshop.honda.com - Brilliance Honda of Crystal Lake",
+    ),
+    (SOURCE_DREAMSHOP_CANOBIE, "dreamshop.honda.com - Canobie Lake Honda"),
+    (SOURCE_DREAMSHOP_CAPE, "dreamshop.honda.com - Cape Girardeau Honda"),
+    (SOURCE_DREAMSHOP_CAPITAL_CITY, "dreamshop.honda.com - Capital City Honda"),
+    (SOURCE_DREAMSHOP_CAPITAL, "dreamshop.honda.com - Capital Honda"),
 )
 
 PART_SOURCES = (
