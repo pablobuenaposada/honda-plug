@@ -14,11 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.sitemaps import GenericSitemap
+from django.contrib.sitemaps.views import sitemap
 from django.urls import include, path
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
 )
+from part.models import Part
 
 from main.views import prometheus_override_view
 
@@ -27,6 +30,11 @@ def trigger_error(request):
     return 1 / 0
 
 
+info_dict = {
+    "queryset": Part.objects.all(),
+    "date_field": "last_time_stock_modified",
+}
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("sentry-debug/", trigger_error),
@@ -34,4 +42,10 @@ urlpatterns = [
     path("api/", include("api.urls", namespace="api")),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path("api/docs/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
+    path(
+        "sitemap.xml",
+        sitemap,
+        {"sitemaps": {"part": GenericSitemap(info_dict)}},
+        name="django.contrib.sitemaps.views.sitemap",
+    ),
 ]

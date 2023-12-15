@@ -26,6 +26,16 @@ class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
     history = HistoricalRecords()
     objects = PartManager()
 
+    def get_absolute_url(self):
+        """returns the url of the frontend for this part, mainly for sitemap"""
+        return f"/part/{self.reference}"
+
+    @property
+    def last_time_stock_modified(self):
+        """returns the last time a stock of this part was found"""
+        if stock := self.stock_set.order_by("-modified").first():
+            return stock.modified
+
     def save(self, **kwargs):
         validate_empty(self.source)
         validate_reference(self.reference)

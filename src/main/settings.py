@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
     "part",
     "djmoney",
     "django_extensions",
@@ -91,6 +93,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "main.wsgi.application"
 
+SITE_ID = 1  # sitemap stuff
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
