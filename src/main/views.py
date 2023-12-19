@@ -1,3 +1,4 @@
+from django.contrib.sitemaps import GenericSitemap
 from django_prometheus import exports
 from part.constants import STOCK_SOURCES
 from part.documents import StockDocument
@@ -25,3 +26,7 @@ def prometheus_override_view(request):
     elasticsearch_stocks.set(StockDocument.search().count())
 
     return exports.ExportToDjangoView(request)
+
+
+class PartsSitemap(GenericSitemap):
+    limit = 1000
