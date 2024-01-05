@@ -24,6 +24,7 @@ migrate:
 gunicorn:
 	venv/bin/gunicorn src.main.wsgi:application --bind 0.0.0.0:8000 --pythonpath=src
 
+# copy generated fullchain.pem and privkey.pem from this command to nginx folder and restart
 certificate:
 	sudo ufw allow 80/tcp
 	sudo certbot certonly --standalone --cert-name hondaplug -d hondaplug.com
