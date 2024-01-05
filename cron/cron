@@ -1,0 +1,1 @@
+0 9 * * * /usr/bin/docker stop scraper-daily || true && /usr/bin/docker rm scraper-daily || true && /usr/bin/docker pull pablobuenaposada/honda-plug-scraper && /usr/bin/docker run --name scraper-daily --env-file /root/honda-plug-scraper/.env -d pablobuenaposada/honda-plug-scraper daily
