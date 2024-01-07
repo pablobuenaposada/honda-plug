@@ -2,11 +2,9 @@ from copy import deepcopy
 from datetime import datetime
 
 from api.parts.permissions import HasScrapPermission
-from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
-from elasticsearch_dsl import Q, Search
-from part.documents import PART_INDEX_NAME
+from api.parts.serializers import PartOutputSerializer
 from part.models import Part
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.generics import RetrieveAPIView
 
 
 class PartsView(RetrieveAPIView):
@@ -39,23 +37,3 @@ class PartsToScrapView(RetrieveAPIView):
         obj.save(update_fields=["last_time_delivered"])
 
         return obj_copy
-
-
-class SearchView(ListAPIView):
-    permission_classes = []
-    serializer_class = SearchOutputSerializer
-
-    def get_queryset(self):
-        query_param = self.request.GET.get("query", "")
-        es_search = Search(index=PART_INDEX_NAME).query(
-            Q("multi_match", query=query_param, fields=["title", "part.reference"])
-        )
-        response = es_search.execute()
-
-        unique_references = {hit.part.reference for hit in response.hits}
-        references = [
-            {"reference": reference, "title": hit.title}
-            for hit, reference in zip(response.hits, unique_references, strict=False)
-        ]
-
-        return references

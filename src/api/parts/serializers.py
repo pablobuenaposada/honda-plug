@@ -59,8 +59,3 @@ class StockDocumentSerializer(DocumentSerializer):
     class Meta:
         document = StockDocument
         fields = ("title", "part")
-
-
-class SearchOutputSerializer(serializers.Serializer):
-    reference = serializers.CharField()
-    title = serializers.CharField()

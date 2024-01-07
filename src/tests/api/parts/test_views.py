@@ -2,10 +2,9 @@ import pytest
 from api.parts.serializers import PartOutputSerializer
 from django.conf import settings
 from django.contrib.auth.models import Permission, User
-from django.core import management
 from django.shortcuts import resolve_url
 from model_bakery import baker
-from part.constants import SOURCE_AMAYAMA, SOURCE_TEGIWA
+from part.constants import SOURCE_TEGIWA
 from part.models import Part, Stock
 from rest_framework import status
 from rest_framework.authtoken.models import Token
@@ -77,106 +76,3 @@ class TestsPartsToScrapView:
         ] == part.last_time_delivered.astimezone().strftime(
             settings.REST_FRAMEWORK["DATETIME_FORMAT"]
         )
-
-
-@pytest.mark.django_db
-class TestsSearchView:
-    endpoint = resolve_url("api:search")
-
-    def test_url(self):
-        assert self.endpoint == "/api/parts/search/"
-
-    @pytest.mark.parametrize(
-        "search_term, expected_reference",
-        (
-            (
-                "head",
-                {
-                    "count": 1,
-                    "next": None,
-                    "previous": None,
-                    "results": [
-                        {
-                            "reference": REFERENCE_1,
-                            "title": TITLE_1,
-                        }
-                    ],
-                },
-            ),
-            (
-                "gasket",
-                {
-                    "count": 1,
-                    "next": None,
-                    "previous": None,
-                    "results": [
-                        {
-                            "reference": REFERENCE_1,
-                            "title": TITLE_1,
-                        }
-                    ],
-                },
-            ),
-            (
-                "oil",
-                {
-                    "count": 1,
-                    "next": None,
-                    "previous": None,
-                    "results": [
-                        {
-                            "reference": REFERENCE_2,
-                            "title": TITLE_2,
-                        }
-                    ],
-                },
-            ),
-            (
-                "head oil",
-                {
-                    "count": 2,
-                    "next": None,
-                    "previous": None,
-                    "results": [
-                        {
-                            "reference": REFERENCE_1,
-                            "title": TITLE_1,
-                        },
-                        {
-                            "reference": REFERENCE_2,
-                            "title": TITLE_2,
-                        },
-                    ],
-                },
-            ),
-            (
-                REFERENCE_1,
-                {
-                    "count": 1,
-                    "next": None,
-                    "previous": None,
-                    "results": [
-                        {
-                            "reference": REFERENCE_1,
-                            "title": TITLE_1,
-                        }
-                    ],
-                },
-            ),
-        ),
-    )
-    def test_success(self, client, search_term, expected_reference):
-        part = baker.make(Part, reference=REFERENCE_1, source=SOURCE_TEGIWA)
-        baker.make(Stock, part=part, title=TITLE_1, source=SOURCE_TEGIWA, country="US")
-        baker.make(Stock, part=part, title=TITLE_3, source=SOURCE_AMAYAMA, country="US")
-        part2 = baker.make(Part, reference=REFERENCE_2, source=SOURCE_TEGIWA)
-        baker.make(Stock, part=part2, title=TITLE_2, source=SOURCE_TEGIWA, country="US")
-
-        management.call_command("search_index", "--delete", "-f")
-        management.call_command("search_index", "--rebuild", "-f")
-        response = client.get(self.endpoint, {"query": search_term})
-
-        assert response.status_code == status.HTTP_200_OK
-        assert {item["reference"] for item in response.data["results"]} == {
-            item["reference"] for item in expected_reference["results"]
-        }
