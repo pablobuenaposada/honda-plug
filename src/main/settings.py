@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "part",
+    "review",
     "djmoney",
     "django_extensions",
     "simple_history",
