@@ -1,6 +1,7 @@
 import pytest
 from api.parts.serializers import (
     PartOutputSerializer,
+    SearchOutputSerializer,
     StockNestedOutputSerializer,
 )
 from model_bakery import baker
@@ -61,3 +62,12 @@ class TestsPartOutputSerializer:
             "title": stock.title,
             "last_time_delivered": None,
         }
+
+
+class TestsSearchOutputSerializer:
+    serializer_class = SearchOutputSerializer
+
+    def test_success(self):
+        assert self.serializer_class(
+            {"reference": "56483-PND-003", "title": "foo"}
+        ).data == {"reference": "56483-PND-003", "title": "foo"}
