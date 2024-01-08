@@ -1,0 +1,11 @@
+[
+  {
+      "model":"review.reviewpart",
+      "pk":1,
+      "fields":{
+        "reference": "76850-TZA-901",
+        "created":"2023-01-01",
+        "modified":"2023-01-01"
+      }
+   }
+]
