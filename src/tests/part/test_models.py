@@ -11,9 +11,13 @@ REFERENCE = "56483-PND-003"
 
 @pytest.mark.django_db
 class TestPart:
-    def test_unique(self):
+    @pytest.mark.parametrize(
+        "reference",
+        (REFERENCE, "56483-PND003"),
+    )
+    def test_unique(self, reference):
         Part.objects.create(reference=REFERENCE, source=SOURCE_EPCDATA)
-        with pytest.raises(IntegrityError):
+        with pytest.raises(ValidationError):
             Part.objects.create(reference=REFERENCE, source=SOURCE_EPCDATA)
 
     def test_mandatory_fields(self):

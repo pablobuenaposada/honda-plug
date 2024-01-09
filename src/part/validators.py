@@ -1,4 +1,6 @@
 from django.core.exceptions import ValidationError
+from django.db.models import Value
+from django.db.models.functions import Replace
 
 
 def validate_reference(value):
@@ -22,3 +24,20 @@ def validate_reference(value):
 def validate_empty(value):
     if not value:
         raise ValidationError("This field cannot be emtpy")
+
+
+def validate_if_exists(value):
+    """check if the reference but normalized already exists"""
+    from part.models import Part
+
+    value = value.upper()
+    if (
+        Part.objects.annotate(
+            normalized_reference=Replace("reference", Value("-"), Value(""))
+        )
+        .filter(normalized_reference=value.replace("-", ""))
+        .exists()
+    ):
+        raise ValidationError(
+            f"The normalized reference '{value.replace('-', '')}' already exists."
+        )
