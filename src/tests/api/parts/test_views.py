@@ -9,6 +9,7 @@ from part.constants import SOURCE_AMAYAMA, SOURCE_TEGIWA
 from part.models import Part, Stock
 from rest_framework import status
 from rest_framework.authtoken.models import Token
+from rest_framework.exceptions import ErrorDetail
 
 REFERENCE_1 = "56483-PND-003"
 TITLE_1 = "Head Gasket"
@@ -29,13 +30,25 @@ class TestsPartsView:
             self.endpoint(REFERENCE_1.lower()) == f"/api/parts/{REFERENCE_1.lower()}/"
         )
 
-    def test_success(self, client):
+    @pytest.mark.parametrize(
+        "reference",
+        (REFERENCE_1, REFERENCE_1.lower(), "56483-PND0-03"),
+    )
+    def test_success(self, client, reference):
         part = baker.make(Part, reference=REFERENCE_1, source=SOURCE_TEGIWA)
         baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
-        response = client.get(self.endpoint(REFERENCE_1.lower()))
+        response = client.get(self.endpoint(reference))
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data == PartOutputSerializer(part).data
+
+    def test_not_found(self, client):
+        response = client.get(self.endpoint(REFERENCE_1))
+
+        assert response.status_code == status.HTTP_404_NOT_FOUND
+        assert response.data == {
+            "detail": ErrorDetail(string="Not found.", code="not_found")
+        }
 
 
 @pytest.mark.django_db

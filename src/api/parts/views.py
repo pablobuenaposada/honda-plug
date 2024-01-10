@@ -3,6 +3,7 @@ from datetime import datetime
 
 from api.parts.permissions import HasScrapPermission
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
+from django.http import Http404
 from elasticsearch_dsl import Q, Search
 from part.documents import PART_INDEX_NAME
 from part.models import Part
@@ -12,14 +13,19 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 class PartsView(RetrieveAPIView):
     permission_classes = []
     serializer_class = PartOutputSerializer
-    queryset = Part.objects.all()
     lookup_field = "reference"
 
+    def get_queryset(self):
+        return Part.objects.search_reference(self.kwargs["reference"])
+
     def get_object(self):
-        if "reference" in self.kwargs:
-            # we expect the url to contain always the reference in lower case so to match it we need it in upper case
-            self.kwargs["reference"] = self.kwargs["reference"].upper()
-        return super().get_object()
+        queryset = self.filter_queryset(self.get_queryset())
+        try:
+            obj = queryset.get()
+        except Part.DoesNotExist as e:
+            raise Http404 from e
+        self.check_object_permissions(self.request, obj)
+        return obj
 
 
 class PartsToScrapView(RetrieveAPIView):

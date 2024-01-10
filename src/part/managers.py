@@ -3,12 +3,21 @@ from datetime import timedelta
 from django.core.cache import cache
 from django.db import models
 from django.db.models import Case, Count, IntegerField, Value, When
+from django.db.models.functions import Replace
 from django.utils import timezone
 
 from part.constants import CACHE_KEY_PARTS_TO_SNEAK
 
 
 class PartManager(models.Manager):
+    def search_reference(self, reference):
+        return (
+            super()
+            .get_queryset()
+            .annotate(normalized_reference=Replace("reference", Value("-"), Value("")))
+            .filter(normalized_reference=reference.upper().replace("-", ""))
+        )
+
     def stocked_parts_first(self):
         return (
             super()
