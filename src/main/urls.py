@@ -1,7 +1,6 @@
 from django.contrib import admin
-from django.contrib.sitemaps.views import sitemap
+from django.contrib.sitemaps import views as sitemaps_views
 from django.urls import include, path
-from django.views.decorators.cache import cache_page
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
@@ -9,8 +8,6 @@ from drf_spectacular.views import (
 from part.models import Part
 
 from main.views import PartsSitemap, prometheus_override_view
-
-SITEMAP_CACHE_SECONDS = 60 * 60
 
 
 def trigger_error(request):
@@ -26,10 +23,22 @@ urlpatterns = [
     path("api/docs/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
     path(
         "sitemap.xml",
-        cache_page(SITEMAP_CACHE_SECONDS)(sitemap),
+        sitemaps_views.index,
         {
             "sitemaps": {
-                "part": PartsSitemap(
+                "parts": PartsSitemap(
+                    {"queryset": Part.objects.all()}, protocol="https"
+                )
+            }
+        },
+        name="django.contrib.sitemaps.views.index",
+    ),
+    path(
+        "sitemap-<section>.xml",
+        sitemaps_views.sitemap,
+        {
+            "sitemaps": {
+                "parts": PartsSitemap(
                     {
                         "queryset": Part.objects.all(),
                         "date_field": "last_time_stock_modified",
