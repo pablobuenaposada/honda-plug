@@ -13,6 +13,7 @@ from pathlib import Path
 
 import environ
 import sentry_sdk
+from django_countries.widgets import LazyChoicesMixin
 from sentry_sdk.integrations.django import DjangoIntegration
 
 env = environ.Env(
@@ -204,3 +205,9 @@ sentry_sdk.init(
 )
 
 PROMETHEUS_EXPORT_MIGRATIONS = False
+
+# TODO: delete me, this is a temp patch for django-countries issue #447
+LazyChoicesMixin.get_choices = lambda self: self._choices
+LazyChoicesMixin.choices = property(
+    LazyChoicesMixin.get_choices, LazyChoicesMixin.set_choices
+)
