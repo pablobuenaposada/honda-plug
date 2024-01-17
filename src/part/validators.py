@@ -22,13 +22,3 @@ def validate_reference(value):
 def validate_empty(value):
     if not value:
         raise ValidationError("This field cannot be emtpy")
-
-
-def validate_if_exists(value):
-    """check if the reference but normalized already exists"""
-    from part.models import Part
-
-    if Part.objects.search_reference(value):
-        raise ValidationError(
-            f"The normalized reference '{value.replace('-', '')}' already exists."
-        )

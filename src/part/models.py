@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 from django.db import models
 from django_countries.fields import CountryField
 from django_extensions.db.models import TimeStampedModel
@@ -8,7 +9,7 @@ from simple_history.models import HistoricalRecords
 
 from part.constants import PART_SOURCES, STOCK_SOURCES
 from part.managers import PartManager
-from part.validators import validate_empty, validate_if_exists, validate_reference
+from part.validators import validate_empty, validate_reference
 
 
 class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
@@ -16,7 +17,7 @@ class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
         unique=True,
         max_length=15,
         default=None,
-        validators=[validate_reference, validate_if_exists],
+        validators=[validate_reference, validate_empty],
     )
     source = models.CharField(
         choices=PART_SOURCES,
@@ -42,8 +43,10 @@ class Part(ExportModelOperationsMixin("part"), TimeStampedModel):
     def save(self, **kwargs):
         validate_empty(self.source)
         validate_reference(self.reference)
-        if not self.id:
-            validate_if_exists(self.reference)
+        if Part.objects.search_reference(self.reference).exclude(id=self.id).exists():
+            raise ValidationError(
+                f"The normalized reference '{self.reference.replace('-', '')}' already exists."
+            )
         self.reference = self.reference.upper()
         super().save(**kwargs)
 
