@@ -46,3 +46,13 @@ class StockInputSerializer(serializers.ModelSerializer):
             "url",
             "country",
         ]
+
+
+class StockBulkInputSerializer(StockInputSerializer):
+    reference = serializers.CharField()
+
+    class Meta:
+        model = Stock
+        fields = [
+            field for field in StockInputSerializer.Meta.fields if field != "part"
+        ] + ["reference"]
