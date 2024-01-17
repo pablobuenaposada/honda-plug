@@ -4,11 +4,12 @@ from django.contrib.auth.models import Permission, User
 from django.shortcuts import resolve_url
 from djmoney.money import Money
 from model_bakery import baker
-from part.constants import SOURCE_TEGIWA
+from part.constants import SOURCE_AMAYAMA, SOURCE_TEGIWA
 from part.models import Part, Stock
 from rest_framework import status
 from rest_framework.authtoken.models import Token
 from rest_framework.exceptions import ErrorDetail
+from review.models import ReviewPart
 
 REFERENCE = "56483-PND-003"
 
@@ -50,15 +51,7 @@ class TestsStocksCreateView:
     def test_no_token(self, client):
         response = client.post(
             self.endpoint,
-            {
-                "part": self.part.pk,
-                "title": "foo",
-                "source": SOURCE_TEGIWA,
-                "url": "https://www.foo.com",
-                "country": "US",
-                "price": "1.99",
-                "price_currency": "USD",
-            },
+            {},
         )
 
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
@@ -141,3 +134,202 @@ class TestsStocksCreateView:
                 )
             ]
         }
+
+
+@pytest.mark.django_db
+class TestsStocksBulkCreateView:
+    endpoint = resolve_url("api:stocks-bulk-create")
+
+    @pytest.fixture(autouse=True)
+    def setup_class(self):
+        user = baker.make(User)
+        user.user_permissions.add(Permission.objects.get(name="Can add stock"))
+        self.token = baker.make(Token, user=user)
+        self.part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+
+    def test_url(self):
+        assert self.endpoint == "/api/stocks/bulk/"
+
+    def test_no_token(self, client):
+        response = client.post(self.endpoint, {})
+
+        assert response.status_code == status.HTTP_401_UNAUTHORIZED
+
+    def test_success(self, client):
+        assert not Stock.objects.exists()
+
+        response = client.post(
+            self.endpoint,
+            [
+                {
+                    "reference": self.part.reference,
+                    "title": "foo",
+                    "source": SOURCE_TEGIWA,
+                    "url": "https://www.foo.com",
+                    "country": "US",
+                    "price": "1",
+                    "price_currency": "USD",
+                },
+                {
+                    "reference": self.part.reference,
+                    "title": "foo",
+                    "source": SOURCE_AMAYAMA,
+                    "url": "https://www.foo.com",
+                    "country": "JP",
+                    "price": "2",
+                    "price_currency": "USD",
+                },
+            ],
+            content_type="application/json",
+            HTTP_AUTHORIZATION=f"Token {self.token}",
+        )
+
+        assert response.status_code == status.HTTP_201_CREATED
+        stocks = Stock.objects.all()
+        assert stocks.count() == 2
+        assert response.data == [StockOutputSerializer(stock).data for stock in stocks]
+        assert not ReviewPart.objects.exists()
+
+    def test_success_with_already_stock(self, client):
+        baker.make(Stock, part=self.part, source=SOURCE_TEGIWA, country="US")
+        response = client.post(
+            self.endpoint,
+            [
+                {
+                    "reference": REFERENCE,
+                    "title": "foo",
+                    "source": SOURCE_TEGIWA,
+                    "url": "https://www.foo.com",
+                    "country": "US",
+                    "price": "1",
+                    "price_currency": "USD",
+                },
+                {
+                    "reference": REFERENCE,
+                    "title": "foo",
+                    "source": SOURCE_AMAYAMA,
+                    "url": "https://www.foo.com",
+                    "country": "JP",
+                    "price": "2",
+                    "price_currency": "USD",
+                },
+            ],
+            content_type="application/json",
+            HTTP_AUTHORIZATION=f"Token {self.token}",
+        )
+
+        assert response.status_code == status.HTTP_201_CREATED
+        stocks = Stock.objects.all()
+        assert stocks.count() == 2
+        assert stocks[0].history.count() == 1
+        assert stocks[1].history.count() == 0
+        assert response.data == [StockOutputSerializer(stock).data for stock in stocks]
+        assert not ReviewPart.objects.exists()
+
+    def test_success_duplicated_stocks(self, client):
+        assert not Stock.objects.exists()
+
+        response = client.post(
+            self.endpoint,
+            [
+                {
+                    "reference": REFERENCE,
+                    "title": "foo",
+                    "source": SOURCE_TEGIWA,
+                    "url": "https://www.foo.com",
+                    "country": "US",
+                    "price": "1",
+                    "price_currency": "USD",
+                },
+                {
+                    "reference": REFERENCE,
+                    "title": "foo",
+                    "source": SOURCE_TEGIWA,
+                    "url": "https://www.foo.com",
+                    "country": "US",
+                    "price": "2",
+                    "price_currency": "USD",
+                },
+            ],
+            content_type="application/json",
+            HTTP_AUTHORIZATION=f"Token {self.token}",
+        )
+
+        assert response.status_code == status.HTTP_201_CREATED
+        stocks = Stock.objects.all()
+        assert stocks.count() == 1
+        assert stocks[0].history.count() == 0
+        assert response.data == [StockOutputSerializer(stock).data for stock in stocks]
+        assert not ReviewPart.objects.exists()
+
+    def test_success_without_part(self, client):
+        assert not Stock.objects.exists()
+
+        response = client.post(
+            self.endpoint,
+            [
+                {
+                    "reference": "1234-123-123",
+                    "title": "foo",
+                    "source": SOURCE_AMAYAMA,
+                    "url": "https://www.foo.com",
+                    "country": "JP",
+                    "price": "2",
+                    "price_currency": "USD",
+                },
+                {
+                    "reference": REFERENCE,
+                    "title": "foo",
+                    "source": SOURCE_TEGIWA,
+                    "url": "https://www.foo.com",
+                    "country": "US",
+                    "price": "1",
+                    "price_currency": "USD",
+                },
+            ],
+            content_type="application/json",
+            HTTP_AUTHORIZATION=f"Token {self.token}",
+        )
+
+        assert response.status_code == status.HTTP_201_CREATED
+        stock = Stock.objects.get()
+        assert stock.history.count() == 0
+        assert response.data == [StockOutputSerializer(stock).data]
+        assert ReviewPart.objects.get().reference == "1234-123-123"
+
+    def test_partial_validation_error(self, client):
+        assert not Stock.objects.exists()
+
+        response = client.post(
+            self.endpoint,
+            [
+                {
+                    "reference": self.part.reference,
+                    "title": "foo",
+                    "source": SOURCE_TEGIWA,
+                    "url": "https://www.foo.com",
+                    "country": "US",
+                    "price": "1",
+                    "price_currency": "USD",
+                },
+                {
+                    "reference": self.part.reference,
+                    "title": "foo",
+                    "source": SOURCE_AMAYAMA,
+                    "url": "www.foo.com",
+                    "country": "JP",
+                    "price": "2",
+                    "price_currency": "USD",
+                },
+            ],
+            content_type="application/json",
+            HTTP_AUTHORIZATION=f"Token {self.token}",
+        )
+
+        assert response.status_code == status.HTTP_400_BAD_REQUEST
+        assert Stock.objects.exists() is False
+        assert response.data == [
+            {},
+            {"url": [ErrorDetail(string="Enter a valid URL.", code="invalid")]},
+        ]
+        assert not ReviewPart.objects.exists()

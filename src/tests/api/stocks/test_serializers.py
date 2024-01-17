@@ -2,6 +2,7 @@ import pytest
 from api.parts.serializers import HistoricalStockNestedOutputSerializer
 from api.stocks.serializers import (
     ImageNestedOutputSerializer,
+    StockBulkInputSerializer,
     StockInputSerializer,
     StockOutputSerializer,
 )
@@ -156,6 +157,76 @@ class TestStockInputSerializer:
         assert serializer.is_valid()
         assert serializer.validated_data == {
             "part": self.part,
+            "country": "US",
+            "source": SOURCE_TEGIWA,
+            "title": "foo",
+            "url": "https://www.foo.com",
+            "available": True,
+            "discontinued": False,
+            "price": Money("1.90", "EUR"),
+            "quantity": 1,
+        }
+
+
+@pytest.mark.django_db
+class TestStockBulkInputSerializer:
+    serializer_class = StockBulkInputSerializer
+
+    @pytest.fixture(autouse=True)
+    def setup_class(self):
+        self.part = baker.make(Part, reference=REFERENCE, source=SOURCE_TEGIWA)
+
+    def test_mandatory(self):
+        serializer = self.serializer_class(data={})
+
+        assert not serializer.is_valid()
+        assert serializer.errors == {
+            "reference": [
+                ErrorDetail(string="This field is required.", code="required")
+            ],
+            "source": [ErrorDetail(string="This field is required.", code="required")],
+            "url": [ErrorDetail(string="This field is required.", code="required")],
+            "country": [ErrorDetail(string="This field is required.", code="required")],
+        }
+
+    def test_success_min(self):
+        serializer = self.serializer_class(
+            data={
+                "reference": self.part.reference,
+                "title": "",
+                "source": SOURCE_TEGIWA,
+                "url": "https://www.foo.com",
+                "country": "US",
+            }
+        )
+
+        assert serializer.is_valid()
+        assert serializer.validated_data == {
+            "reference": self.part.reference,
+            "country": "US",
+            "source": SOURCE_TEGIWA,
+            "title": "",
+            "url": "https://www.foo.com",
+        }
+
+    def test_success_full(self):
+        serializer = self.serializer_class(
+            data={
+                "reference": self.part.reference,
+                "title": "foo",
+                "source": SOURCE_TEGIWA,
+                "url": "https://www.foo.com",
+                "country": "US",
+                "available": True,
+                "discontinued": False,
+                "price": Money("1.90", "EUR"),
+                "quantity": 1,
+            }
+        )
+
+        assert serializer.is_valid()
+        assert serializer.validated_data == {
+            "reference": self.part.reference,
             "country": "US",
             "source": SOURCE_TEGIWA,
             "title": "foo",
