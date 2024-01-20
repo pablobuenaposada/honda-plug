@@ -16,6 +16,14 @@ class TestValidators:
             ("14721PRBA00-8", "must start with 5 characters before first hyphen"),
             ("12345-12", "second group must be more than 2 characters"),
             ("12345-123-123456", "max 15 chars"),
+            ("1221x-PZ1-003", "can't contain X in first or last group"),
+            ("1221X-PZ1-003", "can't contain X in first or last group"),
+            ("12215-PZ1-00x", "can't contain X in first or last group"),
+            ("12215-PZ1-00X", "can't contain X in first or last group"),
+            ("9430x-14200", "can't contain X"),
+            ("9430X-14200", "can't contain X"),
+            ("94301-1420x", "can't contain X"),
+            ("94301-1420X", "can't contain X"),
         ),
     )
     def test_validate_reference_fail(self, reference, error_message):
@@ -28,6 +36,7 @@ class TestValidators:
         (
             "12210-PZ1-003",
             "95701-060-5508",
+            "95701-06X-5508",
             "94301-14200",
             "93891-0501007",
             "63915-SEA-300ZZ",
