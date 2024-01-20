@@ -7,7 +7,7 @@ from review.models import ReviewPart
 
 class ReviewPartAdmin(admin.ModelAdmin):
     model = ReviewPart
-    list_display = ("reference", "created")
+    list_display = ("reference", "source", "created")
     actions = ["add_as_part"]
 
     def add_as_part(self, request, queryset):

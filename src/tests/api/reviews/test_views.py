@@ -27,9 +27,7 @@ class TestsReviewsCreateView:
     def test_no_token(self, client):
         response = client.post(
             self.endpoint,
-            {
-                "reference": REFERENCE,
-            },
+            {"reference": REFERENCE, "source": "foo"},
         )
 
         assert response.status_code == status.HTTP_401_UNAUTHORIZED
@@ -38,7 +36,7 @@ class TestsReviewsCreateView:
         assert not ReviewPart.objects.exists()
         response = client.post(
             self.endpoint,
-            {"reference": REFERENCE},
+            {"reference": REFERENCE, "source": "foo"},
             HTTP_AUTHORIZATION=f"Token {self.token}",
         )
 
@@ -54,7 +52,7 @@ class TestsReviewsCreateView:
 
         response = client.post(
             self.endpoint,
-            {"reference": REFERENCE},
+            {"reference": REFERENCE, "source": "foo"},
             HTTP_AUTHORIZATION=f"Token {self.token}",
         )
 
@@ -79,5 +77,6 @@ class TestsReviewsCreateView:
         assert response.data == {
             "reference": [
                 ErrorDetail(string="This field is required.", code="required")
-            ]
+            ],
+            "source": [ErrorDetail(string="This field is required.", code="required")],
         }

@@ -17,16 +17,13 @@ class TestReviewPartInputSerializer:
             "reference": [
                 ErrorDetail(string="This field is required.", code="required")
             ],
+            "source": [ErrorDetail(string="This field is required.", code="required")],
         }
 
     def test_success(self):
         serializer = self.serializer_class(
-            data={
-                "reference": REFERENCE,
-            }
+            data={"reference": REFERENCE, "source": "foo"}
         )
 
         assert serializer.is_valid()
-        assert serializer.validated_data == {
-            "reference": REFERENCE,
-        }
+        assert serializer.validated_data == {"reference": REFERENCE, "source": "foo"}

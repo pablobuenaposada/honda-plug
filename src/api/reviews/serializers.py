@@ -5,4 +5,4 @@ from review.models import ReviewPart
 class ReviewPartInputSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewPart
-        fields = ["reference"]
+        fields = ["reference", "source"]
