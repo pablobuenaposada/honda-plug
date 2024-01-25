@@ -3,6 +3,7 @@ from api.parts.serializers import HistoricalStockNestedOutputSerializer
 from api.stocks.serializers import (
     ImageNestedOutputSerializer,
     StockBulkInputSerializer,
+    StockBulkOutputSerializer,
     StockInputSerializer,
     StockOutputSerializer,
 )
@@ -235,4 +236,50 @@ class TestStockBulkInputSerializer:
             "discontinued": False,
             "price": Money("1.90", "EUR"),
             "quantity": 1,
+        }
+
+
+@pytest.mark.django_db
+class TestStockBulkOutputSerializer:
+    serializer_class = StockBulkOutputSerializer
+
+    def test_mandatory(self):
+        serializer = self.serializer_class(data={})
+
+        assert not serializer.is_valid()
+        assert serializer.errors == {
+            "created": [ErrorDetail(string="This field is required.", code="required")],
+            "duplicated": [
+                ErrorDetail(string="This field is required.", code="required")
+            ],
+            "not_found": [
+                ErrorDetail(string="This field is required.", code="required")
+            ],
+            "received": [
+                ErrorDetail(string="This field is required.", code="required")
+            ],
+            "updated": [ErrorDetail(string="This field is required.", code="required")],
+            "errors": [ErrorDetail(string="This field is required.", code="required")],
+        }
+
+    def test_success(self):
+        serializer = self.serializer_class(
+            data={
+                "created": 1,
+                "duplicated": 2,
+                "not_found": 3,
+                "received": 4,
+                "updated": 5,
+                "errors": 6,
+            }
+        )
+
+        assert serializer.is_valid()
+        assert serializer.validated_data == {
+            "created": 1,
+            "duplicated": 2,
+            "not_found": 3,
+            "received": 4,
+            "updated": 5,
+            "errors": 6,
         }

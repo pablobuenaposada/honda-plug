@@ -1,5 +1,5 @@
 import pytest
-from api.stocks.serializers import StockOutputSerializer
+from api.stocks.serializers import StockBulkOutputSerializer, StockOutputSerializer
 from django.contrib.auth.models import Permission, User
 from django.shortcuts import resolve_url
 from djmoney.money import Money
@@ -185,13 +185,28 @@ class TestsStocksBulkCreateView:
         )
 
         assert response.status_code == status.HTTP_201_CREATED
-        stocks = Stock.objects.all()
-        assert stocks.count() == 2
-        assert response.data == [StockOutputSerializer(stock).data for stock in stocks]
+        assert Stock.objects.count() == 2
+        stock_tegiwa = Stock.objects.get(source=SOURCE_TEGIWA)
+        stock_amayama = Stock.objects.get(source=SOURCE_AMAYAMA)
+        assert stock_tegiwa.modified is not None
+        assert stock_amayama.modified is not None
+        serializer = StockBulkOutputSerializer(
+            data={
+                "created": 2,
+                "duplicated": 0,
+                "not_found": 0,
+                "received": 2,
+                "updated": 0,
+                "errors": 0,
+            }
+        )
+        serializer.is_valid()
+        assert response.data == serializer.data
         assert not ReviewPart.objects.exists()
 
     def test_success_with_already_stock(self, client):
-        baker.make(Stock, part=self.part, source=SOURCE_TEGIWA, country="US")
+        stock = baker.make(Stock, part=self.part, source=SOURCE_TEGIWA, country="US")
+        initial_modified_date = stock.modified
         response = client.post(
             self.endpoint,
             [
@@ -219,11 +234,25 @@ class TestsStocksBulkCreateView:
         )
 
         assert response.status_code == status.HTTP_201_CREATED
-        stocks = Stock.objects.all()
-        assert stocks.count() == 2
-        assert stocks[0].history.count() == 1
-        assert stocks[1].history.count() == 0
-        assert response.data == [StockOutputSerializer(stock).data for stock in stocks]
+        assert Stock.objects.count() == 2
+        stock_tegiwa = Stock.objects.get(source=SOURCE_TEGIWA)
+        stock_amayama = Stock.objects.get(source=SOURCE_AMAYAMA)
+        assert stock_tegiwa.history.count() == 2
+        assert stock_amayama.history.count() == 1
+        assert stock_tegiwa.modified > initial_modified_date
+        assert stock_amayama.modified is not None
+        serializer = StockBulkOutputSerializer(
+            data={
+                "created": 1,
+                "duplicated": 0,
+                "not_found": 0,
+                "received": 2,
+                "updated": 1,
+                "errors": 0,
+            }
+        )
+        serializer.is_valid()
+        assert response.data == serializer.data
         assert not ReviewPart.objects.exists()
 
     def test_success_duplicated_stocks(self, client):
@@ -258,8 +287,20 @@ class TestsStocksBulkCreateView:
         assert response.status_code == status.HTTP_201_CREATED
         stocks = Stock.objects.all()
         assert stocks.count() == 1
-        assert stocks[0].history.count() == 0
-        assert response.data == [StockOutputSerializer(stock).data for stock in stocks]
+        assert stocks[0].history.count() == 1
+        assert stocks[0].modified is not None
+        serializer = StockBulkOutputSerializer(
+            data={
+                "created": 1,
+                "duplicated": 1,
+                "not_found": 0,
+                "received": 2,
+                "updated": 0,
+                "errors": 0,
+            }
+        )
+        serializer.is_valid()
+        assert response.data == serializer.data
         assert not ReviewPart.objects.exists()
 
     def test_success_without_part(self, client):
@@ -293,8 +334,20 @@ class TestsStocksBulkCreateView:
 
         assert response.status_code == status.HTTP_201_CREATED
         stock = Stock.objects.get()
-        assert stock.history.count() == 0
-        assert response.data == [StockOutputSerializer(stock).data]
+        assert stock.history.count() == 1
+        assert stock.modified is not None
+        serializer = StockBulkOutputSerializer(
+            data={
+                "created": 1,
+                "duplicated": 0,
+                "not_found": 1,
+                "received": 2,
+                "updated": 0,
+                "errors": 0,
+            }
+        )
+        serializer.is_valid()
+        assert response.data == serializer.data
         assert ReviewPart.objects.get().reference == "1234-123-123"
 
     def test_partial_validation_error(self, client):
