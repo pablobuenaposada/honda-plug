@@ -22,7 +22,7 @@ migrate:
 	venv/bin/python src/manage.py collectstatic --noinput
 
 gunicorn:
-	venv/bin/gunicorn src.main.wsgi:application --bind 0.0.0.0:8000 --pythonpath=src
+	venv/bin/gunicorn src.main.wsgi:application --bind 0.0.0.0:8000 --pythonpath=src --timeout 60
 
 # copy generated fullchain.pem and privkey.pem from this command to nginx folder and restart
 certificate:

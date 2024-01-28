@@ -76,8 +76,7 @@ class StocksBulkCreateView(CreateAPIView):
 
     def perform_create(self, serializer):  # noqa: C901
         total_stocks = len(serializer.validated_data)
-        parts_not_found = duplicated_stocks = 0
-        errors = 0
+        parts_not_found = duplicated_stocks = errors = 0
 
         for stock in serializer.validated_data:
             try:
