@@ -12,9 +12,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 
+import django_rq.queues
 import environ
 import sentry_sdk
 from django_countries.widgets import LazyChoicesMixin
+from fakeredis import FakeRedisConnSingleton
 from sentry_sdk.integrations.django import DjangoIntegration
 
 env = environ.Env(
@@ -61,6 +63,7 @@ INSTALLED_APPS = [
     "drf_spectacular",
     "rest_framework.authtoken",
     "django_elasticsearch_dsl",
+    "django_rq",
 ]
 
 MIDDLEWARE = [
@@ -187,6 +190,22 @@ LOGGING = {
         },
     },
 }
+
+RQ_QUEUES = {
+    "default": {
+        "HOST": "redis",
+        "PORT": 6379,
+        "DB": 0,
+        # 'PASSWORD': 'some-password', TODO: set a password
+        "DEFAULT_TIMEOUT": 3600,
+        "DEFAULT_RESULT_TTL": 172800,
+    },
+}
+RQ_SHOW_ADMIN_LINK = True
+RQ_REDIS_ENABLED = env("RQ_REDIS_ENABLED")
+if not RQ_REDIS_ENABLED:
+    RQ_QUEUES["default"]["ASYNC"] = False
+    django_rq.queues.get_redis_connection = FakeRedisConnSingleton()
 
 sentry_sdk.init(
     dsn=env("SENTRY_DSN"),

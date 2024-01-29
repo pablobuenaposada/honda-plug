@@ -1,8 +1,0 @@
-version: "3.9"
-
-services:
-  epc:
-    build: .
-    command: venv/bin/python src/manage.py runscript epc_parser --script-args pblpat.csv
-    env_file:
-      - .env.prod

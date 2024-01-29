@@ -38,7 +38,7 @@ docker/build:
 	docker build --no-cache	--tag=$(DOCKER_IMAGE) .
 
 docker/tests:
-	 docker compose up -d --force-recreate db django elasticsearch
+	 docker compose up -d --force-recreate db django elasticsearch redis
 	 docker exec $(DOCKER_IMAGE)-django-1 make tests
 
 docker/format/check:

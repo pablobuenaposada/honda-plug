@@ -1,6 +1,10 @@
 version: "3.9"
 
 services:
+  redis:
+    image: redis:alpine3.16
+    ports:
+      - "6379:6379"
   db:
     image: postgres:14.4-alpine
     env_file:
@@ -24,6 +28,11 @@ services:
     depends_on:
       db:
         condition: service_healthy
+  worker:
+    build: .
+    command: venv/bin/python src/manage.py rqworker
+    env_file:
+      - .env.local
   migration:
     build: .
     command: venv/bin/python src/manage.py migrate

@@ -56,12 +56,3 @@ class StockBulkInputSerializer(StockInputSerializer):
         fields = [
             field for field in StockInputSerializer.Meta.fields if field != "part"
         ] + ["reference"]
-
-
-class StockBulkOutputSerializer(serializers.Serializer):
-    received = serializers.IntegerField(min_value=0)
-    created = serializers.IntegerField(min_value=0)
-    updated = serializers.IntegerField(min_value=0)
-    not_found = serializers.IntegerField(min_value=0)
-    duplicated = serializers.IntegerField(min_value=0)
-    errors = serializers.IntegerField(min_value=0)

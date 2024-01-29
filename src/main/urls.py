@@ -49,4 +49,5 @@ urlpatterns = [
         },
         name="django.contrib.sitemaps.views.sitemap",
     ),
+    path("django-rq/", include("django_rq.urls")),
 ]
