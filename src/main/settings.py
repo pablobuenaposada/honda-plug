@@ -198,7 +198,6 @@ RQ_QUEUES = {
         "DB": 0,
         # 'PASSWORD': 'some-password', TODO: set a password
         "DEFAULT_TIMEOUT": 3600,
-        "DEFAULT_RESULT_TTL": 172800,
     },
 }
 RQ_SHOW_ADMIN_LINK = True

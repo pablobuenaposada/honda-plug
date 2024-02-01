@@ -6,7 +6,7 @@ from review.models import ReviewPart
 from simple_history.utils import bulk_create_with_history, bulk_update_with_history
 
 
-@job
+@job("default", result_ttl=172800)
 def bulk_create(serializer):  # noqa: C901
     total_stocks = len(serializer.validated_data)
     parts_not_found = duplicated_stocks = errors = 0
