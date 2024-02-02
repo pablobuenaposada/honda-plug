@@ -220,6 +220,9 @@ class TestsStocksBulkCreateView:
         assert Stock.objects.exists() is False
         assert response.data == [
             {},
-            {"url": [ErrorDetail(string="Enter a valid URL.", code="invalid")]},
+            {
+                "url": [ErrorDetail(string="Enter a valid URL.", code="invalid")],
+                "reference": ErrorDetail(string="56483-PND-003", code="invalid"),
+            },
         ]
         assert not ReviewPart.objects.exists()

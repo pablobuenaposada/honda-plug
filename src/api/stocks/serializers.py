@@ -56,3 +56,11 @@ class StockBulkInputSerializer(StockInputSerializer):
         fields = [
             field for field in StockInputSerializer.Meta.fields if field != "part"
         ] + ["reference"]
+
+    def to_internal_value(self, data):
+        try:
+            return super().to_internal_value(data)
+        except serializers.ValidationError as e:
+            # if an error is found we attach the reference field too, so we can debug
+            e.detail.setdefault("reference", data.get("reference"))
+            raise e
