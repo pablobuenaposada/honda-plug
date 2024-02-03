@@ -75,6 +75,7 @@ SOURCE_DREAMSHOP_CAPITAL_CITY = "dreamshop-capital-city-honda"
 SOURCE_DREAMSHOP_CAPITAL = "dreamshop-capital-honda"
 SOURCE_JHPUSA = "jhpusa"
 SOURCE_JDMYAMATO = "jdmyamato"
+SOURCE_COLLEGEHILLSHONDA = "collegehillshonda"
 SOURCE_EPC_4_00 = "epc-4-00"
 SOURCE_UNKNOWN = "unknown"
 
@@ -188,6 +189,7 @@ STOCK_SOURCES = (
     (SOURCE_DREAMSHOP_CAPITAL, "dreamshop.honda.com - Capital Honda"),
     (SOURCE_JHPUSA, "www.jhpusa.com"),
     (SOURCE_JDMYAMATO, "www.jdmyamato.com"),
+    (SOURCE_COLLEGEHILLSHONDA, "www.collegehillshonda.com"),
 )
 
 PART_SOURCES = (
