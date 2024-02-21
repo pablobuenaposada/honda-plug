@@ -7,5 +7,5 @@ scrape_configs:
     static_configs:
       - targets:
         - django:8000
-    scrape_interval: 300s
-    scrape_timeout: 80s
+    scrape_interval: 60s
+    scrape_timeout: 50s
