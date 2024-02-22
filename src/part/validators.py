@@ -15,12 +15,8 @@ def validate_reference(value):
         raise ValidationError("must contain 1 or 2 hyphens")
     if len(value.split("-")[0]) != 5:
         raise ValidationError("must start with 5 characters before first hyphen")
-    if len(value.split("-")[1]) < 3:
-        raise ValidationError("second group must be more than 2 characters")
-    if len(value.split("-")) == 3 and (
-        "X" in value.upper().split("-")[0] or "X" in value.upper().split("-")[2]
-    ):
-        raise ValidationError("can't contain X in first or last group")
+    if len(value.split("-")) == 3 and ("X" in value.upper().split("-")[0]):
+        raise ValidationError("can't contain X in first group")
     if len(value.split("-")) == 2 and "X" in value.upper():
         raise ValidationError("can't contain X")
 
