@@ -15,7 +15,6 @@ from pathlib import Path
 import django_rq.queues
 import environ
 import sentry_sdk
-from django_countries.widgets import LazyChoicesMixin
 from fakeredis import FakeRedisConnSingleton
 from sentry_sdk.integrations.django import DjangoIntegration
 
@@ -224,9 +223,3 @@ sentry_sdk.init(
 )
 
 PROMETHEUS_EXPORT_MIGRATIONS = False
-
-# TODO: delete me, this is a temp patch for django-countries issue #447
-LazyChoicesMixin.get_choices = lambda self: self._choices
-LazyChoicesMixin.choices = property(
-    LazyChoicesMixin.get_choices, LazyChoicesMixin.set_choices
-)
