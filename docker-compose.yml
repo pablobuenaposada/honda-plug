@@ -20,7 +20,7 @@ services:
       retries: 5
   django:
     build: .
-    command: venv/bin/python src/manage.py runserver 0.0.0.0:8000
+    command: python src/manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
     env_file:
@@ -30,19 +30,19 @@ services:
         condition: service_healthy
   worker:
     build: .
-    command: venv/bin/python src/manage.py rqworker
+    command: python src/manage.py rqworker
     env_file:
       - .env.local
   migration:
     build: .
-    command: venv/bin/python src/manage.py migrate
+    command: python src/manage.py migrate
     env_file:
       - .env.local
     depends_on:
       - django
   fixtures:
     build: .
-    command: venv/bin/python src/manage.py loaddata fixtures.json
+    command: python src/manage.py loaddata fixtures.json
     env_file:
       - .env.local
     depends_on:
@@ -76,7 +76,7 @@ services:
       retries: 50
   elasticsearch-index:
     build: .
-    command: venv/bin/python src/manage.py search_index --rebuild -f
+    command: python src/manage.py search_index --rebuild -f
     env_file:
       - .env.local
     depends_on:

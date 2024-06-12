@@ -1,3 +1,43 @@
+[tool.poetry]
+name = "honda-plug"
+version = "0.1.0"
+description = ""
+authors = ["Pablo Buenaposada <pablo.buenaposada@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.0.1"
+django-rq = "^2.10.1"
+django-environ = "^0.9.0"
+django-countries = "7.5.1"
+django-money = "^3.4.1"
+django-simple-history = "^3.4.0"
+django-prometheus = "^2.3.1"
+django-elasticsearch-dsl = "^8.0"
+django-elasticsearch-dsl-drf = "^0.22.5"
+django_extensions = "^3.2.3"
+djangorestframework = "^3.14.0"
+drf-spectacular = "^0.27.0"
+psycopg2 = "^2.9.9"
+sentry-sdk = "^1.39.2"
+pycountry = "^23.12.11"
+elasticsearch-dsl = "8.12.0" # temp fix for elasticsearch-dsl bug
+fakeredis = "^1.9.0" # sounds like a dev only dependency but unfortunately it's referenced in settings.py
+gunicorn = "^21.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+ruff = "*"
+pytest = "*"
+pytest-vcr = "*"
+pytest-django = "*"
+model-bakery = "*"
+freezegun = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.ruff]
 target-version = "py310"
 lint.select = [

@@ -1,9 +1,0 @@
-pytest<8
-pytest-vcr
-pytest-django
-pytest-asyncio
-model-bakery
-black
-ruff
-ipdb
-freezegun

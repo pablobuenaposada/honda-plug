@@ -2,27 +2,27 @@ DOCKER_IMAGE=honda-plug
 TEST_ENV_VARS:=$(shell cat .env.test | xargs)
 
 venv:
-	python3.10 -m venv venv
-	venv/bin/pip install -r requirements.txt
+	poetry install --without dev
 
-format:
-	venv/bin/pip install -r requirements-tests.txt
-	venv/bin/black src
-	venv/bin/ruff src --fix
+venv-dev:
+	poetry install
 
-format/check: venv
-	venv/bin/pip install -r requirements-tests.txt
-	venv/bin/black --verbose src --check
-	venv/bin/ruff src
+format: venv-dev
+	poetry run black src
+	poetry run ruff src --fix
+
+format/check: venv-dev
+	poetry run black --verbose src --check
+	poetry run ruff src
 
 migrations/check:
-	$(TEST_ENV_VARS) venv/bin/python src/manage.py makemigrations --check --dry-run
+	$(TEST_ENV_VARS) poetry run python src/manage.py makemigrations --check --dry-run
 
 migrate:
-	venv/bin/python src/manage.py collectstatic --noinput
+	python src/manage.py collectstatic --noinput
 
 gunicorn:
-	venv/bin/gunicorn src.main.wsgi:application --bind 0.0.0.0:8000 --workers=5 --pythonpath=src --timeout 60
+	gunicorn src.main.wsgi:application --bind 0.0.0.0:8000 --workers=5 --pythonpath=src --timeout 60
 
 # copy generated fullchain.pem and privkey.pem from this command to nginx folder and restart
 certificate:
@@ -30,9 +30,8 @@ certificate:
 	sudo certbot certonly --standalone --cert-name hondaplug -d hondaplug.com
 	sudo ufw delete allow 80/tcp
 
-tests: venv
-	venv/bin/pip install -r requirements-tests.txt
-	$(TEST_ENV_VARS) PYTHONPATH=src venv/bin/pytest src/tests
+tests: venv-dev
+	$(TEST_ENV_VARS) PYTHONPATH=src poetry run pytest src/tests
 
 docker/build:
 	docker build --no-cache	--tag=$(DOCKER_IMAGE) .
@@ -51,7 +50,7 @@ docker/run/shell:
 	docker exec -it honda-plug-django-1 bash
 
 docker/run/index:
-	docker exec -d honda-plug-django-1 venv/bin/python src/manage.py search_index --rebuild -f
+	docker exec -d honda-plug-django-1 python src/manage.py search_index --rebuild -f
 
 docker/run/prod:
 	crontab $(shell pwd)/cron/cron

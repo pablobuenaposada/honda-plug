@@ -32,12 +32,12 @@ services:
   worker:
     restart: always
     build: .
-    command: venv/bin/python src/manage.py rqworker
+    command: python src/manage.py rqworker
     env_file:
       - .env.prod
   migration:
     build: .
-    command: venv/bin/python src/manage.py migrate
+    command: python src/manage.py migrate
     env_file:
       - .env.prod
     depends_on:
