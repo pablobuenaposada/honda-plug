@@ -9,11 +9,11 @@ venv-dev:
 
 format: venv-dev
 	poetry run black src
-	poetry run ruff src --fix
+	poetry run ruff check src --fix
 
 format/check: venv-dev
 	poetry run black --verbose src --check
-	poetry run ruff src
+	poetry run ruff check src
 
 migrations/check:
 	$(TEST_ENV_VARS) poetry run python src/manage.py makemigrations --check --dry-run

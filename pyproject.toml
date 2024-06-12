@@ -62,12 +62,4 @@ lint.select = [
 ]
 lint.ignore = [
     "E501",
-    "E999" # https://github.com/charliermarsh/ruff/issues/282
-]
-# ruff doesn't get along with python 'match' syntax for now, so files containing this are excluded
-exclude = [
-    "src/scrapper/clients/tegiwa.py",
-    "src/scrapper/clients/hondapartsnow.py",
-    "src/part/migrations/0013_alter_stock_unique_together_historicalstock_country_and_more.py",
-    "src/scrapper/clients/common.py",
 ]
