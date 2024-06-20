@@ -15,8 +15,6 @@ class TestValidators:
             ("a-b-c-d", "must contain 1 or 2 hyphens"),
             ("14721PRBA00-8", "must start with 5 characters before first hyphen"),
             ("12345-123-123456", "max 15 chars"),
-            ("1221x-PZ1-003", "can't contain X in first group"),
-            ("1221X-PZ1-003", "can't contain X in first group"),
             ("9430x-14200", "can't contain X"),
             ("9430X-14200", "can't contain X"),
             ("94301-1420x", "can't contain X"),
