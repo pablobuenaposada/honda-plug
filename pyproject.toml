@@ -18,12 +18,12 @@ django-elasticsearch-dsl-drf = "^0.22.5"
 django_extensions = "^3.2.3"
 djangorestframework = "^3.14.0"
 drf-spectacular = "^0.27.0"
-psycopg2 = "^2.9.9"
 sentry-sdk = "^1.39.2"
 pycountry = "^23.12.11"
 elasticsearch-dsl = "8.12.0" # temp fix for elasticsearch-dsl bug
 fakeredis = "^1.9.0" # sounds like a dev only dependency but unfortunately it's referenced in settings.py
 gunicorn = "^21.2.0"
+psycopg2-binary = "^2.9.9"
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
