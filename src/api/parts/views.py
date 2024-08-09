@@ -1,9 +1,11 @@
 from copy import deepcopy
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from api.parts.permissions import HasScrapPermission
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
+from django.conf import settings
 from django.http import Http404
+from django.utils import timezone
 from elasticsearch_dsl import Q, Search
 from part.documents import PART_INDEX_NAME
 from part.models import Part
@@ -25,6 +27,12 @@ class PartsView(RetrieveAPIView):
         except Part.DoesNotExist as e:
             raise Http404 from e
         self.check_object_permissions(self.request, obj)
+        if (
+            obj.last_time_delivered
+            and obj.last_time_delivered <= timezone.now() - timedelta(days=1)
+        ):
+            settings.PARTS_TO_SNEAK.add(obj.reference)
+
         return obj
 
 
@@ -37,8 +45,11 @@ class PartsToScrapView(RetrieveAPIView):
     serializer_class = PartOutputSerializer
 
     def get_object(self):
-        queryset = self.filter_queryset(Part.objects.parts_to_scrap())
-        obj = queryset.first()
+        if settings.PARTS_TO_SNEAK:
+            obj = Part.objects.get(reference=settings.PARTS_TO_SNEAK.pop())
+        else:
+            queryset = self.filter_queryset(Part.objects.parts_to_scrap())
+            obj = queryset.first()
         self.check_object_permissions(self.request, obj)
         obj_copy = deepcopy(obj)
         obj.last_time_delivered = datetime.now()

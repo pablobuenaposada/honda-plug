@@ -1,9 +1,12 @@
+from datetime import timedelta
+
 import pytest
 from api.parts.serializers import PartOutputSerializer
 from django.conf import settings
 from django.contrib.auth.models import Permission, User
 from django.core import management
 from django.shortcuts import resolve_url
+from django.utils import timezone
 from model_bakery import baker
 from part.constants import SOURCE_AMAYAMA, SOURCE_TEGIWA
 from part.models import Part, Stock
@@ -20,6 +23,9 @@ TITLE_2 = "Oil Pump"
 
 @pytest.mark.django_db
 class TestsPartsView:
+    def setup_method(selfself, method):
+        settings.PARTS_TO_SNEAK = set()
+
     def endpoint(self, reference):
         return resolve_url("api:parts-detail", reference=reference)
 
@@ -41,6 +47,7 @@ class TestsPartsView:
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data == PartOutputSerializer(part).data
+        assert set() == settings.PARTS_TO_SNEAK
 
     def test_not_found(self, client):
         response = client.get(self.endpoint(REFERENCE_1))
@@ -49,11 +56,29 @@ class TestsPartsView:
         assert response.data == {
             "detail": ErrorDetail(string="Not found.", code="not_found")
         }
+        assert set() == settings.PARTS_TO_SNEAK
+
+    def test_success_parts_to_sneak(self, client):
+        """if last_time_delivered is more than 1 day then the part is going to be added to be sneaked"""
+        part = baker.make(
+            Part,
+            reference=REFERENCE_1,
+            source=SOURCE_TEGIWA,
+            last_time_delivered=timezone.now() - timedelta(days=1),
+        )
+        baker.make(Stock, part=part, source=SOURCE_TEGIWA, country="US")
+        response = client.get(self.endpoint(REFERENCE_1))
+
+        assert response.status_code == status.HTTP_200_OK
+        assert {REFERENCE_1} == settings.PARTS_TO_SNEAK
 
 
 @pytest.mark.django_db
 class TestsPartsToScrapView:
     endpoint = resolve_url("api:to-scrap")
+
+    def setup_method(selfself, method):
+        settings.PARTS_TO_SNEAK = set()
 
     @pytest.fixture(autouse=True)
     def setup_class(self):
