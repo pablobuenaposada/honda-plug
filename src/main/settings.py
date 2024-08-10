@@ -230,5 +230,3 @@ LazyChoicesMixin.get_choices = lambda self: self._choices
 LazyChoicesMixin.choices = property(
     LazyChoicesMixin.get_choices, LazyChoicesMixin.set_choices
 )
-
-PARTS_TO_SNEAK = set()

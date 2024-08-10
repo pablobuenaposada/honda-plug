@@ -7,6 +7,7 @@ from django.contrib.auth.models import Permission, User
 from django.core import management
 from django.shortcuts import resolve_url
 from django.utils import timezone
+from main.parts_to_sneak import PartsToSneak
 from model_bakery import baker
 from part.constants import SOURCE_AMAYAMA, SOURCE_TEGIWA
 from part.models import Part, Stock
@@ -24,7 +25,7 @@ TITLE_2 = "Oil Pump"
 @pytest.mark.django_db
 class TestsPartsView:
     def setup_method(selfself, method):
-        settings.PARTS_TO_SNEAK = set()
+        PartsToSneak._parts = set()
 
     def endpoint(self, reference):
         return resolve_url("api:parts-detail", reference=reference)
@@ -47,7 +48,7 @@ class TestsPartsView:
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data == PartOutputSerializer(part).data
-        assert set() == settings.PARTS_TO_SNEAK
+        assert PartsToSneak._parts == set()
 
     def test_not_found(self, client):
         response = client.get(self.endpoint(REFERENCE_1))
@@ -56,7 +57,7 @@ class TestsPartsView:
         assert response.data == {
             "detail": ErrorDetail(string="Not found.", code="not_found")
         }
-        assert set() == settings.PARTS_TO_SNEAK
+        assert PartsToSneak._parts == set()
 
     def test_success_parts_to_sneak(self, client):
         """if last_time_delivered is more than 1 day then the part is going to be added to be sneaked"""
@@ -70,7 +71,7 @@ class TestsPartsView:
         response = client.get(self.endpoint(REFERENCE_1))
 
         assert response.status_code == status.HTTP_200_OK
-        assert {REFERENCE_1} == settings.PARTS_TO_SNEAK
+        assert PartsToSneak._parts == {REFERENCE_1}
 
 
 @pytest.mark.django_db
@@ -78,7 +79,7 @@ class TestsPartsToScrapView:
     endpoint = resolve_url("api:to-scrap")
 
     def setup_method(selfself, method):
-        settings.PARTS_TO_SNEAK = set()
+        PartsToSneak._parts = set()
 
     @pytest.fixture(autouse=True)
     def setup_class(self):

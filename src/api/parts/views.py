@@ -3,10 +3,10 @@ from datetime import datetime, timedelta
 
 from api.parts.permissions import HasScrapPermission
 from api.parts.serializers import PartOutputSerializer, SearchOutputSerializer
-from django.conf import settings
 from django.http import Http404
 from django.utils import timezone
 from elasticsearch_dsl import Q, Search
+from main.parts_to_sneak import PartsToSneak
 from part.documents import PART_INDEX_NAME
 from part.models import Part
 from rest_framework.generics import ListAPIView, RetrieveAPIView
@@ -31,7 +31,7 @@ class PartsView(RetrieveAPIView):
             obj.last_time_delivered
             and obj.last_time_delivered <= timezone.now() - timedelta(days=1)
         ):
-            settings.PARTS_TO_SNEAK.add(obj.reference)
+            PartsToSneak.add(obj.reference)
 
         return obj
 
@@ -45,8 +45,9 @@ class PartsToScrapView(RetrieveAPIView):
     serializer_class = PartOutputSerializer
 
     def get_object(self):
-        if settings.PARTS_TO_SNEAK:
-            obj = Part.objects.get(reference=settings.PARTS_TO_SNEAK.pop())
+        if reference := PartsToSneak.pop():
+            # if there's any urgent part to scrap we will return those
+            obj = Part.objects.get(reference=reference)
         else:
             queryset = self.filter_queryset(Part.objects.parts_to_scrap())
             obj = queryset.first()
