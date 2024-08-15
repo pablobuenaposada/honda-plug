@@ -24,6 +24,7 @@ elasticsearch-dsl = "8.12.0" # temp fix for elasticsearch-dsl bug
 fakeredis = "^1.9.0" # sounds like a dev only dependency but unfortunately it's referenced in settings.py
 gunicorn = "^21.2.0"
 psycopg2-binary = "^2.9.9"
+django-redis = "^5.4.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "*"

@@ -191,6 +191,14 @@ LOGGING = {
     },
 }
 
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://redis:6379/1",
+        "KEY_PREFIX": "django",
+    }
+}
+
 RQ_QUEUES = {
     "default": {
         "HOST": "redis",

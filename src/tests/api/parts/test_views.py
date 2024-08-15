@@ -5,9 +5,10 @@ from api.parts.serializers import PartOutputSerializer
 from django.conf import settings
 from django.contrib.auth.models import Permission, User
 from django.core import management
+from django.core.cache import cache
 from django.shortcuts import resolve_url
 from django.utils import timezone
-from main.parts_to_sneak import PartsToSneak
+from main.parts_to_sneak import CACHE_KEY
 from model_bakery import baker
 from part.constants import SOURCE_AMAYAMA, SOURCE_TEGIWA
 from part.models import Part, Stock
@@ -24,9 +25,6 @@ TITLE_2 = "Oil Pump"
 
 @pytest.mark.django_db
 class TestsPartsView:
-    def setup_method(selfself, method):
-        PartsToSneak._parts = set()
-
     def endpoint(self, reference):
         return resolve_url("api:parts-detail", reference=reference)
 
@@ -48,7 +46,7 @@ class TestsPartsView:
 
         assert response.status_code == status.HTTP_200_OK
         assert response.data == PartOutputSerializer(part).data
-        assert PartsToSneak._parts == set()
+        assert cache.get(CACHE_KEY, []) == []
 
     def test_not_found(self, client):
         response = client.get(self.endpoint(REFERENCE_1))
@@ -57,7 +55,7 @@ class TestsPartsView:
         assert response.data == {
             "detail": ErrorDetail(string="Not found.", code="not_found")
         }
-        assert PartsToSneak._parts == set()
+        assert cache.get(CACHE_KEY, []) == []
 
     def test_success_parts_to_sneak(self, client):
         """if last_time_delivered is more than 1 day then the part is going to be added to be sneaked"""
@@ -71,7 +69,7 @@ class TestsPartsView:
         response = client.get(self.endpoint(REFERENCE_1))
 
         assert response.status_code == status.HTTP_200_OK
-        assert PartsToSneak._parts == {REFERENCE_1}
+        assert cache.get(CACHE_KEY) == {REFERENCE_1}
 
 
 @pytest.mark.django_db
@@ -79,7 +77,7 @@ class TestsPartsToScrapView:
     endpoint = resolve_url("api:to-scrap")
 
     def setup_method(selfself, method):
-        PartsToSneak._parts = set()
+        cache.clear()
 
     @pytest.fixture(autouse=True)
     def setup_class(self):

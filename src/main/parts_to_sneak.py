@@ -1,13 +1,23 @@
-class PartsToSneak:
-    """Singleton class for storing urgent parts to be scraped"""
+from django.core.cache import cache
 
-    _parts = set()
+CACHE_KEY = "parts_to_sneak"
+
+
+class PartsToSneak:
+    """class for storing urgent parts to be scraped"""
 
     @classmethod
     def add(cls, reference):
-        cls._parts.add(reference)
+        parts_to_sneak = cache.get(CACHE_KEY, set())
+        parts_to_sneak = set(parts_to_sneak)
+        parts_to_sneak.add(reference)
+        cache.set(CACHE_KEY, parts_to_sneak)
 
     @classmethod
     def pop(cls):
-        if cls._parts:
-            return cls._parts.pop()
+        parts_to_sneak = cache.get(CACHE_KEY, None)
+        if not parts_to_sneak:
+            return None
+        reference = parts_to_sneak.pop()
+        cache.set(CACHE_KEY, parts_to_sneak)
+        return reference
